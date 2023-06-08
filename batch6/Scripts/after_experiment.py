@@ -53,7 +53,10 @@ APPS_5 = ['e.www.writeroomtest',
           'e.www.gyroscopetest']
 
 APPS_6 = ['e.www.writeroomtest',
-          'e.www.gravitytest']
+          'e.www.gravitytest',
+          'e.intervalapp.cameratest',
+          'e.intervalapp.cpufactorialtest',
+          'e.intervalapp.displaytest']
           
 
 def main(device, *args, **kwargs):

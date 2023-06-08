@@ -33,7 +33,10 @@ APPS_5 = ['Room Database Medium Frequency',
           'Gyroscope']
 
 APPS_6 = ['Room Database Low Frequency',
-          'Gravity']
+          'Gravity',
+          'Cpu INTERVAL',
+          'Camera INTERVAL',
+          'Display INTERVAL']
 
 def main(device, *args, **kwargs):
     path = '/home/radu/VU/GreenLab-TA/android-apps-benchmark/APKs'
