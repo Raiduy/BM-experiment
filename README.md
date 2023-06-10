@@ -1,3 +1,3 @@
 ``` shell
-python3 android-runner BM-experiment/batch*/config.json
+python3 android-runner BM-experiment/testA/batch1/config.json
 ```

@@ -2,29 +2,29 @@ import json
 import os
 
 
-APKS_PATH = '/home/radu/VU/GreenLab-TA/android-apps-benchmark/APKs'
-BATTERY_MANAGER_PATH = '/home/radu/VU/GreenLab-TA/ar-batterymanager-script/app/build/outputs/apk/debug/app-debug.apk'
+APKS_PATH = '/home/radu/VU/GreenLab/android-apps-benchmark/APKs'
+BATTERY_MANAGER_PATH = '/home/radu/VU/GreenLab/ar-batterymanager-script/app/build/outputs/apk/debug/app-debug.apk'
 BATTERY_MANAGER_PKG_NAME = 'com.example.batterymanager_utility'
 
 
-def create_folders(parent, batch):
-    if not os.path.exists('./' + parent + '/' + batch):
-        os.makedirs('./' + parent + '/' + batch + '/Scripts')
+def create_folders(device, parent, batch):
+    if not os.path.exists('./' + device + '/' + parent + '/' + batch):
+        os.makedirs('./' + device + '/' + parent + '/' + batch + '/Scripts')
 
 
-def generate_config(ex, batch, devices, apps, sample_interval):
+def generate_config(dev, ex, batch, device, apps, sample_interval):
     with open('templates/config.json', 'r') as f:
         config = json.load(f)
 
-        config['devices'] = devices
+        config['devices'] = device
         config['apps'] = apps
         config['profilers']['batterymanager']['sample_interval'] = sample_interval
 
-    with open(f'./{ex}/{batch}/config.json', 'w') as f:
+    with open(f'./{dev}/{ex}/{batch}/config.json', 'w') as f:
         json.dump(config, f, indent=4)
 
 
-def create_scripts(ex, batch, app_pkg_names, app_folders):
+def create_scripts(dev, ex, batch, app_pkg_names, app_folders):
     for file in os.listdir('templates'):
         with open('templates/' + file, 'r') as f:
             if file == 'config.json':
@@ -40,24 +40,24 @@ def create_scripts(ex, batch, app_pkg_names, app_folders):
             elif file == 'after_run.py' or file == 'before_run.py':
                 script = script.format(battery_manager_package=BATTERY_MANAGER_PKG_NAME)
             
-        with open(f'./{ex}/{batch}/Scripts/' + file, 'w') as f:
+        with open(f'./{dev}/{ex}/{batch}/Scripts/' + file, 'w') as f:
             f.write(script)
 
 
 devices = {
-    'Px3': {},
-    'Pixel 2': {},
-    'Pixel 3': {},
+    'Pixel3-W': {},
+    'Nexus5X-W': {},
+    'GalaxyJ7-W': {},
 }
 
-experiments = json.load(open('experiments_conf.json'))
 
 def main():
-    for experiment, batches in experiments.items():
-        for batch, cfg in batches.items():
-            create_folders(experiment, batch)
-            create_scripts(experiment, batch, cfg['apps'], cfg['pkg_names'])
-            generate_config(experiment, batch, devices, cfg['apps'], cfg['sample_interval'])
+    experiments = json.load(open('./experiments_config.json'))
+    for device in devices:
+        for experiment, batches in experiments.items():
+            for batch, cfg in batches.items():
+                create_folders(device, experiment, batch)
+                create_scripts(device, experiment, batch, cfg['pkg_names'], cfg['apps'])
+                generate_config(device, experiment, batch, {f'{device}':{}}, cfg['pkg_names'], cfg['sample_interval'])
 
 main()    
-    
