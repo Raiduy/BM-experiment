@@ -54,9 +54,9 @@ APPS_5 = ['e.www.writeroomtest',
 
 APPS_6 = ['e.www.writeroomtest',
           'e.www.gravitytest',
-          'e.intervalapp.cameratest',
-          'e.intervalapp.cpufactorialtest',
-          'e.intervalapp.displaytest']
+          'x.intervalapp.cameratest',
+          'x.intervalapp.cpufactorialtest',
+          'x.intervalapp.displaytest']
           
 
 def main(device, *args, **kwargs):

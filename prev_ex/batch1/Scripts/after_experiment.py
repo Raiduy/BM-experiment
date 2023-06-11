@@ -32,9 +32,9 @@
 
 # e.www.writeroomtest.apk
 # e.www.gravitytest.apk
-# e.intervalapp.cameratest.apk
-# e.intervalapp.cpufactorialtest.apk
-# e.intervalapp.displaytest.apk
+# x.intervalapp.cameratest.apk
+# x.intervalapp.cpufactorialtest.apk
+# x.intervalapp.displaytest.apk
 
 
 APPS_1 = ['e.www.cameratest',
@@ -57,9 +57,9 @@ APPS_5 = ['e.www.writeroomtest',
 
 APPS_6 = ['e.www.writeroomtest',
           'e.www.gravitytest',
-          'e.intervalapp.cameratest',
-          'e.intervalapp.cpufactorialtest',
-          'e.intervalapp.displaytest']
+          'x.intervalapp.cameratest',
+          'x.intervalapp.cpufactorialtest',
+          'x.intervalapp.displaytest']
           
 
 def main(device, *args, **kwargs):
