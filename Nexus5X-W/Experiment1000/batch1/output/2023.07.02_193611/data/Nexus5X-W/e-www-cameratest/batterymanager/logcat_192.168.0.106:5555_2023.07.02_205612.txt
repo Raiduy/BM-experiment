@@ -1,0 +1,923 @@
+--------- beginning of system
+07-02 14:55:01.174   756   774 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.batterymanager_utility/.MainActivity} from uid 2000
+07-02 14:55:01.207   756 13002 I ActivityManager: Start proc 13352:com.example.batterymanager_utility/u0a111 for activity com.example.batterymanager_utility/.MainActivity
+--------- beginning of main
+07-02 14:55:01.208 13352 13352 I zygote64: Late-enabling -Xcheck:jni
+07-02 14:55:01.233  3166  3184 V ClearcutMetricXmitter: Transmission is done.
+07-02 14:55:01.303  3050  3050 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+07-02 14:55:01.347 13352 13352 I BatteryMgr:App: creating notification channel
+07-02 14:55:01.421 13352 13372 D OpenGLRenderer: HWUI GL Pipeline
+07-02 14:55:01.594 13352 13352 W zygote64: Class androidx.compose.runtime.snapshots.SnapshotStateList failed lock verification and will run slower.
+07-02 14:55:01.594 13352 13352 W zygote64: Common causes for lock verification issues are non-optimized dex code
+07-02 14:55:01.594 13352 13352 W zygote64: and incorrect proguard optimizations.
+07-02 14:55:01.605 13363 13363 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+07-02 14:55:01.715 13363 13363 D ICU     : Timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+07-02 14:55:01.720 13352 13358 I zygote64: Do partial code cache collection, code=30KB, data=19KB
+07-02 14:55:01.721 13352 13358 I zygote64: After code cache collection, code=30KB, data=19KB
+07-02 14:55:01.721 13352 13358 I zygote64: Increasing code cache capacity to 128KB
+07-02 14:55:01.733 13363 13363 I app_process: The ClassLoaderContext is a special shared library.
+07-02 14:55:01.771 13363 13363 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+07-02 14:55:01.776 13363 13363 W Monkey  : args: [-p, e.www.cameratest, 1]
+07-02 14:55:01.777 13363 13363 W Monkey  :  arg: "-p"
+07-02 14:55:01.778 13363 13363 W Monkey  :  arg: "e.www.cameratest"
+07-02 14:55:01.778 13363 13363 W Monkey  :  arg: "1"
+07-02 14:55:01.778 13363 13363 W Monkey  : data="e.www.cameratest"
+07-02 14:55:01.806   756   782 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{dbd55fa u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{32bf7ab 13363 (unknown name)/2000/u-1 remote:231fc1c}: process gone or crashing
+07-02 14:55:01.828   756  1486 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=e.www.cameratest/.MainActivity} from uid 2000
+07-02 14:55:01.828   756  1486 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+07-02 14:55:01.828   756  1486 W Binder  : java.lang.Throwable
+07-02 14:55:01.828   756  1486 W Binder  : 	at android.os.BinderProxy.transact(Binder.java:752)
+07-02 14:55:01.828   756  1486 W Binder  : 	at android.app.IActivityController$Stub$Proxy.activityStarting(IActivityController.java:172)
+07-02 14:55:01.828   756  1486 W Binder  : 	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:449)
+07-02 14:55:01.828   756  1486 W Binder  : 	at com.android.server.am.ActivityStarter.startActivityLocked(ActivityStarter.java:278)
+07-02 14:55:01.828   756  1486 W Binder  : 	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:817)
+07-02 14:55:01.828   756  1486 W Binder  : 	at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:4532)
+07-02 14:55:01.828   756  1486 W Binder  : 	at com.android.server.am.ActivityManagerService.startActivity(ActivityManagerService.java:4519)
+07-02 14:55:01.828   756  1486 W Binder  : 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:121)
+07-02 14:55:01.828   756  1486 W Binder  : 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2919)
+07-02 14:55:01.828   756  1486 W Binder  : 	at android.os.Binder.execTransact(Binder.java:697)
+07-02 14:55:01.831 13352 13372 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-02 14:55:01.831 13352 13372 I Adreno  : Build Date                       : 09/22/17
+07-02 14:55:01.831 13352 13372 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-02 14:55:01.831 13352 13372 I Adreno  : Local Branch                     : O17A
+07-02 14:55:01.831 13352 13372 I Adreno  : Remote Branch                    : 
+07-02 14:55:01.831 13352 13372 I Adreno  : Remote Branch                    : 
+07-02 14:55:01.831 13352 13372 I Adreno  : Reconstruct Branch               : 
+07-02 14:55:01.832 13352 13372 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-02 14:55:01.840 13352 13372 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-02 14:55:01.842 13363 13363 I Monkey  : Events injected: 1
+07-02 14:55:01.845   363   363 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+07-02 14:55:01.847 13352 13372 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-02 14:55:01.848 13352 13372 I OpenGLRenderer: Initialized EGL, version 1.4
+07-02 14:55:01.848 13352 13372 D OpenGLRenderer: Swap behavior 2
+07-02 14:55:01.859 13352 13352 D Compose Focus: Owner FocusChanged(true)
+07-02 14:55:01.885 13363 13363 I Monkey  : ## Network stats: elapsed time=38ms (0ms mobile, 0ms wifi, 38ms not connected)
+07-02 14:55:01.886 13363 13363 I com.android.commands.monkey: System.exit called, status: 0
+07-02 14:55:01.886 13363 13363 I AndroidRuntime: VM exiting with result code 0.
+07-02 14:55:01.912   363   363 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@2.0::IMapper/default in either framework or device manifest.
+07-02 14:55:01.913 13352 13372 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-02 14:55:01.915 13352 13372 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-02 14:55:01.949 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-02 14:55:01.951 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-02 14:55:01.951 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-02 14:55:01.951 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-02 14:55:01.952 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-02 14:55:01.961   756 13002 I ActivityManager: Start proc 13385:e.www.cameratest/u0a164 for activity e.www.cameratest/.MainActivity
+07-02 14:55:01.964 13385 13385 I zygote64: Late-enabling -Xcheck:jni
+07-02 14:55:02.210 13385 13385 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-02 14:55:02.210 13385 13385 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void e.www.cameratest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:109)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-02 14:55:02.210 13385 13385 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:02.210 13385 13385 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:02.210 13385 13385 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/e.www.cameratest-Rk1PuI8Hi5-jwBPzthCD4w==/base.apk"],nativeLibraryDirectories=[/data/app/e.www.cameratest-Rk1PuI8Hi5-jwBPzthCD4w==/lib/arm64, /system/lib64, /vendor/lib64]]
+07-02 14:55:02.210 13385 13385 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-02 14:55:02.210 13385 13385 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-02 14:55:02.210 13385 13385 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-02 14:55:02.210 13385 13385 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void e.www.cameratest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:109)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-02 14:55:02.210 13385 13385 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:02.210 13385 13385 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:02.210 13385 13385 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:02.210 13385 13385 I zygote64: 
+07-02 14:55:02.211 13385 13385 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void e.www.cameratest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:109)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:02.211 13385 13385 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/e.www.cameratest-Rk1PuI8Hi5-jwBPzthCD4w==/base.apk"],nativeLibraryDirectories=[/data/app/e.www.cameratest-Rk1PuI8Hi5-jwBPzthCD4w==/lib/arm64, /system/lib64, /vendor/lib64]]
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void e.www.cameratest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:109)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:02.211 13385 13385 I zygote64: 
+07-02 14:55:02.211 13385 13385 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void e.www.cameratest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:109)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:02.211 13385 13385 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/e.www.cameratest-Rk1PuI8Hi5-jwBPzthCD4w==/base.apk"],nativeLibraryDirectories=[/data/app/e.www.cameratest-Rk1PuI8Hi5-jwBPzthCD4w==/lib/arm64, /system/lib64, /vendor/lib64]]
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-02 14:55:02.211 13385 13385 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void e.www.cameratest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:109)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-02 14:55:02.211 13385 13385 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-02 14:55:02.211 13385 13385 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-02 14:55:02.212 13385 13385 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-02 14:55:02.212 13385 13385 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:02.212 13385 13385 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:02.212 13385 13385 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:02.212 13385 13385 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:02.212 13385 13385 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:02.212 13385 13385 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:02.212 13385 13385 I zygote64: 
+07-02 14:55:02.237 13385 13385 I CameraManagerGlobal: Connecting to camera service
+07-02 14:55:02.266   568  2034 I CameraService: CameraService::connect call (PID -1 "e.www.cameratest", camera ID 1) for HAL version default and Camera API version 2
+07-02 14:55:02.267   568  2034 I Camera2ClientBase: Camera 1: Opened. Client: e.www.cameratest (PID 13385, UID 10164)
+07-02 14:55:02.267   568  2034 I CameraDeviceClient: CameraDeviceClient 1: Opened
+07-02 14:55:02.281   635 13413 E mm-camera-img: module_imglib_start_session:1778 ###Img_Loglevel 1
+07-02 14:55:02.286   635 13409 E mm-camera-isp2: isp_module_start_session:360 num_session_opened 1
+07-02 14:55:02.288   635 13410 E mm-camera: q3a_port_init:1753  q3a_port_init: 3A VERSION --> 4.1.0.r9
+07-02 14:55:02.294   635 13422 E libaprpmem: 
+07-02 14:55:02.294   635 13422 E libaprpmem:  Ion allocation success virtaddr : ret=3988844544 fd=38 heapid=33554432
+07-02 14:55:02.296   635 13422 E libaprpmem: 
+07-02 14:55:02.296   635 13422 E libaprpmem:  Ion allocation success virtaddr : ret=3984875520 fd=41 heapid=33554432
+07-02 14:55:02.300   635 13422 E libaprpmem: 
+07-02 14:55:02.300   635 13422 E libaprpmem:  Ion allocation success virtaddr : ret=3976937472 fd=42 heapid=33554432
+07-02 14:55:02.304   635 13422 E libaprpmem: 
+07-02 14:55:02.304   635 13422 E libaprpmem:  Ion allocation success virtaddr : ret=3972755456 fd=43 heapid=33554432
+07-02 14:55:02.308   635 13422 E libaprpmem: 
+07-02 14:55:02.308   635 13422 E libaprpmem:  Ion allocation success virtaddr : ret=3964391424 fd=44 heapid=33554432
+07-02 14:55:02.312   635 13422 E libaprpmem: 
+07-02 14:55:02.312   635 13422 E libaprpmem:  Ion allocation success virtaddr : ret=3960209408 fd=45 heapid=33554432
+07-02 14:55:02.314   635 13422 E libaprpmem: 
+07-02 14:55:02.314   635 13422 E libaprpmem:  Ion allocation success virtaddr : ret=3956027392 fd=46 heapid=33554432
+07-02 14:55:02.331   635 13424 E mm-camera: mct: mct_pipeline_start_stream_internal: Adding session stream streamid= 0xf for session=2
+07-02 14:55:02.331   635 13424 E mm-camera: mct: mct_pipeline_start_stream_internal:Linking session stream for session 2
+07-02 14:55:02.331   635 13424 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.331   635 13424 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.334   635 13424 E mm-camera: mct: mct_pipeline_start_stream_internal:Session stream linked successfully session 2
+07-02 14:55:02.360 13385 13438 D OpenGLRenderer: HWUI GL Pipeline
+07-02 14:55:02.373   568  2034 E mm-camera-intf: mm_channel_fsm_fn_stopped: invalid state (1) for evt (6)
+07-02 14:55:02.373   568  2034 I QCamera3HWI: configureStreamsPerfLocked: stopping channel 30208
+07-02 14:55:02.373   568  2034 I QCamera3HWI: configureStreamsPerfLocked: stream[0] type = 0, format = 34, width = 2592, height = 1944, rotation = 0, usage = 0x60000
+07-02 14:55:02.373   568  2034 I QCamera3Stream: init: stream_type is 7, feature_mask is 0
+07-02 14:55:02.374   568  2034 E mm-camera-intf: mm_stream_get_v4l2_fmt: Unknown fmt=101
+07-02 14:55:02.375   568  2034 D Camera3-Device: Set real time priority for request queue thread (tid 13436)
+07-02 14:55:02.400 13385 13438 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-02 14:55:02.400 13385 13438 I Adreno  : Build Date                       : 09/22/17
+07-02 14:55:02.400 13385 13438 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-02 14:55:02.400 13385 13438 I Adreno  : Local Branch                     : O17A
+07-02 14:55:02.400 13385 13438 I Adreno  : Remote Branch                    : 
+07-02 14:55:02.400 13385 13438 I Adreno  : Remote Branch                    : 
+07-02 14:55:02.400 13385 13438 I Adreno  : Reconstruct Branch               : 
+07-02 14:55:02.402 13385 13438 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-02 14:55:02.409 13385 13438 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-02 14:55:02.413   363   363 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+07-02 14:55:02.414 13385 13438 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-02 14:55:02.415 13385 13438 I OpenGLRenderer: Initialized EGL, version 1.4
+07-02 14:55:02.415 13385 13438 D OpenGLRenderer: Swap behavior 2
+07-02 14:55:02.422 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-02 14:55:02.424 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-02 14:55:02.424 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=e.www.cameratest fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-02 14:55:02.424 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-02 14:55:02.425 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-02 14:55:02.425   363   363 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@2.0::IMapper/default in either framework or device manifest.
+07-02 14:55:02.427 13385 13438 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-02 14:55:02.429 13385 13438 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-02 14:55:02.447   756   791 I ActivityManager: Displayed e.www.cameratest/.MainActivity: +494ms (total +1s254ms)
+07-02 14:55:02.467   635 13425 E mm-camera: isp_util_decide_stream_mapping:5685 INFO: type 3 resolution 2592x1944 hw_stream 1 need_native_buff 0 controllable_output 1 shared_output 0
+07-02 14:55:02.467   635 13425 E mm-camera: isp_util_decide_stream_mapping:5685 INFO: type 11 resolution 640x480 hw_stream 0 need_native_buff 1 controllable_output 0 shared_output 0
+07-02 14:55:02.467   635 13425 E mm-camera: isp_util_decide_stream_mapping:5685 INFO: type 5 resolution 640x480 hw_stream 0 need_native_buff 1 controllable_output 0 shared_output 0
+07-02 14:55:02.475   568 13436 I QCamera3HWI: getSensorOutputSize: sensor output dimension = 2592 x 1944
+07-02 14:55:02.475   568 13436 I QCamera3CropRegionMapper: update: active_array: 2592 x 1944, sensor size 2592 x 1944
+07-02 14:55:02.476   568 13436 I QCamera3Stream: init: stream_type is 3, feature_mask is 0
+07-02 14:55:02.476   635 13425 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.476   635 13425 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.478   568 13436 I QCamera3Stream: init: stream_type is 5, feature_mask is 8390286
+07-02 14:55:02.479   635 13425 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.479   635 13425 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.481   568 13436 I QCamera3Stream: init: stream_type is 11, feature_mask is 8390286
+07-02 14:55:02.481   635 13425 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.482   635 13425 E mm-camera-sensor: port_sensor_caps_reserve:87session id doesn't match
+07-02 14:55:02.484   568 13436 E mm-camera-intf: mm_stream_get_v4l2_fmt: Unknown fmt=100
+07-02 14:55:02.484   635 13425 E mm-camera: module_faceproc_port_event_func:827] Invalid type for reprocess 20004
+07-02 14:55:02.484   635 13425 E mm-camera: pproc_module_offline_stream_param_buf:2247 failed: parm_buf.type is invalid
+07-02 14:55:02.485   635 13425 E mm-camera: pproc_module_offline_stream_param_buf:2247 failed: parm_buf.type is invalid
+07-02 14:55:02.507   635 13425 E mm-camera: af_port_handle_sensor_update:2277  Depth_Err: actuator sensitivity: 0.000000 is invalid
+07-02 14:55:02.509   635 13425 E mm-camera-isp2: isp_resource_get_stats_type_mask:1375 enable_stats_mask f88
+07-02 14:55:02.510   635 13425 E mm-camera: iface_util_fill_hw_stream_info_pix:#2447 batch_dbg stream_id 3 type 5 streaming_mode 0
+07-02 14:55:02.513   635 13425 E mm-camera: iface_streamon_to_thread: E, session id = 2, user stream id = 2
+07-02 14:55:02.513   635 13425 E mm-camera-isp2: bpc44_run_abcc_algo:216 No defective pixels set by sensor event
+07-02 14:55:02.513   635 13425 E mm-camera-isp2: isp_sub_module_port_process_downstream_ctrl_event:954 failed: mct event 1 int_event 0
+07-02 14:55:02.514   635 13425 E mm-camera: dsps_proc_init:54  dsps_proc_init: Failed to open sensor1 port
+07-02 14:55:02.528   635 13425 E mm-camera: iface_streamon_to_thread: E, session id = 2, user stream id = 3
+07-02 14:55:02.529   635 13418 E mm-camera: :cpp_hardware_set_clock:333 Set clock 320000000 BW abg 29030400 BW inst 1466181932
+07-02 14:55:02.536   635 13425 E mm-camera: iface_streamon_to_thread: E, session id = 2, user stream id = 4
+07-02 14:55:02.536   635 13411 E mm-camera: iface_util_get_user_streams_by_bundle: streamon, got all bundled streamon!
+07-02 14:55:02.536   635 13411 E mm-camera: iface_streamon: num_user_streams 3, num_hw_streams 2
+07-02 14:55:02.538   635 13451 E mm-camera: iface_axi_cfg_stats_stream_start: stats_cmd: enable = 1, num of stats stream = 6
+07-02 14:55:02.538   635 13425 E mm-camera-img: faceproc_comp_get_param:299] Error type 520
+07-02 14:55:02.540   635 13425 E mm-camera-isp2: be_stats44_trigger_update:449 failed: Denominator is zero. hnum 0 vnum 0
+07-02 14:55:02.547   635 13411 E mm-camera: iface_ispif_get_cfg_params_from_hw_streams: interface 0 already active
+07-02 14:55:02.566   635 13429 E mm-camera-CORE: aec_process_pack_stats_config:5904  invalid inputs to translate dimensions for fov 2 camif 
+07-02 14:55:02.598   635 13415 E mm-camera-isp2: be_stats44_stats_config_validate:623 Invalid BG from 3A h_num = 0, v_num = 0
+07-02 14:55:02.598   635 13415 E mm-camera-isp2: 
+07-02 14:55:02.598   635 13415 E mm-camera-isp2: bhist_stats44_stats_config_validate:363 Invalid BG from 3A h_num = 0, v_num = 0
+07-02 14:55:02.598   635 13415 E mm-camera-isp2: 
+07-02 14:55:02.671  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:02.671  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:02.671  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:02.672  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:02.697   635 13429 E mm-camera-CORE: aec_process_get_matching_index_from_history:4718   history search unsuccessful! 
+07-02 14:55:02.729   635 13429 E mm-camera-CORE: aec_process_get_matching_index_from_history:4718   history search unsuccessful! 
+07-02 14:55:02.783  3166  3166 I A       : GEL#onSaveInstanceState
+07-02 14:55:02.803   428   465 E SurfaceFlinger: Failed to find layer (com.google.android.googlequicksearchbox/com.google.android.launcher.GEL#1) in layer parent (no-parent).
+07-02 14:55:03.064   756 16255 I OpenGLRenderer: Initialized EGL, version 1.4
+07-02 14:55:03.064   756 16255 D OpenGLRenderer: Swap behavior 2
+07-02 14:55:03.171   756   765 I zygote64: NativeAlloc concurrent copying GC freed 56088(2MB) AllocSpace objects, 47(1724KB) LOS objects, 42% free, 16MB/29MB, paused 109us total 106.713ms
+07-02 14:55:03.428 13352 13352 I BatteryMgr:DataCollectionService: onStartCommand: begin
+07-02 14:55:03.429 13352 13352 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 1000
+07-02 14:55:03.429 13352 13352 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+07-02 14:55:03.431 13352 13352 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+07-02 14:55:03.435 13352 13352 I BatteryMgr:DataCollectionService: started foreground
+07-02 14:55:03.437   756   782 E NotificationService: Suppressing notification from package by user request.
+07-02 14:55:03.451 13352 13482 I BatteryMgr:DataCollectionService: collectData: begin
+07-02 14:55:03.458 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324103458,-141600,4184
+07-02 14:55:03.763   635 13429 E mm-camera-sensor: port_sensor_handle_aec_update:444miss aec update window, skip
+07-02 14:55:04.471 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324104470,-141600,4184
+07-02 14:55:05.483 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324105482,-141600,4184
+07-02 14:55:06.492 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324106492,-141600,4184
+07-02 14:55:07.322 13352 13497 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+07-02 14:55:07.499 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324107498,-141600,4184
+07-02 14:55:07.618  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:07.618  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:07.618  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:07.618  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:08.511 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324108510,-141600,4184
+07-02 14:55:09.521 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324109521,-141600,4184
+07-02 14:55:10.528 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324110527,-141600,4184
+07-02 14:55:11.537 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324111537,-141600,4184
+07-02 14:55:12.544 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324112543,-332181,4184
+07-02 14:55:12.633  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:12.633  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:12.633  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:12.633  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:13.458 13507 13507 W Thread-233: type=1400 audit(0.0:278): avc: denied { read } for name="mem" dev="debugfs" ino=580159 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:debugfs:s0 tclass=file permissive=0
+07-02 14:55:13.458 13507 13507 W Thread-233: type=1400 audit(0.0:279): avc: denied { read } for name="mem" dev="debugfs" ino=580159 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:debugfs:s0 tclass=file permissive=0
+07-02 14:55:13.550 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324113550,-332181,4184
+07-02 14:55:14.563 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324114563,-332181,4184
+07-02 14:55:15.568 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324115568,-332181,4184
+07-02 14:55:16.575 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324116575,-332181,4184
+07-02 14:55:17.584 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324117584,-332181,4184
+07-02 14:55:17.636  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:17.637  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:17.637  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:17.637  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:18.592 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324118592,-332181,4184
+07-02 14:55:19.605 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324119605,-332181,4184
+07-02 14:55:20.613 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324120613,-332181,4184
+07-02 14:55:21.621 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324121621,-332181,4184
+07-02 14:55:22.628 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324122628,-332181,4184
+07-02 14:55:22.649  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:22.649  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:22.650  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:22.650  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:23.642 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324123642,-332181,4184
+07-02 14:55:24.652 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324124652,-332181,4184
+07-02 14:55:25.660 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324125660,-332181,4184
+07-02 14:55:26.670 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324126670,-332181,4184
+07-02 14:55:27.659  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:27.659  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:27.659  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:27.659  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:27.681 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324127680,-332181,4154
+07-02 14:55:28.693 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324128693,-332181,4154
+07-02 14:55:29.700 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324129700,-332181,4154
+07-02 14:55:30.707 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324130707,-332181,4154
+07-02 14:55:31.716 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324131716,-332181,4154
+07-02 14:55:32.677  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:32.677  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:32.677  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:32.677  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:32.724 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324132724,-332181,4154
+07-02 14:55:33.736 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324133735,-332181,4154
+07-02 14:55:34.744 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324134744,-332181,4154
+07-02 14:55:35.691   635 13429 E mm-camera-sensor: port_sensor_handle_aec_update:444miss aec update window, skip
+07-02 14:55:35.752 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324135752,-332181,4154
+07-02 14:55:36.762 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324136761,-332181,4154
+07-02 14:55:37.706  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:37.706  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:37.706  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:37.706  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:37.769 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324137769,-332181,4154
+07-02 14:55:37.816 29229 29229 I Finsky  : [2] zbx.onStartJob(4): SCH: job service start with id 9979.
+07-02 14:55:37.845 29229 13520 I Finsky  : [1773] zne.a(118): SCH: Satisfied jobs for 9979 are: 1-1337
+07-02 14:55:37.857 29229 13521 I Finsky  : [1774] zaz.accept(68): SCH: Job 1-1337 starting
+07-02 14:55:37.864 29229 29229 I Finsky  : [2] RoutineHygieneCoreJob.v(4): DailyHygiene Holdoff skipped
+07-02 14:55:37.873 29229 29229 I Finsky  : [2] pwd.a(7): HC: Starting Hygiene for reason 12
+07-02 14:55:37.918   756  2056 I ActivityManager: Start proc 13523:com.google.process.gapps/u0a19 for content provider com.google.android.gsf/.settings.GoogleSettingsProvider
+07-02 14:55:38.099 13523 13523 I GoogleHttpClient: GMS http client unavailable, use old client
+07-02 14:55:38.158 29229 29229 I Finsky  : [2] pwj.f(8): HC: Probe [Cp1nhpT204Q6dmh43Z3S7Psaq6cLJRxTCkd5wCFMS34] for hygiene pass
+07-02 14:55:38.286 29229 29379 I Finsky  : [1238] mrb.a(41): [DeviceConfig] successfully updated device attribute payloads
+07-02 14:55:38.287 29229 29229 I Finsky  : [2] aacw.b(2): Request device config token was successful when fetching experiments.
+07-02 14:55:38.361   635 13429 E mm-camera-sensor: port_sensor_handle_aec_update:444miss aec update window, skip
+07-02 14:55:38.379 13057 13076 I zygote64: Waiting for a blocking GC ProfileSaver
+07-02 14:55:38.381 13057 13069 I zygote64: Background concurrent copying GC freed 131943(5MB) AllocSpace objects, 2(104KB) LOS objects, 49% free, 15MB/31MB, paused 104us total 198.809ms
+07-02 14:55:38.564 29229 13552 I Finsky  : [1778] akxl.e(2): Sending Heterodyne sync request for package com.android.vending
+07-02 14:55:38.641 29229 29229 I Finsky  : [2] izn.k(6): Not delivering second response for request=[[ ] https://play-fe.googleapis.com/fdfe/toc 0x4be64f9b NORMAL 26]
+07-02 14:55:38.775 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324138775,-332181,4154
+07-02 14:55:38.882 29229 13552 I RequestAddCookies: Cookie store not available in HTTP context
+07-02 14:55:39.002 29229 13552 I ResponseProcessCookies: Cookie store not available in HTTP context
+07-02 14:55:39.094 29229 13552 I Finsky  : [1778] tup.g(1): Received Heterodyne sync response. StatusCode=200
+07-02 14:55:39.358 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:39.514 29229 13552 I chatty  : uid=10036(com.android.vending) BlockingExecuto identical 281 lines
+07-02 14:55:39.514 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:39.520 29229 29270 I zygote64: Waiting for a blocking GC ProfileSaver
+07-02 14:55:39.520 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:39.544 29229 13552 I chatty  : uid=10036(com.android.vending) BlockingExecuto identical 52 lines
+07-02 14:55:39.544 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:39.548 29229 29270 I zygote64: WaitForGcToComplete blocked ProfileSaver on HeapTrim for 28.658ms
+07-02 14:55:39.561 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:39.780 29229 13552 I chatty  : uid=10036(com.android.vending) BlockingExecuto identical 608 lines
+07-02 14:55:39.780 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:39.781 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:39.781 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324139781,-332181,4154
+07-02 14:55:39.904 29229 13552 I chatty  : uid=10036(com.android.vending) BlockingExecuto expire 50 lines
+07-02 14:55:39.904 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:40.055 29229 13554 I Finsky  : [1779] wdb.h(1): Triggered update for experiment package com.google.android.finsky.regular.
+07-02 14:55:40.095 29229 13550 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:40.596 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:40.596 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:40.601 29229 13554 I Finsky  : [1779] wdh.c(1): Regular flags synced
+07-02 14:55:40.607 29229 13554 I Finsky  : [1779] ahfj.cc(3): Writing flags config, size 1.
+07-02 14:55:40.608 29229 13554 I Finsky  : [1779] ahfj.cc(3): Started writing experiment flags into file [7M6HNPmDwco8jO0f4jzQgpzyq5imuyA4Nl9LQ0Nx_ZM].
+07-02 14:55:40.616 29229 13554 I Finsky  : [1779] ahfj.cc(17): Finished writing experiment flags into file [7M6HNPmDwco8jO0f4jzQgpzyq5imuyA4Nl9LQ0Nx_ZM].
+07-02 14:55:40.632 29229 13554 I Finsky  : [1779] wdb.g(23): Successfully applied new configurations for package com.google.android.finsky.regular.
+07-02 14:55:40.632 29229 13554 I Finsky  : [1779] wdb.g(29): [EExp] Exporting experiments for package com.google.android.finsky.regular.
+07-02 14:55:40.633 29229 13554 I Finsky  : [1779] yaq.l(3): [EExp] Exporting experiments for namespace com.google.android.finsky.regular.
+07-02 14:55:40.640 13057 13057 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+07-02 14:55:40.640 13057 13057 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+07-02 14:55:40.715 13057 14323 W ResourceType: ResTable_typeSpec entry count inconsistent: given 205, previously 235
+07-02 14:55:40.741 29229 13554 I Finsky  : [1779] wdb.g(34): [EExp] Successfully exported experiments for package com.google.android.finsky.regular.
+07-02 14:55:40.742 29229 13556 I Finsky  : [1780] wdb.h(1): Triggered update for experiment package com.google.android.finsky.stable.
+07-02 14:55:40.742 29229 13552 I Finsky  : [1778] pwj.b(1): HC: beginRecoverGmscoreIfApplicable
+07-02 14:55:40.743 29229 13552 I Finsky  : [1778] pwj.b(2): HC: No target version, skip Gmscore recovery.
+07-02 14:55:40.759 29229 29417 I Finsky  : [1249] mrb.a(41): [DeviceConfig] successfully updated device attribute payloads
+07-02 14:55:40.760 29229 29229 I Finsky  : [2] zpl.b(10): SUH: Request device config token was successful in self update.
+07-02 14:55:40.786 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324140786,-332181,4154
+07-02 14:55:40.815 29229 13554 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:40.875 29229 13557 I Finsky  : [1781] onk.run(16): Wrote row to frosting DB: 9857
+07-02 14:55:41.144 29229 29229 I Finsky  : [2] zpn.e(29): SUH: [self-update] Skipping DFE self-update. Local Version [version=83631210,derivedid=3,splits=[config.arm64_v8a, config.en]] > Server Version [version=-1,derivedid=-1,splits=[]]
+07-02 14:55:41.248 29229 13557 I Finsky  : [1781] onk.run(16): Wrote row to frosting DB: 9858
+07-02 14:55:41.378 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:41.379 29229 13552 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+07-02 14:55:41.385 29229 13556 I Finsky  : [1780] ahfj.cc(3): Writing flags config, size 1.
+07-02 14:55:41.385 29229 13556 I Finsky  : [1780] ahfj.cc(3): Started writing experiment flags into file [8uKij9Tp4PZyjSvh8NyLyFvuCv94NONrKvkkdzEKIoQ].
+07-02 14:55:41.393 29229 13556 I Finsky  : [1780] ahfj.cc(17): Finished writing experiment flags into file [8uKij9Tp4PZyjSvh8NyLyFvuCv94NONrKvkkdzEKIoQ].
+07-02 14:55:41.408 29229 13556 I Finsky  : [1780] wdb.g(23): Successfully applied new configurations for package com.google.android.finsky.stable.
+07-02 14:55:41.409 29229 13556 I Finsky  : [1780] wdb.g(29): [EExp] Exporting experiments for package com.google.android.finsky.stable.
+07-02 14:55:41.409 29229 13556 I Finsky  : [1780] yaq.l(3): [EExp] Exporting experiments for namespace com.google.android.finsky.stable.
+07-02 14:55:41.424 29229 29390 I Finsky  : [1243] yfq.accept(33): SCH: Scheduling phonesky job Id: 10-12, CT: 1688324141271, Constraints: [{ L: 0, D: 43200000, C: 1, I: 1, N: 1 }, { L: 0, D: 0, C: 1, I: 1, N: 0 }]
+07-02 14:55:41.425 29229 29390 I Finsky  : [1243] yfq.accept(33): SCH: Scheduling phonesky job Id: 10-47, CT: 1688324141272, Constraints: [{ L: 0, D: 86400000, C: 1, I: 1, N: 1 }, { L: 0, D: 0, C: 1, I: 1, N: 0 }]
+07-02 14:55:41.433 29229 13556 I Finsky  : [1780] wdb.g(34): [EExp] Successfully exported experiments for package com.google.android.finsky.stable.
+07-02 14:55:41.449 29229 29390 I Finsky  : [1243] yfq.accept(33): SCH: Scheduling phonesky job Id: 10-107, CT: 1688324141272, Constraints: [{ L: 0, D: 43200000, C: 1, I: 1, N: 1 }, { L: 0, D: 0, C: 1, I: 1, N: 0 }]
+07-02 14:55:41.450 29229 29390 I Finsky  : [1243] yfq.accept(33): SCH: Scheduling phonesky job Id: 10-127, CT: 1688324141272, Constraints: [{ L: 0, D: 43200000, C: 1, I: 1, N: 1 }, { L: 0, D: 0, C: 1, I: 1, N: 0 }]
+07-02 14:55:41.487 29229 29417 I Finsky  : [1249] yjy.apply(9): SCH: Scheduling 1 system job(s)
+07-02 14:55:41.487 29229 29417 I Finsky  : [1249] zak.d(4): SCH: Scheduling system job Id: 9572, L: 0, D: 0, C: false, I: false, N: 0
+07-02 14:55:41.493 29229 29229 I Finsky  : [2] zbx.onStartJob(4): SCH: job service start with id 9572.
+07-02 14:55:41.505 29229 29229 I Finsky  : [2] pwc.b(2): Hygiene tasks scheduled
+07-02 14:55:41.512 29229 29229 I Finsky  : [2] zam.r(4): SCH: jobFinished: 1-1337. TimeElapsed: 3652ms.
+07-02 14:55:41.535 29229 13520 I Finsky  : [1773] zne.a(118): SCH: Satisfied jobs for 9572 are: 10-12, 10-47, 10-107, 10-127
+07-02 14:55:41.543 29229 13521 I Finsky  : [1774] adoo.u(7): SCH: Skip running other jobs while hygiene is running
+07-02 14:55:41.557 29229 29229 I Finsky  : [2] zaz.accept(68): SCH: Job 10-12 starting
+07-02 14:55:41.559 29229 29229 I Finsky  : [2] zaz.accept(68): SCH: Job 10-47 starting
+07-02 14:55:41.565 29229 29229 I Finsky  : [2] zaz.accept(68): SCH: Job 10-107 starting
+07-02 14:55:41.569 29229 29229 I Finsky  : [2] zaz.accept(68): SCH: Job 10-127 starting
+07-02 14:55:41.595 29229 13552 I Finsky  : [1778] qyp.c(3): Flushing event logs for [y0_1NG5HTmzf0bF7VytAKz9iHAD6w7yU52Le3i0fi68]
+07-02 14:55:41.598 29229 29229 I Finsky  : [2] AppUsageStatsHygieneJob.a(1): Running reliable app usage stats job
+07-02 14:55:41.608 29229 13552 I Finsky  : [1778] qyp.c(3): Flushing event logs for [Cp1nhpT204Q6dmh43Z3S7Psaq6cLJRxTCkd5wCFMS34]
+07-02 14:55:41.617 29229 13520 I Finsky  : [1773] zne.a(118): SCH: Satisfied jobs for 9979 are: 10-12, 10-47, 10-107, 10-127
+07-02 14:55:41.653 29229 29414 I PlayCommon: [1246] alwp.j(32): Preparing logs for uploading
+07-02 14:55:41.660 29229 29229 I Finsky  : [2] MarketDeeplinkHandlingActivitySwapHygieneJob.a(1): Start swapping the Market Deeplink handling activity.
+07-02 14:55:41.663 29229 29390 I Finsky  : [1243] MarketDeeplinkHandlingActivitySwapHygieneJob.b(3): Set component com.android.vending/com.google.android.finsky.activities.MarketDeepLinkHandlerActivity enabled state to 0
+07-02 14:55:41.664 29229 29390 I Finsky  : [1243] MarketDeeplinkHandlingActivitySwapHygieneJob.b(3): Set component com.android.vending/com.google.android.finsky.transparentmainactivity.TransparentMainActivity enabled state to 0
+07-02 14:55:41.668 29229 29414 I PlayCommon: [1246] alwp.j(183): Connecting to server: https://play.googleapis.com/play/log?format=raw&proto_v2=true
+07-02 14:55:41.682 29229 13520 I Finsky  : [1773] kiz.b(26): [Counters Flush] finished, scheduled=false
+07-02 14:55:41.683 29229 13520 I Finsky  : [1773] zam.r(4): SCH: jobFinished: 10-47. TimeElapsed: 97ms.
+07-02 14:55:41.706 29229 29390 I Finsky  : [1243] zam.r(4): SCH: jobFinished: 10-127. TimeElapsed: 43ms.
+07-02 14:55:41.748 29229 29377 I Finsky  : [1236] yfq.accept(33): SCH: Scheduling phonesky job Id: 1-1337, CT: 1688324141560, Constraints: [{ L: 43182991, D: 86382991, C: 1, I: 1, N: 1 }]
+07-02 14:55:41.763 29229 29390 I Finsky  : [1243] yjy.apply(9): SCH: Scheduling 0 system job(s)
+07-02 14:55:41.792 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324141792,-332181,4154
+07-02 14:55:41.864 29229 29414 I PlayCommon: [1246] alwp.j(220): Successfully uploaded logs.
+07-02 14:55:41.923  4356  4356 I Finsky:background: [2] rpa.onCreate(2): IPC-SERVER: Starting gRPC host service...
+07-02 14:55:42.090 29229 29390 I Finsky  : [1243] jgi.aaw(24): Finished reliable app usage stats job
+07-02 14:55:42.113 29229 29390 I Finsky  : [1243] zam.r(4): SCH: jobFinished: 10-107. TimeElapsed: 509ms.
+07-02 14:55:42.222  4356  4538 I Finsky:background: [1615] kkc.accept(24): [Counters Flush] Successfully generated counter events
+07-02 14:55:42.303   756  2059 I ActivityManager: Start proc 13568:com.android.vending:quick_launch/u0a36 for service com.android.vending/com.google.android.finsky.ipcservers.quicklaunch.QuickLaunchGrpcServerAndroidService
+07-02 14:55:42.560 13568 13568 W ResourceType: ResTable_typeSpec entry count inconsistent: given 205, previously 235
+07-02 14:55:42.665 13568 13568 I Finsky:quick_launch: [2] jvi.i(6): Process created at version: 36.3.12-21 [0] [PR] 542033711
+07-02 14:55:42.684  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:42.684  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:42.684  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:42.685  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:42.797 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324142797,-769954,4154
+07-02 14:55:43.010 13568 13568 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<oq>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/window/OnBackInvokedCallback;
+07-02 14:55:43.010 13568 13568 I zygote64:   at asks askm.a(java.lang.Class) (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at asks askm.b(java.lang.Object) (PG:-1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at asiv asiv.y(asiv, byte[], int, int, asij) (PG:2)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void whs.d() (PG:3)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void wcn.b(wcn) (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void whs.<clinit>() (PG:-1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void wqr.a() (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.util.Map wda.a(wcq) (PG:-1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:113)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:114)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object avtf.b() (PG:2)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void yar.h(android.content.Context, android.app.Application) (PG:5)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void jvi.i() (PG:72)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void jvi.onCreate() (PG:3)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1119)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5740)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void android.app.ActivityThread.-wrap1(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:-1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1656)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:43.010 13568 13568 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.window.OnBackInvokedCallback" on path: DexPathList[[zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/base.apk", zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.arm64_v8a.apk", zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.en.apk"],nativeLibraryDirectories=[/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/lib/arm64, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/base.apk!/lib/arm64-v8a, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.arm64_v8a.apk!/lib/arm64-v8a, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.en.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-02 14:55:43.010 13568 13568 I zygote64:   at asks askm.a(java.lang.Class) (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at asks askm.b(java.lang.Object) (PG:-1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at asiv asiv.y(asiv, byte[], int, int, asij) (PG:2)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void whs.d() (PG:3)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void wcn.b(wcn) (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void whs.<clinit>() (PG:-1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at void wqr.a() (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.util.Map wda.a(wcq) (PG:-1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:113)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:114)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.010 13568 13568 I zygote64:   at java.lang.Object avtf.b() (PG:2)
+07-02 14:55:43.011 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void yar.h(android.content.Context, android.app.Application) (PG:5)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void jvi.i() (PG:72)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void jvi.onCreate() (PG:3)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1119)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5740)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void android.app.ActivityThread.-wrap1(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:-1)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1656)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:43.011 13568 13568 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:43.011 13568 13568 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:43.011 13568 13568 I zygote64: 
+07-02 14:55:43.014 13568 13568 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<oq>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/window/OnBackInvokedCallback;
+07-02 14:55:43.014 13568 13568 I zygote64:   at asks askm.a(java.lang.Class) (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at asks askm.b(java.lang.Object) (PG:-1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at asiv asiv.y(asiv, byte[], int, int, asij) (PG:2)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void whs.d() (PG:3)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void wcn.b(wcn) (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void whs.<clinit>() (PG:-1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void wqr.a() (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.util.Map wda.a(wcq) (PG:-1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:113)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:114)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object avtf.b() (PG:2)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void yar.h(android.content.Context, android.app.Application) (PG:5)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void jvi.i() (PG:72)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void jvi.onCreate() (PG:3)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1119)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5740)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void android.app.ActivityThread.-wrap1(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:-1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1656)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:43.014 13568 13568 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.window.OnBackInvokedCallback" on path: DexPathList[[zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/base.apk", zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.arm64_v8a.apk", zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.en.apk"],nativeLibraryDirectories=[/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/lib/arm64, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/base.apk!/lib/arm64-v8a, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.arm64_v8a.apk!/lib/arm64-v8a, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.en.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-02 14:55:43.014 13568 13568 I zygote64:   at asks askm.a(java.lang.Class) (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at asks askm.b(java.lang.Object) (PG:-1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at asiv asiv.y(asiv, byte[], int, int, asij) (PG:2)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void whs.d() (PG:3)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void wcn.b(wcn) (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void whs.<clinit>() (PG:-1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at void wqr.a() (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.util.Map wda.a(wcq) (PG:-1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:113)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:114)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.014 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.015 13568 13568 I zygote64:   at java.lang.Object avtf.b() (PG:2)
+07-02 14:55:43.015 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void yar.h(android.content.Context, android.app.Application) (PG:5)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void jvi.i() (PG:72)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void jvi.onCreate() (PG:3)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1119)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5740)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void android.app.ActivityThread.-wrap1(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:-1)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1656)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:43.015 13568 13568 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:43.015 13568 13568 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:43.015 13568 13568 I zygote64: 
+07-02 14:55:43.015 13568 13568 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<oq>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/window/OnBackInvokedCallback;
+07-02 14:55:43.015 13568 13568 I zygote64:   at asks askm.a(java.lang.Class) (PG:1)
+07-02 14:55:43.015 13568 13568 I zygote64:   at asks askm.b(java.lang.Object) (PG:-1)
+07-02 14:55:43.015 13568 13568 I zygote64:   at asiv asiv.y(asiv, byte[], int, int, asij) (PG:2)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void whs.d() (PG:3)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void wcn.b(wcn) (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void whs.<clinit>() (PG:-1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void wqr.a() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.util.Map wda.a(wcq) (PG:-1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:113)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:114)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtf.b() (PG:2)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void yar.h(android.content.Context, android.app.Application) (PG:5)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void jvi.i() (PG:72)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void jvi.onCreate() (PG:3)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1119)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5740)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread.-wrap1(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:-1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1656)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:43.016 13568 13568 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.window.OnBackInvokedCallback" on path: DexPathList[[zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/base.apk", zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.arm64_v8a.apk", zip file "/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.en.apk"],nativeLibraryDirectories=[/data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/lib/arm64, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/base.apk!/lib/arm64-v8a, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.arm64_v8a.apk!/lib/arm64-v8a, /data/app/com.android.vending-RjL8LLIjz-UOggELcPBSFg==/split_config.en.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-02 14:55:43.016 13568 13568 I zygote64:   at asks askm.a(java.lang.Class) (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at asks askm.b(java.lang.Object) (PG:-1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at asiv asiv.y(asiv, byte[], int, int, asij) (PG:2)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void whs.d() (PG:3)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void wcn.b(wcn) (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void whs.<clinit>() (PG:-1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void wqr.a() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.util.Map wda.a(wcq) (PG:-1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:113)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.a() (PG:114)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object yau.b() (PG:70)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtf.b() (PG:2)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object avtg.b() (PG:1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void yar.h(android.content.Context, android.app.Application) (PG:5)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void jvi.i() (PG:72)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void jvi.onCreate() (PG:3)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.Instrumentation.callApplicationOnCreate(android.app.Application) (Instrumentation.java:1119)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread.handleBindApplication(android.app.ActivityThread$AppBindData) (ActivityThread.java:5740)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread.-wrap1(android.app.ActivityThread, android.app.ActivityThread$AppBindData) (ActivityThread.java:-1)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1656)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-02 14:55:43.016 13568 13568 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-02 14:55:43.016 13568 13568 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-02 14:55:43.016 13568 13568 I zygote64: 
+07-02 14:55:43.282 13568 13568 I Finsky:quick_launch: [2] ahfj.bR(19): Finished reading experiment flags from file [0tGUNCGIkbk4o6-fQ335kUYSKwVj4lusnHT-A5Dsy08].
+07-02 14:55:43.517   756  2063 D WificondControl: Scan result ready event
+07-02 14:55:43.546 13057 13118 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+07-02 14:55:43.579 13568 13568 I Finsky:quick_launch: [2] ahfj.bR(19): Finished reading experiment flags from file [SMLbPIn9qisdQXQXVqMG2XgCr-69Ed1Mt2xkJhe0ljE].
+07-02 14:55:43.640 13568 13568 I Finsky:quick_launch: [2] ahfj.bR(19): Finished reading experiment flags from file [cDXKMAm20gnql81lkHY0kpZ363Z9OGuPpqWoMw-jNkY].
+07-02 14:55:43.665 13568 13568 I Finsky:quick_launch: [2] rpa.onCreate(2): IPC-SERVER: Starting gRPC host service...
+07-02 14:55:43.797 13568 13568 I Finsky:quick_launch: [2] jey.h(32): This process start was not selected for Play memory metrics collection.
+07-02 14:55:43.804 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324143804,-769954,4154
+07-02 14:55:43.910 13568 13599 I Finsky:quick_launch: [1991] lrl.g(2): Subscription detail: N/A
+07-02 14:55:43.919 13568 13568 I Finsky:quick_launch: [2] lrk.onSubscriptionsChanged(1): onSubscriptionsChanged
+07-02 14:55:44.015 13568 13607 I Finsky:quick_launch: [1999] kkc.accept(24): [Counters Flush] Successfully generated counter events
+07-02 14:55:44.123 29229 13552 I Finsky  : [1778] zam.r(4): SCH: jobFinished: 10-12. TimeElapsed: 2548ms.
+07-02 14:55:44.179 29229 29390 I Finsky  : [1243] yfq.accept(33): SCH: Scheduling phonesky job Id: 26-1414141414, CT: 1688295706714, Constraints: [{ L: 43199995, D: 44099995, C: 1, I: 1, N: 0 }]
+07-02 14:55:44.212 29229 29377 I Finsky  : [1236] yjy.apply(9): SCH: Scheduling 1 system job(s)
+07-02 14:55:44.219 29229 29377 I Finsky  : [1236] zak.d(4): SCH: Scheduling system job Id: 9990, L: 14762496, D: 15662496, C: false, I: false, N: 0
+07-02 14:55:44.240 29229 13521 I Finsky  : [1774] zbx.a(16): SCH: job service finished with id 9572.
+07-02 14:55:44.245 29229 29379 I Finsky  : [1238] yfq.accept(33): SCH: Scheduling phonesky job Id: 1-1337, CT: 1688324141560, Constraints: [{ L: 43182991, D: 86382991, C: 1, I: 1, N: 1 }]
+07-02 14:55:44.246 29229 29379 I Finsky  : [1238] yfq.accept(33): SCH: Scheduling phonesky job Id: 34-900, CT: 1688322593785, Constraints: [{ L: 79199656, D: 1375199656, C: 1, I: 1, N: 1 }]
+07-02 14:55:44.268 29229 29390 I Finsky  : [1243] yjy.apply(9): SCH: Scheduling 1 system job(s)
+07-02 14:55:44.273 29229 29390 I Finsky  : [1243] zak.d(4): SCH: Scheduling system job Id: 9991, L: 43180281, D: 86380281, C: false, I: false, N: 1
+07-02 14:55:44.296 29229 13521 I Finsky  : [1774] zbx.a(16): SCH: job service finished with id 9979.
+07-02 14:55:44.815 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324144815,-769954,4154
+07-02 14:55:45.821 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324145821,-769954,4154
+07-02 14:55:46.827 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324146827,-769954,4154
+07-02 14:55:47.730  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:47.730  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:47.731  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:47.731  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:47.833 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324147833,-769954,4154
+07-02 14:55:48.839 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324148838,-769954,4154
+07-02 14:55:49.845 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324149845,-769954,4154
+07-02 14:55:50.852 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324150851,-769954,4154
+07-02 14:55:51.860 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324151860,-769954,4154
+07-02 14:55:52.299  4356  4356 I Finsky:background: [2] rpa.onDestroy(8): IPC-SERVER: Stopping gRPC host service...
+07-02 14:55:52.737  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:52.737  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:52.738  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:52.738  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:52.873 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324152873,-769954,4154
+07-02 14:55:53.879 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324153878,-769954,4154
+07-02 14:55:54.097 13568 13568 I Finsky:quick_launch: [2] rpa.onDestroy(8): IPC-SERVER: Stopping gRPC host service...
+07-02 14:55:54.885 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324154884,-769954,4154
+07-02 14:55:55.893 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324155893,-769954,4154
+07-02 14:55:56.443 13057 13057 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+07-02 14:55:56.899 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324156899,-769954,4154
+07-02 14:55:57.465   635 13429 E mm-camera-sensor: port_sensor_handle_aec_update:444miss aec update window, skip
+07-02 14:55:57.747  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:55:57.747  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:55:57.747  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:55:57.747  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:55:57.916 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324157916,-769954,4154
+07-02 14:55:58.925 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324158925,-769954,4154
+07-02 14:55:59.931 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324159931,-769954,4154
+07-02 14:56:00.004   756   756 I ActivityManager: Killing 5865:com.google.android.gms.unstable/u0a19 (adj 906): empty for 4807s
+07-02 14:56:00.005   756   784 W zygote64: kill(-5865, 9) failed: No such process
+07-02 14:56:00.038   756   784 I chatty  : uid=1000(system) ActivityManager identical 1 line
+07-02 14:56:00.083   756   784 W zygote64: kill(-5865, 9) failed: No such process
+07-02 14:56:00.083   756   784 I zygote64: Successfully killed process cgroup uid 10019 pid 5865 in 78ms
+07-02 14:56:00.805   635 13429 E mm-camera-sensor: port_sensor_handle_aec_update:444miss aec update window, skip
+07-02 14:56:00.938 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324160938,-769954,4154
+07-02 14:56:01.943 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324161943,-769954,4154
+07-02 14:56:02.755  3076  3261 E NxpTml  : _i2c_write() errno : 5
+07-02 14:56:02.755  3076  3261 E NxpTml  : PN54X - Error in I2C Write.....
+07-02 14:56:02.756  3076  3263 E NxpHal  : write error status = 0x1ff
+07-02 14:56:02.756  3076  3252 E NxpHal  : write_unlocked failed - PN54X Maybe in Standby Mode - Retry
+07-02 14:56:02.957 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324162957,-769954,4154
+07-02 14:56:03.963 13352 13482 I BatteryMgr:DataCollectionService: stats => 1688324163963,-769954,4154
+07-02 14:56:03.973   756   782 E NotificationService: Suppressing notification from package by user request.
+07-02 14:56:03.980   756  2060 I ActivityManager: Killing 4268:com.android.keychain/1000 (adj 906): empty for 4753s
+07-02 14:56:03.982   756   784 W zygote64: kill(-4268, 9) failed: No such process
+07-02 14:56:04.029   756   784 W zygote64: kill(-4268, 9) failed: No such process
+07-02 14:56:04.029   756   784 I zygote64: Successfully killed process cgroup uid 1000 pid 4268 in 47ms
+07-02 14:56:04.317   756  2056 I ActivityManager: Force stopping e.www.cameratest appid=10164 user=0: from pid 13644
+07-02 14:56:04.318   756  2056 I ActivityManager: Killing 13385:e.www.cameratest/u0a164 (adj 0): stop e.www.cameratest
+07-02 14:56:04.319   756   784 W zygote64: kill(-13385, 9) failed: No such process
+07-02 14:56:04.320   756  2056 W ActivityManager: Force removing ActivityRecord{d7ad7c6 u0 e.www.cameratest/.MainActivity t698}: app died, no saved state
+07-02 14:56:04.326   756  2056 I WindowManager: Failed to capture screenshot of Token{4306387 ActivityRecord{d7ad7c6 u0 e.www.cameratest/.MainActivity t698 f}} appWin=Window{666a78b u0 e.www.cameratest/e.www.cameratest.MainActivity} drawState=4
+07-02 14:56:04.360  1466  1466 D CarrierSvcBindHelper: No carrier app for: 0
+07-02 14:56:04.365   756   784 W zygote64: kill(-13385, 9) failed: No such process
+07-02 14:56:04.373   756   791 W ActivityManager: setHasOverlayUi called on unknown pid: 13385
+07-02 14:56:04.375  3076  3076 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-02 14:56:04.381   568  2034 I Camera3-Device: disconnect: E
+07-02 14:56:04.381   568  2034 I CameraLatencyHistogram: ProcessCaptureRequest latency histogram (13) samples:
+07-02 14:56:04.382   568  2034 I CameraLatencyHistogram:        40     80    120    160    200    240    280    320    360    inf (max ms)
+07-02 14:56:04.382   568  2034 I CameraLatencyHistogram:      92.31   0.00   7.69   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+07-02 14:56:04.390   568  2034 E mm-camera-intf: mm_camera_poll_thread_del_poll_fd: invalid handler 31235 (3)
+07-02 14:56:04.390   635 13425 E mm-camera: module_faceproc_port_event_func:794] FD_STREAMOFF 0 20004
+07-02 14:56:04.393   635 13425 E mm-camera: iface_streamoff_to_thread: E, session id = 2, user stream id = 4
+07-02 14:56:04.393   635 13411 E mm-camera: iface_streamoff: E, session_id 2 mct_stream_id = 4
+07-02 14:56:04.393   635 13411 E mm-camera: iface_util_get_user_streams_by_bundle: streamoff, first bundled streamoff all bindled streams!
+07-02 14:56:04.393   635 13411 E mm-camera: iface_util_update_streamon_id: left stream on count 1, skip hw streamoff
+07-02 14:56:04.394   635 13451 E mm-camera: iface_axi_cfg_stats_stream_stop: stats_cmd: enable  = 0, num of stats stream = 6
+07-02 14:56:04.395   635 13411 E mm-camera: iface_ispif_get_cfg_params_from_hw_streams: interace 0 active count = 1, skip stop ispif 
+07-02 14:56:04.397   635 13411 E mm-camera: iface_ispif_streamoff: X, rc = 0
+07-02 14:56:04.397   635 13411 E mm-camera: iface_streamoff: session_id = 2, active_streams = 0
+07-02 14:56:04.397   635 13411 E mm-camera: iface_streamoff: X
+07-02 14:56:04.397   635 13425 E mm-camera: iface_streamoff_to_thread: X, session id = 2, user stream id = 4
+07-02 14:56:04.398   568  2034 E mm-camera-intf: mm_camera_poll_thread_del_poll_fd: invalid handler 30721 (1)
+07-02 14:56:04.398   635 13425 E mm-camera: iface_streamoff_to_thread: E, session id = 2, user stream id = 2
+07-02 14:56:04.398   635 13411 E mm-camera: iface_streamoff: E, session_id 2 mct_stream_id = 2
+07-02 14:56:04.398   635 13411 E mm-camera: iface_util_get_user_streams_by_bundle: skip streamoff! left 1 bundled streamoff, mct stream id 2total bundled stream num = 3
+07-02 14:56:04.398   635 13411 E mm-camera: iface_streamoff: X
+07-02 14:56:04.398   635 13425 E mm-camera: iface_streamoff_to_thread: X, session id = 2, user stream id = 2
+07-02 14:56:04.398   635 13425 E mm-camera: iface_util_set_frame_skip_all_stream: session id = 2, skip pattern = 0
+07-02 14:56:04.403   635 13429 E mm-camera: stats_port_event:1833  stats_port_event stop sending AEC_UPDATE
+07-02 14:56:04.404   635 13429 E mm-camera: stats_port_event:1849  stats_port_event stop sending AWB_UPDATE
+07-02 14:56:04.404   635 13425 E mm-camera: cpp_module_handle_streamoff_event:3462, info: doing stream-off for identity 0x20003
+07-02 14:56:04.404   635 13425 E mm-camera: cpp_module_handle_streamoff_event:3566] iden:0x20003, linked_params:0x0
+07-02 14:56:04.404   635 13425 E mm-camera: cpp_hardware_process_streamoff:731] skip_iden:0x0, duplicate_stream_status:0x0
+07-02 14:56:04.405   635 13418 E mm-camera: :cpp_hardware_set_clock:333 Set clock 320000000 BW abg 0 BW inst 0
+07-02 14:56:04.406   635 13425 E mm-camera: cpp_module_handle_streamoff_event:3611, info: stream-off done for identity 0x20003
+07-02 14:56:04.407   635 13425 E mm-camera: iface_streamoff_to_thread: E, session id = 2, user stream id = 3
+07-02 14:56:04.407   635 13411 E mm-camera: iface_streamoff: E, session_id 2 mct_stream_id = 3
+07-02 14:56:04.407   635 13411 E mm-camera: iface_util_get_user_streams_by_bundle: skip streamoff! left 0 bundled streamoff, mct stream id 3total bundled stream num = 3
+07-02 14:56:04.408   756   784 W zygote64: kill(-13385, 9) failed: No such process
+07-02 14:56:04.408   756   784 I zygote64: Successfully killed process cgroup uid 10164 pid 13385 in 88ms
+07-02 14:56:04.408   635 13451 E mm-camera: iface_axi_stats_stream_unconfig: release stats stream id 80010003, handle 505
+07-02 14:56:04.408   635 13451 E mm-camera: iface_stats_unreg_buf: last VFE close, relase stats buffer
+07-02 14:56:04.408   635 13451 E mm-camera: iface_axi_stats_stream_unconfig: release stats stream id 80010007, handle 302
+07-02 14:56:04.408   635 13451 E mm-camera: iface_stats_unreg_buf: last VFE close, relase stats buffer
+07-02 14:56:04.408   635 13451 E mm-camera: iface_axi_stats_stream_unconfig: release stats stream id 80010008, handle 203
+07-02 14:56:04.408   635 13451 E mm-camera: iface_stats_unreg_buf: last VFE close, relase stats buffer
+07-02 14:56:04.409   635 13451 E mm-camera: iface_axi_stats_stream_unconfig: release stats stream id 80010009, handle 401
+07-02 14:56:04.409   635 13451 E mm-camera: iface_stats_unreg_buf: last VFE close, relase stats buffer
+07-02 14:56:04.409   635 13451 E mm-camera: iface_axi_stats_stream_unconfig: release stats stream id 8001000a, handle 608
+07-02 14:56:04.409   635 13451 E mm-camera: iface_stats_unreg_buf: last VFE close, relase stats buffer
+07-02 14:56:04.409   635 13451 E mm-camera: iface_axi_stats_stream_unconfig: release stats stream id 8001000b, handle 700
+07-02 14:56:04.409   635 13451 E mm-camera: iface_stats_unreg_buf: last VFE close, relase stats buffer
+07-02 14:56:04.409   635 13411 E mm-camera: iface_util_release_resource: camif_cnt= 1 rdi_cnt= 0 used mask 10000
+07-02 14:56:04.409   635 13411 E mm-camera: iface_util_release_resource: camif_cnt= 0 rdi_cnt= 0 used mask 0
+07-02 14:56:04.410 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-02 14:56:04.411   635 13411 E mm-camera: iface_streamoff: all bundled stream streamoff, clear hal bundled mask
+07-02 14:56:04.411   635 13411 E mm-camera: iface_streamoff: X
+07-02 14:56:04.411   635 13425 E mm-camera: iface_streamoff_to_thread: X, session id = 2, user stream id = 3
+07-02 14:56:04.412 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-02 14:56:04.412   635 13425 E mm-camera: sensor_pdaf_deinit:4287failed to open pdaf3 init library function
+07-02 14:56:04.412 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-02 14:56:04.412 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-02 14:56:04.413 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-02 14:56:04.438   568  2034 I QCamera3HWI: ~QCamera3HardwareInterface: stopping channel 30208
+07-02 14:56:04.438   568  2034 E QCamera3Channel: stop: Attempt to stop inactive channel
+07-02 14:56:04.442   635 13425 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x20002, port = 0xf37af680, direction = 2
+07-02 14:56:04.442   635 13425 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x20002, port = 0xf37af680, direction = 2
+07-02 14:56:04.442   635 13425 E mm-camera: iface_unreserve_sink_port: stream_id 2 mode 0 
+07-02 14:56:04.443   635 13425 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x20002, port = 0xf37af980, direction = 1
+07-02 14:56:04.443   635 13425 E mm-camera: iface_ext_unlink_src_port: mct stream already removed from hw stream
+07-02 14:56:04.443   635 13425 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x20002, port = 0xf37af980, direction = 1
+07-02 14:56:04.443   635 13425 E mm-camera: isp_port_check_caps_unreserve:844 ide 20002 port 0xf335a660
+07-02 14:56:04.444   635 13425 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x20003, port = 0xf37af680, direction = 2
+07-02 14:56:04.444   635 13425 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x20003, port = 0xf37af680, direction = 2
+07-02 14:56:04.444   635 13425 E mm-camera: iface_unreserve_sink_port: stream_id 3 mode 0 
+07-02 14:56:04.445   635 13425 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x20003, port = 0xf37af980, direction = 1
+07-02 14:56:04.445   635 13425 E mm-camera: iface_ext_unlink_src_port: mct stream already removed from hw stream
+07-02 14:56:04.445   635 13425 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x20003, port = 0xf37af980, direction = 1
+07-02 14:56:04.445   635 13425 E mm-camera: isp_port_check_caps_unreserve:844 ide 20003 port 0xf335a660
+07-02 14:56:04.445   635 13425 E mm-camera: cpp_port_check_caps_unreserve:164, identity=0x20003
+07-02 14:56:04.445   635 13425 E mm-camera: cpp_port_check_caps_unreserve:174, identity=0x20003, unreserved
+07-02 14:56:04.445   635 13425 E mm-camera: cpp_port_check_caps_unreserve:164, identity=0x20003
+07-02 14:56:04.445   635 13425 E mm-camera: cpp_port_check_caps_unreserve:174, identity=0x20003, unreserved
+07-02 14:56:04.447   635 13425 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x20004, port = 0xf37af680, direction = 2
+07-02 14:56:04.447   635 13425 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x20004, port = 0xf37af680, direction = 2
+07-02 14:56:04.447   635 13425 E mm-camera: iface_unreserve_sink_port: stream_id 4 mode 0 
+07-02 14:56:04.447   635 13425 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x20004, port = 0xf37af980, direction = 1
+07-02 14:56:04.447   635 13425 E mm-camera: iface_ext_unlink_src_port: mct stream already removed from hw stream
+07-02 14:56:04.447   635 13425 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x20004, port = 0xf37af980, direction = 1
+07-02 14:56:04.447   635 13425 E mm-camera: isp_port_check_caps_unreserve:844 ide 20004 port 0xf335a660
+07-02 14:56:04.450   635 13425 E mm-camera: isp_util_print_meta_stream_info:5716 Deallocate resources
+07-02 14:56:04.452   568  2034 E QCamera3HWI: ~QCamera3HardwareInterface: deleting channel 30208
+07-02 14:56:04.454   635 13425 E mm-camera: mct: mct_pipeline_process_set:2304: Couldn't find stream id: 0
+07-02 14:56:04.455   635   635 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x2000f, port = 0xf37af680, direction = 2
+07-02 14:56:04.455   635   635 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x2000f, port = 0xf37af680, direction = 2
+07-02 14:56:04.455   635   635 E mm-camera: iface_unreserve_sink_port: stream_id f mode 0 
+07-02 14:56:04.455   635   635 E mm-camera: port_iface_ext_unlink_func: E, identity = 0x2000f, port = 0xf37af980, direction = 1
+07-02 14:56:04.455   635   635 E mm-camera: iface_ext_unlink_src_port: mct stream already removed from hw stream
+07-02 14:56:04.455   635   635 E mm-camera: port_iface_check_caps_unreserve_func:  E, identity = 0x2000f, port = 0xf37af980, direction = 1
+07-02 14:56:04.455   635   635 E mm-camera: isp_port_check_caps_unreserve:844 ide 2000f port 0xf335a660
+07-02 14:56:04.455   635   635 E mm-camera: c2d_port_check_caps_unreserve:183, identity=0x2000f
+07-02 14:56:04.455   635   635 E mm-camera: c2d_port_check_caps_unreserve:193, identity=0x2000f, unreserved
+07-02 14:56:04.455   635   635 E mm-camera: c2d_port_check_caps_unreserve:183, identity=0x2000f
+07-02 14:56:04.455   635   635 E mm-camera: c2d_port_check_caps_unreserve:193, identity=0x2000f, unreserved
+07-02 14:56:04.455   635   635 E mm-camera: cpp_port_check_caps_unreserve:164, identity=0x2000f
+07-02 14:56:04.455   635   635 E mm-camera: cpp_port_check_caps_unreserve:174, identity=0x2000f, unreserved
+07-02 14:56:04.455   635   635 E mm-camera: cpp_port_check_caps_unreserve:164, identity=0x2000f
+07-02 14:56:04.455   635   635 E mm-camera: cpp_port_check_caps_unreserve:174, identity=0x2000f, unreserved
+07-02 14:56:04.456   635   635 E mm-camera: q3a_thread_af_stop:679  q3a_thread_af_stop:679 MSG_STOP_THREAD
+07-02 14:56:04.456   635   635 D mm-camera: stats_port_delete_reserved_stream:2426: going to NULL peer
+07-02 14:56:04.458   635 13649 E mm-camera-isp2: isp_module_stop_session:437 session id 2
+07-02 14:56:04.459   635 13651 E mm-camera: cpp_module_stop_session:552, info: stopping session 2 ...
+07-02 14:56:04.459   635 13418 E mm-camera: cpp_thread_process_pipe_message:584, CPP_THREAD_MSG_ABORT: cpp_thread exiting..
+07-02 14:56:04.460   635 13652 E mm-camera: module_faceproc_stop_session:1804] session cnt 1
+07-02 14:56:04.461   635 13651 E mm-camera: cpp_module_stop_session:601, info: session 2 stopped.
+07-02 14:56:04.461   635 13651 E mm-camera: c2d_module_stop_session:354, info: stopping session 2 ...
+07-02 14:56:04.462   635 13419 E mm-camera: c2d_thread_process_pipe_message:836, C2D_THREAD_MSG_ABORT: c2d_thread exiting..
+07-02 14:56:04.465   635 13651 E mm-camera: c2d_module_stop_session:399, info: session 2 stopped.
+07-02 14:56:04.470   635 13651 E cac2    :  [cac2latency] cac2_destroy_buffers: 1 ms 
+07-02 14:56:04.488   568  2034 W Camera3-OutputStream: disconnectLocked: While disconnecting stream 0 from native window, the native window died from under us
+07-02 14:56:04.488   568  2034 I CameraLatencyHistogram: Stream 0 dequeueBuffer latency histogram (13) samples:
+07-02 14:56:04.489   568  2034 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+07-02 14:56:04.489   568  2034 I CameraLatencyHistogram:      7.69   61.54   15.38   15.38   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+07-02 14:56:04.489   568  2034 I Camera3-Device: disconnect: X
+07-02 14:56:04.489   568  2034 I Camera3-Device: disconnect: E
+07-02 14:56:04.491   568  2034 I CameraService: disconnect: Disconnected client for camera 1 for PID 13385
+07-02 14:56:04.491   568  2034 I Camera2ClientBase: Closed Camera 1. Client was: e.www.cameratest (PID 13385, UID 10164)
+07-02 14:56:04.491   568  2034 E CameraService: binderDied: Java client's binder died, removing it from the list of active clients
+07-02 14:56:07.749   756 15226 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10111 user=0: from pid 13659
+07-02 14:56:07.750   756 15226 I ActivityManager: Killing 13352:com.example.batterymanager_utility/u0a111 (adj 0): stop com.example.batterymanager_utility
+07-02 14:56:07.751   756 15226 W ActivityManager: Force removing ActivityRecord{b0f05a7 u0 com.example.batterymanager_utility/.MainActivity t697}: app died, no saved state
+07-02 14:56:07.752   756   784 W zygote64: kill(-13352, 9) failed: No such process
+07-02 14:56:07.758   756 15226 I WindowManager: Failed to capture screenshot of Token{f487a54 ActivityRecord{b0f05a7 u0 com.example.batterymanager_utility/.MainActivity t697 f}} appWin=Window{4d9d18f u0 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity} drawState=4
+07-02 14:56:07.794   756   784 W zygote64: kill(-13352, 9) failed: No such process
+07-02 14:56:07.800   756   791 W ActivityManager: setHasOverlayUi called on unknown pid: 13352
+07-02 14:56:07.801  1466  1466 D CarrierSvcBindHelper: No carrier app for: 0
+07-02 14:56:07.804  3076  3076 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: Error handling StartupMeasure's onActivityResume
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.ViewTreeObserver android.view.View.getViewTreeObserver()' on a null object reference
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at com.google.android.libraries.performance.primes.metrics.h.m.onActivityResumed(PG:3)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.Application.dispatchActivityResumed(Application.java:216)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.Activity.onResume(Activity.java:1313)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at com.android.launcher3.Launcher.onResume(PG:1)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1355)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.Activity.performResume(Activity.java:7117)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3556)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3621)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1638)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.os.Looper.loop(Looper.java:164)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+07-02 14:56:07.817  3166  3166 D PrimesStartupMeasure: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+07-02 14:56:07.825   428   428 D SurfaceFlinger: duplicate layer name: changing com.google.android.googlequicksearchbox/com.google.android.launcher.GEL to com.google.android.googlequicksearchbox/com.google.android.launcher.GEL#1
+07-02 14:56:07.838   756   784 W zygote64: kill(-13352, 9) failed: No such process
+07-02 14:56:07.839   756   784 I zygote64: Successfully killed process cgroup uid 10111 pid 13352 in 87ms
+07-02 14:56:07.847  3050  3050 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+07-02 14:56:07.848  3050  3363 I GsaVoiceInteractionSrv: (REDACTED) disregardHotwordSetting: %b
+07-02 14:56:07.848 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-02 14:56:07.848  3050  3363 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+07-02 14:56:07.849 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-02 14:56:07.850 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.googlequicksearchbox fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-02 14:56:07.850 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-02 14:56:07.851 13208 13208 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-02 14:56:08.376  3166  3399 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
