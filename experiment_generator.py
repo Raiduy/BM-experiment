@@ -2,8 +2,8 @@ import json
 import os
 
 
-APKS_PATH = '/home/radu/VU/GreenLab/android-apps-benchmark/APKs'
-BATTERY_MANAGER_PATH = '/home/radu/VU/GreenLab/ar-batterymanager-script/app/build/outputs/apk/debug/app-debug.apk'
+APKS_PATH = '/home/radu/usb/android-apps-benchmark/APKs'
+BATTERY_MANAGER_PATH = '/home/radu/usb/com.example.batterymanager_utility.apk'
 BATTERY_MANAGER_PKG_NAME = 'com.example.batterymanager_utility'
 
 
@@ -48,6 +48,8 @@ devices = {
     'Pixel3-W': {},
     'Nexus5X-W': {},
     'GalaxyJ7-W': {},
+    'NokiaLong-W': {},
+    'NokiaRound-W': {}
 }
 
 
