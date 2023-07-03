@@ -1,0 +1,607 @@
+--------- beginning of main
+07-03 15:31:01.863  9990  9990 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+--------- beginning of system
+07-03 15:31:01.868  1864  5055 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.batterymanager_utility/.MainActivity} from uid 2000
+07-03 15:31:01.870  1864  5055 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=411 attached=false
+07-03 15:31:01.874  1864  5055 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10232; state: DISABLED
+07-03 15:31:01.874  1864  5055 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10232; state: DISABLED
+07-03 15:31:01.875  1864  5055 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10232; state: DISABLED
+07-03 15:31:01.879  1864  5055 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10232; state: DISABLED
+07-03 15:31:01.892  1864  1993 W ActivityManager: ProcessRecord{3162403 0:com.example.batterymanager_utility/u0a232}: ART verification disabled
+07-03 15:31:01.892  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10232; state: DISABLED
+07-03 15:31:01.892  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10232; state: DISABLED
+07-03 15:31:01.892  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10232; state: DISABLED
+07-03 15:31:01.892  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10232; state: ENABLED
+07-03 15:31:01.892  1864  2006 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10232; state: ENABLED
+07-03 15:31:01.897  1232  1232 D Zygote  : Forked child process 9993
+07-03 15:31:01.897  1864  2006 I ActivityManager: Start proc 9993:com.example.batterymanager_utility/u0a232 for pre-top-activity {com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}
+07-03 15:31:01.902  9993  9993 I manager_utilit: Late-enabling -Xcheck:jni
+07-03 15:31:01.929  9993  9993 I manager_utilit: Using CollectorTypeCC GC.
+07-03 15:31:01.934  3373  3381 I adbd    : jdwp connection from 9993
+07-03 15:31:01.936  9993  9993 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:31:01.945  9993  9993 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10232; state: ENABLED
+07-03 15:31:01.951  9993  9993 W ziparchive: Unable to open '/data/app/~~wiOuX4WuIPPsKOoyA2cyHg==/com.example.batterymanager_utility-lHU8ISWQOGIAnOKHZkB-xQ==/base.dm': No such file or directory
+07-03 15:31:01.951  9993  9993 W ziparchive: Unable to open '/data/app/~~wiOuX4WuIPPsKOoyA2cyHg==/com.example.batterymanager_utility-lHU8ISWQOGIAnOKHZkB-xQ==/base.dm': No such file or directory
+07-03 15:31:01.985  6363  6363 I A       : onPause
+07-03 15:31:01.988 31564 31564 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+07-03 15:31:02.001  9995  9995 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+07-03 15:31:02.006  9995  9995 I AndroidRuntime: Using default boot image
+07-03 15:31:02.006  9995  9995 I AndroidRuntime: Leaving lock profiling enabled
+07-03 15:31:02.004  9995  9995 W app_process: type=1400 audit(0.0:1914): avc: denied { read } for name="u:object_r:odsign_prop:s0" dev="tmpfs" ino=18942 scontext=u:r:shell:s0 tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=0
+07-03 15:31:02.006  9995  9995 W libc    : Access denied finding property "odsign.verification.success"
+07-03 15:31:02.009  9995  9995 W app_process: ART APEX data files are untrusted.
+07-03 15:31:02.009  9995  9995 I app_process: Using CollectorTypeCC GC.
+07-03 15:31:02.009  9995  9995 E app_process: Error reading named image component header for /system/framework/boot.art, error: Unable to open file "/system/framework/arm64/boot.art" for reading image header
+07-03 15:31:02.026 10012 10012 W dex2oat64: Mismatch between dex2oat instruction set features to use (ISA: Arm64 Feature string: -a53,crc,lse,fp16,-dotprod,-sve) and those from CPP defines (ISA: Arm64 Feature string: -a53,-crc,-lse,-fp16,-dotprod,-sve) for the command line:
+07-03 15:31:02.026 10012 10012 W dex2oat64: /apex/com.android.art/bin/dex2oat64 --runtime-arg -Xbootclasspath:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --base=0x70000000 --dex-file=/apex/com.android.art/javalib/core-oj.jar --dex-location=/apex/com.android.art/javalib/core-oj.jar --dex-file=/apex/com.android.art/javalib/core-libart.jar --dex-location=/apex/com.android.art/javalib/core-libart.jar --dex-file=/apex/com.android.art/javalib/okhttp.jar --dex-location=/apex/com.android.art/javalib/okhttp.jar --dex-file=/apex/com.android.art/javalib/bouncycastle.jar --dex-location=/apex/com.android.art/javalib/bouncycastle.jar --dex-file=/apex/com.android.art/javalib/apache-xml.jar --dex-location=/apex/com.android.art/javalib/apache-xml.jar --dex-file=/system/framework/framework.jar --dex-location=/system/framework/framework.jar --dex-file=/system/framework/framework-graphics.jar --dex-location=/system/framework/framework-graphics.jar --dex-file=/system/framework/ext.jar --dex-location=/system/framework/ext.jar --dex-file=/system/framework/telephony-common.jar --dex-location=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-location=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-location=/system/framework/ims-common.jar --dex-file=/apex/com.android.i18n/javalib/core-icu4j.jar --dex-location=/apex/com.android.i18n/javalib/core-icu4j.jar --image-fd=5 --output-vdex-fd=6 --oat-fd=7 --oat-location=/system/framework/arm64/boot.oat --single-image --image-format=uncompressed --compiler-filter=verify --profile-file=/apex/com.android.art/etc/boot-image.prof --profile-file=/system/etc/boot-image.prof --avoid-storing-invocation --instruction-set=arm64 --instruction-set-features=runtime --runtime-arg -Xms64m --runtime-arg -Xmx64m --dirty-image-objects=/system/etc/dirty-image-objects --instruction-set-variant=kryo385 --instruction-set-features=default --generate-mini-debug-info
+07-03 15:31:02.029  9993  9993 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~wiOuX4WuIPPsKOoyA2cyHg==/com.example.batterymanager_utility-lHU8ISWQOGIAnOKHZkB-xQ==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~wiOuX4WuIPPsKOoyA2cyHg==/com.example.batterymanager_utility-lHU8ISWQOGIAnOKHZkB-xQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.batterymanager_utility
+07-03 15:31:02.036  9993  9993 V GraphicsEnvironment: ANGLE Developer option for 'com.example.batterymanager_utility' set to: 'default'
+07-03 15:31:02.036  9993  9993 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+07-03 15:31:02.037  9993  9993 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:31:02.038  9993  9993 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:31:02.043  9993  9993 I BatteryMgr:App: creating notification channel
+07-03 15:31:02.044 10012 10012 I dex2oat64: /apex/com.android.art/bin/dex2oat64 --runtime-arg -Xbootclasspath:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --base=0x70000000 --dex-file=/apex/com.android.art/javalib/core-oj.jar --dex-location=/apex/com.android.art/javalib/core-oj.jar --dex-file=/apex/com.android.art/javalib/core-libart.jar --dex-location=/apex/com.android.art/javalib/core-libart.jar --dex-file=/apex/com.android.art/javalib/okhttp.jar --dex-location=/apex/com.android.art/javalib/okhttp.jar --dex-file=/apex/com.android.art/javalib/bouncycastle.jar --dex-location=/apex/com.android.art/javalib/bouncycastle.jar --dex-file=/apex/com.android.art/javalib/apache-xml.jar --dex-location=/apex/com.android.art/javalib/apache-xml.jar --dex-file=/system/framework/framework.jar --dex-location=/system/framework/framework.jar --dex-file=/system/framework/framework-graphics.jar --dex-location=/system/framework/framework-graphics.jar --dex-file=/system/framework/ext.jar --dex-location=/system/framework/ext.jar --dex-file=/system/framework/telephony-common.jar --dex-location=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-location=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-location=/system/framework/ims-common.jar --dex-file=/apex/com.android.i18n/javalib/core-icu4j.jar --dex-location=/apex/com.android.i18n/javalib/core-icu4j.jar --image-fd=5 --output-vdex-fd=6 --oat-fd=7 --oat-location=/system/framework/arm64/boot.oat --single-image --image-format=uncompressed --compiler-filter=verify --profile-file=/apex/com.android.art/etc/boot-image.prof --profile-file=/system/etc/boot-image.prof --avoid-storing-invocation --instruction-set=arm64 --instruction-set-features=runtime --runtime-arg -Xms64m --runtime-arg -Xmx64m --dirty-image-objects=/system/etc/dirty-image-objects --instruction-set-variant=kryo385 --instruction-set-features=default --generate-mini-debug-info
+07-03 15:31:02.045 10012 10012 I dex2oat64: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar
+07-03 15:31:02.187  1864  1994 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10232; state: ENABLED
+07-03 15:31:02.188  2549  2549 I WallpaperService: engine paused
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: QUALCOMM build                   : 781e7d0, I46ff5fc46f
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: Build Date                       : 12/01/20
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.31.04.01
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: Local Branch                     : QPR1
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: Remote Branch                    : 
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: Remote Branch                    : 
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: Reconstruct Branch               : 
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: Build Config                     : C P 11.0.1 AArch64
+07-03 15:31:02.189  9993 10015 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-03 15:31:02.191  9993 10015 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+07-03 15:31:02.193  9993 10015 W AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-03 15:31:02.193  9993 10015 W AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-03 15:31:02.198   740   740 I SDM     : HWCDisplay::GetColorModeCount: Supported color mode count = 5
+07-03 15:31:02.198   738  2422 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+07-03 15:31:02.199  9993 10015 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:31:02.199   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+07-03 15:31:02.200  9993 10018 I Gralloc4: mapper 4.x is not supported
+07-03 15:31:02.200   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+07-03 15:31:02.200  9993 10018 W Gralloc3: mapper 3.x is not supported
+07-03 15:31:02.201   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 15:31:02.201  9993 10018 W Gralloc4: allocator 4.x is not supported
+07-03 15:31:02.201   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 15:31:02.201  9993 10018 W Gralloc3: allocator 3.x is not supported
+07-03 15:31:02.212  6363  6363 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-03 15:31:02.212  6363  6363 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-03 15:31:02.219  1864  1990 W ziparchive: Unable to open '/data/app/~~wiOuX4WuIPPsKOoyA2cyHg==/com.example.batterymanager_utility-lHU8ISWQOGIAnOKHZkB-xQ==/base.dm': No such file or directory
+07-03 15:31:02.220  1864  1990 I ActivityTaskManager: Displayed com.example.batterymanager_utility/.MainActivity: +350ms
+07-03 15:31:02.232  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 15:31:02.233  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 15:31:02.233  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-03 15:31:02.233  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 15:31:02.234  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 15:31:02.237  1864  1993 W ProcessStats: Tracking association SourceState{9927273 com.google.android.googlequicksearchbox:search/10135 BTopFgs #86148} whose proc state 2 is better than process ProcessState{3d4ea49 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (30 skipped)
+07-03 15:31:02.240  6363  6363 I A       : onStop
+07-03 15:31:02.341 10012 10012 I dex2oat64: Using CollectorTypeCC GC.
+07-03 15:31:02.507  1864  4065 W InputManager-JNI: Input channel object '22fdebd Splash Screen com.example.batterymanager_utility (client)' was disposed without first being removed with the input manager!
+07-03 15:31:02.790  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 15:31:04.145 10012 10012 I dex2oat64: Explicit concurrent copying GC freed 88222(11MB) AllocSpace objects, 5(84KB) LOS objects, 27% free, 15MB/21MB, paused 18us,15us total 91.955ms
+07-03 15:31:04.361 10012 10012 I dex2oat64: Explicit concurrent copying GC freed 41961(7495KB) AllocSpace objects, 0(0B) LOS objects, 41% free, 8512KB/14MB, paused 13us,12us total 44.503ms
+07-03 15:31:04.827 10012 10012 I dex2oat64: dex2oat took 2.804s (5.795s cpu) (threads: 8) arena alloc=0B (0B) java alloc=8512KB (8716512B) native alloc=15MB (16374208B) free=4427KB (4533520B)
+07-03 15:31:04.946  9995  9995 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+07-03 15:31:04.946  9995  9995 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt68l.dat
+07-03 15:31:04.993  9995  9995 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:31:04.994  9995  9995 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+07-03 15:31:04.996  9995  9995 W Monkey  : args: [-p, e.www.writelocaltest, 1]
+07-03 15:31:04.996  9995  9995 W Monkey  :  arg: "-p"
+07-03 15:31:04.996  9995  9995 W Monkey  :  arg: "e.www.writelocaltest"
+07-03 15:31:04.997  9995  9995 W Monkey  :  arg: "1"
+07-03 15:31:04.997  9995  9995 W Monkey  : data="e.www.writelocaltest"
+07-03 15:31:05.054  1864  2005 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{ba99c40 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{e533779 9995 (unknown name)/2000/u-1 remote:1e84b72}: process gone or crashing
+07-03 15:31:05.065  1864  5068 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=e.www.writelocaltest/.MainActivity} from uid 2000
+07-03 15:31:05.067  1864  5068 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=412 attached=false
+07-03 15:31:05.069  1864  5068 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10297; state: DISABLED
+07-03 15:31:05.070  1864  5068 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10297; state: DISABLED
+07-03 15:31:05.070  1864  5068 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10297; state: DISABLED
+07-03 15:31:05.071  1864  5068 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10297; state: DISABLED
+07-03 15:31:05.071  1864  5068 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10297; state: DISABLED
+07-03 15:31:05.075  1864  5068 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10297; state: DISABLED
+07-03 15:31:05.081  9995  9995 I Monkey  : Events injected: 1
+07-03 15:31:05.088  1864  1993 W ActivityManager: ProcessRecord{d46d235 0:e.www.writelocaltest/u0a297}: ART verification disabled
+07-03 15:31:05.088  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10297; state: DISABLED
+07-03 15:31:05.089  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10297; state: DISABLED
+07-03 15:31:05.089  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10297; state: DISABLED
+07-03 15:31:05.089  1864  1993 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10297; state: DISABLED
+07-03 15:31:05.089  1864  2006 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10297; state: DISABLED
+07-03 15:31:05.096  9995  9995 I Monkey  : ## Network stats: elapsed time=29ms (0ms mobile, 0ms wifi, 29ms not connected)
+07-03 15:31:05.096  9995  9995 I app_process: System.exit called, status: 0
+07-03 15:31:05.096  9995  9995 I AndroidRuntime: VM exiting with result code 0.
+07-03 15:31:05.098  1232  1232 D Zygote  : Forked child process 10045
+07-03 15:31:05.099  1864  2006 I ActivityManager: Start proc 10045:e.www.writelocaltest/u0a297 for pre-top-activity {e.www.writelocaltest/e.www.writelocaltest.MainActivity}
+07-03 15:31:05.102 10045 10045 I .writelocaltes: Late-enabling -Xcheck:jni
+07-03 15:31:05.105  2549  2889 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 15:31:05.110  2549  2549 I WallpaperService: engine resumed
+07-03 15:31:05.113  2549  2889 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 15:31:05.130 10045 10045 I .writelocaltes: Using CollectorTypeCC GC.
+07-03 15:31:05.134  3373  3381 I adbd    : jdwp connection from 10045
+07-03 15:31:05.136 10045 10045 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:31:05.145  2792  2812 W s.nexuslaunche: Reducing the number of considered missed Gc histogram windows from 231 to 100
+07-03 15:31:05.146 10045 10045 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10297; state: DISABLED
+07-03 15:31:05.151 10045 10045 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+07-03 15:31:05.152 10045 10045 W ziparchive: Unable to open '/data/app/~~uVQIH0eZk3IxJwrr4w8zTw==/e.www.writelocaltest-x0ua4tSqDN5kdINx5Uw_Tg==/base.dm': No such file or directory
+07-03 15:31:05.152 10045 10045 W ziparchive: Unable to open '/data/app/~~uVQIH0eZk3IxJwrr4w8zTw==/e.www.writelocaltest-x0ua4tSqDN5kdINx5Uw_Tg==/base.dm': No such file or directory
+07-03 15:31:05.179 10045 10045 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~uVQIH0eZk3IxJwrr4w8zTw==/e.www.writelocaltest-x0ua4tSqDN5kdINx5Uw_Tg==/base.apk. target_sdk_version=28, uses_libraries=, library_path=/data/app/~~uVQIH0eZk3IxJwrr4w8zTw==/e.www.writelocaltest-x0ua4tSqDN5kdINx5Uw_Tg==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/e.www.writelocaltest
+07-03 15:31:05.185 10045 10045 V GraphicsEnvironment: ANGLE Developer option for 'e.www.writelocaltest' set to: 'default'
+07-03 15:31:05.186 10045 10045 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+07-03 15:31:05.187 10045 10045 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:31:05.187 10045 10045 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:31:05.215 10045 10045 W .writelocaltes: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+07-03 15:31:05.215 10045 10045 W .writelocaltes: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+07-03 15:31:05.244  1864  1994 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10297; state: ENABLED
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: QUALCOMM build                   : 781e7d0, I46ff5fc46f
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: Build Date                       : 12/01/20
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.31.04.01
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: Local Branch                     : QPR1
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: Remote Branch                    : 
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: Remote Branch                    : 
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: Reconstruct Branch               : 
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: Build Config                     : C P 11.0.1 AArch64
+07-03 15:31:05.246 10045 10062 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-03 15:31:05.248 10045 10062 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+07-03 15:31:05.249 10045 10062 W AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-03 15:31:05.249 10045 10062 W AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-03 15:31:05.255   740   740 I SDM     : HWCDisplay::GetColorModeCount: Supported color mode count = 5
+07-03 15:31:05.255   738  2422 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+07-03 15:31:05.255 10045 10062 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:31:05.256   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+07-03 15:31:05.256 10045 10066 I Gralloc4: mapper 4.x is not supported
+07-03 15:31:05.256   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+07-03 15:31:05.257 10045 10066 W Gralloc3: mapper 3.x is not supported
+07-03 15:31:05.258   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 15:31:05.258 10045 10066 W Gralloc4: allocator 4.x is not supported
+07-03 15:31:05.258   693   693 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 15:31:05.258 10045 10066 W Gralloc3: allocator 3.x is not supported
+07-03 15:31:05.270  1864  1990 W ziparchive: Unable to open '/data/app/~~uVQIH0eZk3IxJwrr4w8zTw==/e.www.writelocaltest-x0ua4tSqDN5kdINx5Uw_Tg==/base.dm': No such file or directory
+07-03 15:31:05.271  1864  1990 I ActivityTaskManager: Displayed e.www.writelocaltest/.MainActivity: +203ms
+07-03 15:31:05.277  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 15:31:05.279  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 15:31:05.279  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=e.www.writelocaltest fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-03 15:31:05.279  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 15:31:05.279  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 15:31:05.561  1864  4065 W InputManager-JNI: Input channel object '531d6ca Splash Screen e.www.writelocaltest (client)' was disposed without first being removed with the input manager!
+07-03 15:31:05.717  2549  2549 I WallpaperService: engine paused
+07-03 15:31:05.806  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 4]
+07-03 15:31:05.893  1864  1881 I system_server: Background concurrent copying GC freed 1171455(46MB) AllocSpace objects, 48(1184KB) LOS objects, 58% free, 34MB/82MB, paused 74us,96us total 176.732ms
+07-03 15:31:05.932  1864  1883 W System  : A resource failed to call release. 
+07-03 15:31:05.933  1864  1883 W System  : A resource failed to call release. 
+07-03 15:31:05.934  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.934  1864  1883 W System  : A resource failed to call release. 
+07-03 15:31:05.934  1864  1883 W System  : A resource failed to call release. 
+07-03 15:31:05.935  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.935  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.936  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.936  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.936  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.937  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.937  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.938  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.939  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.939  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.941  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.942  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.943  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:05.944  1864  1883 W System  : A resource failed to call close. 
+07-03 15:31:06.252 10072 10072 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:31:06.710 10088 10088 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:31:06.714  1864  4065 I ActivityManager: Background started FGS: Allowed [callingPackage: com.android.shell; callingUid: 2000; uidState: NONE; intent: Intent { cmp=com.example.batterymanager_utility/.DataCollectionService (has extras) }; code:SYSTEM_UID; tempAllowListReason:<,reasonCode:SYSTEM_ALLOW_LISTED,duration:9223372036854775807,callingUid:-1>; targetSdkVersion:33; callerTargetSdkVersion:-1; startForegroundCount:0; bindFromPackage:null]
+07-03 15:31:06.722  9993  9993 I BatteryMgr:DataCollectionService: onStartCommand: begin
+07-03 15:31:06.722  9993  9993 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 1000
+07-03 15:31:06.722  9993  9993 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+07-03 15:31:06.723  9993  9993 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+07-03 15:31:06.726  9993  9993 I BatteryMgr:DataCollectionService: started foreground
+07-03 15:31:06.735  9993 10091 I BatteryMgr:DataCollectionService: collectData: begin
+07-03 15:31:06.739  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391066739,197500,4072
+07-03 15:31:07.272  9993 10099 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+07-03 15:31:07.749  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391067749,136562,4072
+07-03 15:31:08.769  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391068769,114375,4072
+07-03 15:31:08.832  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 15:31:09.750  1864  1864 I ContentCaptureManagerService: Content capture data sharing session terminated successfully for package 'com.google.android.googlequicksearchbox'
+07-03 15:31:09.784  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391069784,177812,4072
+07-03 15:31:10.806  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391070805,112812,4072
+07-03 15:31:11.830  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391071830,164375,4072
+07-03 15:31:11.856  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 4]
+07-03 15:31:12.847  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391072847,164687,4072
+07-03 15:31:13.864  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391073864,170625,4072
+07-03 15:31:14.872  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391074872,180312,4072
+07-03 15:31:14.879  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 4]
+07-03 15:31:15.898  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391075898,99062,4072
+07-03 15:31:16.924  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391076924,119062,4072
+07-03 15:31:16.947  1864  1864 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+07-03 15:31:16.951  3568  4435 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+07-03 15:31:16.960  2439  2439 D InterruptionStateProvider: No bubble up: not allowed to bubble: 0|com.example.batterymanager_utility|1|null|10232
+07-03 15:31:16.961  2439  2439 D InterruptionStateProvider: No heads up: unimportant notification: 0|com.example.batterymanager_utility|1|null|10232
+07-03 15:31:16.961  1490  1616 D NuPlayerDriver: NuPlayerDriver(0xebf400b0) created, clientPid(2439)
+07-03 15:31:16.961  2439  2485 D PeopleSpaceWidgetMgr: Sbn doesn't contain valid PeopleTileKey: null/0/com.example.batterymanager_utility
+07-03 15:31:16.974  1490 10104 D GenericSource: FileSource remote
+07-03 15:31:16.989  1864  4065 I MediaFocusControl: requestAudioFocus() from uid/pid 10195/2439 AA=USAGE_NOTIFICATION/CONTENT_TYPE_SONIFICATION clientId=android.media.AudioManager@ab96332 callingPack=com.android.systemui req=3 flags=0x0 sdk=31
+07-03 15:31:16.989  1864  4065 I AudioService.FadeOutManager: unfadeOutUid() uid:10195
+07-03 15:31:17.315 26275 26275 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-03 15:31:17.316  1864  4065 W ProcessStats: Tracking association SourceState{f4a1850 system/1000 BTopFgs #86165} whose proc state 2 is better than process ProcessState{3d4ea49 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (34 skipped)
+07-03 15:31:17.502  1490 10103 I GenericSource: start
+07-03 15:31:17.506  2439  2439 D MediaRouter: onRestoreRoute() : route=RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+07-03 15:31:17.507  2439  2439 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+07-03 15:31:17.518  1490 10108 D CCodec  : allocate(c2.android.vorbis.decoder)
+07-03 15:31:17.522  1490 10108 I CCodec  : setting up 'default' as default (vendor) store
+07-03 15:31:17.522  1509 14565 V C2Store : in init
+07-03 15:31:17.523  1509 14565 V C2Store : loading dll
+07-03 15:31:17.528  1490 10108 I CCodec  : Created component [c2.android.vorbis.decoder]
+07-03 15:31:17.529  1490 10108 D CCodecConfig: read media type: audio/vorbis
+07-03 15:31:17.532  1490 10108 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+07-03 15:31:17.533  1490 10108 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+07-03 15:31:17.533  1490 10108 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+07-03 15:31:17.533  1490 10108 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+07-03 15:31:17.533  1490 10108 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+07-03 15:31:17.533  1490 10108 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+07-03 15:31:17.534  1490 10108 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+07-03 15:31:17.536  1490 10108 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+07-03 15:31:17.536  1490 10108 D CCodecConfig: c2 config diff is Dict {
+07-03 15:31:17.536  1490 10108 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+07-03 15:31:17.536  1490 10108 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+07-03 15:31:17.536  1490 10108 D CCodecConfig:   c2::u32 input.delay.value = 0
+07-03 15:31:17.536  1490 10108 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+07-03 15:31:17.536  1490 10108 D CCodecConfig:   string output.media-type.value = "audio/raw"
+07-03 15:31:17.536  1490 10108 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+07-03 15:31:17.536  1490 10108 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+07-03 15:31:17.536  1490 10108 D CCodecConfig: }
+07-03 15:31:17.538  1490 10108 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+07-03 15:31:17.538  1490 10108 D CCodecConfig: no c2 equivalents for durationUs
+07-03 15:31:17.538  1490 10108 D CCodecConfig: no c2 equivalents for csd-1
+07-03 15:31:17.538  1490 10108 D CCodecConfig: no c2 equivalents for channel-mask
+07-03 15:31:17.538  1490 10108 D CCodecConfig: no c2 equivalents for flags
+07-03 15:31:17.539  1490 10108 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 120000
+07-03 15:31:17.540  1490 10108 W Codec2Client: query -- param skipped: index = 1107298332.
+07-03 15:31:17.540  1490 10108 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+07-03 15:31:17.540  1490 10108 D CCodec  :   int32_t bitrate = 120000
+07-03 15:31:17.540  1490 10108 D CCodec  :   int32_t channel-count = 1
+07-03 15:31:17.540  1490 10108 D CCodec  :   int32_t max-input-size = 32768
+07-03 15:31:17.540  1490 10108 D CCodec  :   string mime = "audio/vorbis"
+07-03 15:31:17.540  1490 10108 D CCodec  :   int32_t sample-rate = 48000
+07-03 15:31:17.540  1490 10108 D CCodec  : }
+07-03 15:31:17.541  1490 10108 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+07-03 15:31:17.541  1490 10108 D CCodec  :   int32_t channel-count = 1
+07-03 15:31:17.541  1490 10108 D CCodec  :   string mime = "audio/raw"
+07-03 15:31:17.541  1490 10108 D CCodec  :   int32_t sample-rate = 48000
+07-03 15:31:17.541  1490 10108 D CCodec  :   int32_t channel-mask = 1
+07-03 15:31:17.541  1490 10108 D CCodec  : }
+07-03 15:31:17.541  1490 10108 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+07-03 15:31:17.542  1490 10108 I MediaCodec: MediaCodec will operate in async mode
+07-03 15:31:17.542  1490 10107 D MediaCodec: keep callback message for reclaim
+07-03 15:31:17.543  1490 10108 W Codec2Client: query -- param skipped: index = 1342179345.
+07-03 15:31:17.543  1490 10108 W Codec2Client: query -- param skipped: index = 2415921170.
+07-03 15:31:17.546  1490 10108 D CCodecBufferChannel: [c2.android.vorbis.decoder#444] Created input block pool with allocatorID 16 => poolID 227 - OK (0)
+07-03 15:31:17.546  1509 14565 D BufferPoolAccessor2.0: bufferpool2 0x7163c89038 : 0(0 size) total buffers - 0(0 size) used buffers - 89/92 (recycle/alloc) - 3/91 (fetch/transfer)
+07-03 15:31:17.546  1509 14565 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7163c89038 cached: 0/0M, 0/0% in use; allocs: 92, 97% recycled; transfers: 91, 97% unfetched
+07-03 15:31:17.550  1490 13581 D BufferPoolAccessor2.0: bufferpool2 0xe7e41348 : 0(0 size) total buffers - 0(0 size) used buffers - 89/97 (recycle/alloc) - 8/188 (fetch/transfer)
+07-03 15:31:17.550  1490 13581 D BufferPoolAccessor2.0: Destruction - bufferpool2 0xe7e41348 cached: 0/0M, 0/0% in use; allocs: 97, 92% recycled; transfers: 188, 96% unfetched
+07-03 15:31:17.551  1490 10108 I CCodecBufferChannel: [c2.android.vorbis.decoder#444] Created output block pool with allocatorID 16 => poolID 239 - OK
+07-03 15:31:17.551  1490 10108 D CCodecBufferChannel: [c2.android.vorbis.decoder#444] Configured output block pool ids 239 => OK
+07-03 15:31:17.553  1509 10109 D SimpleC2Component: Using output block pool with poolID 239 => got 239 - 0
+07-03 15:31:17.564  1317  3945 D AudioFlinger: Client defaulted notificationFrames to 12000 for frameCount 24000
+07-03 15:31:17.566  1317  3945 D AF::TrackHandle: OpPlayAudio: track:277 usage:5 not muted
+07-03 15:31:17.574  1250  1362 I EffectsFactory: EffectCreate() create_effect
+07-03 15:31:17.602  1250  1364 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=4194304
+07-03 15:31:17.609  1250  3496 D audio_route: Apply path: speaker-safe
+07-03 15:31:17.609  1250  3496 D audio_hw_primary: enable_snd_device: snd_device(104: vi-feedback)
+07-03 15:31:17.609  1250  3496 D audio_route: Apply path: vi-feedback
+07-03 15:31:17.609  1250  3496 E audio_hw_utils: audio_extn_utils_send_app_type_cfg: Failed to derive app_type for uc type : 0x1
+07-03 15:31:17.609  1250  3496 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 512, path = 1, app id = 0x11132, sample rate = 48000
+07-03 15:31:17.609  1250  3496 D ACDB-LOADER: ACDB -> send_asm_topology
+07-03 15:31:17.609  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> send_adm_topology
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> send_audtable
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> send_audvoltable
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_VOL_STEP_TABLE_SIZE
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+07-03 15:31:17.610  1250  3496 D android.hardware.audio.service: Failed to fetch the lookup information of the device 00000200 
+07-03 15:31:17.610  1250  3496 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> send_audstrmtable
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> send_afe_topology
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 512, Topology Id 10001ccc
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> send_afe_cal
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+07-03 15:31:17.610  1250  3496 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+07-03 15:31:17.611  1250  3496 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 512 path = 1
+07-03 15:31:17.611  1250  3496 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+07-03 15:31:17.611  1250  3496 D audio_hw_primary: enable_audio_route: usecase(25) apply and update mixer path: spkr-vi-record vi-feedback
+07-03 15:31:17.611  1250  3496 D audio_route: Apply path: spkr-vi-record vi-feedback
+07-03 15:31:17.655  1250  3496 D msm8974_platform: Setting audio calibration for snd_device(4) acdb_id(514)
+07-03 15:31:17.655  1250  3496 E ACDB-LOADER: [acdb_loader_adsp_set_audio_cal] active device/stream not found (result=-100) for topology 0x1000dffb and apptype 0x11130
+07-03 15:31:17.655  1250  3496 E ACDB-LOADER: [acdb_loader_adsp_set_audio_cal] set parameters failed with status -100
+07-03 15:31:17.655  1250  3496 D msm8974_platform: Setting audio calibration for snd_device(4) acdb_id(514)
+07-03 15:31:17.656  1250  3496 D audio_hw_waves: print_state_log: send volume table -(0,0.000000,F),(1,0.000000,F),(2,0.000000,F),(3,0.000000,F),(4,0.000000,F),(5,0.000000,T)
+07-03 15:31:17.656  1250  3496 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 514, path = 0, app id = 0x11130, sample rate = 48000
+07-03 15:31:17.656  1250  3496 D ACDB-LOADER: ACDB -> send_asm_topology
+07-03 15:31:17.656  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> send_adm_topology
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> send_audtable
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> send_audvoltable
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_VOL_STEP_TABLE_SIZE
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+07-03 15:31:17.657  1250  3496 D android.hardware.audio.service: Failed to fetch the lookup information of the device 00000202 
+07-03 15:31:17.657  1250  3496 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> send_audstrmtable
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 456
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> send_afe_topology
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 514, Topology Id 10000ccc
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> send_afe_cal
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 514 path = 0
+07-03 15:31:17.657  1250  3496 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+07-03 15:31:17.657  1250  3496 D audio_hw_primary: enable_audio_route: usecase(1) apply and update mixer path: low-latency-playback speaker
+07-03 15:31:17.657  1250  3496 D audio_route: Apply path: low-latency-playback speaker
+07-03 15:31:17.729  1250  3496 D audio_hw_primary: out_write: retry previous failed cal level set
+07-03 15:31:17.750  1250  1364 D audio_hw_waves: print_state_log: send volume table -(0,0.000000,F),(1,0.000000,F),(2,0.000000,F),(3,0.000000,F),(4,0.000000,F),(5,0.302643,T)
+07-03 15:31:17.903  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 4]
+07-03 15:31:17.935  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391077935,119375,4072
+07-03 15:31:18.947  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391078947,190312,4072
+07-03 15:31:18.970  1490 10108 D CCodecBufferChannel: [c2.android.vorbis.decoder#444] buffers after EOS ignored (0 us)
+07-03 15:31:18.970  1490 10108 D CCodecBufferChannel: [c2.android.vorbis.decoder#444] buffers after EOS ignored (0 us)
+07-03 15:31:18.971  1490 10106 D AudioTrack: stop(252): called with 76269 frames delivered
+07-03 15:31:19.400  1864  5068 I MediaFocusControl: abandonAudioFocus() from uid/pid 10195/2439 clientId=android.media.AudioManager@ab96332
+07-03 15:31:19.401  2439 10101 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+07-03 15:31:19.401  2439 10101 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+07-03 15:31:19.401  1490  1616 D NuPlayerDriver: reset(0xebf400b0) at state 6
+07-03 15:31:19.410  1490 10108 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+07-03 15:31:19.410  1509  2515 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+07-03 15:31:19.410  1509  2515 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+07-03 15:31:19.411  1509  2515 V C2Store : in ~ComponentModule
+07-03 15:31:19.411  1509  2515 V C2Store : unloading dll
+07-03 15:31:19.416  1490 10103 D NuPlayerDriver: notifyResetComplete(0xebf400b0)
+07-03 15:31:19.416  1250  1364 D audio_hw_waves: print_state_log: send volume table -(0,0.000000,F),(1,0.000000,F),(2,0.000000,F),(3,0.000000,F),(4,0.000000,F),(5,0.000000,F)
+07-03 15:31:19.416  1490  1616 W AMessage: failed to post message as target looper for handler 0 is gone.
+07-03 15:31:19.959  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391079959,171875,4072
+07-03 15:31:20.934  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:31:20.970  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391080970,171875,4072
+07-03 15:31:21.981  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391081981,208750,4072
+07-03 15:31:22.390  1250  1364 D audio_hw_primary: disable_audio_route: usecase(1) reset and update mixer path: low-latency-playback speaker
+07-03 15:31:22.393  1250  1364 I audio_hw_cirrus_playback: audio_extn_spkr_prot_stop_processing: pcm_tx_close
+07-03 15:31:22.404  1250  1364 D audio_hw_primary: disable_audio_route: usecase(25) reset and update mixer path: spkr-vi-record vi-feedback
+07-03 15:31:22.405  1250  1364 D audio_hw_primary: disable_snd_device: snd_device(104: vi-feedback)
+07-03 15:31:22.549  1509  2465 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 0
+07-03 15:31:22.992  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391082992,166562,4072
+07-03 15:31:23.556  1490 13610 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 0
+07-03 15:31:23.955  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 4]
+07-03 15:31:24.009  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391084009,371250,4072
+07-03 15:31:24.557  1509  2465 D BufferPoolAccessor2.0: bufferpool2 0x7163c89728 : 0(0 size) total buffers - 0(0 size) used buffers - 89/92 (recycle/alloc) - 3/91 (fetch/transfer)
+07-03 15:31:24.557  1509  2465 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 1
+07-03 15:31:24.557  1490 13610 D BufferPoolAccessor2.0: bufferpool2 0xe7e40da8 : 0(0 size) total buffers - 0(0 size) used buffers - 90/98 (recycle/alloc) - 8/188 (fetch/transfer)
+07-03 15:31:24.557  1490 13610 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 1
+07-03 15:31:25.031  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391085031,102187,4072
+07-03 15:31:26.052  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391086052,102812,4072
+07-03 15:31:26.988  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:31:27.070  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391087070,96250,4072
+07-03 15:31:28.097  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391088097,97187,4072
+07-03 15:31:29.119  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391089119,99062,4072
+07-03 15:31:30.028  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 15:31:30.134  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391090133,123437,4072
+07-03 15:31:31.158  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391091158,276250,4072
+07-03 15:31:32.189  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391092189,179375,4072
+07-03 15:31:33.047  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:31:33.204  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391093204,188437,4072
+07-03 15:31:34.219  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391094219,111875,4072
+07-03 15:31:35.238  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391095237,87500,4072
+07-03 15:31:36.085  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 3]
+07-03 15:31:36.256  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391096255,164375,4072
+07-03 15:31:37.272  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391097272,121875,4072
+07-03 15:31:38.301  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391098301,115312,4072
+07-03 15:31:39.123  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 15:31:39.327  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391099327,83125,4072
+07-03 15:31:40.355  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391100355,152500,4072
+07-03 15:31:41.374  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391101374,162500,4072
+07-03 15:31:42.139  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:31:42.400  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391102400,224062,4072
+07-03 15:31:43.425  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391103425,179375,4072
+07-03 15:31:44.440  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391104440,96875,4072
+07-03 15:31:45.174  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 15:31:45.457  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391105457,109062,4072
+07-03 15:31:46.481  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391106481,74375,4072
+07-03 15:31:47.509  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391107509,103437,4072
+07-03 15:31:48.200  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:31:48.539  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391108538,102500,4072
+07-03 15:31:49.564  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391109564,125000,4072
+07-03 15:31:50.583  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391110583,96875,4072
+07-03 15:31:51.238  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 3]
+07-03 15:31:51.601  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391111601,170937,4072
+07-03 15:31:52.630  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391112630,87812,4072
+07-03 15:31:53.643  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391113643,119687,4072
+07-03 15:31:54.273  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 15:31:54.658  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391114658,103125,4072
+07-03 15:31:55.685  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391115685,105000,4072
+07-03 15:31:56.710  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391116709,263437,4072
+07-03 15:31:57.293  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:31:57.736  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391117736,114375,4072
+07-03 15:31:58.751  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391118751,101250,4072
+07-03 15:31:59.767  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391119767,77187,4072
+07-03 15:32:00.014  3568  3933 I AiAiEcho: Predicting[7]: { Feature:1, creation:2023-07-03T13:26:09.595Z, expiry:2023-07-03T14:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-03T14:00:00Z, expiry:2023-07-03T15:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T15:00:00Z, expiry:2023-07-03T16:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T16:00:00Z, expiry:2023-07-03T17:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T17:00:00Z, expiry:2023-07-03T18:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T18:00:00Z, expiry:2023-07-03T19:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T19:00:00Z, expiry:2023-07-03T19:26:09.595Z, isExpired: true}
+07-03 15:32:00.015  3568  3933 I AiAiEcho: EchoTargets: Feature:1
+07-03 15:32:00.015  3568  3933 I AiAiEcho: Filtered by AiAi flag check: 
+07-03 15:32:00.016  3568  3933 I AiAiEcho: Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377243, card type: 1, update time: 2023-07-03T13:26:09.595Z, expiration time: 2023-07-03T14:00:00Z, ranking metadata: RankingMetaData(urgency=0.988, priority=0.3, recency=1.0, rankScore=0.2964, importantTimePoints=# kwj@7bca4) }
+07-03 15:32:00.019  3568  3933 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 1 (types=[1])
+07-03 15:32:00.033  2439  2439 W BcSmartspaceCard: No title view to update
+07-03 15:32:00.314  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 4]
+07-03 15:32:00.796  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391120796,97812,4072
+07-03 15:32:01.821  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391121821,103125,4072
+07-03 15:32:02.849  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391122848,102187,4072
+07-03 15:32:03.346  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 3]
+07-03 15:32:03.862  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391123862,115937,4072
+07-03 15:32:04.883  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391124883,86250,4072
+07-03 15:32:05.901  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391125900,90625,4072
+07-03 15:32:06.364 16288 16532 W TimedProcessReaper: Memory state is: 125
+07-03 15:32:06.381  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:32:06.914  9993 10091 I BatteryMgr:DataCollectionService: stats => 1688391126914,107500,4072
+07-03 15:32:07.208 10118 10118 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:32:07.217  2439 10121 W RingtonePlayer: STOP command without a player
+07-03 15:32:07.218  1864  3664 W ProcessStats: Tracking association SourceState{f4a1850 system/1000 BTopFgs #86168} whose proc state 2 is better than process ProcessState{3d4ea49 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (2 skipped)
+07-03 15:32:07.230  2439  2485 D PeopleSpaceWidgetMgr: Sbn doesn't contain valid PeopleTileKey: null/0/com.example.batterymanager_utility
+07-03 15:32:07.239  2439  2439 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{5f88382 I.E...... ......ID 0,0-1080,2160} canPanelBeCollapsed(): false
+07-03 15:32:07.307 10124 10124 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:32:07.588 10135 10135 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:32:07.592  1864  3664 I ActivityManager: Force stopping e.www.writelocaltest appid=10297 user=0: from pid 10135
+07-03 15:32:07.593  1864  3664 I ActivityManager: Killing 10045:e.www.writelocaltest/u0a297 (adj 0): stop e.www.writelocaltest due to from pid 10135
+07-03 15:32:07.594  1864  3664 W ActivityTaskManager: Force removing ActivityRecord{feea11f u0 e.www.writelocaltest/.MainActivity t412 f}}: app died, no saved state
+07-03 15:32:07.599  1864  3664 W InputManager-JNI: Input channel object '8931aff e.www.writelocaltest/e.www.writelocaltest.MainActivity (client)' was disposed without first being removed with the input manager!
+07-03 15:32:07.608  1864  3664 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10232; state: DISABLED
+07-03 15:32:07.609  1864  3664 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10232; state: DISABLED
+07-03 15:32:07.611  1864  3664 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=412 attached=false
+07-03 15:32:07.611  1864  3664 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=412 attached=false
+07-03 15:32:07.616  1232  1232 I Zygote  : Process 10045 exited due to signal 9 (Killed)
+07-03 15:32:07.617   738   738 E BpTransactionCompletedListener: Failed to transact (-32)
+07-03 15:32:07.623  1864  5068 V ActivityManager: Got obituary of 10045:e.www.writelocaltest
+07-03 15:32:07.623  1864  1993 W ActivityManager: setHasOverlayUi called on unknown pid: 10045
+07-03 15:32:07.623  2626  2626 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-03 15:32:07.623  2626  2626 D CarrierSvcBindHelper: No carrier app for: 0
+07-03 15:32:07.631  3648  3648 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-03 15:32:07.633 27556 27556 I EuiccGoogle: [2] EuiccServiceImpl.onCreate: onCreate Single-SIM mode: simCardState is 1
+07-03 15:32:07.636 27556 10142 I EuiccGoogle: [267] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = -1
+07-03 15:32:07.639 27556 10142 W EuiccGoogle: [267] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId=-1. No eUICC is active. Return null.
+07-03 15:32:07.646  2549  2889 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 15:32:07.647  9993 10010 I OpenGLRenderer: Davey! duration=65585ms; Flags=1, FrameTimelineVsyncId=2269317, IntendedVsync=85012929234953, Vsync=85012945901619, InputEventId=0, HandleInputStart=85012957523290, AnimationStart=85012957528081, PerformTraversalsStart=85012957734331, DrawStart=85013072620957, FrameDeadline=85012962568285, FrameInterval=85012957497196, FrameStartTime=16666666, SyncQueued=85013076921791, SyncStart=85013077018197, IssueDrawCommandsStart=85013079813771, SwapBuffers=85013085519032, FrameCompleted=85078514575966, DequeueBufferDuration=15521, QueueBufferDuration=525469, GpuCompleted=85078514575966, SwapBuffersCompleted=85013086555334, DisplayPresentTime=0, 
+07-03 15:32:07.649  2549  2549 I WallpaperService: engine resumed
+07-03 15:32:07.650  2549  2889 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 15:32:07.653  1864  2013 I libprocessgroup: Successfully killed process cgroup uid 10297 pid 10045 in 58ms
+07-03 15:32:07.665  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 15:32:07.666  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 15:32:07.666  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-03 15:32:07.666  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 15:32:07.667  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 15:32:08.252  2549  2549 I WallpaperService: engine paused
+07-03 15:32:08.754  2439  2439 D PowerNotificationWarningsGoogleImpl: isPlugged: false | isOverheated: false | defenderEnabled: false
+07-03 15:32:08.784  1864  2018 E system_server: Cannot read thread CPU times for PID 1864
+07-03 15:32:08.789  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10108; state: DISABLED
+07-03 15:32:08.789  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10108; state: DISABLED
+07-03 15:32:08.789  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10108; state: DISABLED
+07-03 15:32:08.789  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10108; state: ENABLED
+07-03 15:32:08.790  1864  2006 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10108; state: ENABLED
+07-03 15:32:08.796 10734 10734 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.google.google_battery@1.1::IGoogleBattery/default
+07-03 15:32:08.797  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10112; state: DISABLED
+07-03 15:32:08.797  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10112; state: DISABLED
+07-03 15:32:08.797  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10112; state: DISABLED
+07-03 15:32:08.797  1864  1864 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10112; state: ENABLED
+07-03 15:32:08.804  1232  1232 D Zygote  : Forked child process 10148
+07-03 15:32:08.805  1864  2006 I ActivityManager: Start proc 10148:com.google.android.partnersetup/u0a108 for service {com.google.android.partnersetup/com.google.android.partnersetup.InstalledAppJobService}
+07-03 15:32:08.805  1864  2006 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10112; state: ENABLED
+07-03 15:32:08.814 10148 10148 I id.partnersetu: Using CollectorTypeCC GC.
+07-03 15:32:08.816  1232  1232 D Zygote  : Forked child process 10151
+07-03 15:32:08.817  1864  2006 I ActivityManager: Start proc 10151:com.google.android.apps.gcs/u0a112 for service {com.google.android.apps.gcs/androidx.work.impl.background.systemjob.SystemJobService}
+07-03 15:32:08.821 10148 10148 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+07-03 15:32:08.823 10148 10148 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:32:08.827 10151 10151 I ndroid.apps.gc: Using CollectorTypeCC GC.
+07-03 15:32:08.829  1864  5068 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10108; state: DISABLED
+07-03 15:32:08.833 10151 10151 E ndroid.apps.gc: Not starting debugger since process cannot load the jdwp agent.
+07-03 15:32:08.835 10148 10148 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10108; state: DISABLED
+07-03 15:32:08.836 10151 10151 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:32:08.843  1864  3664 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10112; state: DISABLED
+07-03 15:32:08.846 10148 10148 D nativeloader: Configuring classloader-namespace-shared for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=30, uses_libraries=ALL, library_path=/product/priv-app/PartnerSetupPrebuilt/lib/arm64:/system/lib64:/system_ext/lib64:/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.partnersetup:/product/priv-app/PartnerSetupPrebuilt:/system/lib64:/system_ext/lib64:/product/lib64
+07-03 15:32:08.850 10151 10151 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10112; state: ENABLED
+07-03 15:32:08.856 10148 10148 D nativeloader: Configuring classloader-namespace-shared for other apk /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk. target_sdk_version=30, uses_libraries=, library_path=/product/priv-app/PartnerSetupPrebuilt/lib/arm64:/system/lib64:/system_ext/lib64:/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.partnersetup:/product/priv-app/PartnerSetupPrebuilt:/system/lib64:/system_ext/lib64:/product/lib64
+07-03 15:32:08.867 10148 10148 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.partnersetup' set to: 'default'
+07-03 15:32:08.869 10148 10148 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:32:08.869 10148 10148 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:32:08.875 10151 10151 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~NAEeTtyFqLMC736KIFJnkw==/com.google.android.apps.gcs-llwvTRsjR7qxdBmJrqbliQ==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~NAEeTtyFqLMC736KIFJnkw==/com.google.android.apps.gcs-llwvTRsjR7qxdBmJrqbliQ==/lib/arm64:/data/app/~~NAEeTtyFqLMC736KIFJnkw==/com.google.android.apps.gcs-llwvTRsjR7qxdBmJrqbliQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.gcs
+07-03 15:32:08.887 10151 10151 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.gcs' set to: 'default'
+07-03 15:32:08.888 10151 10151 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:32:08.888 10151 10151 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 15:32:08.900 10151 10182 W ndroid.apps.gc: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (max-target-o, reflection, denied)
+07-03 15:32:08.901 10151 10182 W ndroid.apps.gc: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+07-03 15:32:08.901 10151 10182 W ndroid.apps.gc: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+07-03 15:32:08.912  4101  4101 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+07-03 15:32:08.912  4101  4101 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+07-03 15:32:08.927 10151 10151 D WM-PackageManagerHelper: androidx.work.impl.background.systemjob.SystemJobService enabled
+07-03 15:32:08.927 10151 10151 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+07-03 15:32:08.956 10151 10189 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10112; state: ENABLED
+07-03 15:32:09.058  1864  5068 D ConnectivityService: requestNetwork for uid/pid:10112/10151 activeRequest: null callbackRequest: 1294 [NetworkRequest [ REQUEST id=1295, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+07-03 15:32:09.061  1864  2345 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=1295, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.061  1864  2345 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=1295, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.061  1864  2354 D ConnectivityService: NetReassign [1295 : null → 100] [c 0] [a 1] [i 2]
+07-03 15:32:09.061  1864  2345 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=1295, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.061  1864  2345 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=1295, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.065 10151 10189 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=1fd3f8c0-dff9-4779-b462-e28d1aaa766a, tags={ com.google.android.apps.gcs.service.worker.GcsWorker } ]
+07-03 15:32:09.092 10151 10189 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=7b850275-2a33-4208-9246-68001c7d7065, tags={ com.google.android.apps.gcs.service.worker.GcsWorker } ]
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: Work [ id=3b86154d-955b-49bd-beb5-ab958a8fe1db, tags={ com.google.android.apps.gcs.service.worker.GcsWorker } ] was cancelled
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: java.util.concurrent.CancellationException: Task was cancelled.
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: 	at ahq.m(PG:2)
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: 	at ahq.get(PG:3)
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: 	at aci.run(PG:1)
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: 	at ahf.run(PG:1)
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+07-03 15:32:09.103 10151 10194 I WM-WorkerWrapper: 	at java.lang.Thread.run(Thread.java:1012)
+07-03 15:32:09.138  1864  5068 D ConnectivityService: requestNetwork for uid/pid:10112/10151 activeRequest: null callbackRequest: 1296 [NetworkRequest [ REQUEST id=1297, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+07-03 15:32:09.142  1864  2345 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=1297, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.142  1864  2345 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=1297, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.142  1864  2345 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=1297, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.142  1864  2345 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=1297, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.gcs UnderlyingNetworks: Null] ]
+07-03 15:32:09.142  1864  2354 D ConnectivityService: NetReassign [1297 : null → 100] [c 0] [a 2] [i 2]
+07-03 15:32:09.148 10151 10195 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=926b00e2-e946-4f4c-89a8-7375d02b4502, tags={ com.google.android.apps.gcs.service.worker.GcsWorker } ]
+07-03 15:32:09.160 10151 10201 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_BLK_CHANGED message
+07-03 15:32:09.409  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:32:11.048 10208 10208 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 15:32:11.054  1864  4065 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10232 user=0: from pid 10208
+07-03 15:32:11.055  1864  4065 I ActivityManager: Killing 9993:com.example.batterymanager_utility/u0a232 (adj 0): stop com.example.batterymanager_utility due to from pid 10208
+07-03 15:32:11.056  1864  4065 W ActivityTaskManager: Force removing ActivityRecord{7256867 u0 com.example.batterymanager_utility/.MainActivity t411 f}}: app died, no saved state
+07-03 15:32:11.062  1864  4065 W InputManager-JNI: Input channel object '6addfe3 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity (client)' was disposed without first being removed with the input manager!
+07-03 15:32:11.075  1864  4065 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=411 attached=false
+07-03 15:32:11.075  1864  4065 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=411 attached=false
+07-03 15:32:11.084  2626  2626 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-03 15:32:11.084  2626  2626 D CarrierSvcBindHelper: No carrier app for: 0
+07-03 15:32:11.086  1232  1232 I Zygote  : Process 9993 exited due to signal 9 (Killed)
+07-03 15:32:11.089  1864  1993 W ActivityManager: setHasOverlayUi called on unknown pid: 9993
+07-03 15:32:11.090  1864  2535 V ActivityManager: Got obituary of 9993:com.example.batterymanager_utility
+07-03 15:32:11.090   738   738 E BpTransactionCompletedListener: Failed to transact (-32)
+07-03 15:32:11.101  2549  2889 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 15:32:11.103  3648  3648 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-03 15:32:11.104  3568  3933 I AiAiEcho: Predicting[7]: { Feature:1, creation:2023-07-03T13:26:09.595Z, expiry:2023-07-03T14:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-03T14:00:00Z, expiry:2023-07-03T15:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T15:00:00Z, expiry:2023-07-03T16:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T16:00:00Z, expiry:2023-07-03T17:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T17:00:00Z, expiry:2023-07-03T18:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T18:00:00Z, expiry:2023-07-03T19:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T19:00:00Z, expiry:2023-07-03T19:26:09.595Z, isExpired: true}
+07-03 15:32:11.104  2549  2549 I WallpaperService: engine resumed
+07-03 15:32:11.104  3568  3933 I AiAiEcho: EchoTargets: Feature:1
+07-03 15:32:11.104  3568  3933 I AiAiEcho: Filtered by AiAi flag check: 
+07-03 15:32:11.104  3568  3933 I AiAiEcho: Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377243, card type: 1, update time: 2023-07-03T13:26:09.595Z, expiration time: 2023-07-03T14:00:00Z, ranking metadata: RankingMetaData(urgency=0.988, priority=0.3, recency=1.0, rankScore=0.2964, importantTimePoints=# kwj@7bca4) }
+07-03 15:32:11.105  3568  3933 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+07-03 15:32:11.106  2549  2889 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 15:32:11.107  2792  2792 W BcSmartspaceCard: No title view to update
+07-03 15:32:11.110  6363  6363 I A       : onStart
+07-03 15:32:11.111  1864  2013 I libprocessgroup: Successfully killed process cgroup uid 10232 pid 9993 in 55ms
+07-03 15:32:11.119  6363  6363 I A       : onResume
+07-03 15:32:11.122 31564 31564 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+07-03 15:32:11.122 31564 31595 I GsaVoiceInteractionSrv: (REDACTED) disregardHotwordSetting: %b
+07-03 15:32:11.122 31564 31595 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+07-03 15:32:11.127  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 15:32:11.129  6363  6469 I OpenGLRenderer: Davey! duration=406605ms; Flags=1, FrameTimelineVsyncId=2247440, IntendedVsync=84675376799227, Vsync=84675376799227, InputEventId=0, HandleInputStart=84675377775286, AnimationStart=84675377776327, PerformTraversalsStart=84675377777056, DrawStart=84675389664297, FrameDeadline=84675410132559, FrameInterval=84675377715702, FrameStartTime=16666666, SyncQueued=84675392132995, SyncStart=84675392732006, IssueDrawCommandsStart=84675393153829, SwapBuffers=84675394246225, FrameCompleted=85081982523916, DequeueBufferDuration=14271, QueueBufferDuration=635833, GpuCompleted=85081982523916, SwapBuffersCompleted=84675395667214, DisplayPresentTime=5983267400453391, 
+07-03 15:32:11.129 26275 26275 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-03 15:32:11.129 26275 26275 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-03 15:32:11.131  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 15:32:11.131  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-03 15:32:11.131  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 15:32:11.131  4337  4337 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 15:32:12.425  1864  2354 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 15:32:15.450  1864  2354 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 15:32:16.060 10151 10176 V ClearcutMetricXmitter: Transmission is done.
+07-03 15:32:16.060 10151 10177 V ClearcutMetricXmitter: Transmission is done.
+07-03 15:32:16.067 10151 10177 V ClearcutMetricXmitter: Transmission is done.
+07-03 15:32:16.428  3713 22794 W MediaProvider: isAppCloneUserPair failed. Users: 0 and 0
+07-03 15:32:16.428  3713 22794 W MediaProvider: isAppCloneUserPair for user 0: false
