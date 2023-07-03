@@ -1,0 +1,822 @@
+--------- beginning of main
+07-03 20:16:18.486 16361 16361 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+--------- beginning of system
+07-03 20:16:18.490  1871  2683 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.batterymanager_utility/.MainActivity} from uid 2000
+07-03 20:16:18.492  1871  2683 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=67 attached=false
+07-03 20:16:18.495  1871  2683 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10232; state: DISABLED
+07-03 20:16:18.496  1871  2683 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10232; state: DISABLED
+07-03 20:16:18.496  1871  2683 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10232; state: DISABLED
+07-03 20:16:18.500  1871  2683 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10232; state: DISABLED
+07-03 20:16:18.512  1871  1997 W ActivityManager: ProcessRecord{75c5d75 0:com.example.batterymanager_utility/u0a232}: ART verification disabled
+07-03 20:16:18.512  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10232; state: DISABLED
+07-03 20:16:18.512  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10232; state: DISABLED
+07-03 20:16:18.512  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10232; state: DISABLED
+07-03 20:16:18.512  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10232; state: ENABLED
+07-03 20:16:18.512  1871  2012 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10232; state: ENABLED
+07-03 20:16:18.517  1233  1233 D Zygote  : Forked child process 16364
+07-03 20:16:18.517  1871  2012 I ActivityManager: Start proc 16364:com.example.batterymanager_utility/u0a232 for pre-top-activity {com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}
+07-03 20:16:18.522 16364 16364 I manager_utilit: Late-enabling -Xcheck:jni
+07-03 20:16:18.549 16364 16364 I manager_utilit: Using CollectorTypeCC GC.
+07-03 20:16:18.553 16078 16087 I adbd    : jdwp connection from 16364
+07-03 20:16:18.555 16364 16364 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:16:18.565 16364 16364 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10232; state: ENABLED
+07-03 20:16:18.573 16364 16364 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~8n5m5SkTFP1d_NWZTzb8Kw==/com.example.batterymanager_utility-0YRESPMRIPZC72mFjy4gBA==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~8n5m5SkTFP1d_NWZTzb8Kw==/com.example.batterymanager_utility-0YRESPMRIPZC72mFjy4gBA==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.batterymanager_utility
+07-03 20:16:18.579 16364 16364 V GraphicsEnvironment: ANGLE Developer option for 'com.example.batterymanager_utility' set to: 'default'
+07-03 20:16:18.580 16364 16364 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+07-03 20:16:18.581 16364 16364 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 20:16:18.581 16364 16364 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 20:16:18.586 16364 16364 I BatteryMgr:App: creating notification channel
+07-03 20:16:18.606  3838  3838 I A       : onPause
+07-03 20:16:18.608  3554  3554 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+07-03 20:16:18.621 16366 16366 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+07-03 20:16:18.626 16366 16366 I AndroidRuntime: Using default boot image
+07-03 20:16:18.626 16366 16366 I AndroidRuntime: Leaving lock profiling enabled
+07-03 20:16:18.626 16366 16366 W libc    : Access denied finding property "odsign.verification.success"
+07-03 20:16:18.623 16366 16366 W app_process: type=1400 audit(0.0:124): avc: denied { read } for name="u:object_r:odsign_prop:s0" dev="tmpfs" ino=24166 scontext=u:r:shell:s0 tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=0
+07-03 20:16:18.629 16366 16366 W app_process: ART APEX data files are untrusted.
+07-03 20:16:18.629 16366 16366 I app_process: Using CollectorTypeCC GC.
+07-03 20:16:18.629 16366 16366 E app_process: Error reading named image component header for /system/framework/boot.art, error: Unable to open file "/system/framework/arm64/boot.art" for reading image header
+07-03 20:16:18.645 16387 16387 W dex2oat64: Mismatch between dex2oat instruction set features to use (ISA: Arm64 Feature string: -a53,crc,lse,fp16,-dotprod,-sve) and those from CPP defines (ISA: Arm64 Feature string: -a53,-crc,-lse,-fp16,-dotprod,-sve) for the command line:
+07-03 20:16:18.645 16387 16387 W dex2oat64: /apex/com.android.art/bin/dex2oat64 --runtime-arg -Xbootclasspath:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --base=0x70000000 --dex-file=/apex/com.android.art/javalib/core-oj.jar --dex-location=/apex/com.android.art/javalib/core-oj.jar --dex-file=/apex/com.android.art/javalib/core-libart.jar --dex-location=/apex/com.android.art/javalib/core-libart.jar --dex-file=/apex/com.android.art/javalib/okhttp.jar --dex-location=/apex/com.android.art/javalib/okhttp.jar --dex-file=/apex/com.android.art/javalib/bouncycastle.jar --dex-location=/apex/com.android.art/javalib/bouncycastle.jar --dex-file=/apex/com.android.art/javalib/apache-xml.jar --dex-location=/apex/com.android.art/javalib/apache-xml.jar --dex-file=/system/framework/framework.jar --dex-location=/system/framework/framework.jar --dex-file=/system/framework/framework-graphics.jar --dex-location=/system/framework/framework-graphics.jar --dex-file=/system/framework/ext.jar --dex-location=/system/framework/ext.jar --dex-file=/system/framework/telephony-common.jar --dex-location=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-location=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-location=/system/framework/ims-common.jar --dex-file=/apex/com.android.i18n/javalib/core-icu4j.jar --dex-location=/apex/com.android.i18n/javalib/core-icu4j.jar --image-fd=5 --output-vdex-fd=6 --oat-fd=7 --oat-location=/system/framework/arm64/boot.oat --single-image --image-format=uncompressed --compiler-filter=verify --profile-file=/apex/com.android.art/etc/boot-image.prof --profile-file=/system/etc/boot-image.prof --avoid-storing-invocation --instruction-set=arm64 --instruction-set-features=runtime --runtime-arg -Xms64m --runtime-arg -Xmx64m --dirty-image-objects=/system/etc/dirty-image-objects --instruction-set-variant=kryo385 --instruction-set-features=default --generate-mini-debug-info
+07-03 20:16:18.664 16387 16387 I dex2oat64: /apex/com.android.art/bin/dex2oat64 --runtime-arg -Xbootclasspath:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --base=0x70000000 --dex-file=/apex/com.android.art/javalib/core-oj.jar --dex-location=/apex/com.android.art/javalib/core-oj.jar --dex-file=/apex/com.android.art/javalib/core-libart.jar --dex-location=/apex/com.android.art/javalib/core-libart.jar --dex-file=/apex/com.android.art/javalib/okhttp.jar --dex-location=/apex/com.android.art/javalib/okhttp.jar --dex-file=/apex/com.android.art/javalib/bouncycastle.jar --dex-location=/apex/com.android.art/javalib/bouncycastle.jar --dex-file=/apex/com.android.art/javalib/apache-xml.jar --dex-location=/apex/com.android.art/javalib/apache-xml.jar --dex-file=/system/framework/framework.jar --dex-location=/system/framework/framework.jar --dex-file=/system/framework/framework-graphics.jar --dex-location=/system/framework/framework-graphics.jar --dex-file=/system/framework/ext.jar --dex-location=/system/framework/ext.jar --dex-file=/system/framework/telephony-common.jar --dex-location=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-location=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-location=/system/framework/ims-common.jar --dex-file=/apex/com.android.i18n/javalib/core-icu4j.jar --dex-location=/apex/com.android.i18n/javalib/core-icu4j.jar --image-fd=5 --output-vdex-fd=6 --oat-fd=7 --oat-location=/system/framework/arm64/boot.oat --single-image --image-format=uncompressed --compiler-filter=verify --profile-file=/apex/com.android.art/etc/boot-image.prof --profile-file=/system/etc/boot-image.prof --avoid-storing-invocation --instruction-set=arm64 --instruction-set-features=runtime --runtime-arg -Xms64m --runtime-arg -Xmx64m --dirty-image-objects=/system/etc/dirty-image-objects --instruction-set-variant=kryo385 --instruction-set-features=default --generate-mini-debug-info
+07-03 20:16:18.665 16387 16387 I dex2oat64: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar
+07-03 20:16:18.707  1871  1998 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10232; state: ENABLED
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: QUALCOMM build                   : 781e7d0, I46ff5fc46f
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: Build Date                       : 12/01/20
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.31.04.01
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: Local Branch                     : QPR1
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: Remote Branch                    : 
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: Remote Branch                    : 
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: Reconstruct Branch               : 
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: Build Config                     : C P 11.0.1 AArch64
+07-03 20:16:18.709 16364 16384 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-03 20:16:18.711 16364 16384 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+07-03 20:16:18.712 16364 16384 W AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-03 20:16:18.712 16364 16384 W AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-03 20:16:18.718   743   743 I SDM     : HWCDisplay::GetColorModeCount: Supported color mode count = 5
+07-03 20:16:18.718   741  2412 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+07-03 20:16:18.719 16364 16384 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:16:18.719   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+07-03 20:16:18.719 16364 16389 I Gralloc4: mapper 4.x is not supported
+07-03 20:16:18.720   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+07-03 20:16:18.720 16364 16389 W Gralloc3: mapper 3.x is not supported
+07-03 20:16:18.721   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 20:16:18.721 16364 16389 W Gralloc4: allocator 4.x is not supported
+07-03 20:16:18.721   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 20:16:18.721 16364 16389 W Gralloc3: allocator 3.x is not supported
+07-03 20:16:18.737  1871  1990 I ActivityTaskManager: Displayed com.example.batterymanager_utility/.MainActivity: +244ms
+07-03 20:16:18.748  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 20:16:18.749  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 20:16:18.749  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-03 20:16:18.749  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 20:16:18.749  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 20:16:18.793  2526  2526 I WallpaperService: engine paused
+07-03 20:16:18.795  1871  1997 W ProcessStats: Tracking association SourceState{85af220 com.google.android.googlequicksearchbox:search/10135 BTopFgs #9456} whose proc state 2 is better than process ProcessState{ba85ac5 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (24 skipped)
+07-03 20:16:18.816  3838  3838 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-03 20:16:18.816  3838  3838 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-03 20:16:18.817  3838  3838 I A       : onStop
+07-03 20:16:18.824  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 20:16:18.957 16387 16387 I dex2oat64: Using CollectorTypeCC GC.
+07-03 20:16:19.027  1871  2353 W InputManager-JNI: Input channel object '53dea5f Splash Screen com.example.batterymanager_utility (client)' was disposed without first being removed with the input manager!
+07-03 20:16:20.760 16387 16387 I dex2oat64: Explicit concurrent copying GC freed 88241(11MB) AllocSpace objects, 5(84KB) LOS objects, 27% free, 15MB/21MB, paused 19us,16us total 89.393ms
+07-03 20:16:20.970 16387 16387 I dex2oat64: Explicit concurrent copying GC freed 41961(7495KB) AllocSpace objects, 0(0B) LOS objects, 41% free, 8512KB/14MB, paused 13us,10us total 43.048ms
+07-03 20:16:21.429 16387 16387 I dex2oat64: dex2oat took 2.786s (5.731s cpu) (threads: 8) arena alloc=0B (0B) java alloc=8512KB (8716512B) native alloc=15MB (16378560B) free=4364KB (4468880B)
+07-03 20:16:21.538 16366 16366 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+07-03 20:16:21.538 16366 16366 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt68l.dat
+07-03 20:16:21.579 16366 16366 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:16:21.579 16366 16366 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+07-03 20:16:21.586 16366 16366 W Monkey  : args: [-p, e.www.displaytest, 1]
+07-03 20:16:21.586 16366 16366 W Monkey  :  arg: "-p"
+07-03 20:16:21.586 16366 16366 W Monkey  :  arg: "e.www.displaytest"
+07-03 20:16:21.586 16366 16366 W Monkey  :  arg: "1"
+07-03 20:16:21.587 16366 16366 W Monkey  : data="e.www.displaytest"
+07-03 20:16:21.644  1871  2011 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{e8e67ca u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{67ded3b 16366 (unknown name)/2000/u-1 remote:688256c}: process gone or crashing
+07-03 20:16:21.659  1871  2353 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=e.www.displaytest/.MainActivity} from uid 2000
+07-03 20:16:21.660  1871  2353 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=68 attached=false
+07-03 20:16:21.661  1871  2353 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10222; state: DISABLED
+07-03 20:16:21.662  1871  2353 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10222; state: DISABLED
+07-03 20:16:21.663  1871  2353 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10222; state: DISABLED
+07-03 20:16:21.666  1871  2353 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10222; state: DISABLED
+07-03 20:16:21.669 16366 16366 I Monkey  : Events injected: 1
+07-03 20:16:21.677  1871  1997 W ActivityManager: ProcessRecord{dede7ed 0:e.www.displaytest/u0a222}: ART verification disabled
+07-03 20:16:21.677  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10222; state: DISABLED
+07-03 20:16:21.678  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10222; state: DISABLED
+07-03 20:16:21.678  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10222; state: DISABLED
+07-03 20:16:21.678  1871  1997 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10222; state: DISABLED
+07-03 20:16:21.678  1871  2012 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10222; state: DISABLED
+07-03 20:16:21.679 16366 16366 I Monkey  : ## Network stats: elapsed time=15ms (0ms mobile, 0ms wifi, 15ms not connected)
+07-03 20:16:21.679 16366 16366 I app_process: System.exit called, status: 0
+07-03 20:16:21.679 16366 16366 I AndroidRuntime: VM exiting with result code 0.
+07-03 20:16:21.684  1233  1233 D Zygote  : Forked child process 16415
+07-03 20:16:21.684  1871  2012 I ActivityManager: Start proc 16415:e.www.displaytest/u0a222 for pre-top-activity {e.www.displaytest/e.www.displaytest.MainActivity}
+07-03 20:16:21.688 16415 16415 I www.displaytes: Late-enabling -Xcheck:jni
+07-03 20:16:21.701  2526  2899 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 20:16:21.706  2526  2526 I WallpaperService: engine resumed
+07-03 20:16:21.707  2526  2899 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 20:16:21.715 16415 16415 I www.displaytes: Using CollectorTypeCC GC.
+07-03 20:16:21.719 16078 16087 I adbd    : jdwp connection from 16415
+07-03 20:16:21.721 16415 16415 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:16:21.730 16415 16415 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10222; state: DISABLED
+07-03 20:16:21.735 16415 16415 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+07-03 20:16:21.737 16415 16415 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~bIHE86wLW0o_2aiUvpxm0A==/e.www.displaytest-y7eC8oRvcThp7nx4P2uXtQ==/base.apk. target_sdk_version=28, uses_libraries=, library_path=/data/app/~~bIHE86wLW0o_2aiUvpxm0A==/e.www.displaytest-y7eC8oRvcThp7nx4P2uXtQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/e.www.displaytest
+07-03 20:16:21.741  2766  2780 W s.nexuslaunche: Reducing the number of considered missed Gc histogram windows from 188 to 100
+07-03 20:16:21.744 16415 16415 V GraphicsEnvironment: ANGLE Developer option for 'e.www.displaytest' set to: 'default'
+07-03 20:16:21.744 16415 16415 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+07-03 20:16:21.745 16415 16415 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 20:16:21.746 16415 16415 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-03 20:16:21.774 16415 16415 W www.displaytes: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+07-03 20:16:21.774 16415 16415 W www.displaytes: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+07-03 20:16:21.815  1871  1998 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10222; state: ENABLED
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: QUALCOMM build                   : 781e7d0, I46ff5fc46f
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: Build Date                       : 12/01/20
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.31.04.01
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: Local Branch                     : QPR1
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: Remote Branch                    : 
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: Remote Branch                    : 
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: Reconstruct Branch               : 
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: Build Config                     : C P 11.0.1 AArch64
+07-03 20:16:21.816 16415 16433 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-03 20:16:21.818 16415 16433 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+07-03 20:16:21.819 16415 16433 W AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-03 20:16:21.819 16415 16433 W AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-03 20:16:21.822  1871  3634 I MediaFocusControl: requestAudioFocus() from uid/pid 10222/16415 AA=USAGE_MEDIA/CONTENT_TYPE_MOVIE clientId=android.media.AudioManager@2dbca9c callingPack=e.www.displaytest req=1 flags=0x0 sdk=28
+07-03 20:16:21.823  1871  3634 I AudioService.FadeOutManager: unfadeOutUid() uid:10222
+07-03 20:16:21.825   743   743 I SDM     : HWCDisplay::GetColorModeCount: Supported color mode count = 5
+07-03 20:16:21.825   741  2412 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+07-03 20:16:21.826 16415 16433 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:16:21.828  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 20:16:21.832  1508  2485 D NuPlayerDriver: NuPlayerDriver(0xe8e81e10) created, clientPid(16415)
+07-03 20:16:21.836  1508  2485 D SurfaceUtils: connecting to surface 0xe3604ba8, reason setVideoSurfaceTexture
+07-03 20:16:21.836  1508 16438 D NuPlayer: onSetVideoSurface(0xe3600010, no video decoder)
+07-03 20:16:21.838  1508 16439 D GenericSource: FileSource remote
+07-03 20:16:21.842  1504 10743 I SampleTable: There are reordered frames present.
+07-03 20:16:21.844  1504 10743 D MediaBufferGroup: creating MemoryDealer
+07-03 20:16:21.847   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+07-03 20:16:21.847 16415 16433 I Gralloc4: mapper 4.x is not supported
+07-03 20:16:21.847   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+07-03 20:16:21.847 16415 16433 W Gralloc3: mapper 3.x is not supported
+07-03 20:16:21.849   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 20:16:21.849 16415 16433 W Gralloc4: allocator 4.x is not supported
+07-03 20:16:21.849   689   689 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+07-03 20:16:21.849 16415 16433 W Gralloc3: allocator 3.x is not supported
+07-03 20:16:21.860 16415 16415 D MediaPlayerNative: getMetadata
+07-03 20:16:21.861  1508 16438 I GenericSource: start
+07-03 20:16:21.862  1871  1990 I ActivityTaskManager: Displayed e.www.displaytest/.MainActivity: +198ms
+07-03 20:16:21.866  1508 16445 D CCodec  : allocate(c2.qti.avc.decoder)
+07-03 20:16:21.867  1508 16447 D CCodec  : allocate(c2.android.aac.decoder)
+07-03 20:16:21.868  1508 16445 I CCodec  : setting up 'default' as default (vendor) store
+07-03 20:16:21.868  1508 16447 I CCodec  : setting up 'default' as default (vendor) store
+07-03 20:16:21.868  1309  1646 I QC2Interface: Created Interface (c2.qti.avc.decoder)
+07-03 20:16:21.868  1519  1519 V C2Store : in init
+07-03 20:16:21.868  1519  1519 V C2Store : loading dll
+07-03 20:16:21.868  1309  1646 E QC2Prop : SK::kPropInputDelay:0
+07-03 20:16:21.868  1309  1646 E QC2Prop : SK::kPropOutputDelay:0
+07-03 20:16:21.869  1309  1646 I QC2Comp : Create: Allocated component[18] for name c2.qti.avc.decoder
+07-03 20:16:21.869  1309  1646 I QC2CompStore: Created component(c2.qti.avc.decoder) id(18)
+07-03 20:16:21.870  1508 16447 I CCodec  : Created component [c2.android.aac.decoder]
+07-03 20:16:21.870  1508 16447 D CCodecConfig: read media type: audio/mp4a-latm
+07-03 20:16:21.871  1508 16445 I CCodec  : Created component [c2.qti.avc.decoder]
+07-03 20:16:21.871  1508 16445 D CCodecConfig: read media type: video/avc
+07-03 20:16:21.871  1508 16447 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+07-03 20:16:21.871  1508 16447 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+07-03 20:16:21.871  1508 16447 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+07-03 20:16:21.871  1508 16447 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+07-03 20:16:21.871  1508 16447 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+07-03 20:16:21.872  1508 16447 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+07-03 20:16:21.872  1508 16447 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+07-03 20:16:21.872  1508 16445 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+07-03 20:16:21.873  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 20:16:21.873  1508 16447 I CCodecConfig: query failed after returning 19 values (BAD_INDEX)
+07-03 20:16:21.873  1508 16447 D CCodecConfig: c2 config diff is Dict {
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 coded.aac-packaging.value = 0
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 coded.pl.level = 0
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 coded.pl.profile = 8192
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::i32 coding.drc.album-mode.value = 0
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::float coding.drc.attenuation-factor.value = 1
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::float coding.drc.boost-factor.value = 1
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::i32 coding.drc.compression-mode.value = 3
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::i32 coding.drc.effect-type.value = 3
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::float coding.drc.encoded-level.value = 0.25
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::float coding.drc.reference-level.value = -16
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 8192
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 input.delay.value = 0
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   string input.media-type.value = "audio/mp4a-latm"
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 output.delay.value = 2
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::float output.drc.output-loudness.value = 0.25
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   string output.media-type.value = "audio/raw"
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 raw.max-channel-count.value = 8
+07-03 20:16:21.873  1508 16447 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+07-03 20:16:21.873  1508 16447 D CCodecConfig: }
+07-03 20:16:21.873  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 20:16:21.873  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=e.www.displaytest fieldId=2131165363 fieldName=null extras=null hintLocales=[]}, false)
+07-03 20:16:21.873  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 20:16:21.874  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 20:16:21.874  1508 16447 D CCodec  : [c2.android.aac.decoder] buffers are bound to CCodec for this session
+07-03 20:16:21.874  1508 16447 D CCodecConfig: no c2 equivalents for durationUs
+07-03 20:16:21.874  1508 16447 D CCodecConfig: no c2 equivalents for track-id
+07-03 20:16:21.874  1508 16447 D CCodecConfig: no c2 equivalents for language
+07-03 20:16:21.874  1508 16447 D CCodecConfig: no c2 equivalents for encoder-delay
+07-03 20:16:21.874  1508 16447 D CCodecConfig: no c2 equivalents for encoder-padding
+07-03 20:16:21.874  1508 16447 D CCodecConfig: no c2 equivalents for flags
+07-03 20:16:21.874  1508 16447 D CCodecConfig: config failed => CORRUPTED
+07-03 20:16:21.874  1508 16447 D CCodecConfig: c2 config diff is   c2::u32 raw.channel-count.value = 2
+07-03 20:16:21.874  1508 16447 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+07-03 20:16:21.874  1508 16447 W Codec2Client: query -- param skipped: index = 1107298332.
+07-03 20:16:21.874  1508 16447 D CCodec  : client requested max input size 576, which is smaller than what component recommended (8192); overriding with component recommendation.
+07-03 20:16:21.874  1508 16447 W CCodec  : This behavior is subject to change. It is recommended that app developers double check whether the requested max input size is in reasonable range.
+07-03 20:16:21.874  1508 16447 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-album-mode = 0
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-boost-level = 127
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-cut-level = 127
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-effect-type = 3
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-encoded-target-level = -1
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-max-output-channel_count = 8
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-target-ref-level = 64
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t bitrate = 64000
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t channel-count = 2
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t level = 0
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t max-input-size = 8192
+07-03 20:16:21.874  1508 16447 D CCodec  :   string mime = "audio/mp4a-latm"
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t profile = 2
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t sample-rate = 48000
+07-03 20:16:21.874  1508 16447 D CCodec  : }
+07-03 20:16:21.874  1508 16447 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-album-mode = 0
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-boost-level = 127
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-cut-level = 127
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-effect-type = 3
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-drc-output-loudness = -1
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-encoded-target-level = -1
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-max-output-channel_count = 8
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t aac-target-ref-level = 64
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t channel-count = 2
+07-03 20:16:21.874  1508 16447 D CCodec  :   string mime = "audio/raw"
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t sample-rate = 48000
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t encoder-delay = 2048
+07-03 20:16:21.874  1508 16447 D CCodec  :   int32_t encoder-padding = 64
+07-03 20:16:21.874  1508 16447 D CCodec  : }
+07-03 20:16:21.875  1508 16447 I CCodecConfig: query failed after returning 19 values (BAD_INDEX)
+07-03 20:16:21.876  1508 16445 D CCodecConfig: ignoring local param raw.size (0xd2001800) as it is already supported
+07-03 20:16:21.876  1508 16447 I MediaCodec: MediaCodec will operate in async mode
+07-03 20:16:21.876  1508 16446 D MediaCodec: keep callback message for reclaim
+07-03 20:16:21.876  1508 16445 D CCodecConfig: ignoring local param default.color (0x5200180b) as it is already supported
+07-03 20:16:21.876  1508 16445 D CCodecConfig: ignoring local param raw.hdr-static-info (0xd200180a) as it is already supported
+07-03 20:16:21.877  1309  4081 E QC2Prop : SK::kPropInputDelay:0
+07-03 20:16:21.877  1309  4081 E QC2Prop : SK::kPropOutputDelay:0
+07-03 20:16:21.877  1508 16447 W Codec2Client: query -- param skipped: index = 1342179345.
+07-03 20:16:21.877  1508 16447 W Codec2Client: query -- param skipped: index = 2415921170.
+07-03 20:16:21.877  1508 16447 W Codec2Client: query -- param skipped: index = 1610614798.
+07-03 20:16:21.877  1508 16445 I CCodecConfig: query failed after returning 17 values (BAD_INDEX)
+07-03 20:16:21.878  1508 16447 D CCodecBufferChannel: [c2.android.aac.decoder#137] Created input block pool with allocatorID 16 => poolID 31 - OK (0)
+07-03 20:16:21.878  1508 16445 D CCodecConfig: c2 config diff is Dict {
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::i32 algo.priority.value = -1
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::float algo.rate.value = 4.2039e-44
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 algo.secure-mode.value = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::float coded.frame-rate.value = 30
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 coded.pl.level = 20480
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 coded.pl.profile = 20480
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 coded.vui.color.matrix = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 coded.vui.color.primaries = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 coded.vui.color.range = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 coded.vui.color.transfer = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 default.color.matrix = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 default.color.primaries = 3
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 default.color.range = 2
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 default.color.transfer = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 13271040
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 input.delay.value = 4
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   string input.media-type.value = "video/avc"
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 output.delay.value = 18
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   string output.media-type.value = "video/raw"
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 raw.color.matrix = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 raw.color.primaries = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 raw.color.range = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::u32 raw.color.transfer = 0
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::float raw.hdr-static-info.mastering.blue.x = 1.4013e-45
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::float raw.hdr-static-info.mastering.blue.y = 1.4013e-45
+07-03 20:16:21.878  1508 16445 D CCodecConfig:   c2::float raw.hdr-
+07-03 20:16:21.878  1519  2483 D BufferPoolAccessor2.0: bufferpool2 0x7b46a0db88 : 0(0 size) total buffers - 0(0 size) used buffers - 2938/2942 (recycle/alloc) - 21/2942 (fetch/transfer)
+07-03 20:16:21.878  1519  2483 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7b46a0db88 cached: 0/0M, 0/0% in use; allocs: 2942, 100% recycled; transfers: 2942, 99% unfetched
+07-03 20:16:21.879  1508 16447 I CCodecBufferChannel: [c2.android.aac.decoder#137] Created output block pool with allocatorID 16 => poolID 37 - OK
+07-03 20:16:21.879  1508 10612 D BufferPoolAccessor2.0: bufferpool2 0xe4e80a48 : 0(0 size) total buffers - 0(0 size) used buffers - 2938/2946 (recycle/alloc) - 8/2946 (fetch/transfer)
+07-03 20:16:21.879  1508 10612 D BufferPoolAccessor2.0: Destruction - bufferpool2 0xe4e80a48 cached: 0/0M, 0/0% in use; allocs: 2946, 100% recycled; transfers: 2946, 100% unfetched
+07-03 20:16:21.879  1508 16447 D CCodecBufferChannel: [c2.android.aac.decoder#137] Configured output block pool ids 37 => OK
+07-03 20:16:21.879  1508 16445 W ColorUtils: expected specified color aspects (0:0:0:0)
+07-03 20:16:21.879  1519 16449 D SimpleC2Component: Using output block pool with poolID 37 => got 37 - 0
+07-03 20:16:21.880  1508 16443 D SurfaceUtils: disconnecting from surface 0xe3600018, reason onConfigure
+07-03 20:16:21.880  1508 16444 D SurfaceUtils: connecting to surface 0xe3600018, reason connectToSurface
+07-03 20:16:21.880  1508 16444 I MediaCodec: [c2.qti.avc.decoder] setting surface generation to 1544199
+07-03 20:16:21.880  1508 16444 D SurfaceUtils: disconnecting from surface 0xe3600018, reason connectToSurface(reconnect)
+07-03 20:16:21.880  1519 16449 I C2SoftAacDec: Reconfiguring decoder: 0->48000 Hz, 0->2 channels
+07-03 20:16:21.881  1508 16444 D SurfaceUtils: connecting to surface 0xe3600018, reason connectToSurface(reconnect)
+07-03 20:16:21.881  1508 16445 D CCodec  : [c2.qti.avc.decoder] buffers are bound to CCodec for this session
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for durationUs
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for frame-count
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for track-id
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for language
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for display-width
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for display-height
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for csd-1
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for native-window
+07-03 20:16:21.882  1508 16445 D CCodecConfig: no c2 equivalents for flags
+07-03 20:16:21.882  1508 16447 D CCodecConfig: c2 config diff is   c2::u32 raw.channel-mask.value = 12
+07-03 20:16:21.883  1508 16445 D CCodecConfig: c2 config diff is   c2::i32 algo.priority.value = 0
+07-03 20:16:21.883  1508 16445 D CCodecConfig:   c2::float algo.rate.value = 30
+07-03 20:16:21.883  1508 16445 D CCodecConfig:   c2::u32 coded.pl.level = 20489
+07-03 20:16:21.883  1508 16445 D CCodecConfig:   c2::u32 coded.pl.profile = 20484
+07-03 20:16:21.883  1508 16445 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 737280
+07-03 20:16:21.883  1508 16445 D CCodecConfig:   c2::u32 raw.pixel-format.value = 34
+07-03 20:16:21.883  1508 16445 D CCodecConfig:   c2::u32 raw.size.height = 720
+07-03 20:16:21.883  1508 16445 D CCodecConfig:   c2::u32 raw.size.width = 1280
+07-03 20:16:21.884  1508 16445 W Codec2Client: query -- param skipped: index = 1107298332.
+07-03 20:16:21.884  1508 16445 D CCodec  : client requested max input size 183475, which is smaller than what component recommended (737280); overriding with component recommendation.
+07-03 20:16:21.884  1508 16445 W CCodec  : This behavior is subject to change. It is recommended that app developers double check whether the requested max input size is in reasonable range.
+07-03 20:16:21.884  1508 16445 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t feature-secure-playback = 0
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t frame-rate = 30
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t height = 720
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t level = 512
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t max-input-size = 737280
+07-03 20:16:21.884  1508 16445 D CCodec  :   string mime = "video/avc"
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t priority = 0
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t profile = 8
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t width = 1280
+07-03 20:16:21.884  1508 16445 D CCodec  :   Rect crop(0, 0, 1279, 719)
+07-03 20:16:21.884  1508 16445 D CCodec  : }
+07-03 20:16:21.884  1508 16445 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t android._color-format = 2130708361
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t android._video-scaling = 1
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t android._dataspace = 260
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t color-standard = 1
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t color-range = 2
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t color-transfer = 3
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t sar-height = 1
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t rotation-degrees = 0
+07-03 20:16:21.884  1508 16445 D CCodec  :   Buffer hdr-static-info = {
+07-03 20:16:21.884  1508 16445 D CCodec  :     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+07-03 20:16:21.884  1508 16445 D CCodec  :     00000010:  00 00 00 00 00 00 00 00  00                       .........
+07-03 20:16:21.884  1508 16445 D CCodec  :   }
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t sar-width = 1
+07-03 20:16:21.884  1508 16445 D CCodec  :   Rect crop(0, 0, 1279, 719)
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t width = 1280
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t feature-secure-playback = 0
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t frame-rate = 30
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t height = 720
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t max-height = 1080
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t max-width = 1920
+07-03 20:16:21.884  1508 16445 D CCodec  :   string mime = "video/raw"
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t priority = 0
+07-03 20:16:21.884  1508 16445 D CCodec  :   int32_t color-format = 2130708361
+07-03 20:16:21.884  1508 16445 D CCodec  : }
+07-03 20:16:21.884  1309  4081 E QC2Prop : SK::kPropInputDelay:0
+07-03 20:16:21.884  1309  4081 E QC2Prop : SK::kPropOutputDelay:0
+07-03 20:16:21.884  1508 16445 I CCodecConfig: query failed after returning 17 values (BAD_INDEX)
+07-03 20:16:21.885  1508 16445 D CCodecConfig: c2 config diff is   c2::u32 raw.max-size.height = 720
+07-03 20:16:21.885  1508 16445 D CCodecConfig:   c2::u32 raw.max-size.width = 1280
+07-03 20:16:21.885  1508 16444 I MediaCodec: MediaCodec will operate in async mode
+07-03 20:16:21.885  1508 16443 D MediaCodec: keep callback message for reclaim
+07-03 20:16:21.886  1309 16448 I QC2V4l2Driver: [avcD_18] Device /dev/video32 opened with fd: 7
+07-03 20:16:21.887  1321  2279 D AudioFlinger: Client defaulted notificationFrames to 12000 for frameCount 24000
+07-03 20:16:21.889  1321  2279 D AF::TrackHandle: OpPlayAudio: track:67 usage:1 not muted
+07-03 20:16:21.895  1263  2274 I EffectsFactory: EffectCreate() create_effect
+07-03 20:16:21.896  1309  4081 E QC2Prop : SK::kPropInputDelay:0
+07-03 20:16:21.896  1309  4081 E QC2Prop : SK::kPropOutputDelay:0
+07-03 20:16:21.896  1508 16445 W Codec2Client: query -- param skipped: index = 1342179345.
+07-03 20:16:21.896  1321  2279 W AudioFlinger: moveEffectChain_l() effect chain for session 0 not on source thread 0x78adf71a70
+07-03 20:16:21.896  1508 16445 W Codec2Client: query -- param skipped: index = 2415921170.
+07-03 20:16:21.896  1508 16445 W Codec2Client: query -- param skipped: index = 1610614798.
+07-03 20:16:21.896  1508 16445 D CCodecBufferChannel: [c2.qti.avc.decoder#292] Query input allocators returned 0 params => BAD_INDEX (6)
+07-03 20:16:21.897  1508 16445 D CCodecBufferChannel: [c2.qti.avc.decoder#292] Created input block pool with allocatorID 16 => poolID 32 - OK (0)
+07-03 20:16:21.897  1508 16445 D CCodecBufferChannel: [c2.qti.avc.decoder#292] Query output allocators returned 0 params => BAD_INDEX (6)
+07-03 20:16:21.897  1508 16445 D CCodecBufferChannel: [c2.qti.avc.decoder#292] Query output surface allocator returned 0 params => BAD_INDEX (6)
+07-03 20:16:21.898  1508 16445 I CCodecBufferChannel: [c2.qti.avc.decoder#292] Created output block pool with allocatorID 18 => poolID 23 - OK
+07-03 20:16:21.898  1508 16445 D CCodecBufferChannel: [c2.qti.avc.decoder#292] Configured output block pool ids 23 => OK
+07-03 20:16:21.898  1508 16445 D Codec2-OutputBufferQueue: remote graphic buffer migration 0/0
+07-03 20:16:21.898  1508 16445 D Codec2Client: setOutputSurface -- failed to set consumer usage (6/BAD_INDEX)
+07-03 20:16:21.898  1508 16445 D Codec2Client: setOutputSurface -- generation=1544199 consumer usage=0x900
+07-03 20:16:21.900  1263 10611 D audio_route: Apply path: speaker
+07-03 20:16:21.900  1263 10611 D audio_hw_primary: enable_snd_device: snd_device(104: vi-feedback)
+07-03 20:16:21.900  1263 10611 D audio_route: Apply path: vi-feedback
+07-03 20:16:21.900  1263 10611 E audio_hw_utils: audio_extn_utils_send_app_type_cfg: Failed to derive app_type for uc type : 0x1
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 512, path = 1, app id = 0x11132, sample rate = 48000
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_asm_topology
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_adm_topology
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_audtable
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_audvoltable
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_VOL_STEP_TABLE_SIZE
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+07-03 20:16:21.900  1263 10611 D android.hardware.audio.service: Failed to fetch the lookup information of the device 00000200 
+07-03 20:16:21.900  1263 10611 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_audstrmtable
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_afe_topology
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 512, Topology Id 10001ccc
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_afe_cal
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 512 path = 1
+07-03 20:16:21.900  1263 10611 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+07-03 20:16:21.900  1263 10611 D audio_hw_primary: enable_audio_route: usecase(25) apply and update mixer path: spkr-vi-record vi-feedback
+07-03 20:16:21.900  1263 10611 D audio_route: Apply path: spkr-vi-record vi-feedback
+07-03 20:16:21.900  1309  4081 D C2BqBuffer: local generation change 1544199 , bqId: 70501888163841 migrated buffers # 0
+07-03 20:16:21.901  1508 16445 D Codec2Client: Surface configure completed
+07-03 20:16:21.901  1508 16444 W ResourceManagerService: Ignoring request to add new resource entry with value <= 0
+07-03 20:16:21.902  1508 10612 D BufferPoolAccessor2.0: bufferpool2 0xe4e80b68 : 0(0 size) total buffers - 0(0 size) used buffers - 1877/1889 (recycle/alloc) - 12/1889 (fetch/transfer)
+07-03 20:16:21.902  1508 10612 D BufferPoolAccessor2.0: Destruction - bufferpool2 0xe4e80b68 cached: 0/0M, 0/0% in use; allocs: 1889, 99% recycled; transfers: 1889, 99% unfetched
+07-03 20:16:21.930  1508 16445 D CCodecConfig: c2 config diff is   c2::u32 raw.color.primaries = 3
+07-03 20:16:21.930  1508 16445 D CCodecConfig:   c2::u32 raw.color.range = 2
+07-03 20:16:21.930  1508 16445 D CCodecConfig:   c2::u32 raw.crop.height = 720
+07-03 20:16:21.930  1508 16445 D CCodecConfig:   c2::u32 raw.crop.left = 0
+07-03 20:16:21.930  1508 16445 D CCodecConfig:   c2::u32 raw.crop.top = 0
+07-03 20:16:21.930  1508 16445 D CCodecConfig:   c2::u32 raw.crop.width = 1280
+07-03 20:16:21.931  1508 16445 D CCodecBuffers: [c2.qti.avc.decoder#292:2D-Output] popFromStashAndRegister: at 0us, output format changed to AMessage(what = 0x00000000) = {
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t android._color-format = 2130708361
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t android._video-scaling = 1
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t android._dataspace = 281214976
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t color-standard = 3
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t color-range = 2
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t color-transfer = 3
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t sar-height = 1
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t rotation-degrees = 0
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   Buffer hdr-static-info = {
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:     00000010:  00 00 00 00 00 00 00 00  00                       .........
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   }
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t sar-width = 1
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   Rect crop(0, 0, 1279, 719)
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t width = 1280
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t feature-secure-playback = 0
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t frame-rate = 30
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t height = 720
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t max-height = 720
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t max-width = 1280
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   string mime = "video/raw"
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t priority = 0
+07-03 20:16:21.931  1508 16445 D CCodecBuffers:   int32_t color-format = 2130708361
+07-03 20:16:21.931  1508 16445 D CCodecBuffers: }
+07-03 20:16:21.932 16415 16430 W MediaPlayerNative: info/warning (3, 0)
+07-03 20:16:21.935  1263 10611 I soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 3: usecase id 0, type 0
+07-03 20:16:21.935  1263 10611 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: concurrency active 0, tx 0, rx 1, concurrency session_allowed 1
+07-03 20:16:21.935  1263 10611 D sound_trigger_platform: platform_stdev_check_concurrency_supported: capture concurrency  allowed, usecase type 0 voice_concur 0 voip_concur 0
+07-03 20:16:21.936  1263 10611 D msm8974_platform: Setting audio calibration for snd_device(2) acdb_id(513)
+07-03 20:16:21.936  1263 10611 E ACDB-LOADER: [acdb_loader_adsp_set_audio_cal] active device/stream not found (result=-100) for topology 0x1000dffb and apptype 0x11134
+07-03 20:16:21.936  1263 10611 E ACDB-LOADER: [acdb_loader_adsp_set_audio_cal] set parameters failed with status -100
+07-03 20:16:21.936  1263 10611 D msm8974_platform: Setting audio calibration for snd_device(2) acdb_id(513)
+07-03 20:16:21.936  1263 10611 D audio_hw_waves: print_state_log: send volume table -(0,0.000000,F),(1,0.000000,F),(2,0.000000,F),(3,0.000000,T),(4,0.000000,F),(5,0.000000,F)
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 513, path = 0, app id = 0x11134, sample rate = 48000
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> send_asm_topology
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> send_adm_topology
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> send_audtable
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> send_audvoltable
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_VOL_STEP_TABLE_SIZE
+07-03 20:16:21.936  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+07-03 20:16:21.936  1263 10611 D android.hardware.audio.service: Failed to fetch the lookup information of the device 00000201 
+07-03 20:16:21.937  1263 10611 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> send_audstrmtable
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 456
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> send_afe_topology
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 513, Topology Id 10000ccc
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> send_afe_cal
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 513 path = 0
+07-03 20:16:21.937  1263 10611 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+07-03 20:16:21.937  1263 10611 D audio_hw_primary: enable_audio_route: usecase(0) apply and update mixer path: deep-buffer-playback speaker
+07-03 20:16:21.937  1263 10611 D audio_route: Apply path: deep-buffer-playback speaker
+07-03 20:16:21.992  1263 10611 D audio_hw_primary: out_write: retry previous failed cal level set
+07-03 20:16:22.083  1321  1822 D AudioFlinger: mixer(0x78ad670a70) throttle end: throttle time(51)
+07-03 20:16:22.163  1871  8622 W InputManager-JNI: Input channel object '6d42217 Splash Screen e.www.displaytest (client)' was disposed without first being removed with the input manager!
+07-03 20:16:22.303  2526  2526 I WallpaperService: engine paused
+07-03 20:16:22.827 16458 16458 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:16:23.188 16474 16474 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:16:23.194  1871  3634 I ActivityManager: Background started FGS: Allowed [callingPackage: com.android.shell; callingUid: 2000; uidState: NONE; intent: Intent { cmp=com.example.batterymanager_utility/.DataCollectionService (has extras) }; code:SYSTEM_UID; tempAllowListReason:<,reasonCode:SYSTEM_ALLOW_LISTED,duration:9223372036854775807,callingUid:-1>; targetSdkVersion:33; callerTargetSdkVersion:-1; startForegroundCount:0; bindFromPackage:null]
+07-03 20:16:23.204 16364 16364 I BatteryMgr:DataCollectionService: onStartCommand: begin
+07-03 20:16:23.205 16364 16364 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 1000
+07-03 20:16:23.205 16364 16364 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+07-03 20:16:23.206 16364 16364 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+07-03 20:16:23.211 16364 16364 I BatteryMgr:DataCollectionService: started foreground
+07-03 20:16:23.220 16364 16477 I BatteryMgr:DataCollectionService: collectData: begin
+07-03 20:16:23.223 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408183223,225000,4151
+07-03 20:16:24.233 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408184232,190000,4151
+07-03 20:16:24.552 16364 16485 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+07-03 20:16:24.849  1871  2252 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 2]
+07-03 20:16:25.241 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408185240,205625,4151
+07-03 20:16:26.249 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408186249,199062,4151
+07-03 20:16:26.880  1519  2448 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 0
+07-03 20:16:26.896  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(176)/Done(165)| Work-Rate: Q(35.0/s Avg=35.0/s) Done(32.822/s Avg=32.822/s)| Stream: 29.97fps 3.4Mbps| Pending(11) i/p-done(3)
+07-03 20:16:27.065  1508  9491 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 172/182 (recycle/alloc) - 10/181 (fetch/transfer)
+07-03 20:16:27.128  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 261/272 (recycle/alloc) - 11/271 (fetch/transfer)
+07-03 20:16:27.133  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 264/268 (recycle/alloc) - 4/267 (fetch/transfer)
+07-03 20:16:27.257 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408187256,185625,4151
+07-03 20:16:27.864  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 20:16:27.878  1508  9521 D BufferPoolAccessor2.0: evictor expired: 2, evicted: 0
+07-03 20:16:28.264 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408188264,174687,4151
+07-03 20:16:29.269 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408189269,159687,4151
+07-03 20:16:30.276 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408190276,181562,4151
+07-03 20:16:30.887  1871  2252 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 2]
+07-03 20:16:31.283 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408191282,260625,4151
+07-03 20:16:31.896  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(326)/Done(315)| Work-Rate: Q(30.0/s Avg=32.5/s) Done(29.998/s Avg=31.414/s)| Stream: 29.97fps 1.6Mbps| Pending(11) i/p-done(3)
+07-03 20:16:32.240  1508 10612 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 327/337 (recycle/alloc) - 10/336 (fetch/transfer)
+07-03 20:16:32.292 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408192291,178750,4151
+07-03 20:16:32.393  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 508/519 (recycle/alloc) - 11/518 (fetch/transfer)
+07-03 20:16:32.396  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 511/515 (recycle/alloc) - 6/514 (fetch/transfer)
+07-03 20:16:33.153  3366  9890 I PhenotypeProcessReaper: Memory state is: 125
+07-03 20:16:33.302 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408193302,181875,4151
+07-03 20:16:33.908  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+07-03 20:16:34.311 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408194311,170625,4151
+07-03 20:16:35.320 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408195320,170312,4151
+07-03 20:16:36.329 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408196328,204375,4151
+07-03 20:16:36.897  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(476)/Done(465)| Work-Rate: Q(30.0/s Avg=31.7/s) Done(29.998/s Avg=30.943/s)| Stream: 29.97fps 6.9Mbps| Pending(11) i/p-done(3)
+07-03 20:16:36.924  1871  2252 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 2]
+07-03 20:16:37.337 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408197337,192812,4151
+07-03 20:16:37.485  1508 14703 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 484/494 (recycle/alloc) - 10/493 (fetch/transfer)
+07-03 20:16:37.649  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 753/764 (recycle/alloc) - 11/763 (fetch/transfer)
+07-03 20:16:37.653  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 756/760 (recycle/alloc) - 7/759 (fetch/transfer)
+07-03 20:16:38.346 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408198346,256875,4151
+07-03 20:16:39.355 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408199355,191875,4151
+07-03 20:16:39.408  2423  2481 D ControlsListingControllerImpl: Subscribing callback, service count: 1
+07-03 20:16:39.412  2423  2481 D ControlsListingControllerImpl: Unsubscribing callback
+07-03 20:16:39.677  2423  2481 I QAWController: Re-creating the QAW client to avoid stale.
+07-03 20:16:39.705  1871  1900 W ProcessStats: Tracking association SourceState{4c56239 system/1000 BTopFgs #9473} whose proc state 2 is better than process ProcessState{ba85ac5 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (32 skipped)
+07-03 20:16:39.720  2423  2423 I QuickAccessWalletTile: Successfully retrieved wallet cards.
+07-03 20:16:39.720  2423  2423 D QuickAccessWalletTile: No wallet cards exist.
+07-03 20:16:39.950  1871  2252 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-03 20:16:40.363 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408200363,235000,4151
+07-03 20:16:41.369 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408201369,184375,4151
+07-03 20:16:41.897  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(626)/Done(615)| Work-Rate: Q(30.0/s Avg=31.3/s) Done(29.997/s Avg=30.706/s)| Stream: 29.97fps 2.9Mbps| Pending(11) i/p-done(3)
+07-03 20:16:42.379 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408202379,227812,4151
+07-03 20:16:42.652  1508 10612 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 639/649 (recycle/alloc) - 10/648 (fetch/transfer)
+07-03 20:16:42.893  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 999/1010 (recycle/alloc) - 11/1009 (fetch/transfer)
+07-03 20:16:42.898  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 1002/1006 (recycle/alloc) - 8/1005 (fetch/transfer)
+07-03 20:16:42.973  1871  2252 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 2]
+07-03 20:16:43.387 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408203387,199375,4151
+07-03 20:16:44.396 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408204396,189375,4151
+07-03 20:16:45.406 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408205406,222187,4151
+07-03 20:16:45.421  1871  8622 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=4317106 mSleepTimeMs=2706718 mIdleTimeMs=1561248 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=16653}
+07-03 20:16:45.436  1871  2018 E system_server: Cannot read thread CPU times for PID 1871
+07-03 20:16:45.987  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 4]
+07-03 20:16:46.416 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408206416,209375,4151
+07-03 20:16:46.898  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(776)/Done(765)| Work-Rate: Q(30.0/s Avg=31.0/s) Done(29.995/s Avg=30.564/s)| Stream: 29.97fps 4.4Mbps| Pending(11) i/p-done(3)
+07-03 20:16:47.424 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408207424,240000,4151
+07-03 20:16:47.886  1508 14703 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 796/806 (recycle/alloc) - 10/805 (fetch/transfer)
+07-03 20:16:48.164  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 1247/1258 (recycle/alloc) - 11/1257 (fetch/transfer)
+07-03 20:16:48.167  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 1250/1254 (recycle/alloc) - 10/1253 (fetch/transfer)
+07-03 20:16:48.433 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408208432,311250,4151
+07-03 20:16:48.999  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 1]
+07-03 20:16:49.440 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408209440,168125,4151
+07-03 20:16:50.449 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408210449,190937,4151
+07-03 20:16:51.457 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408211457,215000,4151
+07-03 20:16:51.898  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(926)/Done(915)| Work-Rate: Q(30.0/s Avg=30.8/s) Done(29.997/s Avg=30.470/s)| Stream: 29.97fps 1.0Mbps| Pending(11) i/p-done(3)
+07-03 20:16:52.023  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 20:16:52.464 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408212464,169375,4151
+07-03 20:16:53.100  1508 10608 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 952/962 (recycle/alloc) - 10/961 (fetch/transfer)
+07-03 20:16:53.426  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 1494/1505 (recycle/alloc) - 11/1504 (fetch/transfer)
+07-03 20:16:53.430  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 1497/1501 (recycle/alloc) - 10/1500 (fetch/transfer)
+07-03 20:16:53.471 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408213471,189375,4151
+07-03 20:16:54.480 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408214480,186250,4151
+07-03 20:16:55.040  1871  2252 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 2]
+07-03 20:16:55.489 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408215489,280625,4151
+07-03 20:16:56.497 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408216497,287812,4151
+07-03 20:16:56.899  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(1076)/Done(1065)| Work-Rate: Q(30.0/s Avg=30.7/s) Done(29.998/s Avg=30.403/s)| Stream: 29.97fps 4.3Mbps| Pending(11) i/p-done(3)
+07-03 20:16:57.504 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408217504,187812,4151
+07-03 20:16:58.064  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+07-03 20:16:58.295  1508 10608 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 1108/1118 (recycle/alloc) - 10/1117 (fetch/transfer)
+07-03 20:16:58.512 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408218512,178750,4151
+07-03 20:16:58.671  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 1740/1751 (recycle/alloc) - 11/1750 (fetch/transfer)
+07-03 20:16:58.674  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 1743/1747 (recycle/alloc) - 10/1746 (fetch/transfer)
+07-03 20:16:59.520 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408219520,168125,4151
+07-03 20:17:00.007  3546  3947 I AiAiEcho: Predicting[7]: { Feature:1, creation:2023-07-03T18:14:10.493Z, expiry:2023-07-03T19:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-03T19:00:00Z, expiry:2023-07-03T20:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T20:00:00Z, expiry:2023-07-03T21:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T21:00:00Z, expiry:2023-07-03T22:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T22:00:00Z, expiry:2023-07-03T23:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T23:00:00Z, expiry:2023-07-04T00:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T00:00:00Z, expiry:2023-07-04T00:14:10.493Z, isExpired: true}
+07-03 20:17:00.008  3546  3947 I AiAiEcho: EchoTargets: Feature:1
+07-03 20:17:00.008  3546  3947 I AiAiEcho: Filtered by AiAi flag check: 
+07-03 20:17:00.009  3546  3947 I AiAiEcho: Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377243, card type: 1, update time: 2023-07-03T18:14:10.493Z, expiration time: 2023-07-03T19:00:00Z, ranking metadata: RankingMetaData(urgency=0.993, priority=0.3, recency=1.0, rankScore=0.2979, importantTimePoints=# kwj@7bca4) }
+07-03 20:17:00.011  3546  3947 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 1 (types=[1])
+07-03 20:17:00.023  2423  2423 W BcSmartspaceCard: No title view to update
+07-03 20:17:00.527 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408220527,172500,4151
+07-03 20:17:01.086  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+07-03 20:17:01.534 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408221534,152187,4151
+07-03 20:17:01.899  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(1225)/Done(1214)| Work-Rate: Q(29.8/s Avg=30.6/s) Done(29.798/s Avg=30.327/s)| Stream: 29.97fps 1.4Mbps| Pending(11) i/p-done(3)
+07-03 20:17:02.542 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408222542,164062,4151
+07-03 20:17:03.434  1508 10608 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 1262/1272 (recycle/alloc) - 10/1271 (fetch/transfer)
+07-03 20:17:03.552 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408223552,260625,4151
+07-03 20:17:03.929  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 1985/1996 (recycle/alloc) - 11/1995 (fetch/transfer)
+07-03 20:17:03.932  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 1988/1992 (recycle/alloc) - 11/1991 (fetch/transfer)
+07-03 20:17:04.102  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 20:17:04.559 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408224559,211875,4151
+07-03 20:17:05.566 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408225566,229375,4151
+07-03 20:17:06.572 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408226572,176875,4151
+07-03 20:17:06.899  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(1375)/Done(1364)| Work-Rate: Q(30.0/s Avg=30.5/s) Done(29.998/s Avg=30.290/s)| Stream: 29.97fps 4.1Mbps| Pending(11) i/p-done(3)
+07-03 20:17:07.125  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 3]
+07-03 20:17:07.579 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408227579,154062,4151
+07-03 20:17:08.587 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408228587,186562,4151
+07-03 20:17:08.598  1508  9492 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 1417/1427 (recycle/alloc) - 10/1426 (fetch/transfer)
+07-03 20:17:09.166  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 2231/2242 (recycle/alloc) - 11/2241 (fetch/transfer)
+07-03 20:17:09.171  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 4(16384 size) total buffers - 1(4096 size) used buffers - 2234/2238 (recycle/alloc) - 13/2237 (fetch/transfer)
+07-03 20:17:09.595 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408229595,162500,4151
+07-03 20:17:10.147  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-03 20:17:10.607 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408230607,179375,4151
+07-03 20:17:11.616 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408231616,155625,4151
+07-03 20:17:11.900  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(1525)/Done(1514)| Work-Rate: Q(30.0/s Avg=30.5/s) Done(29.998/s Avg=30.261/s)| Stream: 29.97fps 2.9Mbps| Pending(11) i/p-done(3)
+07-03 20:17:12.624 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408232624,236562,4151
+07-03 20:17:13.159  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 20:17:13.632 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408233632,301562,4151
+07-03 20:17:13.752  1508 14703 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 1571/1581 (recycle/alloc) - 10/1580 (fetch/transfer)
+07-03 20:17:14.404  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 2476/2487 (recycle/alloc) - 11/2486 (fetch/transfer)
+07-03 20:17:14.408  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 5(20480 size) total buffers - 1(4096 size) used buffers - 2478/2483 (recycle/alloc) - 15/2482 (fetch/transfer)
+07-03 20:17:14.641 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408234640,340000,4151
+07-03 20:17:14.676  1871  8622 W ProcessStats: Tracking association SourceState{efc0de9 com.google.android.googlequicksearchbox:interactor/10135 BTopFgs #9475} whose proc state 2 is better than process ProcessState{ba85ac5 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (2 skipped)
+07-03 20:17:15.649 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408235649,245000,4151
+07-03 20:17:16.182  1871  2252 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 2]
+07-03 20:17:16.660 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408236660,205625,4151
+07-03 20:17:16.900  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(1675)/Done(1664)| Work-Rate: Q(30.0/s Avg=30.4/s) Done(29.998/s Avg=30.237/s)| Stream: 29.97fps 3.0Mbps| Pending(11) i/p-done(3)
+07-03 20:17:17.670 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408237669,204687,4151
+07-03 20:17:18.681 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408238680,256250,4151
+07-03 20:17:18.915  1508 10608 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 1726/1736 (recycle/alloc) - 10/1735 (fetch/transfer)
+07-03 20:17:19.202  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+07-03 20:17:19.667  1508 16447 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 8(65536 size) total buffers - 5(40960 size) used buffers - 2724/2735 (recycle/alloc) - 11/2734 (fetch/transfer)
+07-03 20:17:19.671  1519 16449 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 5(20480 size) total buffers - 1(4096 size) used buffers - 2726/2731 (recycle/alloc) - 16/2730 (fetch/transfer)
+07-03 20:17:19.688 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408239688,188750,4151
+07-03 20:17:20.698 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408240697,177500,4151
+07-03 20:17:21.706 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408241706,210937,4151
+07-03 20:17:21.902  1309 16448 I QC2Comp : [avcD_18] Stats: Works: Q(1825)/Done(1816)| Work-Rate: Q(30.0/s Avg=30.4/s) Done(30.390/s Avg=30.250/s)| Stream: 29.97fps 1.1Mbps| Pending(9) i/p-done(1)
+07-03 20:17:22.223  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 20:17:22.717 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408242717,186875,4151
+07-03 20:17:23.722 16364 16477 I BatteryMgr:DataCollectionService: stats => 1688408243722,186250,4151
+07-03 20:17:23.799 16494 16494 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:17:23.894 16499 16499 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:17:24.082  1508 10608 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 10(7372800 size) total buffers - 9(6635520 size) used buffers - 1881/1891 (recycle/alloc) - 10/1890 (fetch/transfer)
+07-03 20:17:24.165 16510 16510 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:17:24.173  1871  1900 I ActivityManager: Force stopping e.www.displaytest appid=10222 user=0: from pid 16510
+07-03 20:17:24.174  1871  1900 I ActivityManager: Killing 16415:e.www.displaytest/u0a222 (adj 0): stop e.www.displaytest due to from pid 16510
+07-03 20:17:24.176  1871  1900 W ActivityTaskManager: Force removing ActivityRecord{38de1b1 u0 e.www.displaytest/.MainActivity t68 f}}: app died, no saved state
+07-03 20:17:24.181  1871  1900 W InputManager-JNI: Input channel object 'd1a0c91 e.www.displaytest/e.www.displaytest.MainActivity (client)' was disposed without first being removed with the input manager!
+07-03 20:17:24.194  1871  1900 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10232; state: DISABLED
+07-03 20:17:24.195  1871  1900 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10232; state: DISABLED
+07-03 20:17:24.196  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.196  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.196  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.197  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.197  1871  7166 I MediaFocusControl: AudioFocus  removeFocusStackEntryOnDeath(): removing entry for android.os.BinderProxy@40d244d
+07-03 20:17:24.197  1508  1508 D NuPlayerDriver: reset(0xe8e81e10) at state 5
+07-03 20:17:24.197  1508 16444 E Codec2-OutputBufferQueue: outputBuffer -- queueBuffer() failed on bufferqueue-based block. Error = -32.
+07-03 20:17:24.198  1508 16444 I CCodecBufferChannel: [c2.qti.avc.decoder#292] queueBuffer failed: -32
+07-03 20:17:24.198  1508 16444 I MediaCodec: rendring output error -32
+07-03 20:17:24.198  1233  1233 I Zygote  : Process 16415 exited due to signal 9 (Killed)
+07-03 20:17:24.198  1871  1900 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=68 attached=false
+07-03 20:17:24.198  1871  1900 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=68 attached=false
+07-03 20:17:24.199   741   741 E BpTransactionCompletedListener: Failed to transact (-32)
+07-03 20:17:24.199   741   741 E BpTransactionCompletedListener: Failed to transact (-32)
+07-03 20:17:24.201  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.201  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.201  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.201  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.202  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.202  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.202  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.202  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.202  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.202  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.202  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.202  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.202  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.202  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.202  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.202  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.202  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.202  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.202  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.202  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.202  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.202  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.202  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.202  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.202  1309 16452 D C2BqBuffer: cannot dequeue buffer -32
+07-03 20:17:24.202  1309 16452 E QC2Buf  : allocate: failed to alloc graphic block w(1280)/h(720)/f(7fa30c06)/usage(20010000)
+07-03 20:17:24.202  1309 16452 W QC2V4l2Codec: [avcD_18] Graphic output-buf allocation failed!
+07-03 20:17:24.202  1309 16452 E QC2V4l2Codec: [avcD_18] Error during buffer allocation
+07-03 20:17:24.208  1508 16447 D CCodecBuffers: [c2.android.aac.decoder#137:1D-Output.Impl[N]] Client returned a buffer it does not own according to our record: 0
+07-03 20:17:24.208  1508 16447 D CCodecBuffers: [c2.android.aac.decoder#137:1D-Output.Impl[N]] Client returned a buffer it does not own according to our record: 1
+07-03 20:17:24.208  1508 16447 D CCodecBuffers: [c2.android.aac.decoder#137:1D-Output.Impl[N]] Client returned a buffer it does not own according to our record: 2
+07-03 20:17:24.208  1508 16444 E MediaCodec: Codec reported err 0x80000000, actionCode 0, while in state 7/FLUSHING
+07-03 20:17:24.209  1508 16444 D SurfaceUtils: disconnecting from surface 0xe3600018, reason disconnectFromSurface
+07-03 20:17:24.209  1508 16444 E SurfaceUtils: Failed to disconnect from surface 0xe3600018, err -32
+07-03 20:17:24.209  1508 16444 W MediaCodec: nativeWindowDisconnect returned an error: Broken pipe (-32)
+07-03 20:17:24.209  1508 16444 W MediaCodec: received FlushCompleted message in state 0/UNINITIALIZED
+07-03 20:17:24.209  1508 16443 E NuPlayerDecoder: failed to flush [c2.qti.avc.decoder] (err=-2147483648)
+07-03 20:17:24.209  1508 16438 E NuPlayer: received error(0x80000000) from video decoder, flushing(2), now shutting down
+07-03 20:17:24.212  1871  1902 V ActivityManager: Got obituary of 16415:e.www.displaytest
+07-03 20:17:24.212  1871  1997 W ActivityManager: setHasOverlayUi called on unknown pid: 16415
+07-03 20:17:24.212  2613  2613 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-03 20:17:24.213  2613  2613 D CarrierSvcBindHelper: No carrier app for: 0
+07-03 20:17:24.213  1508 16447 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+07-03 20:17:24.213  1519  1519 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+07-03 20:17:24.213  1519  1519 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+07-03 20:17:24.214  1519  1519 V C2Store : in ~ComponentModule
+07-03 20:17:24.214  1519  1519 V C2Store : unloading dll
+07-03 20:17:24.214  1309  4081 I QC2Comp : NOTE: Release returning: 0 (OK=0)
+07-03 20:17:24.215  1508 16515 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+07-03 20:17:24.216  1309  4081 I QC2CompStore: Deleting component(c2.qti.avc.decoder) id(18)
+07-03 20:17:24.216  1508 16443 D SurfaceUtils: connecting to surface 0xe3600018, reason onShutdown
+07-03 20:17:24.216  1508 16443 E SurfaceUtils: Failed to connect to surface 0xe3600018, err -32
+07-03 20:17:24.216  1508 16443 W NuPlayerDecoder: [c2.qti.avc.decoder] failed to connect to native window, error=-32
+07-03 20:17:24.219  1871  2013 I libprocessgroup: Successfully killed process cgroup uid 10222 pid 16415 in 43ms
+07-03 20:17:24.220  1508 16438 D NuPlayerDriver: notifyResetComplete(0xe8e81e10)
+07-03 20:17:24.221  1508  1508 D SurfaceUtils: disconnecting from surface 0xe3604ba8, reason disconnectNativeWindow
+07-03 20:17:24.221  1508  1508 E SurfaceUtils: Failed to disconnect from surface 0xe3604ba8, err -32
+07-03 20:17:24.221  1508  1508 W MediaPlayerService: nativeWindowDisconnect returned an error: Broken pipe (-32)
+07-03 20:17:24.221  1508  1508 D AudioTrack: stop(42): called with 0 frames delivered
+07-03 20:17:24.221  1321  1593 W AudioFlinger: session id 369 not found for pid 16415
+07-03 20:17:24.222  3635  3635 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-03 20:17:24.224  1309  4081 I QC2V4l2Driver: [avcD_18] Closed device driver with fd: 7
+07-03 20:17:24.226  2821  2821 I EuiccGoogle: [2] EuiccServiceImpl.onCreate: onCreate Single-SIM mode: simCardState is 1
+07-03 20:17:24.229  1309  4081 I QC2Comp : [avcD_18] Deallocated component c2.qti.avc.decoder [id=18]
+07-03 20:17:24.230  2821 16520 I EuiccGoogle: [186] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = -1
+07-03 20:17:24.233  2821 16520 W EuiccGoogle: [186] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId=-1. No eUICC is active. Return null.
+07-03 20:17:24.247  2526  2899 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 20:17:24.249  2526  2526 I WallpaperService: engine resumed
+07-03 20:17:24.250  2526  2899 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 20:17:24.263  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 20:17:24.263  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 20:17:24.263  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-03 20:17:24.263  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 20:17:24.264  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 20:17:24.264 16364 16513 I OpenGLRenderer: Davey! duration=65658ms; Flags=1, FrameTimelineVsyncId=291984, IntendedVsync=4290281119907, Vsync=4290297786573, InputEventId=0, HandleInputStart=4290308229996, AnimationStart=4290308234579, PerformTraversalsStart=4290308402965, DrawStart=4290407134641, FrameDeadline=4290314453239, FrameInterval=4290308204996, FrameStartTime=16666666, SyncQueued=4290411393027, SyncStart=4290411485371, IssueDrawCommandsStart=4290411771413, SwapBuffers=4290416992871, FrameCompleted=4355939614347, DequeueBufferDuration=17968, QueueBufferDuration=539739, GpuCompleted=4355939614347, SwapBuffersCompleted=4290418008340, DisplayPresentTime=0, 
+07-03 20:17:24.325  1263  9524 D audio_hw_waves: print_state_log: send volume table -(0,0.000000,F),(1,0.000000,F),(2,0.000000,F),(3,0.000000,F),(4,0.000000,F),(5,0.000000,F)
+07-03 20:17:24.326  1321  1541 W AudioFlinger: moveEffectChain_l() effect chain for session 0 not on source thread 0x78ad670a70
+07-03 20:17:24.850  2526  2526 I WallpaperService: engine paused
+07-03 20:17:25.243  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 3]
+07-03 20:17:27.384  1263  2274 D audio_hw_primary: disable_audio_route: usecase(0) reset and update mixer path: deep-buffer-playback speaker
+07-03 20:17:27.386  1263  2274 I soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 2: usecase id 0, type 0
+07-03 20:17:27.386  1263  2274 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: concurrency active 0, tx 0, rx 0, concurrency session_allowed 1
+07-03 20:17:27.386  1263  2274 D sound_trigger_platform: platform_stdev_check_concurrency_supported: capture concurrency  allowed, usecase type 0 voice_concur 0 voip_concur 0
+07-03 20:17:27.386  1263  2274 I audio_hw_cirrus_playback: audio_extn_spkr_prot_stop_processing: pcm_tx_close
+07-03 20:17:27.393  1263  2274 D audio_hw_primary: disable_audio_route: usecase(25) reset and update mixer path: spkr-vi-record vi-feedback
+07-03 20:17:27.393  1263  2274 D audio_hw_primary: disable_snd_device: snd_device(104: vi-feedback)
+07-03 20:17:27.619 16528 16528 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-03 20:17:27.624  1871  1900 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10232 user=0: from pid 16528
+07-03 20:17:27.626  1871  1900 I ActivityManager: Killing 16364:com.example.batterymanager_utility/u0a232 (adj 0): stop com.example.batterymanager_utility due to from pid 16528
+07-03 20:17:27.628  1871  1900 W ActivityTaskManager: Force removing ActivityRecord{b2a8eb9 u0 com.example.batterymanager_utility/.MainActivity t67 f}}: app died, no saved state
+07-03 20:17:27.634  1871  1900 W InputManager-JNI: Input channel object 'fa6285e com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity (client)' was disposed without first being removed with the input manager!
+07-03 20:17:27.651  1871  1900 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=67 attached=false
+07-03 20:17:27.651  1871  1900 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=67 attached=false
+07-03 20:17:27.653  1233  1233 I Zygote  : Process 16364 exited due to signal 9 (Killed)
+07-03 20:17:27.654   741   741 E BpTransactionCompletedListener: Failed to transact (-32)
+07-03 20:17:27.654  1871  1900 W ProcessStats: Tracking association SourceState{f934d3c com.google.android.euicc/10100 BTopFgs #9485} whose proc state 2 is better than process ProcessState{ba85ac5 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (30 skipped)
+07-03 20:17:27.658  2613  2613 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-03 20:17:27.658  2613  2613 D CarrierSvcBindHelper: No carrier app for: 0
+07-03 20:17:27.658  1871  2683 V ActivityManager: Got obituary of 16364:com.example.batterymanager_utility
+07-03 20:17:27.662  1871  1997 W ActivityManager: setHasOverlayUi called on unknown pid: 16364
+07-03 20:17:27.666  3635  3635 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-03 20:17:27.669  3838  3838 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-03 20:17:27.669  3838  3838 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-03 20:17:27.672  1871  2013 I libprocessgroup: Successfully killed process cgroup uid 10232 pid 16364 in 44ms
+07-03 20:17:27.677  3838  3838 I A       : onStart
+07-03 20:17:27.681  2526  2899 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-03 20:17:27.684  3838  3838 I A       : onResume
+07-03 20:17:27.687  2526  2526 I WallpaperService: engine resumed
+07-03 20:17:27.689  3554  3554 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+07-03 20:17:27.689  3554  4133 I GsaVoiceInteractionSrv: (REDACTED) disregardHotwordSetting: %b
+07-03 20:17:27.689  3554  4133 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+07-03 20:17:27.690  3546  3947 I AiAiEcho: Predicting[7]: { Feature:1, creation:2023-07-03T18:14:10.493Z, expiry:2023-07-03T19:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-03T19:00:00Z, expiry:2023-07-03T20:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T20:00:00Z, expiry:2023-07-03T21:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T21:00:00Z, expiry:2023-07-03T22:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T22:00:00Z, expiry:2023-07-03T23:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-03T23:00:00Z, expiry:2023-07-04T00:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T00:00:00Z, expiry:2023-07-04T00:14:10.493Z, isExpired: true}
+07-03 20:17:27.690  3546  3947 I AiAiEcho: EchoTargets: Feature:1
+07-03 20:17:27.690  3546  3947 I AiAiEcho: Filtered by AiAi flag check: 
+07-03 20:17:27.692  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-03 20:17:27.692  3838  6625 I OpenGLRenderer: Davey! duration=383568ms; Flags=1, FrameTimelineVsyncId=268246, IntendedVsync=3975796337511, Vsync=3975796337511, InputEventId=0, HandleInputStart=3975796778404, AnimationStart=3975796782675, PerformTraversalsStart=3975796783665, DrawStart=3975807573458, FrameDeadline=3975833670843, FrameInterval=3975796769707, FrameStartTime=16666666, SyncQueued=3975808184656, SyncStart=3975808292572, IssueDrawCommandsStart=3975809101062, SwapBuffers=3975812434812, FrameCompleted=4359365028802, DequeueBufferDuration=2939948, QueueBufferDuration=587761, GpuCompleted=4359365028802, SwapBuffersCompleted=3975813454812, DisplayPresentTime=0, 
+07-03 20:17:27.692  3546  3947 I AiAiEcho: Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377243, card type: 1, update time: 2023-07-03T18:14:10.493Z, expiration time: 2023-07-03T19:00:00Z, ranking metadata: RankingMetaData(urgency=0.993, priority=0.3, recency=1.0, rankScore=0.2979, importantTimePoints=# kwj@7bca4) }
+07-03 20:17:27.693  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-03 20:17:27.693  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-03 20:17:27.693  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-03 20:17:27.693  3568  3568 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-03 20:17:27.695  3546  3947 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+07-03 20:17:27.704  2766  2766 W BcSmartspaceCard: No title view to update
+07-03 20:17:28.259  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 20:17:28.889  1508  9521 D BufferPoolAccessor2.0: bufferpool2 0xe4e81228 : 0(0 size) total buffers - 0(0 size) used buffers - 2945/2956 (recycle/alloc) - 11/2956 (fetch/transfer)
+07-03 20:17:28.889  1508  9521 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 1
+07-03 20:17:28.892  1519  2448 D BufferPoolAccessor2.0: bufferpool2 0x7b46a102d8 : 0(0 size) total buffers - 0(0 size) used buffers - 2947/2952 (recycle/alloc) - 17/2952 (fetch/transfer)
+07-03 20:17:28.892  1519  2448 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 1
+07-03 20:17:29.889  1508  9521 D BufferPoolAccessor2.0: bufferpool2 0xe4e83bc8 : 0(0 size) total buffers - 0(0 size) used buffers - 1883/1893 (recycle/alloc) - 10/1893 (fetch/transfer)
+07-03 20:17:29.890  1508  9521 D BufferPoolAccessor2.0: evictor expired: 1, evicted: 1
+07-03 20:17:31.276  1871  2252 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-03 20:17:33.013  3728  4211 W MediaProvider: isAppCloneUserPair failed. Users: 0 and 0
+07-03 20:17:33.014  3728  4211 W MediaProvider: isAppCloneUserPair for user 0: false
