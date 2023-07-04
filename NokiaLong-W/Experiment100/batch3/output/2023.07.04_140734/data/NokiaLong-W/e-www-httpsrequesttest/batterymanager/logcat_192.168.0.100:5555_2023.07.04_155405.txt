@@ -1,0 +1,798 @@
+--------- beginning of main
+07-04 15:52:55.668   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+--------- beginning of system
+07-04 15:52:55.918  1165  3173 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.batterymanager_utility/.MainActivity} from uid 2000
+07-04 15:52:55.921   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+07-04 15:52:55.927  1165  3173 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:52:55.927  1165  3173 D CompatibilityInfo: applicationDensity - 420
+07-04 15:52:55.927  1165  3173 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:52:55.927  1165  3173 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+07-04 15:52:55.936  1165  1194 E system_server: Invalid ID 0x00000000.
+07-04 15:52:55.946  1165  1193 W ActivityManager: ProcessRecord{53293f6 0:com.example.batterymanager_utility/u0a186}: ART verification disabled
+07-04 15:52:55.947  1165  1193 D ActivityManager: Package [com.example.batterymanager_utility] have process
+07-04 15:52:55.959   663   663 D Zygote  : Forked child process 8449
+07-04 15:52:55.965  1165  1201 I ActivityManager: Start proc 8449:com.example.batterymanager_utility/u0a186 for activity {com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}
+07-04 15:52:55.966  1165  1201 D ActivityManager: handleProcessStartedLocked mDoneFinishBooting && app.pid != 0 ---> notifyProcessStart, app.processName = com.example.batterymanager_utility, app.info = ApplicationInfo{78d6ccd com.example.batterymanager_utility}, app.hostingType = activity, getHostingName() = ComponentInfo{com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}, getIntentFlag() = 0, getIsPackageRunning() = true, app = ProcessRecord{53293f6 8449:com.example.batterymanager_utility/u0a186}, getExtraData() = null
+07-04 15:52:55.966  8449  8449 I manager_utilit: Late-enabling -Xcheck:jni
+07-04 15:52:56.002  8449  8449 E manager_utilit: Unknown bits set in runtime_flags: 0x8000
+07-04 15:52:56.025  1165  3173 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:52:56.025  1165  3173 D CompatibilityInfo: applicationDensity - 420
+07-04 15:52:56.025  1165  3173 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:52:56.030  1165  3173 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:52:56.030  1165  3173 D CompatibilityInfo: applicationDensity - 420
+07-04 15:52:56.030  1165  3173 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:52:56.032  3434  3434 I A       : onPause
+07-04 15:52:56.032  1165  8470 W IrisConfig: ColorManagerService is not Existed
+07-04 15:52:56.036  1165  3173 I qspmsvc-client: inside perf_hint_qspm
+07-04 15:52:56.049  3135  3135 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+07-04 15:52:56.049  3135  3762 I HwDetectorWithState: (REDACTED) a: %d
+07-04 15:52:56.201  8449  8449 I Perf    : Connecting to perf service.
+07-04 15:52:56.222  8449  8449 I BatteryMgr:App: creating notification channel
+07-04 15:52:56.225   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+07-04 15:52:56.225   887   956 E ANDR-IOP: IIop:: Iop HAL Service is not available.
+07-04 15:52:56.227  8449  8473 E Perf    : Fail to get file list com.example.batterymanager_utility
+07-04 15:52:56.228  8449  8473 E Perf    : getFolderSize() : Exception_1 = java.lang.NullPointerException: Attempt to get length of null array
+07-04 15:52:56.229  8449  8473 E Perf    : Fail to get file list com.example.batterymanager_utility
+07-04 15:52:56.229  8449  8473 E Perf    : getFolderSize() : Exception_1 = java.lang.NullPointerException: Attempt to get length of null array
+07-04 15:52:56.317  1165  3173 E WindowManager: App trying to use insecure INPUT_FEATURE_NO_INPUT_CHANNEL flag. Ignoring
+07-04 15:52:56.421  8455  8455 W app_process: type=1400 audit(0.0:5072): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=1448 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+07-04 15:52:56.421  8455  8455 I chatty  : uid=2000(shell) app_process identical 1 line
+07-04 15:52:56.421  8455  8455 W app_process: type=1400 audit(0.0:5074): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=1448 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+07-04 15:52:56.423  8455  8455 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+07-04 15:52:56.429  8455  8455 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+07-04 15:52:56.429  8455  8455 I AndroidRuntime: Using default boot image
+07-04 15:52:56.429  8455  8455 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+07-04 15:52:56.429  8455  8455 I AndroidRuntime: Leaving lock profiling enabled
+07-04 15:52:56.429  8455  8455 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+07-04 15:52:56.563  8455  8455 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+07-04 15:52:56.587  8455  8455 I app_process: The ClassLoaderContext is a special shared library.
+07-04 15:52:56.614  8455  8455 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+07-04 15:52:56.629  8455  8455 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+07-04 15:52:56.630  8455  8455 W Monkey  : args: [-p, e.www.httpsrequesttest, 1]
+07-04 15:52:56.631  8455  8455 W Monkey  :  arg: "-p"
+07-04 15:52:56.631  8455  8455 W Monkey  :  arg: "e.www.httpsrequesttest"
+07-04 15:52:56.631  8455  8455 W Monkey  :  arg: "1"
+07-04 15:52:56.631  8455  8455 W Monkey  : data="e.www.httpsrequesttest"
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: QUALCOMM build                   : f2ab992, I401605978b
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: Build Date                       : 09/28/19
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: OpenGL ES Shader Compiler Version: EV031.27.05.01
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: Local Branch                     : 
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: Remote Branch                    : 
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: Remote Branch                    : 
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: Reconstruct Branch               : 
+07-04 15:52:56.668  8449  8474 I AdrenoGLES: Build Config                     : S L 8.0.11 AArch64
+07-04 15:52:56.671  8449  8449 W RenderThread: type=1400 audit(0.0:5075): avc: denied { search } for name="kgsl-3d0" dev="sysfs" ino=29187 scontext=u:r:untrusted_app:s0:c186,c256,c512,c768 tcontext=u:object_r:sysfs_kgsl:s0 tclass=dir permissive=0
+07-04 15:52:56.674  8449  8474 I AdrenoGLES: PFP: 0x005ff112, ME: 0x005ff066
+07-04 15:52:56.676  1165  1200 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{a5bda2c u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{f9d7cf5 8455 (unknown name)/2000/u-1 remote:499247e}: process gone or crashing
+07-04 15:52:56.677  8449  8474 W AdrenoUtils: <ReadGpuID_from_sysfs:194>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-04 15:52:56.677  8449  8474 W AdrenoUtils: <ReadGpuID:218>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-04 15:52:56.680   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.7::IDisplayConfig/default in either framework or device manifest.
+07-04 15:52:56.681   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.7::IDisplayConfig/default in either framework or device manifest.
+07-04 15:52:56.691  1165  3657 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=e.www.httpsrequesttest/.MainActivity} from uid 2000
+07-04 15:52:56.692  1165  3657 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+07-04 15:52:56.692  1165  3657 W Binder  : java.lang.Throwable
+07-04 15:52:56.692  1165  3657 W Binder  : 	at android.os.BinderProxy.transact(BinderProxy.java:480)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at android.app.IActivityController$Stub$Proxy.activityStarting(IActivityController.java:273)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:798)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:587)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1292)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:518)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1058)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1032)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:3759)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3588)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2906)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+07-04 15:52:56.692  1165  3657 W Binder  : 	at android.os.Binder.execTransact(Binder.java:994)
+07-04 15:52:56.701   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+07-04 15:52:56.708  1165  3657 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:52:56.709  1165  3657 D CompatibilityInfo: applicationDensity - 420
+07-04 15:52:56.709  1165  3657 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:52:56.709   569   569 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+07-04 15:52:56.709  8449  8474 W Gralloc3: mapper 3.x is not supported
+07-04 15:52:56.709  1165  3657 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+07-04 15:52:56.713  8455  8455 I Monkey  : Events injected: 1
+07-04 15:52:56.715  1165  1165 V SettingsProvider: Notifying for 0: content://settings/system/accelerometer_rotation
+07-04 15:52:56.723  1165  1194 E system_server: Invalid ID 0x00000000.
+07-04 15:52:56.728  1165  1165 V SettingsProvider: Notifying for 0: content://settings/system/accelerometer_rotation
+07-04 15:52:56.734   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+07-04 15:52:56.734  1165  1199 I ActivityTaskManager: Displayed e.www.httpsrequesttest/.MainActivity: +815ms
+07-04 15:52:56.735   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+07-04 15:52:56.735  8455  8455 I Monkey  : ## Network stats: elapsed time=43ms (0ms mobile, 0ms wifi, 43ms not connected)
+07-04 15:52:56.736  8455  8455 I app_process: System.exit called, status: 0
+07-04 15:52:56.737  8455  8455 I AndroidRuntime: VM exiting with result code 0.
+07-04 15:52:56.779  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 15:52:56.780  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 15:52:56.780  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 15:52:56.780  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 15:52:56.780  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 15:52:56.788  1165  1193 W ActivityManager: ProcessRecord{7c9f6c7 0:e.www.httpsrequesttest/u0a199}: ART verification disabled
+07-04 15:52:56.789  1165  1193 D ActivityManager: Package [e.www.httpsrequesttest] have process
+07-04 15:52:56.789  1165  1193 D ActivityTrigger: ActivityTrigger activityStopTrigger 
+07-04 15:52:56.792   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:52:56.795  3434  3434 I A       : onStop
+07-04 15:52:56.801   663   663 D Zygote  : Forked child process 8494
+07-04 15:52:56.805  1165  1201 I ActivityManager: Start proc 8494:e.www.httpsrequesttest/u0a199 for activity {e.www.httpsrequesttest/e.www.httpsrequesttest.MainActivity}
+07-04 15:52:56.805  1165  1201 D ActivityManager: handleProcessStartedLocked mDoneFinishBooting && app.pid != 0 ---> notifyProcessStart, app.processName = e.www.httpsrequesttest, app.info = ApplicationInfo{71c519 e.www.httpsrequesttest}, app.hostingType = activity, getHostingName() = ComponentInfo{e.www.httpsrequesttest/e.www.httpsrequesttest.MainActivity}, getIntentFlag() = 0, getIsPackageRunning() = true, app = ProcessRecord{7c9f6c7 8494:e.www.httpsrequesttest/u0a199}, getExtraData() = null
+07-04 15:52:56.808  8494  8494 I ttpsrequesttes: Late-enabling -Xcheck:jni
+07-04 15:52:56.842  8494  8494 E ttpsrequesttes: Unknown bits set in runtime_flags: 0x8000
+07-04 15:52:56.864  1165  1184 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:52:56.864  1165  1184 D CompatibilityInfo: applicationDensity - 420
+07-04 15:52:56.864  1165  1184 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:52:56.869  1165  1184 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:52:56.869  1165  1184 D CompatibilityInfo: applicationDensity - 420
+07-04 15:52:56.869  1165  1184 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:52:56.870  1165  8513 W IrisConfig: ColorManagerService is not Existed
+07-04 15:52:56.874  1165  1184 I qspmsvc-client: inside perf_hint_qspm
+07-04 15:52:56.963  8494  8494 I Perf    : Connecting to perf service.
+07-04 15:52:56.972   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+07-04 15:52:56.972   887   956 E ANDR-IOP: IIop:: Iop HAL Service is not available.
+07-04 15:52:56.974  8494  8515 E Perf    : Fail to get file list e.www.httpsrequesttest
+07-04 15:52:56.974  8494  8515 E Perf    : getFolderSize() : Exception_1 = java.lang.NullPointerException: Attempt to get length of null array
+07-04 15:52:56.974  8494  8515 E Perf    : Fail to get file list e.www.httpsrequesttest
+07-04 15:52:56.974  8494  8515 E Perf    : getFolderSize() : Exception_1 = java.lang.NullPointerException: Attempt to get length of null array
+07-04 15:52:57.053  8494  8494 W ttpsrequesttes: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+07-04 15:52:57.054  8494  8494 W ttpsrequesttes: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+07-04 15:52:57.085  1165  1184 E WindowManager: App trying to use insecure INPUT_FEATURE_NO_INPUT_CHANNEL flag. Ignoring
+07-04 15:52:57.106  8494  8519 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 15:52:57.108  8494  8519 I DpmTcmClient: RegisterTcmMonitor from: $Proxy0
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: QUALCOMM build                   : f2ab992, I401605978b
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: Build Date                       : 09/28/19
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: OpenGL ES Shader Compiler Version: EV031.27.05.01
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: Local Branch                     : 
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: Remote Branch                    : 
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: Remote Branch                    : 
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: Reconstruct Branch               : 
+07-04 15:52:57.118  8494  8516 I AdrenoGLES: Build Config                     : S L 8.0.11 AArch64
+07-04 15:52:57.121  8494  8494 W RenderThread: type=1400 audit(0.0:5076): avc: denied { search } for name="kgsl-3d0" dev="sysfs" ino=29187 scontext=u:r:untrusted_app_27:s0:c199,c256,c512,c768 tcontext=u:object_r:sysfs_kgsl:s0 tclass=dir permissive=0
+07-04 15:52:57.125  8494  8516 I AdrenoGLES: PFP: 0x005ff112, ME: 0x005ff066
+07-04 15:52:57.128  8494  8516 W AdrenoUtils: <ReadGpuID_from_sysfs:194>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-04 15:52:57.128  8494  8516 W AdrenoUtils: <ReadGpuID:218>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-04 15:52:57.130   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.7::IDisplayConfig/default in either framework or device manifest.
+07-04 15:52:57.131   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.7::IDisplayConfig/default in either framework or device manifest.
+07-04 15:52:57.146   569   569 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+07-04 15:52:57.146  8494  8516 W Gralloc3: mapper 3.x is not supported
+07-04 15:52:57.166  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 15:52:57.167  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 15:52:57.167  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=e.www.httpsrequesttest fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 15:52:57.167  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 15:52:57.167  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 15:52:57.493  1165  1193 D ActivityTrigger: ActivityTrigger activityStopTrigger 
+07-04 15:52:58.277  1165  3657 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:52:58.277  1165  3657 D CompatibilityInfo: applicationDensity - 420
+07-04 15:52:58.277  1165  3657 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:52:58.278   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:52:58.283  8449  8449 I BatteryMgr:DataCollectionService: onStartCommand: begin
+07-04 15:52:58.283  8449  8449 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 100
+07-04 15:52:58.284  8449  8449 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+07-04 15:52:58.285  8449  8449 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+07-04 15:52:58.287  8449  8449 I BatteryMgr:DataCollectionService: started foreground
+07-04 15:52:58.288  1165  1200 E NotificationService: Suppressing notification from package by user request.
+07-04 15:52:58.288  1165  1200 I ServiceRecord: ServicesRecord broadcast notify intent package = com.example.batterymanager_utility pid = 8449
+07-04 15:52:58.295  8449  8547 I BatteryMgr:DataCollectionService: collectData: begin
+07-04 15:52:58.300  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478778300,-343261,4132
+07-04 15:52:58.405  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478778405,-343261,4132
+07-04 15:52:58.509  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478778509,-343261,4132
+07-04 15:52:58.614  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478778613,-343261,4132
+07-04 15:52:58.721  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478778721,-343261,4132
+07-04 15:52:58.830  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478778830,-343261,4132
+07-04 15:52:58.940  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478778940,-343261,4132
+07-04 15:52:59.045  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779045,-343261,4132
+07-04 15:52:59.151  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779150,-343261,4132
+07-04 15:52:59.263  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779263,-343261,4132
+07-04 15:52:59.374  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779374,-343261,4132
+07-04 15:52:59.488  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779488,-343261,4132
+07-04 15:52:59.597  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779597,-343261,4132
+07-04 15:52:59.708  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779708,-343261,4132
+07-04 15:52:59.822  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779822,-201660,4132
+07-04 15:52:59.934  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478779934,-201660,4132
+07-04 15:53:00.002  2287  2287 D SystemUIUpdateMonitor: run() curMinutes = 28141313 mLastMinute = 28141312
+07-04 15:53:00.003  2287  2287 D SystemUIUpdateMonitor: setTimeHandler() mTimeTICK_receiver.size() = 16
+07-04 15:53:00.003  2287  2287 D SystemUIUpdateMonitor: setTimeHandler() newDelay = 59997
+07-04 15:53:00.047  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780047,-201660,4132
+07-04 15:53:00.153  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780152,-201660,4132
+07-04 15:53:00.263  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780263,-201660,4132
+07-04 15:53:00.371  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780371,-201660,4132
+07-04 15:53:00.479  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780479,-201660,4132
+07-04 15:53:00.587  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780587,-201660,4132
+07-04 15:53:00.694  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780694,-201660,4132
+07-04 15:53:00.805  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780805,-201660,4132
+07-04 15:53:00.919  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478780919,-201660,4132
+07-04 15:53:01.033  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781032,-201660,4132
+07-04 15:53:01.137  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781137,-201660,4132
+07-04 15:53:01.164  3240  5150 D FileOperator: Mode change to WRITE_MODE!
+07-04 15:53:01.199   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:01.242  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781242,-190917,4132
+07-04 15:53:01.355  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781355,-190917,4132
+07-04 15:53:01.466  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781465,-190917,4132
+07-04 15:53:01.576  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781575,-190917,4132
+07-04 15:53:01.685  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781685,-190917,4132
+07-04 15:53:01.748  8449  8558 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+07-04 15:53:01.793  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781793,-190917,4132
+07-04 15:53:01.897  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478781897,-190917,4132
+07-04 15:53:01.967  3240  5150 D FileOperator: Mode change to WRITE_MODE!
+07-04 15:53:02.001  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782001,-190917,4132
+07-04 15:53:02.105  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782105,-190917,4132
+07-04 15:53:02.215  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782215,-190917,4132
+07-04 15:53:02.328  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782328,-190917,4132
+07-04 15:53:02.441  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782441,-190917,4132
+07-04 15:53:02.552  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782552,-190917,4132
+07-04 15:53:02.663  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782663,-190917,4132
+07-04 15:53:02.774  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782774,-124511,4132
+07-04 15:53:02.881  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782881,-124511,4132
+07-04 15:53:02.990  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478782990,-124511,4132
+07-04 15:53:03.106  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783106,-124511,4132
+07-04 15:53:03.218  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783218,-124511,4132
+07-04 15:53:03.326  2287  2287 I DataSaverController: registerReceiver() : Runnable call registerReceiver()
+07-04 15:53:03.329  2287  2287 I DataSaverController: registerReceiver() : queryIntentServices = 0
+07-04 15:53:03.329  2287  2287 I DataSaverController: registerReceiver() :  postDelayed Runnable 30000
+07-04 15:53:03.329  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783329,-124511,4132
+07-04 15:53:03.442  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783442,-124511,4132
+07-04 15:53:03.550  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783550,-124511,4132
+07-04 15:53:03.661  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783661,-124511,4132
+07-04 15:53:03.771  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783771,-124511,4132
+07-04 15:53:03.885  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783885,-124511,4132
+07-04 15:53:03.993  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478783993,-124511,4132
+07-04 15:53:04.102  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784101,-124511,4132
+07-04 15:53:04.212  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784212,-205566,4132
+07-04 15:53:04.322  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784321,-205566,4132
+07-04 15:53:04.433  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784432,-205566,4132
+07-04 15:53:04.546  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784546,-205566,4132
+07-04 15:53:04.659  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784658,-205566,4132
+07-04 15:53:04.772  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784772,-205566,4132
+07-04 15:53:04.885  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784885,-205566,4132
+07-04 15:53:04.995  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478784995,-205566,4132
+07-04 15:53:05.104  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785104,-205566,4132
+07-04 15:53:05.210  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785210,-205566,4132
+07-04 15:53:05.319  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785319,-205566,4132
+07-04 15:53:05.433  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785433,-205566,4132
+07-04 15:53:05.543  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785542,-205566,4132
+07-04 15:53:05.656  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785656,-125976,4132
+07-04 15:53:05.765  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785765,-125976,4132
+07-04 15:53:05.876  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785876,-125976,4132
+07-04 15:53:05.989  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478785989,-125976,4132
+07-04 15:53:06.100  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786100,-125976,4132
+07-04 15:53:06.208  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786208,-125976,4132
+07-04 15:53:06.315  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786315,-125976,4132
+07-04 15:53:06.422  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786422,-125976,4132
+07-04 15:53:06.537  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786536,-125976,4132
+07-04 15:53:06.649  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786648,-125976,4132
+07-04 15:53:06.762  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786762,-125976,4132
+07-04 15:53:06.872  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786872,-125976,4132
+07-04 15:53:06.983  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478786983,-125976,4132
+07-04 15:53:07.096  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787096,-119628,4132
+07-04 15:53:07.206  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787206,-119628,4132
+07-04 15:53:07.322  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787322,-119628,4132
+07-04 15:53:07.430  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787429,-119628,4132
+07-04 15:53:07.538  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787538,-119628,4132
+07-04 15:53:07.647  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787646,-119628,4132
+07-04 15:53:07.758  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787758,-119628,4132
+07-04 15:53:07.869  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787868,-119628,4132
+07-04 15:53:07.980  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478787979,-119628,4132
+07-04 15:53:08.091  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788090,-119628,4132
+07-04 15:53:08.207  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788207,-119628,4132
+07-04 15:53:08.314  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788314,-119628,4132
+07-04 15:53:08.424  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788424,-119628,4132
+07-04 15:53:08.537  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788535,-119628,4132
+07-04 15:53:08.645  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788645,-129882,4132
+07-04 15:53:08.757  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788757,-129882,4132
+07-04 15:53:08.867  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788867,-129882,4132
+07-04 15:53:08.978  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478788978,-129882,4132
+07-04 15:53:09.090  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789090,-129882,4132
+07-04 15:53:09.201  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789201,-129882,4132
+07-04 15:53:09.318  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789318,-129882,4132
+07-04 15:53:09.431  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789431,-129882,4132
+07-04 15:53:09.542  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789542,-129882,4132
+07-04 15:53:09.654  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789653,-129882,4132
+07-04 15:53:09.767  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789767,-129882,4132
+07-04 15:53:09.875  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789874,-129882,4132
+07-04 15:53:09.942   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:09.983  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478789983,-129882,4132
+07-04 15:53:10.094  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790094,-161132,4132
+07-04 15:53:10.205  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790204,-161132,4132
+07-04 15:53:10.317  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790317,-161132,4132
+07-04 15:53:10.428  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790428,-161132,4132
+07-04 15:53:10.539  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790539,-161132,4132
+07-04 15:53:10.650  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790649,-161132,4132
+07-04 15:53:10.730   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:10.761  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790761,-161132,4132
+07-04 15:53:10.878  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790878,-161132,4132
+07-04 15:53:10.988  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478790988,-161132,4132
+07-04 15:53:11.097  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791097,-161132,4132
+07-04 15:53:11.210  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791210,-161132,4132
+07-04 15:53:11.324  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791323,-161132,4132
+07-04 15:53:11.438  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791437,-161132,4132
+07-04 15:53:11.549  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791548,-153808,4132
+07-04 15:53:11.659  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791658,-153808,4132
+07-04 15:53:11.775  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791774,-153808,4132
+07-04 15:53:11.888  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478791888,-153808,4132
+07-04 15:53:11.895   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:11.899   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:11.899  3387  3387 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 15:53:12.001  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792001,-153808,4132
+07-04 15:53:12.111  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792111,-153808,4132
+07-04 15:53:12.219  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792218,-153808,4132
+07-04 15:53:12.333  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792332,-153808,4132
+07-04 15:53:12.443  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792443,-153808,4132
+07-04 15:53:12.554  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792554,-153808,4132
+07-04 15:53:12.664  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792664,-153808,4132
+07-04 15:53:12.778  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792777,-153808,4132
+07-04 15:53:12.894  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478792894,-153808,4132
+07-04 15:53:13.004  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793004,-121093,4132
+07-04 15:53:13.114  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793114,-121093,4132
+07-04 15:53:13.222  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793222,-121093,4132
+07-04 15:53:13.330  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793329,-121093,4132
+07-04 15:53:13.439  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793439,-121093,4132
+07-04 15:53:13.550  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793550,-121093,4132
+07-04 15:53:13.664  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793664,-121093,4132
+07-04 15:53:13.778  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793777,-121093,4132
+07-04 15:53:13.888  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793888,-121093,4132
+07-04 15:53:13.999  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478793998,-121093,4132
+07-04 15:53:14.111  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794111,-121093,4132
+07-04 15:53:14.223  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794222,-121093,4132
+07-04 15:53:14.332  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794332,-121093,4132
+07-04 15:53:14.442  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794441,-195800,4132
+07-04 15:53:14.551  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794551,-195800,4132
+07-04 15:53:14.665  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794665,-195800,4132
+07-04 15:53:14.776  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794775,-195800,4132
+07-04 15:53:14.889  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478794888,-195800,4132
+07-04 15:53:15.002  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795001,-195800,4132
+07-04 15:53:15.112  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795112,-195800,4132
+07-04 15:53:15.217  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795217,-195800,4132
+07-04 15:53:15.330  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795330,-195800,4132
+07-04 15:53:15.439  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795439,-195800,4132
+07-04 15:53:15.547  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795547,-195800,4132
+07-04 15:53:15.659  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795659,-195800,4132
+07-04 15:53:15.770  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795770,-195800,4132
+07-04 15:53:15.883  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795883,-122558,4132
+07-04 15:53:15.996  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478795996,-122558,4132
+07-04 15:53:16.106  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796106,-122558,4132
+07-04 15:53:16.217  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796217,-122558,4132
+07-04 15:53:16.330  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796329,-122558,4132
+07-04 15:53:16.441  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796441,-122558,4132
+07-04 15:53:16.549  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796549,-122558,4132
+07-04 15:53:16.656  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796656,-122558,4132
+07-04 15:53:16.763  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796763,-122558,4132
+07-04 15:53:16.876  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796876,-122558,4132
+07-04 15:53:16.988  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478796988,-122558,4132
+07-04 15:53:17.098  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797098,-122558,4132
+07-04 15:53:17.209  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797209,-122558,4132
+07-04 15:53:17.320  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797320,-122558,4132
+07-04 15:53:17.453  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797452,-129882,4132
+07-04 15:53:17.568  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797568,-129882,4132
+07-04 15:53:17.677  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797677,-129882,4132
+07-04 15:53:17.786  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797786,-129882,4132
+07-04 15:53:17.899  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478797899,-129882,4132
+07-04 15:53:18.009  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798009,-129882,4132
+07-04 15:53:18.122  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798122,-129882,4132
+07-04 15:53:18.233  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798232,-129882,4132
+07-04 15:53:18.348  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798347,-129882,4132
+07-04 15:53:18.461  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798461,-129882,4132
+07-04 15:53:18.571  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798571,-129882,4132
+07-04 15:53:18.681  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798681,-129882,4132
+07-04 15:53:18.789  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798789,-129882,4132
+07-04 15:53:18.897  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478798897,-142578,4132
+07-04 15:53:19.004  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799004,-142578,4132
+07-04 15:53:19.117  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799117,-142578,4132
+07-04 15:53:19.228  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799228,-142578,4132
+07-04 15:53:19.335  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799335,-142578,4132
+07-04 15:53:19.442  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799442,-142578,4132
+07-04 15:53:19.563  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799563,-142578,4132
+07-04 15:53:19.674  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799674,-142578,4132
+07-04 15:53:19.785  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799785,-142578,4132
+07-04 15:53:19.896  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478799895,-142578,4132
+07-04 15:53:20.004  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800004,-142578,4132
+07-04 15:53:20.112  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800112,-142578,4132
+07-04 15:53:20.222  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800222,-142578,4132
+07-04 15:53:20.337  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800336,-140136,4132
+07-04 15:53:20.449  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800449,-140136,4132
+07-04 15:53:20.560  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800560,-140136,4132
+07-04 15:53:20.672  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800672,-140136,4132
+07-04 15:53:20.784  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800784,-140136,4132
+07-04 15:53:20.895  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478800894,-140136,4132
+07-04 15:53:21.007  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801006,-140136,4132
+07-04 15:53:21.113  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801113,-140136,4132
+07-04 15:53:21.220  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801220,-140136,4132
+07-04 15:53:21.331  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801330,-140136,4132
+07-04 15:53:21.443  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801443,-140136,4132
+07-04 15:53:21.557  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801557,-140136,4132
+07-04 15:53:21.668  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801668,-140136,4132
+07-04 15:53:21.781  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801781,-130371,4132
+07-04 15:53:21.892  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478801892,-130371,4132
+07-04 15:53:22.014  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802014,-130371,4132
+07-04 15:53:22.126  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802126,-130371,4132
+07-04 15:53:22.234  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802234,-130371,4132
+07-04 15:53:22.341  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802341,-130371,4132
+07-04 15:53:22.455  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802455,-130371,4132
+07-04 15:53:22.569  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802568,-130371,4132
+07-04 15:53:22.685  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802685,-130371,4132
+07-04 15:53:22.798  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802798,-130371,4132
+07-04 15:53:22.908  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478802908,-130371,4132
+07-04 15:53:23.022  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803022,-130371,4132
+07-04 15:53:23.134  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803134,-130371,4132
+07-04 15:53:23.248  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803248,-123535,4132
+07-04 15:53:23.357  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803357,-123535,4132
+07-04 15:53:23.466  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803466,-123535,4132
+07-04 15:53:23.576  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803576,-123535,4132
+07-04 15:53:23.690  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803690,-123535,4132
+07-04 15:53:23.800  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803800,-123535,4132
+07-04 15:53:23.913  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478803913,-123535,4132
+07-04 15:53:24.021  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804021,-123535,4132
+07-04 15:53:24.134  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804134,-123535,4132
+07-04 15:53:24.244  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804244,-123535,4132
+07-04 15:53:24.362  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804362,-123535,4132
+07-04 15:53:24.470  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804470,-123535,4132
+07-04 15:53:24.577  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804577,-123535,4132
+07-04 15:53:24.691  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804691,-187988,4132
+07-04 15:53:24.805  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804804,-187988,4132
+07-04 15:53:24.872   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:24.913  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478804913,-187988,4132
+07-04 15:53:25.025  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805025,-187988,4132
+07-04 15:53:25.135  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805135,-187988,4132
+07-04 15:53:25.245  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805245,-187988,4132
+07-04 15:53:25.358  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805357,-187988,4132
+07-04 15:53:25.482  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805482,-187988,4132
+07-04 15:53:25.590  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805590,-187988,4132
+07-04 15:53:25.701  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805701,-187988,4132
+07-04 15:53:25.821  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805821,-187988,4132
+07-04 15:53:25.939  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478805939,-187988,4132
+07-04 15:53:26.050  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806050,-187988,4132
+07-04 15:53:26.163  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806163,-125488,4132
+07-04 15:53:26.273  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806273,-125488,4132
+07-04 15:53:26.384  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806384,-125488,4132
+07-04 15:53:26.495  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806494,-125488,4132
+07-04 15:53:26.584   662  8564 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+07-04 15:53:26.604  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806604,-125488,4132
+07-04 15:53:26.711  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806711,-125488,4132
+07-04 15:53:26.818  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806818,-125488,4132
+07-04 15:53:26.928  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478806927,-125488,4132
+07-04 15:53:27.039  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807038,-125488,4132
+07-04 15:53:27.152  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807152,-125488,4132
+07-04 15:53:27.262  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807262,-125488,4132
+07-04 15:53:27.375  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807375,-125488,4132
+07-04 15:53:27.485  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807485,-125488,4132
+07-04 15:53:27.602  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807602,-125488,4132
+07-04 15:53:27.715  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807714,-118652,4132
+07-04 15:53:27.827  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807827,-118652,4132
+07-04 15:53:27.936  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478807935,-118652,4132
+07-04 15:53:28.048  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808048,-118652,4132
+07-04 15:53:28.158  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808158,-118652,4132
+07-04 15:53:28.268  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808268,-118652,4132
+07-04 15:53:28.379  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808379,-118652,4132
+07-04 15:53:28.499  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808498,-118652,4132
+07-04 15:53:28.608  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808608,-118652,4132
+07-04 15:53:28.722  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808721,-118652,4132
+07-04 15:53:28.831  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808831,-118652,4132
+07-04 15:53:28.945  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478808945,-118652,4132
+07-04 15:53:29.053  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809053,-118652,4132
+07-04 15:53:29.160  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809160,-156249,4132
+07-04 15:53:29.269  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809269,-156249,4132
+07-04 15:53:29.380  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809380,-156249,4132
+07-04 15:53:29.493  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809493,-156249,4132
+07-04 15:53:29.603  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809603,-156249,4132
+07-04 15:53:29.710  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809710,-156249,4132
+07-04 15:53:29.817  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809817,-156249,4132
+07-04 15:53:29.927  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478809926,-156249,4132
+07-04 15:53:30.040  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810040,-156249,4132
+07-04 15:53:30.150  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810150,-156249,4132
+07-04 15:53:30.256  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810256,-156249,4132
+07-04 15:53:30.363  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810363,-156249,4132
+07-04 15:53:30.476  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810476,-156249,4132
+07-04 15:53:30.586  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810586,-125976,4132
+07-04 15:53:30.699  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810699,-125976,4132
+07-04 15:53:30.813  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810813,-125976,4132
+07-04 15:53:30.926  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478810926,-125976,4132
+07-04 15:53:31.039  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811039,-125976,4132
+07-04 15:53:31.149  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811149,-125976,4132
+07-04 15:53:31.256  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811256,-125976,4132
+07-04 15:53:31.364  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811363,-125976,4132
+07-04 15:53:31.473  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811473,-125976,4132
+07-04 15:53:31.587  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811587,-125976,4132
+07-04 15:53:31.696  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811696,-125976,4132
+07-04 15:53:31.809  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811809,-125976,4132
+07-04 15:53:31.922  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478811921,-125976,4132
+07-04 15:53:32.038  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812038,-120117,4132
+07-04 15:53:32.151  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812151,-120117,4132
+07-04 15:53:32.261  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812261,-120117,4132
+07-04 15:53:32.373  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812373,-120117,4132
+07-04 15:53:32.480  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812480,-120117,4132
+07-04 15:53:32.587  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812587,-120117,4132
+07-04 15:53:32.697  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812697,-120117,4132
+07-04 15:53:32.812  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812812,-120117,4132
+07-04 15:53:32.920  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478812920,-120117,4132
+07-04 15:53:33.032  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813032,-120117,4132
+07-04 15:53:33.142  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813142,-120117,4132
+07-04 15:53:33.257  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813256,-120117,4132
+07-04 15:53:33.342  2287  2287 I DataSaverController: registerReceiver() : Runnable call registerReceiver()
+07-04 15:53:33.344  2287  2287 I DataSaverController: registerReceiver() : queryIntentServices = 0
+07-04 15:53:33.344  2287  2287 I DataSaverController: registerReceiver() :  postDelayed Runnable 30000
+07-04 15:53:33.369  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813369,-120117,4132
+07-04 15:53:33.482  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813482,-120605,4132
+07-04 15:53:33.591  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813591,-120605,4132
+07-04 15:53:33.700  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813700,-120605,4132
+07-04 15:53:33.810  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813810,-120605,4132
+07-04 15:53:33.920  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478813920,-120605,4132
+07-04 15:53:34.034  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814034,-120605,4132
+07-04 15:53:34.147  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814146,-120605,4132
+07-04 15:53:34.261  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814261,-120605,4132
+07-04 15:53:34.371  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814371,-120605,4132
+07-04 15:53:34.484  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814484,-120605,4132
+07-04 15:53:34.597  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814597,-120605,4132
+07-04 15:53:34.710  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814710,-120605,4132
+07-04 15:53:34.818  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814817,-120605,4132
+07-04 15:53:34.927  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478814927,-195800,4132
+07-04 15:53:35.043  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815043,-195800,4132
+07-04 15:53:35.167  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815167,-195800,4132
+07-04 15:53:35.281  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815280,-195800,4132
+07-04 15:53:35.392  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815392,-195800,4132
+07-04 15:53:35.505  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815505,-195800,4132
+07-04 15:53:35.618  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815618,-195800,4132
+07-04 15:53:35.733  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815730,-195800,4132
+07-04 15:53:35.843  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815843,-195800,4132
+07-04 15:53:35.951  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478815951,-195800,4132
+07-04 15:53:36.059  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816059,-195800,4132
+07-04 15:53:36.175  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816175,-195800,4132
+07-04 15:53:36.286  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816286,-195800,4132
+07-04 15:53:36.397  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816396,-134277,4132
+07-04 15:53:36.509  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816509,-134277,4132
+07-04 15:53:36.619  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816619,-134277,4132
+07-04 15:53:36.732  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816732,-134277,4132
+07-04 15:53:36.845  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816845,-134277,4132
+07-04 15:53:36.955  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478816955,-134277,4132
+07-04 15:53:37.063  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817063,-134277,4132
+07-04 15:53:37.172  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817172,-134277,4132
+07-04 15:53:37.287  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817287,-134277,4132
+07-04 15:53:37.397  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817397,-134277,4132
+07-04 15:53:37.506  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817506,-134277,4132
+07-04 15:53:37.616  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817616,-134277,4132
+07-04 15:53:37.729  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817729,-134277,4132
+07-04 15:53:37.849  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817849,-134277,4132
+07-04 15:53:37.962  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478817962,-123046,4132
+07-04 15:53:38.072  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818071,-123046,4132
+07-04 15:53:38.178  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818178,-123046,4132
+07-04 15:53:38.287  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818287,-123046,4132
+07-04 15:53:38.403  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818403,-123046,4132
+07-04 15:53:38.517  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818517,-123046,4132
+07-04 15:53:38.627  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818626,-123046,4132
+07-04 15:53:38.739  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818739,-123046,4132
+07-04 15:53:38.850  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818849,-123046,4132
+07-04 15:53:38.963  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478818963,-123046,4132
+07-04 15:53:39.089  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819089,-123046,4132
+07-04 15:53:39.200  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819200,-123046,4132
+07-04 15:53:39.306  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819306,-123046,4132
+07-04 15:53:39.413  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819413,-175781,4132
+07-04 15:53:39.524  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819524,-175781,4132
+07-04 15:53:39.640  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819640,-175781,4132
+07-04 15:53:39.753  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819753,-175781,4132
+07-04 15:53:39.866  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819865,-175781,4132
+07-04 15:53:39.964   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:39.972  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478819972,-175781,4132
+07-04 15:53:40.085  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820085,-175781,4132
+07-04 15:53:40.198  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820198,-175781,4132
+07-04 15:53:40.308  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820308,-175781,4132
+07-04 15:53:40.414  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820414,-175781,4132
+07-04 15:53:40.522  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820522,-175781,4132
+07-04 15:53:40.632  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820632,-175781,4132
+07-04 15:53:40.745  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820745,-175781,4132
+07-04 15:53:40.855  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820855,-123046,4132
+07-04 15:53:40.971  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478820970,-123046,4132
+07-04 15:53:41.083  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821083,-123046,4132
+07-04 15:53:41.190  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821190,-123046,4132
+07-04 15:53:41.302  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821302,-123046,4132
+07-04 15:53:41.413  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821413,-123046,4132
+07-04 15:53:41.521  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821521,-123046,4132
+07-04 15:53:41.629  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821629,-123046,4132
+07-04 15:53:41.747  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821747,-123046,4132
+07-04 15:53:41.864  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821864,-123046,4132
+07-04 15:53:41.982  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478821981,-123046,4132
+07-04 15:53:42.094  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822094,-123046,4132
+07-04 15:53:42.201  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822200,-123046,4132
+07-04 15:53:42.306  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822306,-142578,4132
+07-04 15:53:42.418  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822418,-142578,4132
+07-04 15:53:42.528  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822528,-142578,4132
+07-04 15:53:42.634  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822634,-142578,4132
+07-04 15:53:42.743  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822743,-142578,4132
+07-04 15:53:42.850  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822850,-142578,4132
+07-04 15:53:42.960  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478822960,-142578,4132
+07-04 15:53:43.070  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823070,-142578,4132
+07-04 15:53:43.184  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823184,-142578,4132
+07-04 15:53:43.295  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823295,-142578,4132
+07-04 15:53:43.411  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823411,-142578,4132
+07-04 15:53:43.527  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823526,-142578,4132
+07-04 15:53:43.636  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823636,-142578,4132
+07-04 15:53:43.743  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823743,-122558,4132
+07-04 15:53:43.851  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823851,-122558,4132
+07-04 15:53:43.957  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478823957,-122558,4132
+07-04 15:53:44.071  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824070,-122558,4132
+07-04 15:53:44.185  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824184,-122558,4132
+07-04 15:53:44.298  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824297,-122558,4132
+07-04 15:53:44.408  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824407,-122558,4132
+07-04 15:53:44.521  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824521,-122558,4132
+07-04 15:53:44.633  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824632,-122558,4132
+07-04 15:53:44.745  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824745,-122558,4132
+07-04 15:53:44.857  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824857,-122558,4132
+07-04 15:53:44.966  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478824966,-122558,4132
+07-04 15:53:45.073  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825073,-122558,4132
+07-04 15:53:45.185  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825185,-161621,4132
+07-04 15:53:45.308  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825303,-161621,4132
+07-04 15:53:45.417  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825417,-161621,4132
+07-04 15:53:45.527  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825527,-161621,4132
+07-04 15:53:45.638  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825638,-161621,4132
+07-04 15:53:45.748  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825748,-161621,4132
+07-04 15:53:45.859  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825858,-161621,4132
+07-04 15:53:45.968  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478825968,-161621,4132
+07-04 15:53:46.079  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826079,-161621,4132
+07-04 15:53:46.185  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826185,-161621,4132
+07-04 15:53:46.298  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826298,-161621,4132
+07-04 15:53:46.410  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826410,-161621,4132
+07-04 15:53:46.523  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826523,-161621,4132
+07-04 15:53:46.629  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826629,-161621,4132
+07-04 15:53:46.740  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826739,-140624,4132
+07-04 15:53:46.853  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826853,-140624,4132
+07-04 15:53:46.966  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478826966,-140624,4132
+07-04 15:53:47.075  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827075,-140624,4132
+07-04 15:53:47.184  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827183,-140624,4132
+07-04 15:53:47.290  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827290,-140624,4132
+07-04 15:53:47.402  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827402,-140624,4132
+07-04 15:53:47.512  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827512,-140624,4132
+07-04 15:53:47.622  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827622,-140624,4132
+07-04 15:53:47.734  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827734,-140624,4132
+07-04 15:53:47.855  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827855,-140624,4132
+07-04 15:53:47.965  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478827965,-140624,4132
+07-04 15:53:48.075  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828075,-140624,4132
+07-04 15:53:48.187  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828187,-120605,4132
+07-04 15:53:48.294  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828293,-120605,4132
+07-04 15:53:48.408  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828407,-120605,4132
+07-04 15:53:48.517  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828517,-120605,4132
+07-04 15:53:48.629  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828629,-120605,4132
+07-04 15:53:48.738  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828738,-120605,4132
+07-04 15:53:48.849  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828849,-120605,4132
+07-04 15:53:48.961  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478828961,-120605,4132
+07-04 15:53:49.074  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829074,-120605,4132
+07-04 15:53:49.183  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829183,-120605,4132
+07-04 15:53:49.293  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829292,-120605,4132
+07-04 15:53:49.403  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829402,-120605,4132
+07-04 15:53:49.514  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829514,-120605,4132
+07-04 15:53:49.624  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829624,-197753,4132
+07-04 15:53:49.733  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829733,-197753,4132
+07-04 15:53:49.844  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829844,-197753,4132
+07-04 15:53:49.955  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478829955,-197753,4132
+07-04 15:53:50.067  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830066,-197753,4132
+07-04 15:53:50.178  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830178,-197753,4132
+07-04 15:53:50.288  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830288,-197753,4132
+07-04 15:53:50.401  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830401,-197753,4132
+07-04 15:53:50.508  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830508,-197753,4132
+07-04 15:53:50.614  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830614,-197753,4132
+07-04 15:53:50.721  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830720,-197753,4132
+07-04 15:53:50.833  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830833,-197753,4132
+07-04 15:53:50.946  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478830946,-197753,4132
+07-04 15:53:51.059  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831059,-118652,4132
+07-04 15:53:51.172  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831171,-118652,4132
+07-04 15:53:51.283  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831282,-118652,4132
+07-04 15:53:51.393  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831393,-118652,4132
+07-04 15:53:51.505  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831504,-118652,4132
+07-04 15:53:51.616  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831616,-118652,4132
+07-04 15:53:51.725  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831724,-118652,4132
+07-04 15:53:51.831  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831831,-118652,4132
+07-04 15:53:51.941  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478831940,-118652,4132
+07-04 15:53:52.053  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832053,-118652,4132
+07-04 15:53:52.163  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832163,-118652,4132
+07-04 15:53:52.273  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832273,-118652,4132
+07-04 15:53:52.383  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832383,-118652,4132
+07-04 15:53:52.496  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832496,-118652,4132
+07-04 15:53:52.608  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832607,-126953,4132
+07-04 15:53:52.717  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832716,-126953,4132
+07-04 15:53:52.824  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832823,-126953,4132
+07-04 15:53:52.932  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478832932,-126953,4132
+07-04 15:53:53.045  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833045,-126953,4132
+07-04 15:53:53.155  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833155,-126953,4132
+07-04 15:53:53.268  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833267,-126953,4132
+07-04 15:53:53.378  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833377,-126953,4132
+07-04 15:53:53.493  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833493,-126953,4132
+07-04 15:53:53.604  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833604,-126953,4132
+07-04 15:53:53.715  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833715,-126953,4132
+07-04 15:53:53.825  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833825,-126953,4132
+07-04 15:53:53.939  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478833939,-126953,4132
+07-04 15:53:54.046  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834046,-129882,4132
+07-04 15:53:54.154  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834154,-129882,4132
+07-04 15:53:54.264  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834264,-129882,4132
+07-04 15:53:54.373  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834373,-129882,4132
+07-04 15:53:54.483  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834483,-129882,4132
+07-04 15:53:54.592  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834592,-129882,4132
+07-04 15:53:54.700  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834700,-129882,4132
+07-04 15:53:54.813  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834813,-129882,4132
+07-04 15:53:54.917   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:54.927  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478834927,-129882,4132
+07-04 15:53:55.040  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835040,-129882,4132
+07-04 15:53:55.147  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835147,-129882,4132
+07-04 15:53:55.253  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835253,-129882,4132
+07-04 15:53:55.371  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835371,-129882,4132
+07-04 15:53:55.488  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835488,-151855,4132
+07-04 15:53:55.601  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835601,-151855,4132
+07-04 15:53:55.715  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835715,-151855,4132
+07-04 15:53:55.828  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835828,-151855,4132
+07-04 15:53:55.937  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478835936,-151855,4132
+07-04 15:53:56.048  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836048,-151855,4132
+07-04 15:53:56.162  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836162,-151855,4132
+07-04 15:53:56.269  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836269,-151855,4132
+07-04 15:53:56.375  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836375,-151855,4132
+07-04 15:53:56.488  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836488,-151855,4132
+07-04 15:53:56.598  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836598,-151855,4132
+07-04 15:53:56.708  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836708,-151855,4132
+07-04 15:53:56.818  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836818,-151855,4132
+07-04 15:53:56.928  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478836927,-118164,4132
+07-04 15:53:57.039  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837038,-118164,4132
+07-04 15:53:57.152  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837152,-118164,4132
+07-04 15:53:57.265  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837264,-118164,4132
+07-04 15:53:57.381  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837381,-118164,4132
+07-04 15:53:57.488  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837488,-118164,4132
+07-04 15:53:57.594  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837594,-118164,4132
+07-04 15:53:57.700  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837700,-118164,4132
+07-04 15:53:57.810  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837810,-118164,4132
+07-04 15:53:57.920  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478837920,-118164,4132
+07-04 15:53:58.030  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478838030,-118164,4132
+07-04 15:53:58.140  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478838139,-118164,4132
+07-04 15:53:58.246  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478838246,-118164,4132
+07-04 15:53:58.358  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478838358,-118164,4132
+07-04 15:53:58.468  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478838468,-129882,4132
+07-04 15:53:58.574  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478838574,-129882,4132
+07-04 15:53:58.677  8449  8547 I BatteryMgr:DataCollectionService: stats => 1688478838677,-129882,4132
+07-04 15:53:58.697   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:59.054  1165  1184 I ActivityManager: Force stopping e.www.httpsrequesttest appid=10199 user=0: from pid 8590
+07-04 15:53:59.055  1165  1184 I ActivityManager: Killing 8494:e.www.httpsrequesttest/u0a199 (adj 0): stop e.www.httpsrequesttest
+07-04 15:53:59.057   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:59.058  1165  1184 W ActivityTaskManager: Force removing ActivityRecord{5a9b8fb u0 e.www.httpsrequesttest/.MainActivity t1068 f}: app died, no saved state
+07-04 15:53:59.087  1165  8593 W IrisConfig: ColorManagerService is not Existed
+07-04 15:53:59.095   663   663 I Zygote  : Process 8494 exited due to signal 9 (Killed)
+07-04 15:53:59.097  1165  1202 I libprocessgroup: Successfully killed process cgroup uid 10199 pid 8494 in 40ms
+07-04 15:53:59.114   569   569 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+07-04 15:53:59.114  1165  2980 E ANDR-PERF-JNI: UXEngine Trigger - Returning null
+07-04 15:53:59.117  2567  2567 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+07-04 15:53:59.117  2567  2567 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 15:53:59.118  2567  2567 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+07-04 15:53:59.118  2567  2567 D CarrierSvcBindHelper: No carrier app for: 1
+07-04 15:53:59.121   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:59.128  1165  1193 W ActivityManager: setHasOverlayUi called on unknown pid: 8494
+07-04 15:53:59.130  4376  4376 D PredictionService: onRequestPredictionUpdate
+07-04 15:53:59.130  4376  4376 D PredictionService: update predictions
+07-04 15:53:59.132  3165  3165 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 15:53:59.143  3434  3434 I A       : onStart
+07-04 15:53:59.146  3434  3434 I A       : onResume
+07-04 15:53:59.156  3135  3135 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+07-04 15:53:59.156  3135  3714 I GsaVoiceInteractionSrv: (REDACTED) disregardHotwordSetting: %b
+07-04 15:53:59.156  3135  3714 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+07-04 15:53:59.168  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 15:53:59.170  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 15:53:59.171  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.android.launcher3 fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 15:53:59.171  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 15:53:59.172  4418  4418 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 15:53:59.177   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:59.179  1165  3949 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 15:53:59.179  1165  3949 D CompatibilityInfo: applicationDensity - 420
+07-04 15:53:59.179  1165  3949 D CompatibilityInfo: applicationScale - 1.0
+07-04 15:53:59.180   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:53:59.182  3387  3387 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 15:53:59.182  3387  3387 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 15:54:00.002  2287  2287 D SystemUIUpdateMonitor: run() curMinutes = 28141314 mLastMinute = 28141313
+07-04 15:54:00.004  2287  2287 D SystemUIUpdateMonitor: setTimeHandler() mTimeTICK_receiver.size() = 16
+07-04 15:54:00.004  2287  2287 D SystemUIUpdateMonitor: setTimeHandler() newDelay = 59996
+07-04 15:54:01.594  2972 28388 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 23905004]
+07-04 15:54:01.596  2972 28388 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+07-04 15:54:01.600   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:54:01.653  2972 28388 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 25515063]
+07-04 15:54:02.496  1165  8831 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10186 user=0: from pid 8602
+07-04 15:54:02.498  1165  8831 I ActivityManager: Killing 8449:com.example.batterymanager_utility/u0a186 (adj 700): stop com.example.batterymanager_utility
+07-04 15:54:02.499   569   569 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.servicetracker::IServicetracker sid=u:r:system_server:s0 pid=1165 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=0
+07-04 15:54:02.500  1165  8831 W ActivityTaskManager: Force removing ActivityRecord{d59f7d2 u0 com.example.batterymanager_utility/.MainActivity t1067 f}: app died, no saved state
+07-04 15:54:02.525  2567  2567 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+07-04 15:54:02.525  2567  2567 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 15:54:02.527  2567  2567 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+07-04 15:54:02.527  2567  2567 D CarrierSvcBindHelper: No carrier app for: 1
+07-04 15:54:02.528  3165  3165 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 15:54:02.536  1165  1193 W ActivityManager: setHasOverlayUi called on unknown pid: 8449
+07-04 15:54:02.537   663   663 I Zygote  : Process 8449 exited due to signal 9 (Killed)
+07-04 15:54:02.548  1165  1202 I libprocessgroup: Successfully killed process cgroup uid 10186 pid 8449 in 49ms
+07-04 15:54:03.347  2287  2287 I DataSaverController: registerReceiver() : Runnable call registerReceiver()
+07-04 15:54:03.350  2287  2287 I DataSaverController: registerReceiver() : queryIntentServices = 0
+07-04 15:54:03.350  2287  2287 I DataSaverController: registerReceiver() :  postDelayed Runnable 30000
+07-04 15:54:04.133  3240  5150 D FileOperator: Mode change to WRITE_MODE!
