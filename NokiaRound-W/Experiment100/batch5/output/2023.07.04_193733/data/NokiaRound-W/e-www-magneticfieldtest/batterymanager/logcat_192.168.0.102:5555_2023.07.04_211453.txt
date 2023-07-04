@@ -1,0 +1,850 @@
+--------- beginning of main
+07-04 21:13:40.894 10652 10652 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+--------- beginning of system
+07-04 21:13:40.898  2164  2511 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.batterymanager_utility/.MainActivity} from uid 2000
+07-04 21:13:40.900  2164  2511 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=403 attached=false
+07-04 21:13:40.901  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10232; state: DISABLED
+07-04 21:13:40.902  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10232; state: DISABLED
+07-04 21:13:40.903  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10232; state: DISABLED
+07-04 21:13:40.909  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10232; state: DISABLED
+07-04 21:13:40.922  2164  2248 W ActivityManager: ProcessRecord{4337c92 0:com.example.batterymanager_utility/u0a232}: ART verification disabled
+07-04 21:13:40.922  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10232; state: DISABLED
+07-04 21:13:40.922  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10232; state: DISABLED
+07-04 21:13:40.923  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10232; state: DISABLED
+07-04 21:13:40.923  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10232; state: ENABLED
+07-04 21:13:40.923  2164  2257 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10232; state: ENABLED
+07-04 21:13:40.930  1085  1085 D Zygote  : Forked child process 10655
+07-04 21:13:40.933  2164  2257 I ActivityManager: Start proc 10655:com.example.batterymanager_utility/u0a232 for pre-top-activity {com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}
+07-04 21:13:40.936 10655 10655 I manager_utilit: Late-enabling -Xcheck:jni
+07-04 21:13:40.965 10655 10655 I manager_utilit: Using CollectorTypeCC GC.
+07-04 21:13:40.970  5504  5512 I adbd    : jdwp connection from 10655
+07-04 21:13:40.972 10655 10655 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:13:40.984 10655 10655 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10232; state: ENABLED
+07-04 21:13:40.990 10655 10655 W ziparchive: Unable to open '/data/app/~~fQh79iB4MXsgYbTtVI2gjQ==/com.example.batterymanager_utility--U9A_ZUw1UrBg_I3I81-6w==/base.dm': No such file or directory
+07-04 21:13:40.990 10655 10655 W ziparchive: Unable to open '/data/app/~~fQh79iB4MXsgYbTtVI2gjQ==/com.example.batterymanager_utility--U9A_ZUw1UrBg_I3I81-6w==/base.dm': No such file or directory
+07-04 21:13:41.015 30641 30641 I A       : onPause
+07-04 21:13:41.020  3724  3724 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+07-04 21:13:41.031 10662 10662 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+07-04 21:13:41.035 10662 10662 I AndroidRuntime: Using default boot image
+07-04 21:13:41.035 10662 10662 I AndroidRuntime: Leaving lock profiling enabled
+07-04 21:13:41.030 10662 10662 W app_process: type=1400 audit(0.0:404): avc: denied { read } for name="u:object_r:odsign_prop:s0" dev="tmpfs" ino=23665 scontext=u:r:shell:s0 tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=0
+07-04 21:13:41.035 10662 10662 W libc    : Access denied finding property "odsign.verification.success"
+07-04 21:13:41.038 10662 10662 W app_process: ART APEX data files are untrusted.
+07-04 21:13:41.039 10662 10662 I app_process: Using CollectorTypeCC GC.
+07-04 21:13:41.039 10662 10662 E app_process: Error reading named image component header for /system/framework/boot.art, error: Unable to open file "/system/framework/arm64/boot.art" for reading image header
+07-04 21:13:41.055 10679 10679 W dex2oat64: Mismatch between dex2oat instruction set features to use (ISA: Arm64 Feature string: -a53,crc,lse,fp16,-dotprod,-sve) and those from CPP defines (ISA: Arm64 Feature string: -a53,-crc,-lse,-fp16,-dotprod,-sve) for the command line:
+07-04 21:13:41.055 10679 10679 W dex2oat64: /apex/com.android.art/bin/dex2oat64 --runtime-arg -Xbootclasspath:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --base=0x70000000 --dex-file=/apex/com.android.art/javalib/core-oj.jar --dex-location=/apex/com.android.art/javalib/core-oj.jar --dex-file=/apex/com.android.art/javalib/core-libart.jar --dex-location=/apex/com.android.art/javalib/core-libart.jar --dex-file=/apex/com.android.art/javalib/okhttp.jar --dex-location=/apex/com.android.art/javalib/okhttp.jar --dex-file=/apex/com.android.art/javalib/bouncycastle.jar --dex-location=/apex/com.android.art/javalib/bouncycastle.jar --dex-file=/apex/com.android.art/javalib/apache-xml.jar --dex-location=/apex/com.android.art/javalib/apache-xml.jar --dex-file=/system/framework/framework.jar --dex-location=/system/framework/framework.jar --dex-file=/system/framework/framework-graphics.jar --dex-location=/system/framework/framework-graphics.jar --dex-file=/system/framework/ext.jar --dex-location=/system/framework/ext.jar --dex-file=/system/framework/telephony-common.jar --dex-location=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-location=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-location=/system/framework/ims-common.jar --dex-file=/apex/com.android.i18n/javalib/core-icu4j.jar --dex-location=/apex/com.android.i18n/javalib/core-icu4j.jar --image-fd=5 --output-vdex-fd=6 --oat-fd=7 --oat-location=/system/framework/arm64/boot.oat --single-image --image-format=uncompressed --compiler-filter=verify --profile-file=/apex/com.android.art/etc/boot-image.prof --profile-file=/system/etc/boot-image.prof --avoid-storing-invocation --instruction-set=arm64 --instruction-set-features=runtime --runtime-arg -Xms64m --runtime-arg -Xmx64m --dirty-image-objects=/system/etc/dirty-image-objects --instruction-set-variant=kryo385 --instruction-set-features=default --generate-mini-debug-info
+07-04 21:13:41.069 10655 10655 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~fQh79iB4MXsgYbTtVI2gjQ==/com.example.batterymanager_utility--U9A_ZUw1UrBg_I3I81-6w==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~fQh79iB4MXsgYbTtVI2gjQ==/com.example.batterymanager_utility--U9A_ZUw1UrBg_I3I81-6w==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.batterymanager_utility
+07-04 21:13:41.074 10679 10679 I dex2oat64: /apex/com.android.art/bin/dex2oat64 --runtime-arg -Xbootclasspath:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar --base=0x70000000 --dex-file=/apex/com.android.art/javalib/core-oj.jar --dex-location=/apex/com.android.art/javalib/core-oj.jar --dex-file=/apex/com.android.art/javalib/core-libart.jar --dex-location=/apex/com.android.art/javalib/core-libart.jar --dex-file=/apex/com.android.art/javalib/okhttp.jar --dex-location=/apex/com.android.art/javalib/okhttp.jar --dex-file=/apex/com.android.art/javalib/bouncycastle.jar --dex-location=/apex/com.android.art/javalib/bouncycastle.jar --dex-file=/apex/com.android.art/javalib/apache-xml.jar --dex-location=/apex/com.android.art/javalib/apache-xml.jar --dex-file=/system/framework/framework.jar --dex-location=/system/framework/framework.jar --dex-file=/system/framework/framework-graphics.jar --dex-location=/system/framework/framework-graphics.jar --dex-file=/system/framework/ext.jar --dex-location=/system/framework/ext.jar --dex-file=/system/framework/telephony-common.jar --dex-location=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-location=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-location=/system/framework/ims-common.jar --dex-file=/apex/com.android.i18n/javalib/core-icu4j.jar --dex-location=/apex/com.android.i18n/javalib/core-icu4j.jar --image-fd=5 --output-vdex-fd=6 --oat-fd=7 --oat-location=/system/framework/arm64/boot.oat --single-image --image-format=uncompressed --compiler-filter=verify --profile-file=/apex/com.android.art/etc/boot-image.prof --profile-file=/system/etc/boot-image.prof --avoid-storing-invocation --instruction-set=arm64 --instruction-set-features=runtime --runtime-arg -Xms64m --runtime-arg -Xmx64m --dirty-image-objects=/system/etc/dirty-image-objects --instruction-set-variant=kryo385 --instruction-set-features=default --generate-mini-debug-info
+07-04 21:13:41.075 10679 10679 I dex2oat64: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar
+07-04 21:13:41.075 10655 10655 V GraphicsEnvironment: ANGLE Developer option for 'com.example.batterymanager_utility' set to: 'default'
+07-04 21:13:41.075 10655 10655 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+07-04 21:13:41.077 10655 10655 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 21:13:41.077 10655 10655 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 21:13:41.082 10655 10655 I BatteryMgr:App: creating notification channel
+07-04 21:13:41.227  2164  2249 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10232; state: ENABLED
+07-04 21:13:41.228  2570  2570 I WallpaperService: engine paused
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: QUALCOMM build                   : 781e7d0, I46ff5fc46f
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: Build Date                       : 12/01/20
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.31.04.01
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: Local Branch                     : QPR1
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: Remote Branch                    : 
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: Remote Branch                    : 
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: Reconstruct Branch               : 
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: Build Config                     : C P 11.0.1 AArch64
+07-04 21:13:41.228 10655 10682 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-04 21:13:41.231 10655 10682 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+07-04 21:13:41.232 10655 10682 W AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-04 21:13:41.232 10655 10682 W AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-04 21:13:41.238   739   767 I SDM     : HWCDisplay::GetColorModeCount: Supported color mode count = 5
+07-04 21:13:41.239   737  2876 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+07-04 21:13:41.239 10655 10682 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:13:41.240   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+07-04 21:13:41.244 10655 10686 I Gralloc4: mapper 4.x is not supported
+07-04 21:13:41.244   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+07-04 21:13:41.244 10655 10686 W Gralloc3: mapper 3.x is not supported
+07-04 21:13:41.246   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+07-04 21:13:41.246 10655 10686 W Gralloc4: allocator 4.x is not supported
+07-04 21:13:41.246   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+07-04 21:13:41.246 10655 10686 W Gralloc3: allocator 3.x is not supported
+07-04 21:13:41.246 30641 30641 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-04 21:13:41.246 30641 30641 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-04 21:13:41.260  2164  2245 W ziparchive: Unable to open '/data/app/~~fQh79iB4MXsgYbTtVI2gjQ==/com.example.batterymanager_utility--U9A_ZUw1UrBg_I3I81-6w==/base.dm': No such file or directory
+07-04 21:13:41.261  2164  2245 I ActivityTaskManager: Displayed com.example.batterymanager_utility/.MainActivity: +360ms
+07-04 21:13:41.277  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 21:13:41.277  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 21:13:41.278  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 21:13:41.278  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 21:13:41.278  2164  2248 W ProcessStats: Tracking association SourceState{b4960b com.google.android.googlequicksearchbox:search/10135 BTopFgs #46242} whose proc state 2 is better than process ProcessState{9b58cc3 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (41 skipped)
+07-04 21:13:41.280  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 21:13:41.280 30641 30641 I A       : onStop
+07-04 21:13:41.371 10679 10679 I dex2oat64: Using CollectorTypeCC GC.
+07-04 21:13:41.518  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-04 21:13:41.559  2164  2511 W InputManager-JNI: Input channel object '8ef2af4 Splash Screen com.example.batterymanager_utility (client)' was disposed without first being removed with the input manager!
+07-04 21:13:43.242 10679 10679 I dex2oat64: Explicit concurrent copying GC freed 88242(11MB) AllocSpace objects, 5(84KB) LOS objects, 27% free, 15MB/21MB, paused 20us,16us total 90.957ms
+07-04 21:13:43.456 10679 10679 I dex2oat64: Explicit concurrent copying GC freed 41961(7495KB) AllocSpace objects, 0(0B) LOS objects, 41% free, 8512KB/14MB, paused 19us,10us total 44.093ms
+07-04 21:13:43.919 10679 10679 I dex2oat64: dex2oat took 2.866s (5.906s cpu) (threads: 8) arena alloc=0B (0B) java alloc=8512KB (8716512B) native alloc=15MB (16378672B) free=4028KB (4125600B)
+07-04 21:13:44.041 10662 10662 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+07-04 21:13:44.041 10662 10662 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt68l.dat
+07-04 21:13:44.086 10662 10662 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:13:44.086 10662 10662 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+07-04 21:13:44.091 10662 10662 W Monkey  : args: [-p, e.www.magneticfieldtest, 1]
+07-04 21:13:44.091 10662 10662 W Monkey  :  arg: "-p"
+07-04 21:13:44.092 10662 10662 W Monkey  :  arg: "e.www.magneticfieldtest"
+07-04 21:13:44.092 10662 10662 W Monkey  :  arg: "1"
+07-04 21:13:44.092 10662 10662 W Monkey  : data="e.www.magneticfieldtest"
+07-04 21:13:44.150  2164  2256 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{6d0fe23 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{67d0f20 10662 (unknown name)/2000/u-1 remote:20763dd}: process gone or crashing
+07-04 21:13:44.163  2164  2511 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=e.www.magneticfieldtest/.MainActivity} from uid 2000
+07-04 21:13:44.164  2164  2511 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=404 attached=false
+07-04 21:13:44.167  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10296; state: DISABLED
+07-04 21:13:44.168  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10296; state: DISABLED
+07-04 21:13:44.169  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10296; state: DISABLED
+07-04 21:13:44.170  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10296; state: DISABLED
+07-04 21:13:44.170  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10296; state: DISABLED
+07-04 21:13:44.174  2164  2511 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10296; state: DISABLED
+07-04 21:13:44.179 10662 10662 I Monkey  : Events injected: 1
+07-04 21:13:44.193 10662 10662 I Monkey  : ## Network stats: elapsed time=27ms (0ms mobile, 0ms wifi, 27ms not connected)
+07-04 21:13:44.194  2164  2248 W ActivityManager: ProcessRecord{166b2aa 0:e.www.magneticfieldtest/u0a296}: ART verification disabled
+07-04 21:13:44.194  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10296; state: DISABLED
+07-04 21:13:44.194  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10296; state: DISABLED
+07-04 21:13:44.194  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10296; state: DISABLED
+07-04 21:13:44.194  2164  2248 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10296; state: DISABLED
+07-04 21:13:44.195  2164  2257 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10296; state: DISABLED
+07-04 21:13:44.196 10662 10662 I app_process: System.exit called, status: 0
+07-04 21:13:44.196 10662 10662 I AndroidRuntime: VM exiting with result code 0.
+07-04 21:13:44.205  1085  1085 D Zygote  : Forked child process 10713
+07-04 21:13:44.210  2164  2257 I ActivityManager: Start proc 10713:e.www.magneticfieldtest/u0a296 for pre-top-activity {e.www.magneticfieldtest/e.www.magneticfieldtest.MainActivity}
+07-04 21:13:44.214  2570  2911 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-04 21:13:44.214 10713 10713 I gneticfieldtes: Late-enabling -Xcheck:jni
+07-04 21:13:44.219  2570  2570 I WallpaperService: engine resumed
+07-04 21:13:44.220  2570  2911 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-04 21:13:44.250 10713 10713 I gneticfieldtes: Using CollectorTypeCC GC.
+07-04 21:13:44.254  5504  5512 I adbd    : jdwp connection from 10713
+07-04 21:13:44.257 10713 10713 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:13:44.266 10713 10713 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10296; state: DISABLED
+07-04 21:13:44.271 10713 10713 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+07-04 21:13:44.271 10713 10713 W ziparchive: Unable to open '/data/app/~~wfbwTM4Qpm9GVANPgAbkvg==/e.www.magneticfieldtest-dWcwN3P6DrmOyZ7SykTUbQ==/base.dm': No such file or directory
+07-04 21:13:44.271 10713 10713 W ziparchive: Unable to open '/data/app/~~wfbwTM4Qpm9GVANPgAbkvg==/e.www.magneticfieldtest-dWcwN3P6DrmOyZ7SykTUbQ==/base.dm': No such file or directory
+07-04 21:13:44.298 10713 10713 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~wfbwTM4Qpm9GVANPgAbkvg==/e.www.magneticfieldtest-dWcwN3P6DrmOyZ7SykTUbQ==/base.apk. target_sdk_version=28, uses_libraries=, library_path=/data/app/~~wfbwTM4Qpm9GVANPgAbkvg==/e.www.magneticfieldtest-dWcwN3P6DrmOyZ7SykTUbQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/e.www.magneticfieldtest
+07-04 21:13:44.305 10713 10713 V GraphicsEnvironment: ANGLE Developer option for 'e.www.magneticfieldtest' set to: 'default'
+07-04 21:13:44.305 10713 10713 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+07-04 21:13:44.306 10713 10713 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 21:13:44.307 10713 10713 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 21:13:44.334 10713 10713 W gneticfieldtes: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+07-04 21:13:44.334 10713 10713 W gneticfieldtes: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+07-04 21:13:44.337  2164  9686 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10296 pid=10713
+07-04 21:13:44.342  2164  9686 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10296 pid=10713
+07-04 21:13:44.342  2164  9686 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10296 pid=10713
+07-04 21:13:44.342  1133  1133 I sensors-hal: batch_physical_sensor:285, android.sensor.magnetic_field/21, period=20000000, max_latency=0
+07-04 21:13:44.342  1133  1133 I sensors-hal: batch_physical_sensor:296, android.sensor.magnetic_field/21, period=20000000, max_latency=0 request completed
+07-04 21:13:44.343  1133  1133 I sensors-hal: activate_physical_sensor:220, android.sensor.magnetic_field/21 en=1
+07-04 21:13:44.340  1133  1133 W sensors@2.0-ser: type=1400 audit(0.0:405): avc: denied { read write } for name="diag" dev="tmpfs" ino=23978 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+07-04 21:13:44.343  1133  1133 I sensors-hal: get_qmi_debug_flag:245, support_qmi_debug : false
+07-04 21:13:44.344  1133  1133 D Diag_Lib:  Diag_LSM_Init: Failed to open handle to diag driver, error = 13
+07-04 21:13:44.344  1133  1133 I sensors-hal: get_qmi_debug_flag:245, support_qmi_debug : false
+07-04 21:13:44.344  1133  1133 I sensors-hal: get_qmi_debug_flag:245, support_qmi_debug : false
+07-04 21:13:44.345  1133  1133 I sensors-hal: activate:318, mag_filter is disabled, active_count 1
+07-04 21:13:44.345  1133  1133 I sensors-hal: activate_physical_sensor:233, android.sensor.magnetic_field/21 en=1 completed
+07-04 21:13:44.352  1133 10740 I sensors-hal: handle_indication_realtime:456,  SCHED_FIFO(10) for qmi_cbk
+07-04 21:13:44.352  1133 10744 I sensors-hal: handle_indication_realtime:456,  SCHED_FIFO(10) for qmi_cbk
+07-04 21:13:44.376  2164  2249 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10296; state: ENABLED
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: QUALCOMM build                   : 781e7d0, I46ff5fc46f
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: Build Date                       : 12/01/20
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.31.04.01
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: Local Branch                     : QPR1
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: Remote Branch                    : 
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: Remote Branch                    : 
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: Reconstruct Branch               : 
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: Build Config                     : C P 11.0.1 AArch64
+07-04 21:13:44.378 10713 10736 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-04 21:13:44.380 10713 10736 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+07-04 21:13:44.381 10713 10736 W AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+07-04 21:13:44.381 10713 10736 W AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+07-04 21:13:44.387   739   767 I SDM     : HWCDisplay::GetColorModeCount: Supported color mode count = 5
+07-04 21:13:44.387   737  1434 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+07-04 21:13:44.388 10713 10736 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:13:44.388   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+07-04 21:13:44.388 10713 10749 I Gralloc4: mapper 4.x is not supported
+07-04 21:13:44.389   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+07-04 21:13:44.389 10713 10749 W Gralloc3: mapper 3.x is not supported
+07-04 21:13:44.390   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+07-04 21:13:44.390 10713 10749 W Gralloc4: allocator 4.x is not supported
+07-04 21:13:44.390   687   687 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+07-04 21:13:44.390 10713 10749 W Gralloc3: allocator 3.x is not supported
+07-04 21:13:44.401  2164  2245 W ziparchive: Unable to open '/data/app/~~wfbwTM4Qpm9GVANPgAbkvg==/e.www.magneticfieldtest-dWcwN3P6DrmOyZ7SykTUbQ==/base.dm': No such file or directory
+07-04 21:13:44.402  2164  2245 I ActivityTaskManager: Displayed e.www.magneticfieldtest/.MainActivity: +237ms
+07-04 21:13:44.409  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 21:13:44.410  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 21:13:44.410  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=e.www.magneticfieldtest fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 21:13:44.410  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 21:13:44.410  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 21:13:44.537  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-04 21:13:44.695  2164  2290 W InputManager-JNI: Input channel object '9f3fd4c Splash Screen e.www.magneticfieldtest (client)' was disposed without first being removed with the input manager!
+07-04 21:13:44.831  2570  2570 I WallpaperService: engine paused
+07-04 21:13:45.347 10755 10755 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:13:45.781 10771 10771 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:13:45.788  2164  2290 I ActivityManager: Background started FGS: Allowed [callingPackage: com.android.shell; callingUid: 2000; uidState: NONE; intent: Intent { cmp=com.example.batterymanager_utility/.DataCollectionService (has extras) }; code:SYSTEM_UID; tempAllowListReason:<,reasonCode:SYSTEM_ALLOW_LISTED,duration:9223372036854775807,callingUid:-1>; targetSdkVersion:33; callerTargetSdkVersion:-1; startForegroundCount:0; bindFromPackage:null]
+07-04 21:13:45.797 10655 10655 I BatteryMgr:DataCollectionService: onStartCommand: begin
+07-04 21:13:45.797 10655 10655 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 100
+07-04 21:13:45.797 10655 10655 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+07-04 21:13:45.798 10655 10655 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+07-04 21:13:45.802 10655 10655 I BatteryMgr:DataCollectionService: started foreground
+07-04 21:13:45.811 10655 10774 I BatteryMgr:DataCollectionService: collectData: begin
+07-04 21:13:45.816 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498025816,190937,4097
+07-04 21:13:45.923 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498025923,190937,4097
+07-04 21:13:46.035 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026035,236250,4097
+07-04 21:13:46.144 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026144,236250,4097
+07-04 21:13:46.189 10655 10782 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+07-04 21:13:46.255 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026255,236250,4097
+07-04 21:13:46.367 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026367,128437,4097
+07-04 21:13:46.483 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026483,128437,4097
+07-04 21:13:46.601 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026601,128437,4097
+07-04 21:13:46.720 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026719,116250,4097
+07-04 21:13:46.828 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026828,116250,4097
+07-04 21:13:46.939 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498026939,116250,4097
+07-04 21:13:47.047 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027047,109062,4097
+07-04 21:13:47.159 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027159,109062,4097
+07-04 21:13:47.277 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027277,109062,4097
+07-04 21:13:47.390 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027390,117500,4097
+07-04 21:13:47.503 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027503,117500,4097
+07-04 21:13:47.561  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 2]
+07-04 21:13:47.617 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027617,117500,4097
+07-04 21:13:47.732 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027732,130625,4097
+07-04 21:13:47.846 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027846,130625,4097
+07-04 21:13:47.954 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498027954,130625,4097
+07-04 21:13:48.062 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028062,128125,4097
+07-04 21:13:48.170 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028170,128125,4097
+07-04 21:13:48.288 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028288,128125,4097
+07-04 21:13:48.403 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028403,194375,4097
+07-04 21:13:48.517 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028516,194375,4097
+07-04 21:13:48.630 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028630,194375,4097
+07-04 21:13:48.742 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028742,117500,4097
+07-04 21:13:48.857 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028857,117500,4097
+07-04 21:13:48.972 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498028972,117500,4097
+07-04 21:13:49.084 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029084,117500,4097
+07-04 21:13:49.197 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029197,130625,4097
+07-04 21:13:49.305 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029304,130625,4097
+07-04 21:13:49.415 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029415,130625,4097
+07-04 21:13:49.524 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029524,207500,4097
+07-04 21:13:49.636 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029636,207500,4097
+07-04 21:13:49.754 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029754,207500,4097
+07-04 21:13:49.869 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029869,129062,4097
+07-04 21:13:49.985 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498029984,129062,4097
+07-04 21:13:50.099 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030099,129062,4097
+07-04 21:13:50.213 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030213,110937,4097
+07-04 21:13:50.327 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030327,110937,4097
+07-04 21:13:50.435 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030435,110937,4097
+07-04 21:13:50.546 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030546,186875,4097
+07-04 21:13:50.580  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:13:50.655 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030654,186875,4097
+07-04 21:13:50.768 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030767,186875,4097
+07-04 21:13:50.882 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030881,120625,4097
+07-04 21:13:50.988 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498030988,120625,4097
+07-04 21:13:51.101 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031101,120625,4097
+07-04 21:13:51.214 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031214,139687,4097
+07-04 21:13:51.326 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031326,139687,4097
+07-04 21:13:51.440 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031439,139687,4097
+07-04 21:13:51.548 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031548,140000,4097
+07-04 21:13:51.656 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031656,140000,4097
+07-04 21:13:51.765 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031765,140000,4097
+07-04 21:13:51.878 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031878,140000,4097
+07-04 21:13:51.989 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498031989,106250,4097
+07-04 21:13:52.104 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032104,106250,4097
+07-04 21:13:52.218 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032218,106250,4097
+07-04 21:13:52.337 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032337,139062,4097
+07-04 21:13:52.450 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032450,139062,4097
+07-04 21:13:52.564 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032563,139062,4097
+07-04 21:13:52.678 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032678,122187,4097
+07-04 21:13:52.787 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032786,122187,4097
+07-04 21:13:52.897 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498032897,122187,4097
+07-04 21:13:53.005 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033005,220312,4097
+07-04 21:13:53.117 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033117,220312,4097
+07-04 21:13:53.233 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033233,220312,4097
+07-04 21:13:53.348 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033347,136250,4097
+07-04 21:13:53.460 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033460,136250,4097
+07-04 21:13:53.574 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033574,136250,4097
+07-04 21:13:53.606  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-04 21:13:53.688 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033688,111875,4097
+07-04 21:13:53.797 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033796,111875,4097
+07-04 21:13:53.904 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498033904,111875,4097
+07-04 21:13:54.011 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034011,198125,4097
+07-04 21:13:54.118 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034118,198125,4097
+07-04 21:13:54.225 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034225,198125,4097
+07-04 21:13:54.340 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034339,198125,4097
+07-04 21:13:54.461 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034460,117812,4097
+07-04 21:13:54.575 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034575,117812,4097
+07-04 21:13:54.691 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034691,117812,4097
+07-04 21:13:54.809 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034809,200312,4097
+07-04 21:13:54.929 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498034929,200312,4097
+07-04 21:13:55.037 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035037,200312,4097
+07-04 21:13:55.153 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035153,223750,4097
+07-04 21:13:55.261 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035261,223750,4097
+07-04 21:13:55.373 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035373,223750,4097
+07-04 21:13:55.492 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035492,122187,4097
+07-04 21:13:55.602 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035602,122187,4097
+07-04 21:13:55.721 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035721,122187,4097
+07-04 21:13:55.830 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035830,165000,4097
+07-04 21:13:55.939 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498035938,165000,4097
+07-04 21:13:56.047 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036047,165000,4097
+07-04 21:13:56.155 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036155,135625,4097
+07-04 21:13:56.267 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036267,135625,4097
+07-04 21:13:56.350 30663 30663 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 21:13:56.351  2164  9686 W ProcessStats: Tracking association SourceState{c3a3072 system/1000 BTopFgs #46257} whose proc state 2 is better than process ProcessState{9b58cc3 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (31 skipped)
+07-04 21:13:56.373 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036373,135625,4097
+07-04 21:13:56.486 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036486,128750,4097
+07-04 21:13:56.600 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036599,128750,4097
+07-04 21:13:56.624  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 3]
+07-04 21:13:56.718 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036718,128750,4097
+07-04 21:13:56.836 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036836,132187,4097
+07-04 21:13:56.950 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498036949,132187,4097
+07-04 21:13:57.066 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037066,132187,4097
+07-04 21:13:57.182 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037182,131875,4097
+07-04 21:13:57.297 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037297,131875,4097
+07-04 21:13:57.405 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037405,131875,4097
+07-04 21:13:57.512 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037512,177187,4097
+07-04 21:13:57.625 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037625,177187,4097
+07-04 21:13:57.739 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037738,177187,4097
+07-04 21:13:57.852 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037851,177187,4097
+07-04 21:13:57.966 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498037966,128437,4097
+07-04 21:13:58.079 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038079,128437,4097
+07-04 21:13:58.195 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038195,128437,4097
+07-04 21:13:58.307 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038307,134687,4097
+07-04 21:13:58.414 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038414,134687,4097
+07-04 21:13:58.523 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038523,134687,4097
+07-04 21:13:58.630 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038630,192812,4097
+07-04 21:13:58.741 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038741,192812,4097
+07-04 21:13:58.856 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038856,192812,4097
+07-04 21:13:58.973 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498038973,125937,4097
+07-04 21:13:59.091 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039091,125937,4097
+07-04 21:13:59.206 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039206,125937,4097
+07-04 21:13:59.319 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039319,120625,4097
+07-04 21:13:59.431 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039431,120625,4097
+07-04 21:13:59.540 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039540,120625,4097
+07-04 21:13:59.645  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-04 21:13:59.647 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039646,194687,4097
+07-04 21:13:59.753 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039753,194687,4097
+07-04 21:13:59.869 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039869,194687,4097
+07-04 21:13:59.983 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498039983,134062,4097
+07-04 21:14:00.024  3655  3912 I AiAiEcho: Predicting[7]: { Feature:1, creation:2023-07-04T18:50:10.965Z, expiry:2023-07-04T19:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T19:00:00Z, expiry:2023-07-04T20:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-04T20:00:00Z, expiry:2023-07-04T21:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T21:00:00Z, expiry:2023-07-04T22:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T22:00:00Z, expiry:2023-07-04T23:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T23:00:00Z, expiry:2023-07-05T00:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-05T00:00:00Z, expiry:2023-07-05T00:50:10.965Z, isExpired: true}
+07-04 21:14:00.025  3655  3912 I AiAiEcho: EchoTargets: Feature:1
+07-04 21:14:00.025  3655  3912 I AiAiEcho: Filtered by AiAi flag check: 
+07-04 21:14:00.026  3655  3912 I AiAiEcho: Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377244, card type: 1, update time: 2023-07-04T19:00:00Z, expiration time: 2023-07-04T20:00:00Z, ranking metadata: RankingMetaData(urgency=0.949, priority=0.3, recency=1.0, rankScore=0.2847, importantTimePoints=# kwj@7bca4) }
+07-04 21:14:00.029  3655  3912 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 1 (types=[1])
+07-04 21:14:00.041  2428  2428 W BcSmartspaceCard: No title view to update
+07-04 21:14:00.093 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040092,134062,4097
+07-04 21:14:00.205 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040205,134062,4097
+07-04 21:14:00.317 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040316,116562,4097
+07-04 21:14:00.435 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040435,116562,4097
+07-04 21:14:00.550 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040550,116562,4097
+07-04 21:14:00.658 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040657,128750,4097
+07-04 21:14:00.773 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040773,128750,4097
+07-04 21:14:00.881 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040881,128750,4097
+07-04 21:14:00.994 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498040994,128750,4097
+07-04 21:14:01.113 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041113,202500,4097
+07-04 21:14:01.229 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041229,202500,4097
+07-04 21:14:01.344 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041344,202500,4097
+07-04 21:14:01.460 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041460,129062,4097
+07-04 21:14:01.578 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041578,129062,4097
+07-04 21:14:01.689 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041689,129062,4097
+07-04 21:14:01.798 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041798,115000,4097
+07-04 21:14:01.910 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498041910,115000,4097
+07-04 21:14:02.018 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042018,115000,4097
+07-04 21:14:02.135 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042135,115312,4097
+07-04 21:14:02.249 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042249,115312,4097
+07-04 21:14:02.359 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042359,115312,4097
+07-04 21:14:02.474 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042474,156250,4097
+07-04 21:14:02.582 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042582,156250,4097
+07-04 21:14:02.664  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:14:02.689 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042688,156250,4097
+07-04 21:14:02.807 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042807,112812,4097
+07-04 21:14:02.915 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498042915,112812,4097
+07-04 21:14:03.022 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043022,112812,4097
+07-04 21:14:03.128 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043128,202500,4097
+07-04 21:14:03.253 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043253,202500,4097
+07-04 21:14:03.368 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043368,202500,4097
+07-04 21:14:03.485 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043485,125937,4097
+07-04 21:14:03.600 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043600,125937,4097
+07-04 21:14:03.716 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043716,125937,4097
+07-04 21:14:03.832 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043832,168125,4097
+07-04 21:14:03.945 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498043945,168125,4097
+07-04 21:14:04.065 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044064,168125,4097
+07-04 21:14:04.174 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044173,171250,4097
+07-04 21:14:04.288 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044287,171250,4097
+07-04 21:14:04.400 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044400,171250,4097
+07-04 21:14:04.515 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044515,171250,4097
+07-04 21:14:04.634 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044634,130312,4097
+07-04 21:14:04.746 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044746,130312,4097
+07-04 21:14:04.852 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044852,130312,4097
+07-04 21:14:04.964 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498044964,339375,4097
+07-04 21:14:05.078 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045078,339375,4097
+07-04 21:14:05.190 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045189,339375,4097
+07-04 21:14:05.301 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045301,188750,4097
+07-04 21:14:05.415 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045415,188750,4097
+07-04 21:14:05.528 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045528,188750,4097
+07-04 21:14:05.644 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045643,103437,4097
+07-04 21:14:05.687  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:14:05.761 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045761,103437,4097
+07-04 21:14:05.875 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045875,103437,4097
+07-04 21:14:05.988 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498045988,124375,4097
+07-04 21:14:06.104 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046104,124375,4097
+07-04 21:14:06.226 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046226,124375,4097
+07-04 21:14:06.337 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046337,124375,4097
+07-04 21:14:06.445 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046445,124375,4097
+07-04 21:14:06.560 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046559,124375,4097
+07-04 21:14:06.676 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046676,170937,4097
+07-04 21:14:06.792 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046792,170937,4097
+07-04 21:14:06.910 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498046910,170937,4097
+07-04 21:14:07.025 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047025,121250,4097
+07-04 21:14:07.139 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047139,121250,4097
+07-04 21:14:07.252 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047252,121250,4097
+07-04 21:14:07.365 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047365,113125,4097
+07-04 21:14:07.478 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047478,113125,4097
+07-04 21:14:07.586 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047586,113125,4097
+07-04 21:14:07.698 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047698,174062,4097
+07-04 21:14:07.808 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047807,174062,4097
+07-04 21:14:07.921 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498047920,174062,4097
+07-04 21:14:08.029 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048029,153437,4097
+07-04 21:14:08.143 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048143,153437,4097
+07-04 21:14:08.250 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048250,153437,4097
+07-04 21:14:08.362 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048362,180000,4097
+07-04 21:14:08.475 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048475,180000,4097
+07-04 21:14:08.586 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048586,180000,4097
+07-04 21:14:08.693 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048693,180000,4097
+07-04 21:14:08.705  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+07-04 21:14:08.801 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048800,202500,4097
+07-04 21:14:08.915 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498048914,202500,4097
+07-04 21:14:09.029 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049029,202500,4097
+07-04 21:14:09.143 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049143,132187,4097
+07-04 21:14:09.260 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049260,132187,4097
+07-04 21:14:09.375 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049375,132187,4097
+07-04 21:14:09.497 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049497,112812,4097
+07-04 21:14:09.609 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049608,112812,4097
+07-04 21:14:09.723 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049722,112812,4097
+07-04 21:14:09.841 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049841,151562,4097
+07-04 21:14:09.948 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498049948,151562,4097
+07-04 21:14:10.062 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050062,151562,4097
+07-04 21:14:10.169 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050169,188750,4097
+07-04 21:14:10.284 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050284,188750,4097
+07-04 21:14:10.400 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050399,188750,4097
+07-04 21:14:10.525 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050525,121250,4097
+07-04 21:14:10.640 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050640,121250,4097
+07-04 21:14:10.760 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050760,121250,4097
+07-04 21:14:10.877 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050877,115625,4097
+07-04 21:14:10.986 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498050986,115625,4097
+07-04 21:14:11.098 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051097,115625,4097
+07-04 21:14:11.206 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051206,119687,4097
+07-04 21:14:11.321 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051321,119687,4097
+07-04 21:14:11.430 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051429,119687,4097
+07-04 21:14:11.542 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051542,179062,4097
+07-04 21:14:11.656 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051656,179062,4097
+07-04 21:14:11.733  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+07-04 21:14:11.769 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051768,179062,4097
+07-04 21:14:11.880 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051880,122812,4097
+07-04 21:14:11.991 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498051991,122812,4097
+07-04 21:14:12.102 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052102,122812,4097
+07-04 21:14:12.213 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052213,122812,4097
+07-04 21:14:12.335 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052335,205312,4097
+07-04 21:14:12.454 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052454,205312,4097
+07-04 21:14:12.570 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052569,94687,4097
+07-04 21:14:12.684 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052683,94687,4097
+07-04 21:14:12.798 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052798,94687,4097
+07-04 21:14:12.918 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498052918,94687,4097
+07-04 21:14:13.027 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053027,126250,4097
+07-04 21:14:13.134 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053134,126250,4097
+07-04 21:14:13.243 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053242,126250,4097
+07-04 21:14:13.350 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053350,254375,4097
+07-04 21:14:13.459 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053459,254375,4097
+07-04 21:14:13.576 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053576,254375,4097
+07-04 21:14:13.697 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053696,126875,4097
+07-04 21:14:13.812 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053812,126875,4097
+07-04 21:14:13.933 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498053933,126875,4097
+07-04 21:14:14.047 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054047,128437,4097
+07-04 21:14:14.164 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054164,128437,4097
+07-04 21:14:14.272 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054272,128437,4097
+07-04 21:14:14.378 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054378,188437,4097
+07-04 21:14:14.490 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054489,188437,4097
+07-04 21:14:14.604 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054604,188437,4097
+07-04 21:14:14.723 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054723,103125,4097
+07-04 21:14:14.768  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 4]
+07-04 21:14:14.837 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054837,103125,4097
+07-04 21:14:14.951 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498054950,103125,4097
+07-04 21:14:15.063 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055063,124687,4097
+07-04 21:14:15.177 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055177,124687,4097
+07-04 21:14:15.285 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055285,124687,4097
+07-04 21:14:15.393 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055393,121562,4097
+07-04 21:14:15.505 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055504,121562,4097
+07-04 21:14:15.612 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055612,121562,4097
+07-04 21:14:15.727 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055727,121562,4097
+07-04 21:14:15.838 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055837,126250,4097
+07-04 21:14:15.954 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498055954,126250,4097
+07-04 21:14:16.073 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056073,120000,4097
+07-04 21:14:16.186 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056186,120000,4097
+07-04 21:14:16.298 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056298,120000,4097
+07-04 21:14:16.411 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056411,120000,4097
+07-04 21:14:16.518 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056518,139062,4097
+07-04 21:14:16.629 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056628,139062,4097
+07-04 21:14:16.737 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056737,139062,4097
+07-04 21:14:16.851 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056850,135625,4097
+07-04 21:14:16.967 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498056967,135625,4097
+07-04 21:14:17.086 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057086,135625,4097
+07-04 21:14:17.204 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057204,158750,4097
+07-04 21:14:17.318 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057318,158750,4097
+07-04 21:14:17.431 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057431,158750,4097
+07-04 21:14:17.543 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057543,118125,4097
+07-04 21:14:17.651 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057651,118125,4097
+07-04 21:14:17.760 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057760,118125,4097
+07-04 21:14:17.783  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:14:17.870 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057870,175937,4097
+07-04 21:14:17.992 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498057991,175937,4097
+07-04 21:14:18.106 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058106,175937,4097
+07-04 21:14:18.221 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058220,107812,4097
+07-04 21:14:18.327 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058327,107812,4097
+07-04 21:14:18.435 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058434,107812,4097
+07-04 21:14:18.547 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058547,128125,4097
+07-04 21:14:18.654 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058654,128125,4097
+07-04 21:14:18.761 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058761,128125,4097
+07-04 21:14:18.873 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058873,184687,4097
+07-04 21:14:18.983 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498058983,184687,4097
+07-04 21:14:19.105 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059105,184687,4097
+07-04 21:14:19.221 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059221,184687,4097
+07-04 21:14:19.332 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059332,128750,4097
+07-04 21:14:19.445 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059445,128750,4097
+07-04 21:14:19.556 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059556,128750,4097
+07-04 21:14:19.670 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059670,152187,4097
+07-04 21:14:19.779 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059779,152187,4097
+07-04 21:14:19.886 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059886,152187,4097
+07-04 21:14:19.995 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498059994,183125,4097
+07-04 21:14:20.107 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060107,183125,4097
+07-04 21:14:20.213 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060213,183125,4097
+07-04 21:14:20.326 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060326,205312,4097
+07-04 21:14:20.440 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060440,205312,4097
+07-04 21:14:20.559 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060559,205312,4097
+07-04 21:14:20.673 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060673,105625,4097
+07-04 21:14:20.783 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060783,105625,4097
+07-04 21:14:20.809  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+07-04 21:14:20.896 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498060896,105625,4097
+07-04 21:14:21.010 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061010,114062,4097
+07-04 21:14:21.117 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061117,114062,4097
+07-04 21:14:21.225 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061224,114062,4097
+07-04 21:14:21.333 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061332,114062,4097
+07-04 21:14:21.451 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061451,190937,4097
+07-04 21:14:21.573 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061572,190937,4097
+07-04 21:14:21.685 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061685,111250,4097
+07-04 21:14:21.796 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061795,111250,4097
+07-04 21:14:21.908 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498061908,111250,4097
+07-04 21:14:22.021 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062021,111250,4097
+07-04 21:14:22.134 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062134,124062,4097
+07-04 21:14:22.242 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062241,124062,4097
+07-04 21:14:22.350 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062349,124062,4097
+07-04 21:14:22.461 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062461,176562,4097
+07-04 21:14:22.575 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062575,176562,4097
+07-04 21:14:22.687 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062687,176562,4097
+07-04 21:14:22.802 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062802,124375,4097
+07-04 21:14:22.920 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498062920,124375,4097
+07-04 21:14:23.037 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063037,124375,4097
+07-04 21:14:23.154 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063153,136562,4097
+07-04 21:14:23.260 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063260,136562,4097
+07-04 21:14:23.367 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063367,136562,4097
+07-04 21:14:23.478 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063478,191875,4097
+07-04 21:14:23.585 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063585,191875,4097
+07-04 21:14:23.697 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063697,191875,4097
+07-04 21:14:23.811 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063811,132187,4097
+07-04 21:14:23.833  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-04 21:14:23.936 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498063936,132187,4097
+07-04 21:14:24.052 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064052,132187,4097
+07-04 21:14:24.166 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064166,112812,4097
+07-04 21:14:24.278 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064278,112812,4097
+07-04 21:14:24.397 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064397,112812,4097
+07-04 21:14:24.506 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064506,108437,4097
+07-04 21:14:24.621 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064621,108437,4097
+07-04 21:14:24.735 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064735,108437,4097
+07-04 21:14:24.847 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064846,135000,4097
+07-04 21:14:24.963 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498064963,135000,4097
+07-04 21:14:25.077 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065077,135000,4097
+07-04 21:14:25.191 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065191,116562,4097
+07-04 21:14:25.303 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065303,116562,4097
+07-04 21:14:25.410 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065410,116562,4097
+07-04 21:14:25.518 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065518,116562,4097
+07-04 21:14:25.625 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065625,150312,4097
+07-04 21:14:25.741 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065741,150312,4097
+07-04 21:14:25.849 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065849,150312,4097
+07-04 21:14:25.961 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498065961,118125,4097
+07-04 21:14:26.075 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066075,118125,4097
+07-04 21:14:26.191 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066191,118125,4097
+07-04 21:14:26.305 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066305,190625,4097
+07-04 21:14:26.421 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066421,190625,4097
+07-04 21:14:26.536 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066536,190625,4097
+07-04 21:14:26.644 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066644,169687,4097
+07-04 21:14:26.751 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066751,169687,4097
+07-04 21:14:26.851  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:14:26.858 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066858,169687,4097
+07-04 21:14:26.965 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498066965,186250,4097
+07-04 21:14:27.080 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067079,186250,4097
+07-04 21:14:27.195 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067195,186250,4097
+07-04 21:14:27.308 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067308,120625,4097
+07-04 21:14:27.422 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067422,120625,4097
+07-04 21:14:27.532 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067532,120625,4097
+07-04 21:14:27.648 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067648,131250,4097
+07-04 21:14:27.763 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067762,131250,4097
+07-04 21:14:27.870 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067870,131250,4097
+07-04 21:14:27.978 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498067977,131250,4097
+07-04 21:14:28.085 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068084,200937,4097
+07-04 21:14:28.201 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068201,200937,4097
+07-04 21:14:28.315 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068315,200937,4097
+07-04 21:14:28.427 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068427,235000,4097
+07-04 21:14:28.542 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068542,235000,4097
+07-04 21:14:28.657 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068657,235000,4097
+07-04 21:14:28.774 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068773,107500,4097
+07-04 21:14:28.893 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498068893,107500,4097
+07-04 21:14:29.001 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069001,107500,4097
+07-04 21:14:29.120 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069120,200937,4097
+07-04 21:14:29.230 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069230,200937,4097
+07-04 21:14:29.346 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069346,200937,4097
+07-04 21:14:29.461 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069460,103437,4097
+07-04 21:14:29.574 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069574,103437,4097
+07-04 21:14:29.691 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069691,103437,4097
+07-04 21:14:29.807 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069806,121250,4097
+07-04 21:14:29.881  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-04 21:14:29.920 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498069920,121250,4097
+07-04 21:14:30.032 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070031,121250,4097
+07-04 21:14:30.140 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070139,127187,4097
+07-04 21:14:30.248 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070248,127187,4097
+07-04 21:14:30.355 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070355,127187,4097
+07-04 21:14:30.462 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070462,237500,4097
+07-04 21:14:30.576 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070575,237500,4097
+07-04 21:14:30.690 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070690,237500,4097
+07-04 21:14:30.800 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070800,123750,4097
+07-04 21:14:30.920 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498070920,123750,4097
+07-04 21:14:31.033 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071033,123750,4097
+07-04 21:14:31.148 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071148,107500,4097
+07-04 21:14:31.255 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071255,107500,4097
+07-04 21:14:31.364 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071363,107500,4097
+07-04 21:14:31.472 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071472,107500,4097
+07-04 21:14:31.585 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071584,177812,4097
+07-04 21:14:31.699 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071699,177812,4097
+07-04 21:14:31.813 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071813,177812,4097
+07-04 21:14:31.926 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498071926,114375,4097
+07-04 21:14:32.040 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072040,114375,4097
+07-04 21:14:32.155 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072154,114375,4097
+07-04 21:14:32.275 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072275,120625,4097
+07-04 21:14:32.383 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072383,120625,4097
+07-04 21:14:32.494 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072494,120625,4097
+07-04 21:14:32.608 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072608,186875,4097
+07-04 21:14:32.722 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072722,186875,4097
+07-04 21:14:32.842 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072842,186875,4097
+07-04 21:14:32.899  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:14:32.957 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498072957,161250,4097
+07-04 21:14:33.076 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073076,161250,4097
+07-04 21:14:33.185 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073184,161250,4097
+07-04 21:14:33.293 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073293,117812,4097
+07-04 21:14:33.407 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073407,117812,4097
+07-04 21:14:33.515 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073515,117812,4097
+07-04 21:14:33.633 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073633,175000,4097
+07-04 21:14:33.745 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073745,175000,4097
+07-04 21:14:33.858 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073858,175000,4097
+07-04 21:14:33.969 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498073969,110937,4097
+07-04 21:14:34.076 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074076,110937,4097
+07-04 21:14:34.187 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074187,110937,4097
+07-04 21:14:34.293 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074293,346250,4097
+07-04 21:14:34.406 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074406,346250,4097
+07-04 21:14:34.520 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074519,346250,4097
+07-04 21:14:34.627 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074627,346250,4097
+07-04 21:14:34.738 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074738,209687,4097
+07-04 21:14:34.845 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074845,209687,4097
+07-04 21:14:34.958 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498074958,209687,4097
+07-04 21:14:35.066 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075065,116562,4097
+07-04 21:14:35.174 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075174,116562,4097
+07-04 21:14:35.297 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075297,116562,4097
+07-04 21:14:35.410 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075410,115312,4097
+07-04 21:14:35.524 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075524,115312,4097
+07-04 21:14:35.643 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075643,115312,4097
+07-04 21:14:35.750 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075750,188125,4097
+07-04 21:14:35.868 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075867,188125,4097
+07-04 21:14:35.916  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 4]
+07-04 21:14:35.975 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498075975,188125,4097
+07-04 21:14:36.089 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076089,119375,4097
+07-04 21:14:36.206 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076206,119375,4097
+07-04 21:14:36.325 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076325,119375,4097
+07-04 21:14:36.438 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076438,185625,4097
+07-04 21:14:36.549 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076549,185625,4097
+07-04 21:14:36.664 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076663,185625,4097
+07-04 21:14:36.779 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076778,130000,4097
+07-04 21:14:36.886 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076886,130000,4097
+07-04 21:14:36.996 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498076996,130000,4097
+07-04 21:14:37.104 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077104,186875,4097
+07-04 21:14:37.217 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077217,186875,4097
+07-04 21:14:37.336 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077335,186875,4097
+07-04 21:14:37.450 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077449,186875,4097
+07-04 21:14:37.562 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077562,108750,4097
+07-04 21:14:37.683 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077683,108750,4097
+07-04 21:14:37.803 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077803,136562,4097
+07-04 21:14:37.918 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498077918,136562,4097
+07-04 21:14:38.025 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078025,136562,4097
+07-04 21:14:38.133 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078133,136562,4097
+07-04 21:14:38.241 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078241,185625,4097
+07-04 21:14:38.355 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078355,185625,4097
+07-04 21:14:38.472 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078471,185625,4097
+07-04 21:14:38.585 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078585,120625,4097
+07-04 21:14:38.699 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078699,120625,4097
+07-04 21:14:38.814 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078814,120625,4097
+07-04 21:14:38.920 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498078920,111875,4097
+07-04 21:14:38.933  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 3]
+07-04 21:14:39.032 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079032,111875,4097
+07-04 21:14:39.143 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079143,111875,4097
+07-04 21:14:39.254 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079254,355937,4097
+07-04 21:14:39.361 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079361,355937,4097
+07-04 21:14:39.477 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079477,355937,4097
+07-04 21:14:39.591 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079591,136250,4097
+07-04 21:14:39.707 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079707,136250,4097
+07-04 21:14:39.824 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079824,136250,4097
+07-04 21:14:39.939 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498079938,111250,4097
+07-04 21:14:40.057 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080057,111250,4097
+07-04 21:14:40.173 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080173,111250,4097
+07-04 21:14:40.284 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080284,134375,4097
+07-04 21:14:40.399 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080399,134375,4097
+07-04 21:14:40.521 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080520,134375,4097
+07-04 21:14:40.632 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080632,100937,4097
+07-04 21:14:40.744 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080743,100937,4097
+07-04 21:14:40.857 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080857,100937,4097
+07-04 21:14:40.972 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498080972,105312,4097
+07-04 21:14:41.086 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081086,105312,4097
+07-04 21:14:41.206 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081206,105312,4097
+07-04 21:14:41.322 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081322,117187,4097
+07-04 21:14:41.430 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081430,117187,4097
+07-04 21:14:41.545 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081545,117187,4097
+07-04 21:14:41.663 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081663,113750,4097
+07-04 21:14:41.719 30641 30641 I A       : Local calendar periodic scheduler worker starts.
+07-04 21:14:41.724 30641 30641 I A       : Scheduling the PCP local calendar update worker.
+07-04 21:14:41.735 30641 30780 I A       : Calendar refresh worker found. Do not schedule new one.
+07-04 21:14:41.737 30641 30734 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=a9c098c7-fc81-4cc9-b1ed-8dea1fa8cdc6, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.search.assistant.platform.pcp.featuredata.localcalendar.LocalCalendarPeriodicSchedulerWorker } ]
+07-04 21:14:41.768 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081767,113750,4097
+07-04 21:14:41.879 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081879,113750,4097
+07-04 21:14:41.962  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-04 21:14:41.991 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498081991,113750,4097
+07-04 21:14:42.099 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082098,120312,4097
+07-04 21:14:42.213 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082213,120312,4097
+07-04 21:14:42.337 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082337,120312,4097
+07-04 21:14:42.451 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082451,99062,4097
+07-04 21:14:42.566 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082566,99062,4097
+07-04 21:14:42.677 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082677,99062,4097
+07-04 21:14:42.791 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082791,195937,4097
+07-04 21:14:42.911 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498082910,195937,4097
+07-04 21:14:43.032 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083032,195937,4097
+07-04 21:14:43.146 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083145,92812,4097
+07-04 21:14:43.267 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083267,92812,4097
+07-04 21:14:43.386 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083386,92812,4097
+07-04 21:14:43.500 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083500,123750,4097
+07-04 21:14:43.615 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083615,123750,4097
+07-04 21:14:43.722 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083722,123750,4097
+07-04 21:14:43.830 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083830,178750,4097
+07-04 21:14:43.947 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498083947,178750,4097
+07-04 21:14:44.056 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084055,178750,4097
+07-04 21:14:44.176 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084176,114062,4097
+07-04 21:14:44.297 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084297,114062,4097
+07-04 21:14:44.409 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084409,114062,4097
+07-04 21:14:44.536 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084536,122500,4097
+07-04 21:14:44.645 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084645,122500,4097
+07-04 21:14:44.752 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084752,122500,4097
+07-04 21:14:44.860 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084859,188125,4097
+07-04 21:14:44.968 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498084968,188125,4097
+07-04 21:14:44.986  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:14:45.079 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085079,188125,4097
+07-04 21:14:45.092  2164  2175 I system_server: Background young concurrent copying GC freed 665665(18MB) AllocSpace objects, 41(1028KB) LOS objects, 23% free, 66MB/86MB, paused 162us,187us total 106.176ms
+07-04 21:14:45.125  2164  2177 W System  : A resource failed to call release. 
+07-04 21:14:45.126  2164  2177 W System  : A resource failed to call release. 
+07-04 21:14:45.127  2164  2177 W System  : A resource failed to call close. 
+07-04 21:14:45.127  2164  2177 W System  : A resource failed to call release. 
+07-04 21:14:45.128  2164  2177 W System  : A resource failed to call release. 
+07-04 21:14:45.193 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085192,202812,4097
+07-04 21:14:45.311 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085311,202812,4097
+07-04 21:14:45.424 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085424,202812,4097
+07-04 21:14:45.535 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085535,111562,4097
+07-04 21:14:45.648 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085648,111562,4097
+07-04 21:14:45.765 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085765,111562,4097
+07-04 21:14:45.874 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085874,173125,4097
+07-04 21:14:45.982 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498085982,173125,4097
+07-04 21:14:46.088 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498086088,173125,4097
+07-04 21:14:46.193 10655 10774 I BatteryMgr:DataCollectionService: stats => 1688498086193,173125,4097
+07-04 21:14:46.262 10789 10789 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:14:46.270  2164  4225 W ProcessStats: Tracking association SourceState{c3a3072 system/1000 BTopFgs #46259} whose proc state 2 is better than process ProcessState{9b58cc3 com.google.android.gms.persistent/10125 pkg=com.google.android.gms} proc state 3 (2 skipped)
+07-04 21:14:46.353 10794 10794 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:14:46.610 10805 10805 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:14:46.615  2164  4225 I ActivityManager: Force stopping e.www.magneticfieldtest appid=10296 user=0: from pid 10805
+07-04 21:14:46.617  2164  4225 I ActivityManager: Killing 10713:e.www.magneticfieldtest/u0a296 (adj 0): stop e.www.magneticfieldtest due to from pid 10805
+07-04 21:14:46.618  1133  1133 I sensors-hal: activate_physical_sensor:220, android.sensor.magnetic_field/21 en=0
+07-04 21:14:46.619  2164  4225 W ActivityTaskManager: Force removing ActivityRecord{a808a9e u0 e.www.magneticfieldtest/.MainActivity t404 f}}: app died, no saved state
+07-04 21:14:46.624  1133  1133 I sensors-hal: activate_physical_sensor:233, android.sensor.magnetic_field/21 en=0 completed
+07-04 21:14:46.625  2164  4225 W InputManager-JNI: Input channel object 'c29affe e.www.magneticfieldtest/e.www.magneticfieldtest.MainActivity (client)' was disposed without first being removed with the input manager!
+07-04 21:14:46.638  2164  4225 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10232; state: DISABLED
+07-04 21:14:46.639  2164  4225 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10232; state: DISABLED
+07-04 21:14:46.640  1085  1085 I Zygote  : Process 10713 exited due to signal 9 (Killed)
+07-04 21:14:46.641  2164  4225 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=404 attached=false
+07-04 21:14:46.641  2164  4225 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=404 attached=false
+07-04 21:14:46.643   737   737 E BpTransactionCompletedListener: Failed to transact (-32)
+07-04 21:14:46.652  2164  2248 W ActivityManager: setHasOverlayUi called on unknown pid: 10713
+07-04 21:14:46.652  2164  4754 V ActivityManager: Got obituary of 10713:e.www.magneticfieldtest
+07-04 21:14:46.652  2700  2700 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-04 21:14:46.652  2700  2700 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 21:14:46.659  3814  3814 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 21:14:46.670 28490 28490 I EuiccGoogle: [2] EuiccServiceImpl.onCreate: onCreate Single-SIM mode: simCardState is 1
+07-04 21:14:46.673  2570  2911 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-04 21:14:46.676  2570  2570 I WallpaperService: engine resumed
+07-04 21:14:46.676 28490 10812 I EuiccGoogle: [2461] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = -1
+07-04 21:14:46.677  2570  2911 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-04 21:14:46.680 28490 10812 W EuiccGoogle: [2461] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId=-1. No eUICC is active. Return null.
+07-04 21:14:46.683  2164  2258 I libprocessgroup: Successfully killed process cgroup uid 10296 pid 10713 in 64ms
+07-04 21:14:46.689 10655 10685 I OpenGLRenderer: Davey! duration=65578ms; Flags=1, FrameTimelineVsyncId=1811935, IntendedVsync=35931309820960, Vsync=35931343154292, InputEventId=0, HandleInputStart=35931343414737, AnimationStart=35931343419893, PerformTraversalsStart=35931343669476, DrawStart=35931460419852, FrameDeadline=35931343154292, FrameInterval=35931343384476, FrameStartTime=16666666, SyncQueued=35931466323343, SyncStart=35931466440686, IssueDrawCommandsStart=35931467021572, SwapBuffers=35931473028239, FrameCompleted=35996888742933, DequeueBufferDuration=1033334, QueueBufferDuration=597187, GpuCompleted=35996888742933, SwapBuffersCompleted=35931474157979, DisplayPresentTime=0, 
+07-04 21:14:46.690  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 21:14:46.691  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 21:14:46.691  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 21:14:46.691  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 21:14:46.691  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 21:14:47.276  2570  2570 I WallpaperService: engine paused
+07-04 21:14:48.023  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+07-04 21:14:50.002 10819 10819 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+07-04 21:14:50.007  2164  6515 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10232 user=0: from pid 10819
+07-04 21:14:50.009  2164  6515 I ActivityManager: Killing 10655:com.example.batterymanager_utility/u0a232 (adj 0): stop com.example.batterymanager_utility due to from pid 10819
+07-04 21:14:50.011  2164  6515 W ActivityTaskManager: Force removing ActivityRecord{1dd0606 u0 com.example.batterymanager_utility/.MainActivity t403 f}}: app died, no saved state
+07-04 21:14:50.018  2164  6515 W InputManager-JNI: Input channel object '14abf2 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity (client)' was disposed without first being removed with the input manager!
+07-04 21:14:50.036  2164  6515 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=403 attached=false
+07-04 21:14:50.036  2164  6515 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=403 attached=false
+07-04 21:14:50.042  2700  2700 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-04 21:14:50.042  2700  2700 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 21:14:50.044  1085  1085 I Zygote  : Process 10655 exited due to signal 9 (Killed)
+07-04 21:14:50.044  2164  4748 V ActivityManager: Got obituary of 10655:com.example.batterymanager_utility
+07-04 21:14:50.044  2164  2248 W ActivityManager: setHasOverlayUi called on unknown pid: 10655
+07-04 21:14:50.050  3814  3814 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 21:14:50.057   737   737 E BpTransactionCompletedListener: Failed to transact (-32)
+07-04 21:14:50.061  3655  3912 I AiAiEcho: Predicting[7]: { Feature:1, creation:2023-07-04T18:50:10.965Z, expiry:2023-07-04T19:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T19:00:00Z, expiry:2023-07-04T20:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-04T20:00:00Z, expiry:2023-07-04T21:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T21:00:00Z, expiry:2023-07-04T22:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T22:00:00Z, expiry:2023-07-04T23:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-04T23:00:00Z, expiry:2023-07-05T00:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-05T00:00:00Z, expiry:2023-07-05T00:50:10.965Z, isExpired: true}
+07-04 21:14:50.062  3655  3912 I AiAiEcho: EchoTargets: Feature:1
+07-04 21:14:50.062  3655  3912 I AiAiEcho: Filtered by AiAi flag check: 
+07-04 21:14:50.062  3655  3912 I AiAiEcho: Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377244, card type: 1, update time: 2023-07-04T19:00:00Z, expiration time: 2023-07-04T20:00:00Z, ranking metadata: RankingMetaData(urgency=0.942, priority=0.3, recency=1.0, rankScore=0.28260002, importantTimePoints=# kwj@7bca4) }
+07-04 21:14:50.063  3655  3912 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+07-04 21:14:50.064  2164  2258 I libprocessgroup: Successfully killed process cgroup uid 10232 pid 10655 in 53ms
+07-04 21:14:50.067  2570  2911 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-04 21:14:50.067  2843  2843 W BcSmartspaceCard: No title view to update
+07-04 21:14:50.067 30641 30641 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-04 21:14:50.067 30641 30641 I A       : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+07-04 21:14:50.069  2570  2570 I WallpaperService: engine resumed
+07-04 21:14:50.070  2570  2911 W OpenGLRenderer: Surface doesn't have any previously queued frames, nothing to readback from
+07-04 21:14:50.075 30641 30641 I A       : onStart
+07-04 21:14:50.081 30641 30641 I A       : onResume
+07-04 21:14:50.085  3724  3724 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+07-04 21:14:50.086  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 21:14:50.086  3724  4236 I GsaVoiceInteractionSrv: (REDACTED) disregardHotwordSetting: %b
+07-04 21:14:50.086  3724  4236 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+07-04 21:14:50.087 30641 30819 I OpenGLRenderer: Davey! duration=407099ms; Flags=1, FrameTimelineVsyncId=1790464, IntendedVsync=35593194932968, Vsync=35593194932968, InputEventId=0, HandleInputStart=35593196203343, AnimationStart=35593196205426, PerformTraversalsStart=35593196206051, DrawStart=35593217371470, FrameDeadline=35593232266300, FrameInterval=35593196110113, FrameStartTime=16666666, SyncQueued=35593219928709, SyncStart=35593220229751, IssueDrawCommandsStart=35593220597876, SwapBuffers=35593221457616, FrameCompleted=36000295193689, DequeueBufferDuration=13489, QueueBufferDuration=778386, GpuCompleted=36000295193689, SwapBuffersCompleted=35593222835481, DisplayPresentTime=0, 
+07-04 21:14:50.089  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 21:14:50.090  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 21:14:50.090  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 21:14:50.090  3678  3678 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 21:14:50.092 30663 30663 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 21:14:50.092 30663 30663 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 21:14:50.208  2164  2265 W ProcessCpuTracker: Failed to stat(/proc/10827): android.system.ErrnoException: stat failed: ENOENT (No such file or directory)
+07-04 21:14:50.208  2164  2265 W ProcessCpuTracker: Skipping unknown process pid 10827
+07-04 21:14:50.221  2164  9686 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=36002766 mSleepTimeMs=22805972 mIdleTimeMs=13055526 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=133956}
+07-04 21:14:50.230  2164  2263 E system_server: Cannot read thread CPU times for PID 2164
+07-04 21:14:51.040  2164  2338 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
+07-04 21:14:54.066  2164  2338 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 3]
+07-04 21:14:55.416  3701  4223 W MediaProvider: isAppCloneUserPair failed. Users: 0 and 0
+07-04 21:14:55.416  3701  4223 W MediaProvider: isAppCloneUserPair for user 0: false

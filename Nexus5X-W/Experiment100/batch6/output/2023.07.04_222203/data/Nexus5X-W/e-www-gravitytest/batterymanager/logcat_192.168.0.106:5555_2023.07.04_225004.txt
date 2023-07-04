@@ -1,0 +1,864 @@
+--------- beginning of main
+07-04 16:24:02.201   765   933 I chatty  : uid=1000(system) InputReader expire 1 line
+07-04 16:24:02.203   765   933 I InputReader: Reconfiguring input devices.  changes=0x00000010
+--------- beginning of system
+07-04 16:48:52.051   765 20919 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.batterymanager_utility/.MainActivity} from uid 2000
+07-04 16:48:52.083  3121  3381 V ClearcutMetricXmitter: Transmission is done.
+07-04 16:48:52.091  4431  4431 I zygote64: Late-enabling -Xcheck:jni
+07-04 16:48:52.094   765  3787 I ActivityManager: Start proc 4431:com.example.batterymanager_utility/u0a111 for activity com.example.batterymanager_utility/.MainActivity
+07-04 16:48:52.164  3005  3005 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+07-04 16:48:52.229  4431  4431 I BatteryMgr:App: creating notification channel
+07-04 16:48:52.302  4431  4450 D OpenGLRenderer: HWUI GL Pipeline
+07-04 16:48:52.479  4431  4431 W zygote64: Class androidx.compose.runtime.snapshots.SnapshotStateList failed lock verification and will run slower.
+07-04 16:48:52.479  4431  4431 W zygote64: Common causes for lock verification issues are non-optimized dex code
+07-04 16:48:52.479  4431  4431 W zygote64: and incorrect proguard optimizations.
+07-04 16:48:52.493  4444  4444 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+07-04 16:48:52.577  4431  4436 I zygote64: Do partial code cache collection, code=30KB, data=18KB
+07-04 16:48:52.578  4431  4436 I zygote64: After code cache collection, code=30KB, data=18KB
+07-04 16:48:52.578  4431  4436 I zygote64: Increasing code cache capacity to 128KB
+07-04 16:48:52.607  4444  4444 D ICU     : Timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+07-04 16:48:52.626  4444  4444 I app_process: The ClassLoaderContext is a special shared library.
+07-04 16:48:52.664  4444  4444 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+07-04 16:48:52.667  4444  4444 W Monkey  : args: [-p, e.www.gravitytest, 1]
+07-04 16:48:52.668  4444  4444 W Monkey  :  arg: "-p"
+07-04 16:48:52.668  4444  4444 W Monkey  :  arg: "e.www.gravitytest"
+07-04 16:48:52.668  4444  4444 W Monkey  :  arg: "1"
+07-04 16:48:52.668  4444  4444 W Monkey  : data="e.www.gravitytest"
+07-04 16:48:52.690  4431  4450 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-04 16:48:52.690  4431  4450 I Adreno  : Build Date                       : 09/22/17
+07-04 16:48:52.690  4431  4450 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-04 16:48:52.690  4431  4450 I Adreno  : Local Branch                     : O17A
+07-04 16:48:52.690  4431  4450 I Adreno  : Remote Branch                    : 
+07-04 16:48:52.690  4431  4450 I Adreno  : Remote Branch                    : 
+07-04 16:48:52.690  4431  4450 I Adreno  : Reconstruct Branch               : 
+07-04 16:48:52.692   765   779 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{1cdfd1a u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{3eee04b 4444 (unknown name)/2000/u-1 remote:715463c}: process gone or crashing
+07-04 16:48:52.692  4431  4450 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 16:48:52.702  4431  4450 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-04 16:48:52.708   362   362 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+07-04 16:48:52.708   765  1534 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=e.www.gravitytest/.MainActivity} from uid 2000
+07-04 16:48:52.708   765  1534 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+07-04 16:48:52.708   765  1534 W Binder  : java.lang.Throwable
+07-04 16:48:52.708   765  1534 W Binder  : 	at android.os.BinderProxy.transact(Binder.java:752)
+07-04 16:48:52.708   765  1534 W Binder  : 	at android.app.IActivityController$Stub$Proxy.activityStarting(IActivityController.java:172)
+07-04 16:48:52.708   765  1534 W Binder  : 	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:449)
+07-04 16:48:52.708   765  1534 W Binder  : 	at com.android.server.am.ActivityStarter.startActivityLocked(ActivityStarter.java:278)
+07-04 16:48:52.708   765  1534 W Binder  : 	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:817)
+07-04 16:48:52.708   765  1534 W Binder  : 	at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:4532)
+07-04 16:48:52.708   765  1534 W Binder  : 	at com.android.server.am.ActivityManagerService.startActivity(ActivityManagerService.java:4519)
+07-04 16:48:52.708   765  1534 W Binder  : 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:121)
+07-04 16:48:52.708   765  1534 W Binder  : 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2919)
+07-04 16:48:52.708   765  1534 W Binder  : 	at android.os.Binder.execTransact(Binder.java:697)
+07-04 16:48:52.710  4431  4450 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-04 16:48:52.712  4431  4450 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 16:48:52.712  4431  4450 D OpenGLRenderer: Swap behavior 2
+07-04 16:48:52.716  4431  4431 D Compose Focus: Owner FocusChanged(true)
+07-04 16:48:52.718  4444  4444 I Monkey  : Events injected: 1
+07-04 16:48:52.731  4444  4444 I Monkey  : ## Network stats: elapsed time=22ms (0ms mobile, 0ms wifi, 22ms not connected)
+07-04 16:48:52.733  4444  4444 I com.android.commands.monkey: System.exit called, status: 0
+07-04 16:48:52.733  4444  4444 I AndroidRuntime: VM exiting with result code 0.
+07-04 16:48:52.786   362   362 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@2.0::IMapper/default in either framework or device manifest.
+07-04 16:48:52.787  4431  4450 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-04 16:48:52.788  4431  4450 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 16:48:52.824  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 16:48:52.825  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 16:48:52.826  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 16:48:52.826  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 16:48:52.826  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 16:48:52.844   765  3793 I ActivityManager: Start proc 4463:e.www.gravitytest/u0a180 for activity e.www.gravitytest/.MainActivity
+07-04 16:48:52.845  4463  4463 I zygote64: Late-enabling -Xcheck:jni
+07-04 16:48:53.053  4463  4463 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerWrapper>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2203)
+07-04 16:48:53.053  4463  4463 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:637)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:518)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:466)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:140)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void e.www.gravitytest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:13)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 16:48:53.053  4463  4463 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 16:48:53.053  4463  4463 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 16:48:53.053  4463  4463 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/e.www.gravitytest-WAsLezoRNS7HCEAc9b4Vkw==/base.apk"],nativeLibraryDirectories=[/data/app/e.www.gravitytest-WAsLezoRNS7HCEAc9b4Vkw==/lib/arm64, /system/lib64, /vendor/lib64]]
+07-04 16:48:53.053  4463  4463 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 16:48:53.053  4463  4463 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 16:48:53.053  4463  4463 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2203)
+07-04 16:48:53.053  4463  4463 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:637)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:518)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:466)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:140)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void e.www.gravitytest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:13)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 16:48:53.053  4463  4463 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 16:48:53.053  4463  4463 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 16:48:53.053  4463  4463 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 16:48:53.053  4463  4463 I zygote64: 
+07-04 16:48:53.054  4463  4463 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerWrapper>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2203)
+07-04 16:48:53.054  4463  4463 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:637)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:518)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:466)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:140)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void e.www.gravitytest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:13)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 16:48:53.054  4463  4463 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 16:48:53.054  4463  4463 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/e.www.gravitytest-WAsLezoRNS7HCEAc9b4Vkw==/base.apk"],nativeLibraryDirectories=[/data/app/e.www.gravitytest-WAsLezoRNS7HCEAc9b4Vkw==/lib/arm64, /system/lib64, /vendor/lib64]]
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2203)
+07-04 16:48:53.054  4463  4463 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:637)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:518)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:466)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:140)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void e.www.gravitytest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:13)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 16:48:53.054  4463  4463 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 16:48:53.054  4463  4463 I zygote64: 
+07-04 16:48:53.054  4463  4463 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerWrapper>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2203)
+07-04 16:48:53.054  4463  4463 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:637)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:518)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:466)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:140)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void e.www.gravitytest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:13)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 16:48:53.054  4463  4463 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 16:48:53.054  4463  4463 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/e.www.gravitytest-WAsLezoRNS7HCEAc9b4Vkw==/base.apk"],nativeLibraryDirectories=[/data/app/e.www.gravitytest-WAsLezoRNS7HCEAc9b4Vkw==/lib/arm64, /system/lib64, /vendor/lib64]]
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 16:48:53.054  4463  4463 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 16:48:53.054  4463  4463 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2203)
+07-04 16:48:53.055  4463  4463 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:637)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:518)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:466)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:140)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void e.www.gravitytest.MainActivity.onCreate(android.os.Bundle) (MainActivity.kt:13)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 16:48:53.055  4463  4463 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 16:48:53.055  4463  4463 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 16:48:53.055  4463  4463 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 16:48:53.055  4463  4463 I zygote64: 
+07-04 16:48:53.119  4463  4479 D OpenGLRenderer: HWUI GL Pipeline
+07-04 16:48:53.174  4463  4479 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-04 16:48:53.174  4463  4479 I Adreno  : Build Date                       : 09/22/17
+07-04 16:48:53.174  4463  4479 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-04 16:48:53.174  4463  4479 I Adreno  : Local Branch                     : O17A
+07-04 16:48:53.174  4463  4479 I Adreno  : Remote Branch                    : 
+07-04 16:48:53.174  4463  4479 I Adreno  : Remote Branch                    : 
+07-04 16:48:53.174  4463  4479 I Adreno  : Reconstruct Branch               : 
+07-04 16:48:53.176  4463  4479 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 16:48:53.189  4463  4479 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-04 16:48:53.195  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 16:48:53.197   362   362 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+07-04 16:48:53.202  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 16:48:53.202  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=e.www.gravitytest fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 16:48:53.202  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 16:48:53.203  4463  4479 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-04 16:48:53.204  4463  4479 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 16:48:53.204  4463  4479 D OpenGLRenderer: Swap behavior 2
+07-04 16:48:53.210  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 16:48:53.221   362   362 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@2.0::IMapper/default in either framework or device manifest.
+07-04 16:48:53.222  4463  4479 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-04 16:48:53.223  4463  4479 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 16:48:53.246   765   788 I ActivityManager: Displayed e.www.gravitytest/.MainActivity: +411ms (total +2m15s146ms)
+07-04 16:48:53.683  3121  3121 I A       : GEL#onSaveInstanceState
+07-04 16:48:53.687  2463  2463 I A       : Trimming objects from memory, since app is in the background.
+07-04 16:48:53.713  3121  3121 I A       : Trimming objects from memory, since app is in the background.
+07-04 16:48:53.716  3121  4332 V rsC++   : RS Message thread exiting.
+07-04 16:48:53.943   765 10091 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 16:48:53.943   765 10091 D OpenGLRenderer: Swap behavior 2
+07-04 16:48:54.446  4431  4431 I BatteryMgr:DataCollectionService: onStartCommand: begin
+07-04 16:48:54.446  4431  4431 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 100
+07-04 16:48:54.447  4431  4431 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+07-04 16:48:54.450  4431  4431 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+07-04 16:48:54.455  4431  4431 I BatteryMgr:DataCollectionService: started foreground
+07-04 16:48:54.457   765   779 E NotificationService: Suppressing notification from package by user request.
+07-04 16:48:54.469  4431  4502 I BatteryMgr:DataCollectionService: collectData: begin
+07-04 16:48:54.475  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503734474,-116118,4245
+07-04 16:48:54.581  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503734581,-116118,4245
+07-04 16:48:54.689  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503734689,-116118,4245
+07-04 16:48:54.805  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503734805,-116118,4245
+07-04 16:48:54.922  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503734922,-116118,4245
+07-04 16:48:55.041  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735040,-116118,4245
+07-04 16:48:55.158  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735157,-116118,4245
+07-04 16:48:55.277  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735276,-116118,4245
+07-04 16:48:55.396  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735396,-116118,4245
+07-04 16:48:55.513  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735513,-116118,4245
+07-04 16:48:55.633  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735633,-116118,4245
+07-04 16:48:55.749  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735749,-116118,4245
+07-04 16:48:55.868  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735867,-116118,4245
+07-04 16:48:55.984  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503735984,-116118,4245
+07-04 16:48:56.105  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736105,-116118,4245
+07-04 16:48:56.223  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736222,-116118,4245
+07-04 16:48:56.339  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736339,-116118,4245
+07-04 16:48:56.465  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736464,-116118,4245
+07-04 16:48:56.585  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736585,-116118,4245
+07-04 16:48:56.705  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736705,-116118,4245
+07-04 16:48:56.820  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736820,-116118,4245
+07-04 16:48:56.936  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503736935,-116118,4245
+07-04 16:48:57.052  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737051,-116118,4245
+07-04 16:48:57.169  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737168,-116118,4245
+07-04 16:48:57.278  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737278,-116118,4245
+07-04 16:48:57.393  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737393,-116118,4245
+07-04 16:48:57.512  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737512,-116118,4245
+07-04 16:48:57.636  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737635,-116118,4245
+07-04 16:48:57.707  4431  4511 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+07-04 16:48:57.749  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737749,-116118,4245
+07-04 16:48:57.869  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737868,-116118,4245
+07-04 16:48:57.987  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503737987,-116118,4245
+07-04 16:48:58.107  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738107,-116118,4245
+07-04 16:48:58.224  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738223,-116118,4245
+07-04 16:48:58.343  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738343,-116118,4245
+07-04 16:48:58.460  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738459,-116118,4245
+07-04 16:48:58.579  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738579,-116118,4245
+07-04 16:48:58.696  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738696,-116118,4245
+07-04 16:48:58.804  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738804,-116118,4245
+07-04 16:48:58.910  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503738910,-116118,4245
+07-04 16:48:59.016  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739016,-116118,4245
+07-04 16:48:59.132  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739131,-116118,4245
+07-04 16:48:59.249  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739249,-116118,4245
+07-04 16:48:59.370  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739370,-116118,4245
+07-04 16:48:59.491  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739490,-116118,4245
+07-04 16:48:59.608  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739607,-116118,4245
+07-04 16:48:59.724  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739724,-116118,4245
+07-04 16:48:59.842  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739842,-116118,4245
+07-04 16:48:59.960  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503739960,-116118,4245
+07-04 16:49:00.074  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740073,-116118,4245
+07-04 16:49:00.189  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740188,-116118,4245
+07-04 16:49:00.306  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740306,-116118,4245
+07-04 16:49:00.423  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740422,-116118,4245
+07-04 16:49:00.538  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740538,-116118,4245
+07-04 16:49:00.656  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740656,-116118,4245
+07-04 16:49:00.773  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740773,-116118,4245
+07-04 16:49:00.890  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503740890,-116118,4245
+07-04 16:49:01.007  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741006,-116118,4245
+07-04 16:49:01.126  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741125,-116118,4245
+07-04 16:49:01.241  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741240,-116118,4245
+07-04 16:49:01.358  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741357,-116118,4245
+07-04 16:49:01.475  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741475,-116118,4245
+07-04 16:49:01.592  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741592,-116118,4245
+07-04 16:49:01.708  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741708,-116118,4245
+07-04 16:49:01.826  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741826,-116118,4245
+07-04 16:49:01.944  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503741943,-116118,4245
+07-04 16:49:02.061  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742061,-116118,4245
+07-04 16:49:02.175  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742174,-116118,4245
+07-04 16:49:02.289  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742288,-116118,4245
+07-04 16:49:02.403  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742403,-116118,4245
+07-04 16:49:02.523  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742522,-116118,4245
+07-04 16:49:02.639  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742638,-116118,4245
+07-04 16:49:02.755  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742754,-116118,4245
+07-04 16:49:02.872  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742871,-116118,4245
+07-04 16:49:02.991  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503742990,-116118,4245
+07-04 16:49:03.110  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743109,-116118,4245
+07-04 16:49:03.231  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743230,-116118,4245
+07-04 16:49:03.348  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743347,-116118,4245
+07-04 16:49:03.466  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743466,-116118,4245
+07-04 16:49:03.582  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743581,-116118,4245
+07-04 16:49:03.699  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743698,-116118,4245
+07-04 16:49:03.818  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743818,-116118,4245
+07-04 16:49:03.934  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503743933,-116118,4245
+07-04 16:49:04.051  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744051,-116118,4245
+07-04 16:49:04.172  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744171,-116118,4245
+07-04 16:49:04.289  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744288,-116118,4245
+07-04 16:49:04.405  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744405,-116118,4245
+07-04 16:49:04.519  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744518,-116118,4245
+07-04 16:49:04.636  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744636,-116118,4245
+07-04 16:49:04.752  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744751,-116118,4245
+07-04 16:49:04.868  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744868,-116118,4245
+07-04 16:49:04.985  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503744985,-116118,4245
+07-04 16:49:05.101  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745101,-116118,4245
+07-04 16:49:05.218  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745217,-116118,4245
+07-04 16:49:05.335  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745333,-116118,4245
+07-04 16:49:05.452  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745452,-116118,4245
+07-04 16:49:05.569  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745569,-116118,4245
+07-04 16:49:05.686  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745686,-116118,4245
+07-04 16:49:05.802  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745801,-116118,4245
+07-04 16:49:05.919  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503745919,-116118,4245
+07-04 16:49:06.035  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746034,-116118,4245
+07-04 16:49:06.152  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746151,-116118,4245
+07-04 16:49:06.158  4431  4436 I zygote64: Do partial code cache collection, code=60KB, data=45KB
+07-04 16:49:06.159  4431  4436 I zygote64: After code cache collection, code=60KB, data=45KB
+07-04 16:49:06.159  4431  4436 I zygote64: Increasing code cache capacity to 256KB
+07-04 16:49:06.269  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746268,-116118,4245
+07-04 16:49:06.385  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746385,-116118,4245
+07-04 16:49:06.501  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746501,-116118,4245
+07-04 16:49:06.622  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746622,-116118,4245
+07-04 16:49:06.739  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746739,-116118,4245
+07-04 16:49:06.856  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746856,-116118,4245
+07-04 16:49:06.973  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503746972,-116118,4245
+07-04 16:49:07.089  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747089,-116118,4245
+07-04 16:49:07.206  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747205,-116118,4245
+07-04 16:49:07.317  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747316,-116118,4245
+07-04 16:49:07.431  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747430,-116118,4245
+07-04 16:49:07.547  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747546,-116118,4245
+07-04 16:49:07.665  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747665,-116118,4245
+07-04 16:49:07.780  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747780,-116118,4245
+07-04 16:49:07.898  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503747898,-116118,4245
+07-04 16:49:08.017  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748016,-116118,4245
+07-04 16:49:08.138  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748138,-116118,4245
+07-04 16:49:08.258  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748258,-116118,4245
+07-04 16:49:08.377  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748376,-116118,4245
+07-04 16:49:08.495  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748494,-116118,4245
+07-04 16:49:08.611  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748610,-116118,4245
+07-04 16:49:08.728  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748728,-116118,4245
+07-04 16:49:08.844  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748843,-116118,4245
+07-04 16:49:08.963  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503748962,-116118,4245
+07-04 16:49:09.082  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749081,-116118,4245
+07-04 16:49:09.198  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749198,-116118,4245
+07-04 16:49:09.317  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749316,-116118,4245
+07-04 16:49:09.433  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749433,-116118,4245
+07-04 16:49:09.549  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749549,-116118,4245
+07-04 16:49:09.667  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749666,-116118,4245
+07-04 16:49:09.783  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749783,-116118,4245
+07-04 16:49:09.900  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503749900,-116118,4245
+07-04 16:49:10.018  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750017,-116118,4245
+07-04 16:49:10.132  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750132,-116118,4245
+07-04 16:49:10.248  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750248,-116118,4245
+07-04 16:49:10.366  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750365,-116118,4245
+07-04 16:49:10.487  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750486,-116118,4245
+07-04 16:49:10.604  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750603,-116118,4245
+07-04 16:49:10.719  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750719,-116118,4245
+07-04 16:49:10.834  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750833,-116118,4245
+07-04 16:49:10.949  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503750949,-116118,4245
+07-04 16:49:11.065  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751065,-116118,4245
+07-04 16:49:11.185  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751184,-116118,4245
+07-04 16:49:11.301  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751301,-208281,4245
+07-04 16:49:11.422  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751421,-208281,4245
+07-04 16:49:11.541  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751540,-208281,4245
+07-04 16:49:11.658  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751657,-208281,4245
+07-04 16:49:11.774  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751774,-208281,4245
+07-04 16:49:11.887  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503751886,-208281,4245
+07-04 16:49:12.003  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752002,-208281,4245
+07-04 16:49:12.117  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752116,-208281,4245
+07-04 16:49:12.235  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752234,-208281,4245
+07-04 16:49:12.349  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752349,-208281,4245
+07-04 16:49:12.464  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752463,-208281,4245
+07-04 16:49:12.586  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752585,-208281,4245
+07-04 16:49:12.702  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752701,-208281,4245
+07-04 16:49:12.818  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752817,-208281,4245
+07-04 16:49:12.935  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503752935,-208281,4245
+07-04 16:49:13.051  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753051,-208281,4245
+07-04 16:49:13.179  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753178,-208281,4245
+07-04 16:49:13.300  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753299,-208281,4245
+07-04 16:49:13.416  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753416,-208281,4245
+07-04 16:49:13.532  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753531,-208281,4245
+07-04 16:49:13.648  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753648,-208281,4245
+07-04 16:49:13.764  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753764,-208281,4245
+07-04 16:49:13.878  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753877,-208281,4245
+07-04 16:49:13.992  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503753991,-208281,4245
+07-04 16:49:14.106  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754106,-208281,4245
+07-04 16:49:14.224  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754224,-208281,4245
+07-04 16:49:14.342  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754341,-208281,4245
+07-04 16:49:14.457  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754457,-208281,4245
+07-04 16:49:14.573  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754572,-208281,4245
+07-04 16:49:14.689  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754689,-208281,4245
+07-04 16:49:14.805  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754804,-208281,4245
+07-04 16:49:14.917  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503754916,-208281,4245
+07-04 16:49:15.032  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755031,-208281,4245
+07-04 16:49:15.146  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755146,-208281,4245
+07-04 16:49:15.263  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755263,-208281,4245
+07-04 16:49:15.381  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755380,-208281,4245
+07-04 16:49:15.497  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755497,-208281,4245
+07-04 16:49:15.615  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755614,-208281,4245
+07-04 16:49:15.732  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755732,-208281,4245
+07-04 16:49:15.848  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755847,-208281,4245
+07-04 16:49:15.963  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503755963,-208281,4245
+07-04 16:49:16.079  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756079,-208281,4245
+07-04 16:49:16.202  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756201,-208281,4245
+07-04 16:49:16.315  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756314,-208281,4245
+07-04 16:49:16.429  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756429,-208281,4245
+07-04 16:49:16.544  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756544,-208281,4245
+07-04 16:49:16.661  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756661,-208281,4245
+07-04 16:49:16.780  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756777,-208281,4245
+07-04 16:49:16.898  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503756898,-208281,4245
+07-04 16:49:17.016  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757015,-208281,4245
+07-04 16:49:17.131  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757131,-208281,4245
+07-04 16:49:17.247  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757246,-208281,4245
+07-04 16:49:17.363  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757363,-208281,4245
+07-04 16:49:17.476  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757476,-208281,4245
+07-04 16:49:17.590  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757590,-208281,4245
+07-04 16:49:17.706  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757705,-208281,4245
+07-04 16:49:17.819  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757819,-208281,4245
+07-04 16:49:17.934  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503757933,-208281,4245
+07-04 16:49:18.048  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758048,-208281,4245
+07-04 16:49:18.163  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758162,-208281,4245
+07-04 16:49:18.278  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758278,-208281,4245
+07-04 16:49:18.398  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758397,-208281,4245
+07-04 16:49:18.513  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758512,-208281,4245
+07-04 16:49:18.627  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758627,-208281,4245
+07-04 16:49:18.742  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758742,-208281,4245
+07-04 16:49:18.858  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758858,-208281,4245
+07-04 16:49:18.974  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503758973,-208281,4245
+07-04 16:49:19.088  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759088,-208281,4245
+07-04 16:49:19.204  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759203,-208281,4245
+07-04 16:49:19.319  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759319,-208281,4245
+07-04 16:49:19.434  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759433,-208281,4245
+07-04 16:49:19.546  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759546,-208281,4245
+07-04 16:49:19.662  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759662,-208281,4245
+07-04 16:49:19.778  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759778,-208281,4245
+07-04 16:49:19.893  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503759892,-208281,4245
+07-04 16:49:20.008  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760007,-208281,4245
+07-04 16:49:20.121  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760120,-208281,4245
+07-04 16:49:20.240  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760240,-208281,4245
+07-04 16:49:20.358  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760358,-208281,4245
+07-04 16:49:20.471  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760471,-208281,4245
+07-04 16:49:20.588  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760588,-208281,4245
+07-04 16:49:20.702  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760702,-208281,4245
+07-04 16:49:20.819  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760819,-208281,4245
+07-04 16:49:20.934  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503760934,-208281,4245
+07-04 16:49:21.052  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761051,-208281,4245
+07-04 16:49:21.166  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761165,-208281,4245
+07-04 16:49:21.279  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761278,-208281,4245
+07-04 16:49:21.393  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761393,-208281,4245
+07-04 16:49:21.509  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761509,-208281,4245
+07-04 16:49:21.623  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761623,-208281,4245
+07-04 16:49:21.739  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761738,-208281,4245
+07-04 16:49:21.852  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761851,-208281,4245
+07-04 16:49:21.967  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503761966,-208281,4245
+07-04 16:49:22.083  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762083,-208281,4245
+07-04 16:49:22.198  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762198,-208281,4245
+07-04 16:49:22.314  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762313,-208281,4245
+07-04 16:49:22.429  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762429,-208281,4245
+07-04 16:49:22.547  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762547,-208281,4245
+07-04 16:49:22.660  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762659,-208281,4245
+07-04 16:49:22.773  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762773,-208281,4245
+07-04 16:49:22.889  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503762889,-208281,4245
+07-04 16:49:23.003  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763003,-208281,4245
+07-04 16:49:23.121  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763121,-208281,4245
+07-04 16:49:23.235  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763235,-208281,4245
+07-04 16:49:23.346  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763346,-208281,4245
+07-04 16:49:23.463  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763463,-208281,4245
+07-04 16:49:23.577  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763577,-208281,4245
+07-04 16:49:23.694  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763693,-208281,4245
+07-04 16:49:23.810  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763809,-208281,4245
+07-04 16:49:23.928  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503763928,-208281,4245
+07-04 16:49:24.042  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764042,-208281,4245
+07-04 16:49:24.156  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764155,-208281,4245
+07-04 16:49:24.269  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764269,-208281,4245
+07-04 16:49:24.383  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764383,-208281,4245
+07-04 16:49:24.499  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764499,-208281,4245
+07-04 16:49:24.617  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764617,-208281,4245
+07-04 16:49:24.730  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764730,-208281,4245
+07-04 16:49:24.846  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764845,-208281,4245
+07-04 16:49:24.961  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503764960,-208281,4245
+07-04 16:49:25.076  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765075,-208281,4245
+07-04 16:49:25.189  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765189,-208281,4245
+07-04 16:49:25.306  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765306,-208281,4245
+07-04 16:49:25.420  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765420,-208281,4245
+07-04 16:49:25.535  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765535,-208281,4245
+07-04 16:49:25.649  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765649,-208281,4245
+07-04 16:49:25.763  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765763,-208281,4245
+07-04 16:49:25.878  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765878,-208281,4245
+07-04 16:49:25.991  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503765991,-208281,4245
+07-04 16:49:26.105  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766105,-208281,4245
+07-04 16:49:26.220  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766219,-208281,4245
+07-04 16:49:26.334  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766334,-208281,4245
+07-04 16:49:26.449  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766448,-208281,4245
+07-04 16:49:26.564  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766562,-208281,4245
+07-04 16:49:26.684  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766684,-208281,4245
+07-04 16:49:26.796  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766796,-208281,4245
+07-04 16:49:26.909  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503766909,-208281,4245
+07-04 16:49:27.027  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767026,-208281,4245
+07-04 16:49:27.143  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767142,-208281,4245
+07-04 16:49:27.258  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767258,-208281,4245
+07-04 16:49:27.370  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767369,-208281,4245
+07-04 16:49:27.483  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767483,-208281,4245
+07-04 16:49:27.596  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767596,-208281,4245
+07-04 16:49:27.714  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767713,-208281,4245
+07-04 16:49:27.829  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767828,-208281,4245
+07-04 16:49:27.942  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503767942,-208281,4245
+07-04 16:49:28.059  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768058,-208281,4245
+07-04 16:49:28.172  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768171,-208281,4245
+07-04 16:49:28.286  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768286,-208281,4245
+07-04 16:49:28.402  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768402,-208281,4245
+07-04 16:49:28.518  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768518,-208281,4245
+07-04 16:49:28.636  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768636,-208281,4245
+07-04 16:49:28.749  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768749,-208281,4245
+07-04 16:49:28.862  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768862,-208281,4245
+07-04 16:49:28.977  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503768977,-208281,4245
+07-04 16:49:29.091  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769091,-208281,4245
+07-04 16:49:29.205  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769205,-208281,4245
+07-04 16:49:29.316  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769316,-208281,4245
+07-04 16:49:29.429  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769429,-208281,4245
+07-04 16:49:29.544  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769544,-208281,4245
+07-04 16:49:29.659  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769659,-208281,4245
+07-04 16:49:29.772  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769771,-208281,4245
+07-04 16:49:29.886  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769885,-208281,4245
+07-04 16:49:29.999  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503769999,-208281,4245
+07-04 16:49:30.114  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770113,-208281,4245
+07-04 16:49:30.227  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770226,-208281,4245
+07-04 16:49:30.338  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770338,-208281,4245
+07-04 16:49:30.453  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770453,-208281,4245
+07-04 16:49:30.569  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770569,-208281,4245
+07-04 16:49:30.683  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770683,-208281,4245
+07-04 16:49:30.799  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770799,-208281,4245
+07-04 16:49:30.913  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503770912,-208281,4245
+07-04 16:49:31.026  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771025,-208281,4245
+07-04 16:49:31.141  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771141,-208281,4245
+07-04 16:49:31.257  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771257,-208281,4245
+07-04 16:49:31.369  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771369,-208281,4245
+07-04 16:49:31.482  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771481,-208281,4245
+07-04 16:49:31.597  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771597,-208281,4245
+07-04 16:49:31.712  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771712,-208281,4245
+07-04 16:49:31.828  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771828,-208281,4245
+07-04 16:49:31.945  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503771944,-208281,4245
+07-04 16:49:32.056  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772056,-208281,4245
+07-04 16:49:32.169  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772169,-208281,4245
+07-04 16:49:32.284  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772284,-208281,4245
+07-04 16:49:32.400  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772400,-208281,4245
+07-04 16:49:32.517  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772516,-208281,4245
+07-04 16:49:32.633  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772632,-208281,4245
+07-04 16:49:32.745  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772744,-208281,4245
+07-04 16:49:32.859  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772859,-208281,4245
+07-04 16:49:32.974  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503772974,-208281,4245
+07-04 16:49:33.089  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773089,-208281,4245
+07-04 16:49:33.201  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773201,-208281,4245
+07-04 16:49:33.315  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773314,-208281,4245
+07-04 16:49:33.430  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773429,-208281,4245
+07-04 16:49:33.545  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773545,-208281,4245
+07-04 16:49:33.661  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773661,-208281,4245
+07-04 16:49:33.775  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773775,-208281,4245
+07-04 16:49:33.889  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503773889,-208281,4245
+07-04 16:49:34.000  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774000,-208281,4245
+07-04 16:49:34.116  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774116,-208281,4245
+07-04 16:49:34.230  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774230,-208281,4245
+07-04 16:49:34.343  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774343,-208281,4245
+07-04 16:49:34.455  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774455,-208281,4245
+07-04 16:49:34.569  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774569,-208281,4245
+07-04 16:49:34.684  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774684,-208281,4245
+07-04 16:49:34.797  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774796,-208281,4245
+07-04 16:49:34.911  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503774910,-208281,4245
+07-04 16:49:35.025  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775025,-208281,4245
+07-04 16:49:35.139  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775138,-208281,4245
+07-04 16:49:35.252  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775251,-208281,4245
+07-04 16:49:35.365  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775365,-208281,4245
+07-04 16:49:35.481  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775481,-208281,4245
+07-04 16:49:35.596  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775595,-208281,4245
+07-04 16:49:35.711  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775710,-208281,4245
+07-04 16:49:35.825  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775825,-208281,4245
+07-04 16:49:35.936  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503775936,-208281,4245
+07-04 16:49:36.049  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776049,-208281,4245
+07-04 16:49:36.164  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776163,-208281,4245
+07-04 16:49:36.279  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776279,-208281,4245
+07-04 16:49:36.391  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776391,-208281,4245
+07-04 16:49:36.499  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776499,-208281,4245
+07-04 16:49:36.613  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776613,-208281,4245
+07-04 16:49:36.725  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776725,-208281,4245
+07-04 16:49:36.841  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776841,-208281,4245
+07-04 16:49:36.953  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503776953,-208281,4245
+07-04 16:49:37.068  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777068,-208281,4245
+07-04 16:49:37.183  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777183,-208281,4245
+07-04 16:49:37.292  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777292,-208281,4245
+07-04 16:49:37.406  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777406,-208281,4245
+07-04 16:49:37.520  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777519,-208281,4245
+07-04 16:49:37.632  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777632,-208281,4245
+07-04 16:49:37.745  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777745,-208281,4245
+07-04 16:49:37.859  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777858,-208281,4245
+07-04 16:49:37.973  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503777972,-208281,4245
+07-04 16:49:38.084  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778084,-208281,4245
+07-04 16:49:38.198  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778198,-208281,4245
+07-04 16:49:38.313  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778313,-208281,4245
+07-04 16:49:38.427  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778427,-208281,4245
+07-04 16:49:38.539  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778539,-208281,4245
+07-04 16:49:38.653  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778652,-208281,4245
+07-04 16:49:38.765  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778765,-208281,4245
+07-04 16:49:38.881  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778880,-208281,4245
+07-04 16:49:38.993  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503778993,-208281,4245
+07-04 16:49:39.108  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779108,-208281,4245
+07-04 16:49:39.221  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779221,-208281,4245
+07-04 16:49:39.335  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779335,-208281,4245
+07-04 16:49:39.450  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779450,-208281,4245
+07-04 16:49:39.566  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779566,-208281,4245
+07-04 16:49:39.682  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779681,-208281,4245
+07-04 16:49:39.795  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779795,-208281,4245
+07-04 16:49:39.909  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503779908,-208281,4245
+07-04 16:49:40.024  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780023,-208281,4245
+07-04 16:49:40.136  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780135,-208281,4245
+07-04 16:49:40.249  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780249,-208281,4245
+07-04 16:49:40.363  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780362,-208281,4245
+07-04 16:49:40.478  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780478,-208281,4245
+07-04 16:49:40.593  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780592,-208281,4245
+07-04 16:49:40.708  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780708,-208281,4245
+07-04 16:49:40.822  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780822,-208281,4245
+07-04 16:49:40.935  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503780935,-208281,4245
+07-04 16:49:41.050  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781049,-208281,4245
+07-04 16:49:41.165  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781165,-208281,4245
+07-04 16:49:41.276  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781275,-208281,4245
+07-04 16:49:41.389  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781388,-208281,4245
+07-04 16:49:41.505  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781504,-208281,4245
+07-04 16:49:41.621  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781621,-208281,4245
+07-04 16:49:41.738  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781738,-208281,4245
+07-04 16:49:41.849  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781849,-208281,4245
+07-04 16:49:41.963  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503781962,-208281,4245
+07-04 16:49:42.077  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782077,-208281,4245
+07-04 16:49:42.192  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782192,-208281,4245
+07-04 16:49:42.306  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782305,-208281,4245
+07-04 16:49:42.420  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782420,-208281,4245
+07-04 16:49:42.535  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782535,-208281,4245
+07-04 16:49:42.650  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782650,-208281,4245
+07-04 16:49:42.763  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782763,-208281,4245
+07-04 16:49:42.879  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782879,-208281,4245
+07-04 16:49:42.992  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503782992,-208281,4245
+07-04 16:49:43.104  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783104,-208281,4245
+07-04 16:49:43.218  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783217,-109404,4245
+07-04 16:49:43.332  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783332,-109404,4245
+07-04 16:49:43.445  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783445,-109404,4245
+07-04 16:49:43.557  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783557,-109404,4245
+07-04 16:49:43.669  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783669,-109404,4245
+07-04 16:49:43.782  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783782,-109404,4245
+07-04 16:49:43.894  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503783894,-109404,4245
+07-04 16:49:44.008  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784007,-109404,4245
+07-04 16:49:44.122  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784122,-109404,4245
+07-04 16:49:44.241  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784237,-109404,4245
+07-04 16:49:44.353  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784352,-109404,4245
+07-04 16:49:44.465  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784465,-109404,4245
+07-04 16:49:44.582  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784582,-109404,4245
+07-04 16:49:44.696  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784696,-109404,4245
+07-04 16:49:44.811  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784811,-109404,4245
+07-04 16:49:44.931  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503784930,-109404,4245
+07-04 16:49:45.045  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785043,-109404,4245
+07-04 16:49:45.156  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785155,-109404,4245
+07-04 16:49:45.271  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785270,-109404,4245
+07-04 16:49:45.385  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785385,-109404,4245
+07-04 16:49:45.500  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785500,-109404,4245
+07-04 16:49:45.613  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785613,-109404,4245
+07-04 16:49:45.726  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785726,-109404,4245
+07-04 16:49:45.840  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785840,-109404,4245
+07-04 16:49:45.955  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503785955,-109404,4245
+07-04 16:49:46.071  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786071,-109404,4245
+07-04 16:49:46.183  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786183,-109404,4245
+07-04 16:49:46.298  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786298,-109404,4245
+07-04 16:49:46.411  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786411,-109404,4245
+07-04 16:49:46.525  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786524,-109404,4245
+07-04 16:49:46.643  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786642,-109404,4245
+07-04 16:49:46.756  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786756,-109404,4245
+07-04 16:49:46.870  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786870,-109404,4245
+07-04 16:49:46.984  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503786983,-109404,4245
+07-04 16:49:47.100  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787099,-109404,4245
+07-04 16:49:47.214  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787213,-109404,4245
+07-04 16:49:47.325  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787325,-109404,4245
+07-04 16:49:47.440  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787440,-109404,4245
+07-04 16:49:47.555  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787554,-109404,4245
+07-04 16:49:47.669  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787669,-109404,4245
+07-04 16:49:47.783  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787783,-109404,4245
+07-04 16:49:47.894  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503787894,-109404,4245
+07-04 16:49:48.009  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788009,-109404,4245
+07-04 16:49:48.124  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788123,-109404,4245
+07-04 16:49:48.240  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788240,-109404,4245
+07-04 16:49:48.356  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788354,-109404,4245
+07-04 16:49:48.467  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788467,-109404,4245
+07-04 16:49:48.587  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788587,-109404,4245
+07-04 16:49:48.701  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788701,-109404,4245
+07-04 16:49:48.815  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788815,-109404,4245
+07-04 16:49:48.933  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503788932,-109404,4245
+07-04 16:49:49.048  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789048,-109404,4245
+07-04 16:49:49.163  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789163,-109404,4245
+07-04 16:49:49.275  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789275,-109404,4245
+07-04 16:49:49.388  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789388,-109404,4245
+07-04 16:49:49.504  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789504,-109404,4245
+07-04 16:49:49.619  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789619,-109404,4245
+07-04 16:49:49.735  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789735,-109404,4245
+07-04 16:49:49.847  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789847,-109404,4245
+07-04 16:49:49.961  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503789961,-109404,4245
+07-04 16:49:50.075  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790074,-109404,4245
+07-04 16:49:50.189  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790189,-109404,4245
+07-04 16:49:50.302  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790302,-109404,4245
+07-04 16:49:50.414  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790413,-109404,4245
+07-04 16:49:50.528  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790528,-109404,4245
+07-04 16:49:50.642  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790642,-109404,4245
+07-04 16:49:50.754  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790754,-109404,4245
+07-04 16:49:50.866  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790865,-109404,4245
+07-04 16:49:50.981  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503790980,-109404,4245
+07-04 16:49:51.095  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791095,-109404,4245
+07-04 16:49:51.208  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791207,-109404,4245
+07-04 16:49:51.320  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791319,-109404,4245
+07-04 16:49:51.432  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791431,-109404,4245
+07-04 16:49:51.545  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791544,-109404,4245
+07-04 16:49:51.659  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791659,-109404,4245
+07-04 16:49:51.770  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791770,-109404,4245
+07-04 16:49:51.884  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791884,-109404,4245
+07-04 16:49:51.998  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503791998,-109404,4245
+07-04 16:49:52.117  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792117,-109404,4245
+07-04 16:49:52.229  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792229,-109404,4245
+07-04 16:49:52.342  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792342,-109404,4245
+07-04 16:49:52.456  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792455,-109404,4245
+07-04 16:49:52.569  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792569,-109404,4245
+07-04 16:49:52.681  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792681,-109404,4245
+07-04 16:49:52.796  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792796,-109404,4245
+07-04 16:49:52.910  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503792909,-109404,4245
+07-04 16:49:53.023  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793023,-109404,4245
+07-04 16:49:53.135  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793135,-109404,4245
+07-04 16:49:53.248  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793248,-109404,4245
+07-04 16:49:53.364  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793363,-109404,4245
+07-04 16:49:53.478  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793478,-109404,4245
+07-04 16:49:53.589  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793589,-109404,4245
+07-04 16:49:53.701  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793701,-109404,4245
+07-04 16:49:53.816  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793815,-109404,4245
+07-04 16:49:53.928  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503793927,-109404,4245
+07-04 16:49:54.046  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794045,-109404,4245
+07-04 16:49:54.152  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794152,-109404,4245
+07-04 16:49:54.265  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794264,-109404,4245
+07-04 16:49:54.376  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794375,-109404,4245
+07-04 16:49:54.491  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794491,-109404,4245
+07-04 16:49:54.605  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794604,-109404,4245
+07-04 16:49:54.720  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794719,-109404,4245
+07-04 16:49:54.832  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794832,-109404,4245
+07-04 16:49:54.944  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503794944,-109404,4245
+07-04 16:49:55.053  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503795053,-109404,4245
+07-04 16:49:55.165  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503795165,-109404,4245
+07-04 16:49:55.279  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503795279,-109404,4245
+07-04 16:49:55.390  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503795389,-109404,4245
+07-04 16:49:55.497  4431  4502 I BatteryMgr:DataCollectionService: stats => 1688503795496,-109404,4245
+07-04 16:48:54.459   765   779 E NotificationService: Suppressing notification from package by user request.
+07-04 16:49:55.560   765   779 E NotificationService: Suppressing notification from package by user request.
+07-04 16:49:56.054   765  3792 I ActivityManager: Force stopping e.www.gravitytest appid=10180 user=0: from pid 4563
+07-04 16:49:56.054   765  3792 I ActivityManager: Killing 4463:e.www.gravitytest/u0a180 (adj 0): stop e.www.gravitytest
+07-04 16:49:56.055   765  3792 W ActivityManager: Force removing ActivityRecord{3ed0e6 u0 e.www.gravitytest/.MainActivity t1775}: app died, no saved state
+07-04 16:49:56.055   765   781 W zygote64: kill(-4463, 9) failed: No such process
+07-04 16:49:56.062   765  3792 I WindowManager: Failed to capture screenshot of Token{6493627 ActivityRecord{3ed0e6 u0 e.www.gravitytest/.MainActivity t1775 f}} appWin=Window{89a24a5 u0 e.www.gravitytest/e.www.gravitytest.MainActivity} drawState=4
+07-04 16:49:56.071   765   788 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 60)
+07-04 16:49:56.093  1439  1439 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 16:49:56.097   765   788 W ActivityManager: setHasOverlayUi called on unknown pid: 4463
+07-04 16:49:56.099   765   781 W zygote64: kill(-4463, 9) failed: No such process
+07-04 16:49:56.099   765   781 I zygote64: Successfully killed process cgroup uid 10180 pid 4463 in 43ms
+07-04 16:49:56.105  3054  3054 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 16:49:56.127  4431  4450 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-04 16:49:56.127  4431  4450 I Adreno  : Build Date                       : 09/22/17
+07-04 16:49:56.127  4431  4450 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-04 16:49:56.127  4431  4450 I Adreno  : Local Branch                     : O17A
+07-04 16:49:56.127  4431  4450 I Adreno  : Remote Branch                    : 
+07-04 16:49:56.127  4431  4450 I Adreno  : Remote Branch                    : 
+07-04 16:49:56.127  4431  4450 I Adreno  : Reconstruct Branch               : 
+07-04 16:49:56.130  4431  4450 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 16:49:56.134  4431  4450 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-04 16:49:56.141  4431  4450 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-04 16:49:56.142  4431  4450 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 16:49:56.143  4431  4450 D OpenGLRenderer: Swap behavior 2
+07-04 16:49:56.146  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 16:49:56.148  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 16:49:56.148  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 16:49:56.148  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 16:49:56.148  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 16:49:58.195   765  3119 D WificondControl: Scan result ready event
+07-04 16:49:59.559   765 20919 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10111 user=0: from pid 4572
+07-04 16:49:59.560   765 20919 I ActivityManager: Killing 4431:com.example.batterymanager_utility/u0a111 (adj 0): stop com.example.batterymanager_utility
+07-04 16:49:59.561   765   781 W zygote64: kill(-4431, 9) failed: No such process
+07-04 16:49:59.562   765 20919 W ActivityManager: Force removing ActivityRecord{6ca319d u0 com.example.batterymanager_utility/.MainActivity t1774}: app died, no saved state
+07-04 16:49:59.576   765 20919 I WindowManager: Failed to capture screenshot of Token{ba32612 ActivityRecord{6ca319d u0 com.example.batterymanager_utility/.MainActivity t1774 f}} appWin=Window{8b1702f u0 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity} drawState=4
+07-04 16:49:59.604  2463  2516 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-04 16:49:59.604  2463  2516 I Adreno  : Build Date                       : 09/22/17
+07-04 16:49:59.604  2463  2516 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-04 16:49:59.604  2463  2516 I Adreno  : Local Branch                     : O17A
+07-04 16:49:59.604  2463  2516 I Adreno  : Remote Branch                    : 
+07-04 16:49:59.604  2463  2516 I Adreno  : Remote Branch                    : 
+07-04 16:49:59.604  2463  2516 I Adreno  : Reconstruct Branch               : 
+07-04 16:49:59.604   765   781 W zygote64: kill(-4431, 9) failed: No such process
+07-04 16:49:59.609  2463  2516 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 16:49:59.618  1439  1439 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 16:49:59.619  2463  2516 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-04 16:49:59.619   765   788 W ActivityManager: setHasOverlayUi called on unknown pid: 4431
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: Error handling StartupMeasure's onActivityResume
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.ViewTreeObserver android.view.View.getViewTreeObserver()' on a null object reference
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at com.google.android.libraries.performance.primes.metrics.h.m.onActivityResumed(PG:3)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.Application.dispatchActivityResumed(Application.java:216)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.Activity.onResume(Activity.java:1313)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at com.android.launcher3.Launcher.onResume(PG:1)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1355)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.Activity.performResume(Activity.java:7117)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3556)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3621)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1638)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.os.Looper.loop(Looper.java:164)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at java.lang.reflect.Method.invoke(Native Method)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+07-04 16:49:59.620  3121  3121 D PrimesStartupMeasure: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+07-04 16:49:59.626  2463  2516 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-04 16:49:59.626  2463  2516 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 16:49:59.626  2463  2516 D OpenGLRenderer: Swap behavior 2
+07-04 16:49:59.627   428   428 D SurfaceFlinger: duplicate layer name: changing com.google.android.googlequicksearchbox/com.google.android.launcher.GEL to com.google.android.googlequicksearchbox/com.google.android.launcher.GEL#1
+07-04 16:49:59.633  3005  3005 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+07-04 16:49:59.634  3054  3054 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 16:49:59.634  3005  3325 I GsaVoiceInteractionSrv: (REDACTED) disregardHotwordSetting: %b
+07-04 16:49:59.634  3005  3325 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+07-04 16:49:59.642  3121  3373 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-04 16:49:59.642  3121  3373 I Adreno  : Build Date                       : 09/22/17
+07-04 16:49:59.642  3121  3373 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-04 16:49:59.642  3121  3373 I Adreno  : Local Branch                     : O17A
+07-04 16:49:59.642  3121  3373 I Adreno  : Remote Branch                    : 
+07-04 16:49:59.642  3121  3373 I Adreno  : Remote Branch                    : 
+07-04 16:49:59.642  3121  3373 I Adreno  : Reconstruct Branch               : 
+07-04 16:49:59.644  3121  3373 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 16:49:59.648  3121  3373 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-04 16:49:59.649   765   781 W zygote64: kill(-4431, 9) failed: No such process
+07-04 16:49:59.649   765   781 I zygote64: Successfully killed process cgroup uid 10111 pid 4431 in 88ms
+07-04 16:49:59.650  3121  3373 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-04 16:49:59.652  3121  3373 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 16:49:59.653  3121  3373 D OpenGLRenderer: Swap behavior 2
+07-04 16:49:59.659  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 16:49:59.660  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 16:49:59.660  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.googlequicksearchbox fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 16:49:59.660  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 16:49:59.661  1237  1237 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 16:50:00.204  3121  3373 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...

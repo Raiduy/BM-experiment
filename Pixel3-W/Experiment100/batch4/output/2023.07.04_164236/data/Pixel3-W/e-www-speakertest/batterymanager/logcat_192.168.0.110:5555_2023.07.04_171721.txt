@@ -1,0 +1,1562 @@
+--------- beginning of system
+07-04 17:16:09.677  1726  1912 W EntropyMixer: Failed to add HW RNG output to entropy pool
+07-04 17:16:09.677  1726  1912 W EntropyMixer: java.io.FileNotFoundException: /dev/hw_random: open failed: EACCES (Permission denied)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at libcore.io.IoBridge.open(IoBridge.java:492)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at java.io.FileInputStream.<init>(FileInputStream.java:115)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at com.android.server.RandomBlock.fromFile(RandomBlock.java:45)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at com.android.server.EntropyMixer.addHwRandomEntropy(EntropyMixer.java:205)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at com.android.server.EntropyMixer.access$000(EntropyMixer.java:59)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at com.android.server.EntropyMixer$1.handleMessage(EntropyMixer.java:83)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at android.os.Looper.loop(Looper.java:223)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at libcore.io.Linux.open(Native Method)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:166)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:254)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	at libcore.io.IoBridge.open(IoBridge.java:478)
+07-04 17:16:09.677  1726  1912 W EntropyMixer: 	... 10 more
+07-04 17:16:09.677  1726  1912 I EntropyMixer: Writing entropy...
+07-04 17:16:09.873  1726  4988 I ActivityTaskManager: zhl stack block_packagename =
+07-04 17:16:09.873  1726  4988 I ActivityTaskManager: zhl stack block_activity =
+07-04 17:16:09.873  1726  4988 I ActivityTaskManager: zhl mPackage =com.example.batterymanager_utility
+07-04 17:16:09.873  1726  4988 I ActivityTaskManager: zhl mClass =MainActivity
+07-04 17:16:09.873  1726  4988 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.batterymanager_utility/.MainActivity} from uid 2000
+--------- beginning of main
+07-04 17:16:09.884  1726  4988 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:09.885  1726  4988 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:09.885  1726  4988 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:09.885  1726  4988 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+07-04 17:16:09.889 16561 16563 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:09.899  1726  1913 W ActivityManager: ProcessRecord{90e6825 0:com.example.batterymanager_utility/u0a200}: ART verification disabled
+07-04 17:16:09.899  1726  1913 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10200; state: DISABLED
+07-04 17:16:09.900  1726  1926 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10200; state: ENABLED
+07-04 17:16:09.918   916   916 D Zygote  : Forked child process 16568
+07-04 17:16:09.921  1726  1926 I ActivityManager: Start proc 16568:com.example.batterymanager_utility/u0a200 for pre-top-activity {com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}
+07-04 17:16:09.936 16568 16568 I manager_utilit: Late-enabling -Xcheck:jni
+07-04 17:16:09.973 16568 16568 I manager_utilit: Unquickening 18 vdex files!
+07-04 17:16:09.983 23114 23122 I adbd    : jdwp connection from 16568
+07-04 17:16:09.991  4180  4180 I A       : onPause
+07-04 17:16:09.994  4204  4204 I HdmBroadcastRecvUpd: (REDACTED) received broadcast: %s
+07-04 17:16:09.994  4204  4927 I HdmHotwordRequestListen: (REDACTED) received broadcast: %s
+07-04 17:16:09.994  4204  4927 I SodaTriggeringFrontend: (REDACTED) #onConfigUpdate. requester: %s
+07-04 17:16:09.995  4204  4925 I SodaTriggeringFrontend: #onConfigUpdate inside sequencer
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) Voice Match (Speaker-id) supported : %b 
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) hotword enrollment state is enrolled:  %b, speakerId model exist: %b. Voice Match supported : %b 
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) isHotwordAvailable():  %b, isHotwordEnabled() %b 
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) isHotwordAvailable():  %b, isHotwordEnabled() %b 
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) Hotword enrollment state : %s.
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) Voice Match (Speaker-id) supported : %b 
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) Voice Match (Speaker-id) supported : %b 
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) hotword enrollment state is enrolled:  %b, speakerId model exist: %b, voice match supported : %b
+07-04 17:16:09.995  4204  4925 I A       : (REDACTED) Hotword isNonVoiceMatchHotwordEnabled: %b, isHotwordAvailable : %b, isHotwordEnabled : %b, isVoiceMatchSupported: %b, isHotwordEnrolled: %b.
+07-04 17:16:09.995  4204  4925 I SodaTriggeringFrontend: (REDACTED) Ignore the legacy hotword request. voice match enabled %b, isHotwordSupported %b, isIncompleteEnrollmentState %b, nonVoiceMatchHotwordEnabled %b
+07-04 17:16:09.996  2942  2980 D FaceUnlock: onTaskStackChangedBackground
+07-04 17:16:09.997  2942  2980 D FaceUnlock: PackageName =com.example.batterymanager_utility
+07-04 17:16:09.999  1726  3232 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:10.000  1726  3232 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:10.000  1726  3232 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:10.002  1726  3232 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:10.002  1726  3232 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:10.002  1726  3232 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:10.058 16574 16574 W app_process: type=1400 audit(0.0:115908): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=12577 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+07-04 17:16:10.058 16574 16574 I chatty  : uid=2000(shell) app_process identical 2 lines
+07-04 17:16:10.058 16574 16574 W app_process: type=1400 audit(0.0:115911): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=12577 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+07-04 17:16:10.062 16574 16574 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+07-04 17:16:10.066 16574 16574 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+07-04 17:16:10.066 16574 16574 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+07-04 17:16:10.066 16574 16574 I AndroidRuntime: Using default boot image
+07-04 17:16:10.066 16574 16574 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+07-04 17:16:10.066 16574 16574 I AndroidRuntime: Leaving lock profiling enabled
+07-04 17:16:10.067 16574 16574 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+07-04 17:16:10.124 24715 24715 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.reminders.service.START pkg=com.google.android.gms }
+07-04 17:16:10.170 16568 16568 I Perf    : Connecting to perf service.
+07-04 17:16:10.180 16568 16568 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 17:16:10.181 16568 16568 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 17:16:10.188  3564  3564 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:10.196 16568 16568 I BatteryMgr:App: creating notification channel
+07-04 17:16:10.203 16574 16574 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+07-04 17:16:10.203 16574 16574 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+07-04 17:16:10.216 16574 16574 I app_process: The ClassLoaderContext is a special shared library.
+07-04 17:16:10.239 16574 16574 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+07-04 17:16:10.253 16574 16574 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+07-04 17:16:10.254 16574 16574 W Monkey  : args: [-p, e.www.speakertest, 1]
+07-04 17:16:10.255 16574 16574 W Monkey  :  arg: "-p"
+07-04 17:16:10.255 16574 16574 W Monkey  :  arg: "e.www.speakertest"
+07-04 17:16:10.255 16574 16574 W Monkey  :  arg: "1"
+07-04 17:16:10.255 16574 16574 W Monkey  : data="e.www.speakertest"
+07-04 17:16:10.262 16568 16568 V Activity: mLastPackageName-com.example.batterymanager_utility.MainActivity
+07-04 17:16:10.290  1726  1925 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{c4b6fe u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{9f77e5f 16574 (unknown name)/2000/u-1 remote:c9a8c80}: process gone or crashing
+07-04 17:16:10.300 16568 16568 D PureDisplay: package-com.example.batterymanager_utility DYNAMIC_ORIGINAL_MODE open
+07-04 17:16:10.303 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,hdrMode=1
+07-04 17:16:10.306 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.306  1726  7455 I ActivityTaskManager: zhl stack block_packagename =
+07-04 17:16:10.306  1726  7455 I ActivityTaskManager: zhl stack block_activity =
+07-04 17:16:10.306  1726  7455 I ActivityTaskManager: zhl mPackage =e.www.speakertest
+07-04 17:16:10.306  1726  7455 I ActivityTaskManager: zhl mClass =MainActivity
+07-04 17:16:10.306  1726  7455 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=e.www.speakertest/.MainActivity} from uid 2000
+07-04 17:16:10.306   973  1073 I IrisService: irisConfigureSet(258, 1, 1)
+07-04 17:16:10.306 25555 25555 D PureDisplay: --setIrisDisplayHdrMode- mode =1--result = 0
+07-04 17:16:10.306 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,pureDisplayMode=1
+07-04 17:16:10.307 25555 25555 D PureDisplay: isDeviceProvisioned=true
+07-04 17:16:10.308 25555 25555 D PureDisplay: isUserSetuped=true
+07-04 17:16:10.308 25555 25555 D PureDisplay: setOriginalModeEnable()
+07-04 17:16:10.309 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.309   973  1073 I IrisService: irisConfigureSet(0, 1, 0)
+07-04 17:16:10.322  1726  7455 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:10.322  1726  7455 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:10.322  1726  7455 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:10.323  1726  7455 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+07-04 17:16:10.325 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.326   973  1073 I IrisService: irisConfigureSet(41, 1, 0)
+07-04 17:16:10.327 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.327   973   973 I IrisService: irisConfigureSet(42, 1, 0)
+07-04 17:16:10.328 16574 16574 I Monkey  : Events injected: 1
+07-04 17:16:10.329 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.330   973   973 I IrisService: irisConfigureSet(40, 1, 0)
+07-04 17:16:10.343 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.343   973   973 I IrisService: irisConfigureSet(36, 1, 0)
+07-04 17:16:10.349  1726  1913 W ActivityManager: ProcessRecord{1b30747 0:e.www.speakertest/u0a218}: ART verification disabled
+07-04 17:16:10.349  1726  1913 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10218; state: DISABLED
+07-04 17:16:10.350  1726  1926 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10218; state: DISABLED
+07-04 17:16:10.351 16574 16574 I Monkey  : ## Network stats: elapsed time=41ms (0ms mobile, 0ms wifi, 41ms not connected)
+07-04 17:16:10.352 16574 16574 I app_process: System.exit called, status: 0
+07-04 17:16:10.352 16574 16574 I AndroidRuntime: VM exiting with result code 0.
+07-04 17:16:10.359 25555 25555 D PureDisplay: getWhiteBalanceAutoMode()0
+07-04 17:16:10.361 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.361   973   973 I IrisService: irisConfigureSet(39, 1, 1)
+07-04 17:16:10.363   916   916 D Zygote  : Forked child process 16614
+07-04 17:16:10.367  1726  1926 I ActivityManager: Start proc 16614:e.www.speakertest/u0a218 for pre-top-activity {e.www.speakertest/e.www.speakertest.MainActivity}
+07-04 17:16:10.376 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.376   973   973 I IrisService: irisConfigureSet(264, 1, 0)
+07-04 17:16:10.376 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastclass=com.example.batterymanager_utility.MainActivity
+07-04 17:16:10.377 16614 16614 I www.speakertes: Late-enabling -Xcheck:jni
+07-04 17:16:10.378 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastpackage=com.example.batterymanager_utility
+07-04 17:16:10.378 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastpackage_resume=1
+07-04 17:16:10.413 16614 16614 I www.speakertes: Unquickening 18 vdex files!
+07-04 17:16:10.422 23114 23122 I adbd    : jdwp connection from 16614
+07-04 17:16:10.437  1726  4988 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:10.437  1726  4988 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:10.437  1726  4988 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:10.439  1726  4988 I ActivityTaskManager: The Process e.www.speakertest Already Exists in BG. So sending its PID: 16614
+07-04 17:16:10.444  1726  1913 I ActivityManager: Killing 12297:android.process.acore/u0a84 (adj 965): empty for 4091s
+07-04 17:16:10.445  3196  3196 V Activity: onStop mLastPackageName = com.example.batterymanager_utility.MainActivity--mLastPackageResume = 1
+07-04 17:16:10.467  1726  3273 D CountryDetector: No listener is left
+07-04 17:16:10.468   916   916 I Zygote  : Process 12297 exited due to signal 9 (Killed)
+07-04 17:16:10.473 16614 16614 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+07-04 17:16:10.475  3196  3196 D PureDisplay: package-com.example.batterymanager_utility DYNAMIC_ORIGINAL_MODE open
+07-04 17:16:10.479  4180  4180 I A       : onStop
+07-04 17:16:10.482 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,hdrMode=1
+07-04 17:16:10.483  1726  1929 I libprocessgroup: Successfully killed process cgroup uid 10084 pid 12297 in 37ms
+07-04 17:16:10.485 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.485   973   973 I IrisService: irisConfigureSet(258, 1, 1)
+07-04 17:16:10.485 25555 25555 D PureDisplay: --setIrisDisplayHdrMode- mode =1--result = 0
+07-04 17:16:10.485 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,pureDisplayMode=1
+07-04 17:16:10.486 25555 25555 D PureDisplay: isDeviceProvisioned=true
+07-04 17:16:10.486 25555 25555 D PureDisplay: isUserSetuped=true
+07-04 17:16:10.487 25555 25555 D PureDisplay: setOriginalModeEnable()
+07-04 17:16:10.488 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.488   973   973 I IrisService: irisConfigureSet(0, 1, 0)
+07-04 17:16:10.492 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.493   973  1073 I IrisService: irisConfigureSet(41, 1, 0)
+07-04 17:16:10.495 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.496   973   973 I IrisService: irisConfigureSet(42, 1, 0)
+07-04 17:16:10.497 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.500   973   973 I IrisService: irisConfigureSet(40, 1, 0)
+07-04 17:16:10.511 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.513   973  1073 I IrisService: irisConfigureSet(36, 1, 0)
+07-04 17:16:10.519 25555 25578 W app.puredispla: Reducing the number of considered missed Gc histogram windows from 106 to 100
+07-04 17:16:10.525 25555 25555 D PureDisplay: getWhiteBalanceAutoMode()0
+07-04 17:16:10.526 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.526   973  1073 I IrisService: irisConfigureSet(39, 1, 1)
+07-04 17:16:10.542 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.543   973   973 I IrisService: irisConfigureSet(264, 1, 0)
+07-04 17:16:10.547 16614 16614 I Perf    : Connecting to perf service.
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: QUALCOMM build                   : d7ad79a, I2f86ca99a8
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: Build Date                       : 06/13/21
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.12
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: Local Branch                     : mybranchebcc171e-87ea-f17a-bb69-1458d0b52af0
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: Remote Branch                    : quic/gfx-adreno.lnx.1.0.r127-rel
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: Remote Branch                    : NONE
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: Build Config                     : S L 10.0.7 AArch64
+07-04 17:16:10.560 16568 16593 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-04 17:16:10.562 16614 16614 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 17:16:10.564 16614 16614 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 17:16:10.567 16568 16593 I AdrenoGLES-0: PFP: 0x005ff114, ME: 0x005ff066
+07-04 17:16:10.594   632   632 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+07-04 17:16:10.594 16568 16593 I Gralloc4: mapper 4.x is not supported
+07-04 17:16:10.594   632   632 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+07-04 17:16:10.594 16568 16593 W Gralloc3: mapper 3.x is not supported
+07-04 17:16:10.622  1726 10229 I ActivityTaskManager: The Process e.www.speakertest Already Exists in BG. So sending its PID: 16614
+07-04 17:16:10.624  1726 10229 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:10.624  1726 10229 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:10.624  1726 10229 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:10.722 16614 16614 W www.speakertes: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+07-04 17:16:10.723 16614 16614 W www.speakertes: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+07-04 17:16:10.724  2942  2974 W System  : A resource failed to call release. 
+07-04 17:16:10.724  2942  2974 W System  : A resource failed to call release. 
+07-04 17:16:10.728  2942  2997 D FaceUnlock: onTaskStackChangedBackground
+07-04 17:16:10.730  2942  2997 D FaceUnlock: PackageName =e.www.speakertest
+07-04 17:16:10.731  1726  4286 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.733  1726  4286 I chatty  : uid=1000(system) Binder:1726_12 identical 3 lines
+07-04 17:16:10.734  1726  4286 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.734  1726  4988 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.734  1726  4988 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.734  1726  4286 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.735  1726  6921 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.735  1726  6921 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.736  1328  1328 D NuPlayerDriver: NuPlayerDriver(0xed1403d0) created, clientPid(16614)
+07-04 17:16:10.740  1328  1328 I ExtendedNuUtils: printFileName fd(7) -> /data/app/~~DPcRYSkFdcXWLs55rCaYGQ==/e.www.speakertest-yIOGodwZG2nX16T_vMnWYQ==/base.apk
+07-04 17:16:10.741  1328  1328 E AudioSystem: invalid attributes { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: -1 Flags: 0x800 Tags:  } when converting to stream
+07-04 17:16:10.742  1328 16642 D GenericSource: FileSource remote
+07-04 17:16:10.745  1323  3333 I MMParserExtractor: Created(0x7b5160ef50)
+07-04 17:16:10.747  1323  3333 E Utils   : did not find channel-count and/or sample-rate
+07-04 17:16:10.747  1323  3333 E Utils   : did not find channel-count and/or sample-rate
+07-04 17:16:10.761 16614 16614 V Activity: mLastPackageName-e.www.speakertest.MainActivity
+07-04 17:16:10.794 16614 16614 D PureDisplay: package-e.www.speakertest DYNAMIC_ORIGINAL_MODE open
+07-04 17:16:10.797 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,hdrMode=1
+07-04 17:16:10.800 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.801   973   973 I IrisService: irisConfigureSet(258, 1, 1)
+07-04 17:16:10.801 25555 25555 D PureDisplay: --setIrisDisplayHdrMode- mode =1--result = 0
+07-04 17:16:10.801 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,pureDisplayMode=1
+07-04 17:16:10.802 25555 25555 D PureDisplay: isDeviceProvisioned=true
+07-04 17:16:10.802 25555 25555 D PureDisplay: isUserSetuped=true
+07-04 17:16:10.802 25555 25555 D PureDisplay: setOriginalModeEnable()
+07-04 17:16:10.803 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.803   973   973 I IrisService: irisConfigureSet(0, 1, 0)
+07-04 17:16:10.809 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.809   973   973 I IrisService: irisConfigureSet(41, 1, 0)
+07-04 17:16:10.810 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.811   973  1073 I IrisService: irisConfigureSet(42, 1, 0)
+07-04 17:16:10.812 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.812   973   973 I IrisService: irisConfigureSet(40, 1, 0)
+07-04 17:16:10.817  1328 16641 I GenericSource: start
+07-04 17:16:10.818  1328 16641 W Utils   : track of type 'audio/mpeg' does not publish channel mask, channel count 2
+07-04 17:16:10.819  1328 16641 W Utils   : track of type 'audio/mpeg' does not publish channel mask, channel count 2
+07-04 17:16:10.821   962  2316 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+07-04 17:16:10.821   962  2316 I audio_hw_primary: getting vr mode to 0
+07-04 17:16:10.821   962  2316 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+07-04 17:16:10.822  1011  1011 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+07-04 17:16:10.822  1011  1011 I AudioFlinger: openOutput() this 0x7669bd06b0, module 10 Device type:0x2,@:, SamplingRate 44100, Format 0x1000000, Channels 0x3, flags 0x31
+07-04 17:16:10.822   962  2316 D audio_hw_primary: adev_open_output_stream: enter: format(0x1000000) sample_rate(44100) channel_mask(0x3) devices(0x2) flags(0x31)        stream_handle(0xed057140) address()
+07-04 17:16:10.823   962  2316 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+07-04 17:16:10.823   962  2316 D audio_hw_primary: adev_open_output_stream: Stream (0xed057140) picks up usecase (compress-offload-playback)
+07-04 17:16:10.823   962  2316 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 85
+07-04 17:16:10.824  1011  1011 I AudioFlinger: HAL output buffer size 65536 frames, normal sink buffer size 65536 frames
+07-04 17:16:10.824   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: Using Fix DSP delay
+07-04 17:16:10.825   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: delay in ms is 50
+07-04 17:16:10.825   962  2316 D compress_voip: compress_voip_out_get_parameters: enter
+07-04 17:16:10.825  1011  1011 E AudioFlinger: Failed to add event callback
+07-04 17:16:10.825  1011 16649 I AudioFlinger: AudioFlinger's thread 0x76e9bd5170 tid=16649 ready to run
+07-04 17:16:10.825   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: Using Fix DSP delay
+07-04 17:16:10.825   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: delay in ms is 50
+07-04 17:16:10.826   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: Using Fix DSP delay
+07-04 17:16:10.826   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: delay in ms is 50
+07-04 17:16:10.828  1011 16649 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+07-04 17:16:10.828  1011 16649 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+07-04 17:16:10.830  1726  4286 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.831  1726  4286 I chatty  : uid=1000(system) Binder:1726_12 identical 3 lines
+07-04 17:16:10.832  1726  4286 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: QUALCOMM build                   : d7ad79a, I2f86ca99a8
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: Build Date                       : 06/13/21
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.12
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: Local Branch                     : mybranchebcc171e-87ea-f17a-bb69-1458d0b52af0
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: Remote Branch                    : quic/gfx-adreno.lnx.1.0.r127-rel
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: Remote Branch                    : NONE
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: Build Config                     : S L 10.0.7 AArch64
+07-04 17:16:10.836 16614 16636 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+07-04 17:16:10.836  1011  1011 D AF::TrackHandle: OpPlayAudio: track:62 usage:0 not muted
+07-04 17:16:10.837   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: Using Fix DSP delay
+07-04 17:16:10.837   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: delay in ms is 50
+07-04 17:16:10.838   962  2316 D compress_voip: compress_voip_out_get_parameters: enter
+07-04 17:16:10.839  1328 16645 E AudioSystem: invalid attributes { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: -1 Flags: 0x800 Tags:  } when converting to stream
+07-04 17:16:10.842 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.844   962  2316 I EffectsFactory: EffectCreate() create_effect
+07-04 17:16:10.844   973  1073 I IrisService: irisConfigureSet(36, 1, 0)
+07-04 17:16:10.846 16614 16636 I AdrenoGLES-0: PFP: 0x005ff114, ME: 0x005ff066
+07-04 17:16:10.847  1011  1401 W AudioFlinger: moveEffectChain_l() effect chain for session 0 not on source thread 0x784c520040
+07-04 17:16:10.858 25555 25555 D PureDisplay: getWhiteBalanceAutoMode()0
+07-04 17:16:10.859 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.860   973  1073 I IrisService: irisConfigureSet(39, 1, 1)
+07-04 17:16:10.865   632   632 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+07-04 17:16:10.865 16614 16636 I Gralloc4: mapper 4.x is not supported
+07-04 17:16:10.865   632   632 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+07-04 17:16:10.865 16614 16636 W Gralloc3: mapper 3.x is not supported
+07-04 17:16:10.873   962  2316 E volume_listener: check_and_set_gain_dep_cal: Failed to set gain dep cal level
+07-04 17:16:10.873   962  2316 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+07-04 17:16:10.873   962  2316 D audio_hw_primary: adev_create_audio_patch: Playback patch from mix handle 85 to device 2
+07-04 17:16:10.873   962  2316 D audio_hw_primary: update_patch: enter
+07-04 17:16:10.873   962  2316 D audio_hw_primary: route_output_stream: enter: usecase(3: compress-offload-playback) devices 2
+07-04 17:16:10.873   962  2316 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 11
+07-04 17:16:10.874   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: Using Fix DSP delay
+07-04 17:16:10.874   962  2316 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: delay in ms is 50
+07-04 17:16:10.876  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:16:10.876  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:16:10.876 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:16:10.877   962  2316 D audio_hw_primary: copl(0xed057140):calling compress flush
+07-04 17:16:10.877   962  2316 W audio_hw_primary: out_flush called in invalid state 0
+07-04 17:16:10.877   962  2316 D audio_hw_primary: copl(0xed057140):out of compress flush
+07-04 17:16:10.877  1726  6921 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:10.878   962  2316 D audio_hw_primary: out_set_parameters: enter: usecase(3: compress-offload-playback) kvpairs: delay_samples=576;music_offload_avg_bit_rate=192000;music_offload_sample_rate=44100;padding_samples=1339
+07-04 17:16:10.878   973  1073 I IrisService: irisConfigureSet(264, 1, 0)
+07-04 17:16:10.879 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastclass=e.www.speakertest.MainActivity
+07-04 17:16:10.880 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastpackage=e.www.speakertest
+07-04 17:16:10.882 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastpackage_resume=1
+07-04 17:16:10.883  1726  1924 I ActivityTaskManager: Displayed e.www.speakertest/.MainActivity: +570ms
+07-04 17:16:10.898   962  2316 E volume_listener: check_and_set_gain_dep_cal: Failed to set gain dep cal level
+07-04 17:16:10.899   962  2316 D audio_hw_primary: out_set_volume: called with left_vol=0.055912, right_vol=0.055912
+07-04 17:16:10.899   962  2316 E audio_hw_primary: out_set_compr_volume:ctl for mixer cmd - Compress Playback 8 Volume, left 0.055912, right 0.055912
+07-04 17:16:10.901   962  2316 E FMQ     : grantorIdx must be less than 3
+07-04 17:16:10.901   962  2316 E FMQ     : grantorIdx must be less than 3
+07-04 17:16:10.902 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 17:16:10.902  1011 16649 E FMQ     : grantorIdx must be less than 3
+07-04 17:16:10.902  1011 16649 E FMQ     : grantorIdx must be less than 3
+07-04 17:16:10.902   962 16651 D audio_hw_primary: start_output_stream: enter: stream(0xed057140)usecase(3: compress-offload-playback) devices(0x2) is_haptic_usecase(0)
+07-04 17:16:10.903   962 16651 D audio_hw_primary: select_devices for use case (compress-offload-playback)
+07-04 17:16:10.903   962 16651 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 44100 channels 2, backend_idx 0 usecase = 3 device (speaker)
+07-04 17:16:10.903   962 16651 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+07-04 17:16:10.903   962 16651 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+07-04 17:16:10.903   962 16651 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 44100 channels 2, backend_idx 0 usecase = 3 device (speaker)
+07-04 17:16:10.903 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 17:16:10.903   962 16651 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+07-04 17:16:10.903   962 16651 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 44100 channels 2,backend_idx 0 usecase = 3 device (speaker)
+07-04 17:16:10.903 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=e.www.speakertest fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 17:16:10.903   962 16651 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+07-04 17:16:10.903   962 16651 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+07-04 17:16:10.903   962 16651 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+07-04 17:16:10.903   962 16651 E msm8974_platform: platform_check_backends_match: Invalid snd_device = 
+07-04 17:16:10.903   962 16651 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device: backends match 0
+07-04 17:16:10.903   962 16651 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+07-04 17:16:10.903   962 16651 D hardware_info: hw_info_append_hw_type : device_name = speaker
+07-04 17:16:10.903   962 16651 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices(0)
+07-04 17:16:10.903 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 17:16:10.903   962 16651 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+07-04 17:16:10.903   962 16651 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+07-04 17:16:10.903   962 16651 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+07-04 17:16:10.903   962 16651 D audio_route: Apply path: speaker
+07-04 17:16:10.904 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 17:16:10.911   962 16651 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+07-04 17:16:10.911   962 16651 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (compress-offload-playback)id (3) sr 44100 bw (16) device speaker
+07-04 17:16:10.911   962 16651 D audio_hw_primary: audio_is_true_native_stream_active:napb:native stream detected
+07-04 17:16:10.911   962 16651 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+07-04 17:16:10.911   962 16651 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 3 of type 0 for Event 3, with Raise=1
+07-04 17:16:10.911   962 16651 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 3, usecase type 0
+07-04 17:16:10.911   962 16651 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 1,concurrency session allowed
+07-04 17:16:10.911   962 16651 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+07-04 17:16:10.911   962 16651 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices(0)
+07-04 17:16:10.911   962 16651 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+07-04 17:16:10.912   962 16651 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69936, acdb_dev_id 14, sample_rate 48000, snd_device_be_idx 127
+07-04 17:16:10.912   962 16651 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+07-04 17:16:10.912   962 16651 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path = 0, app id = 0x11130, sample rate = 48000, afe_sample_rate = 48000
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> send_asm_topology
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> send_adm_topology
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> send_audtable
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[14] app_type[69936]
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> send_audvoltable
+07-04 17:16:10.912   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> send_audstrmtable
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 456
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> send_afe_topology
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 14, Topology Id 112fc
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> send_afe_cal
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+07-04 17:16:10.913   962 16651 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000000E 
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+07-04 17:16:10.913   962 16651 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000000E 
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: Error: ACDB AFE returned = -19
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[14]
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 14 path = 0
+07-04 17:16:10.913   962 16651 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+07-04 17:16:10.913   962 16651 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices(0)
+07-04 17:16:10.913   962 16651 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 3 snd_dev 2
+07-04 17:16:10.913   962 16651 D audio_hw_primary: enable_audio_route: apply mixer and update path: compress-offload-playback
+07-04 17:16:10.913   962 16651 D audio_route: Apply path: compress-offload-playback
+07-04 17:16:10.914   962 16651 D audio_hw_primary: select_devices: done
+07-04 17:16:10.914   962 16651 D audio_hw_primary: audio_enable_asm_bit_width_enforce_mode: DSP bitwidth feature is disabled.
+07-04 17:16:10.973   962 16651 D audio_hw_utils: audio_extn_utils_compress_set_render_mode:: render mode 0
+07-04 17:16:10.973   962 16651 D audio_hw_utils: audio_extn_utils_compress_set_clk_rec_mode:: clk recovery is only supported in STC render mode
+07-04 17:16:10.973   962 16652 D offload_visualizer: thread enter
+07-04 17:16:10.974   962 16651 D audio_hw_primary: start_output_stream: exit
+07-04 17:16:10.974   962 16651 D audio_hw_primary: out_write: retry previous failed cal level set
+07-04 17:16:10.974   962 16651 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+07-04 17:16:10.974   962 16651 D ACDB-LOADER: ACDB -> send_audvoltable
+07-04 17:16:10.974   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+07-04 17:16:10.974   962 16651 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 5
+07-04 17:16:10.974   962 16651 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 40
+07-04 17:16:10.975   962 16651 D audio_hw_primary: copl(0xed057140):send new gapless metadata
+07-04 17:16:10.990   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:10.991   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:11.264 16568 16568 V Activity: onStop mLastPackageResume = false com.example.batterymanager_utility.MainActivity@47f3c3
+07-04 17:16:11.266 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastpackage_resume=0
+07-04 17:16:11.880  1726  6921 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:11.880  1726  6921 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:11.880  1726  6921 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:11.881 16672 16674 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:11.885 16568 16568 I BatteryMgr:DataCollectionService: onStartCommand: begin
+07-04 17:16:11.885 16568 16568 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 100
+07-04 17:16:11.885 16568 16568 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+07-04 17:16:11.887 16568 16568 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+07-04 17:16:11.889  1726  6921 D CompatibilityChangeReporter: Compat change id reported: 136219221; UID 10200; state: ENABLED
+07-04 17:16:11.889 16568 16568 I BatteryMgr:DataCollectionService: started foreground
+07-04 17:16:11.897 16568 16675 I BatteryMgr:DataCollectionService: collectData: begin
+07-04 17:16:11.900 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483771900,-513183,4298
+07-04 17:16:12.004 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772004,-325683,4298
+07-04 17:16:12.108 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772108,-325683,4298
+07-04 17:16:12.211 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772211,-325683,4298
+07-04 17:16:12.314 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772314,-325683,4298
+07-04 17:16:12.417 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772417,-325683,4298
+07-04 17:16:12.520 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772520,-325683,4298
+07-04 17:16:12.624 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772624,-325683,4298
+07-04 17:16:12.727 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772727,-325683,4298
+07-04 17:16:12.830 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772830,-325683,4298
+07-04 17:16:12.934 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483772933,-325683,4298
+07-04 17:16:13.037 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773037,-325683,4298
+07-04 17:16:13.053  1726  1924 I UsageStatsService: User[0] Flushing usage stats to disk
+07-04 17:16:13.140 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773140,-325683,4298
+07-04 17:16:13.243 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773243,-325683,4298
+07-04 17:16:13.351 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773350,-325683,4298
+07-04 17:16:13.358  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:115912): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:13.358  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:13.358  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:115914): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:13.358  1233  1233 W ipacm   : type=1400 audit(0.0:115915): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:13.358  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:13.358  1233  1233 W ipacm   : type=1400 audit(0.0:115917): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:13.466 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773466,-223144,4298
+07-04 17:16:13.517   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:13.528   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:13.528   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:13.578 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773577,-223144,4298
+07-04 17:16:13.690 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773690,-223144,4298
+07-04 17:16:13.741  1726  6921 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:13.742  1726  4286 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:13.744  1726  4988 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:13.744  1726  4988 I chatty  : uid=1000(system) Binder:1726_15 identical 1 line
+07-04 17:16:13.748  1726  4988 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:13.804 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773803,-223144,4298
+07-04 17:16:13.916 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483773916,-223144,4298
+07-04 17:16:14.037 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774037,-223144,4298
+07-04 17:16:14.147 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774147,-223144,4298
+07-04 17:16:14.258 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774258,-223144,4298
+07-04 17:16:14.374 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774374,-223144,4298
+07-04 17:16:14.491 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774490,-223144,4298
+07-04 17:16:14.600 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774600,-223144,4298
+07-04 17:16:14.709 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774709,-223144,4298
+07-04 17:16:14.822 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774822,-223144,4298
+07-04 17:16:14.937 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483774936,-149413,4298
+07-04 17:16:15.061 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775061,-149413,4298
+07-04 17:16:15.176 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775176,-149413,4298
+07-04 17:16:15.288 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775288,-149413,4298
+07-04 17:16:15.398 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775398,-149413,4298
+07-04 17:16:15.515 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775515,-149413,4298
+07-04 17:16:15.518  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:115947): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:15.518  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:15.518  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:115949): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:15.518  1233  1233 W ipacm   : type=1400 audit(0.0:115950): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:15.518  1233  1233 W ipacm   : type=1400 audit(0.0:115951): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:15.621 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775621,-149413,4298
+07-04 17:16:15.736 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775736,-149413,4298
+07-04 17:16:15.859 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775859,-149413,4298
+07-04 17:16:15.975 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483775975,-149413,4298
+07-04 17:16:16.085 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776085,-149413,4298
+07-04 17:16:16.166 16568 16684 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+07-04 17:16:16.194 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776194,-149413,4298
+07-04 17:16:16.234   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:16.239   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:16.240   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:16.302 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776302,-149413,4298
+07-04 17:16:16.412 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776411,-220214,4298
+07-04 17:16:16.524 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776524,-220214,4298
+07-04 17:16:16.640 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776640,-220214,4298
+07-04 17:16:16.752 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776752,-220214,4298
+07-04 17:16:16.859 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776859,-220214,4298
+07-04 17:16:16.968 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483776968,-220214,4298
+07-04 17:16:17.077 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777077,-220214,4298
+07-04 17:16:17.185 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777185,-220214,4298
+07-04 17:16:17.296 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777296,-220214,4298
+07-04 17:16:17.406 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777406,-220214,4298
+07-04 17:16:17.522 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777521,-220214,4298
+07-04 17:16:17.636 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777636,-220214,4298
+07-04 17:16:17.752 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777751,-220214,4298
+07-04 17:16:17.866 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777866,-142578,4298
+07-04 17:16:17.975 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483777975,-142578,4298
+07-04 17:16:18.091 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778091,-142578,4298
+07-04 17:16:18.206 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778206,-142578,4298
+07-04 17:16:18.315 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778315,-142578,4298
+07-04 17:16:18.425 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778424,-142578,4298
+07-04 17:16:18.537 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778536,-142578,4298
+07-04 17:16:18.652 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778652,-142578,4298
+07-04 17:16:18.766 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778765,-142578,4298
+07-04 17:16:18.870 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483778870,-142578,4298
+07-04 17:16:18.974   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:18.983   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:18.984   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:19.000 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779000,-142578,4298
+07-04 17:16:19.114 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779114,-142578,4298
+07-04 17:16:19.227 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779227,-142578,4298
+07-04 17:16:19.343 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779342,-146484,4298
+07-04 17:16:19.453 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779453,-146484,4298
+07-04 17:16:19.564 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779564,-146484,4298
+07-04 17:16:19.671 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779671,-146484,4298
+07-04 17:16:19.777 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779777,-146484,4298
+07-04 17:16:19.889 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779889,-146484,4298
+07-04 17:16:19.995 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483779994,-146484,4298
+07-04 17:16:20.105 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780104,-146484,4298
+07-04 17:16:20.210 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780210,-146484,4298
+07-04 17:16:20.317 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780317,-146484,4298
+07-04 17:16:20.423 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780423,-146484,4298
+07-04 17:16:20.529 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780528,-146484,4298
+07-04 17:16:20.634 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780634,-146484,4298
+07-04 17:16:20.740 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780740,-146484,4298
+07-04 17:16:20.845 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780845,-241699,4298
+07-04 17:16:20.951 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483780951,-241699,4298
+07-04 17:16:21.057 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781057,-241699,4298
+07-04 17:16:21.162 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781162,-241699,4298
+07-04 17:16:21.269 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781269,-241699,4298
+07-04 17:16:21.375 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781375,-241699,4298
+07-04 17:16:21.494 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781494,-241699,4298
+07-04 17:16:21.604 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781604,-241699,4298
+07-04 17:16:21.695   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:21.702   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:21.702   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:21.714 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781714,-241699,4298
+07-04 17:16:21.743  4180  4180 I A       : Local calendar periodic scheduler worker starts.
+07-04 17:16:21.745  4180  4180 I A       : Scheduling the PCP local calendar update worker.
+07-04 17:16:21.756  4180  4982 I A       : Calendar refresh worker found. Do not schedule new one.
+07-04 17:16:21.759  4180  4790 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=62cc7884-81cb-4e80-a097-166d996a19e3, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.search.assistant.platform.pcp.featuredata.localcalendar.LocalCalendarPeriodicSchedulerWorker } ]
+07-04 17:16:21.820 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781820,-241699,4298
+07-04 17:16:21.934 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483781934,-241699,4298
+07-04 17:16:22.047 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782046,-241699,4298
+07-04 17:16:22.162 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782162,-241699,4298
+07-04 17:16:22.275 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782275,-241699,4298
+07-04 17:16:22.382 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782382,-174316,4298
+07-04 17:16:22.499 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782498,-174316,4298
+07-04 17:16:22.619 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782619,-174316,4298
+07-04 17:16:22.729 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782729,-174316,4298
+07-04 17:16:22.838 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782838,-174316,4298
+07-04 17:16:22.950 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483782950,-174316,4298
+07-04 17:16:23.062 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783062,-174316,4298
+07-04 17:16:23.177 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783177,-174316,4298
+07-04 17:16:23.293 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783293,-174316,4298
+07-04 17:16:23.410 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783410,-174316,4298
+07-04 17:16:23.522 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783522,-174316,4298
+07-04 17:16:23.639 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783638,-174316,4298
+07-04 17:16:23.751 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783751,-174316,4298
+07-04 17:16:23.860 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783860,-163574,4298
+07-04 17:16:23.969 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483783969,-163574,4298
+07-04 17:16:24.085 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784085,-163574,4298
+07-04 17:16:24.200 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784200,-163574,4298
+07-04 17:16:24.315 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784315,-163574,4298
+07-04 17:16:24.431 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784430,-163574,4298
+07-04 17:16:24.435   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:24.453   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:24.453   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:24.540 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784539,-163574,4298
+07-04 17:16:24.658 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784658,-163574,4298
+07-04 17:16:24.774 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784774,-163574,4298
+07-04 17:16:24.887 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784886,-163574,4298
+07-04 17:16:24.992 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483784992,-163574,4298
+07-04 17:16:25.099 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785099,-163574,4298
+07-04 17:16:25.213 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785212,-163574,4298
+07-04 17:16:25.331 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785331,-203124,4298
+07-04 17:16:25.446 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785445,-203124,4298
+07-04 17:16:25.521 24715 24715 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 17:16:25.552 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785552,-203124,4298
+07-04 17:16:25.667 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785666,-203124,4298
+07-04 17:16:25.782 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785782,-203124,4298
+07-04 17:16:25.897 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483785896,-203124,4298
+07-04 17:16:26.012 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786012,-203124,4298
+07-04 17:16:26.121 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786121,-203124,4298
+07-04 17:16:26.234 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786234,-203124,4298
+07-04 17:16:26.350 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786347,-203124,4298
+07-04 17:16:26.468 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786467,-203124,4298
+07-04 17:16:26.581 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786580,-203124,4298
+07-04 17:16:26.697 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786696,-203124,4298
+07-04 17:16:26.809 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786809,-169921,4298
+07-04 17:16:26.924 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483786923,-169921,4298
+07-04 17:16:27.032 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787030,-169921,4298
+07-04 17:16:27.117  1471  1581 E QMI_FW  : qmi_cci_get_ref: ref count increased 2
+07-04 17:16:27.142  1471  1581 I chatty  : uid=1001(radio) DispatcherModul identical 5 lines
+07-04 17:16:27.144  1471  1581 E QMI_FW  : qmi_cci_get_ref: ref count increased 2
+07-04 17:16:27.148 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787148,-169921,4298
+07-04 17:16:27.155   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:27.155  1471  1581 E QMI_FW  : qmi_cci_get_ref: ref count increased 2
+07-04 17:16:27.159   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:27.160   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:27.257 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787256,-169921,4298
+07-04 17:16:27.364 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787364,-169921,4298
+07-04 17:16:27.398  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:115979): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:27.398  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:27.398  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:115981): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:27.398  1233  1233 W ipacm   : type=1400 audit(0.0:115982): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:27.398  1233  1233 W ipacm   : type=1400 audit(0.0:115983): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:27.471 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787471,-169921,4298
+07-04 17:16:27.585 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787585,-169921,4298
+07-04 17:16:27.701 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787700,-169921,4298
+07-04 17:16:27.816 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787816,-169921,4298
+07-04 17:16:27.932 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483787928,-169921,4298
+07-04 17:16:28.046 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788046,-169921,4298
+07-04 17:16:28.162 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788161,-169921,4298
+07-04 17:16:28.196  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:28.277 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788277,-149413,4298
+07-04 17:16:28.387 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788387,-149413,4298
+07-04 17:16:28.496 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788496,-149413,4298
+07-04 17:16:28.542  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:28.610 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788610,-149413,4298
+07-04 17:16:28.726 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788725,-149413,4298
+07-04 17:16:28.836 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788836,-149413,4298
+07-04 17:16:28.952 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483788952,-149413,4298
+07-04 17:16:29.074 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789074,-149413,4298
+07-04 17:16:29.186 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789186,-149413,4298
+07-04 17:16:29.301 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789301,-149413,4298
+07-04 17:16:29.414 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789414,-149413,4298
+07-04 17:16:29.524 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789523,-149413,4298
+07-04 17:16:29.633 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789633,-149413,4298
+07-04 17:16:29.745 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789745,-222167,4298
+07-04 17:16:29.855 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789855,-222167,4298
+07-04 17:16:29.894   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:29.904   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:29.904   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:29.961 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483789961,-222167,4298
+07-04 17:16:30.075 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790075,-222167,4298
+07-04 17:16:30.184 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790184,-222167,4298
+07-04 17:16:30.299 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790299,-222167,4298
+07-04 17:16:30.420 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790420,-222167,4298
+07-04 17:16:30.533 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790533,-222167,4298
+07-04 17:16:30.649 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790649,-222167,4298
+07-04 17:16:30.757 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790757,-222167,4298
+07-04 17:16:30.867 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790867,-222167,4298
+07-04 17:16:30.984 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483790983,-222167,4298
+07-04 17:16:31.101 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791101,-222167,4298
+07-04 17:16:31.209 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791209,-154296,4298
+07-04 17:16:31.320 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791320,-154296,4298
+07-04 17:16:31.435 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791435,-154296,4298
+07-04 17:16:31.550 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791550,-154296,4298
+07-04 17:16:31.666 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791666,-154296,4298
+07-04 17:16:31.785 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791785,-154296,4298
+07-04 17:16:31.894 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483791894,-154296,4298
+07-04 17:16:32.002 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792002,-154296,4298
+07-04 17:16:32.109 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792109,-154296,4298
+07-04 17:16:32.239 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792238,-154296,4298
+07-04 17:16:32.354 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792354,-154296,4298
+07-04 17:16:32.469 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792469,-154296,4298
+07-04 17:16:32.585 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792585,-154296,4298
+07-04 17:16:32.615   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:32.623   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:32.624   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:32.698 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792698,-162109,4298
+07-04 17:16:32.806 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792806,-162109,4298
+07-04 17:16:32.926 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483792926,-162109,4298
+07-04 17:16:33.034 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793034,-162109,4298
+07-04 17:16:33.143 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793143,-162109,4298
+07-04 17:16:33.252 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793252,-162109,4298
+07-04 17:16:33.318  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116014): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:33.318  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:33.318  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116016): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:33.318  1233  1233 W ipacm   : type=1400 audit(0.0:116017): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:33.318  1233  1233 W ipacm   : type=1400 audit(0.0:116018): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:33.359 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793359,-162109,4298
+07-04 17:16:33.467 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793467,-162109,4298
+07-04 17:16:33.581 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793580,-162109,4298
+07-04 17:16:33.696 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793695,-162109,4298
+07-04 17:16:33.785  4204  5336 V ClearcutMetricXmitter: Transmission is done.
+07-04 17:16:33.802 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793802,-162109,4298
+07-04 17:16:33.917 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483793916,-162109,4298
+07-04 17:16:34.032 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794031,-162109,4298
+07-04 17:16:34.142 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794141,-175781,4298
+07-04 17:16:34.249 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794249,-175781,4298
+07-04 17:16:34.357 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794357,-175781,4298
+07-04 17:16:34.469 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794469,-175781,4298
+07-04 17:16:34.584 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794584,-175781,4298
+07-04 17:16:34.699 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794699,-175781,4298
+07-04 17:16:34.813 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794813,-175781,4298
+07-04 17:16:34.926 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483794925,-175781,4298
+07-04 17:16:35.041 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795040,-175781,4298
+07-04 17:16:35.155 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795154,-175781,4298
+07-04 17:16:35.185  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:35.213  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:35.263 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795263,-175781,4298
+07-04 17:16:35.355   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:35.362   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:35.363   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:35.373 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795373,-175781,4298
+07-04 17:16:35.480 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795480,-175781,4298
+07-04 17:16:35.595 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795594,-175781,4298
+07-04 17:16:35.711 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795710,-152343,4298
+07-04 17:16:35.786  1726  6921 D ConnectivityService: requestNetwork for uid/pid:10153/11693 NetworkRequest [ TRACK_DEFAULT id=258, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10153 AdministratorUids: [] RequestorUid: 10153 RequestorPackageName: com.google.android.apps.messaging] ]
+07-04 17:16:35.787  1726  2357 D ConnectivityService: NetReassign [258 : null → 100]
+07-04 17:16:35.788  3449  3449 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=258, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10153 AdministratorUids: [] RequestorUid: 10153 RequestorPackageName: com.google.android.apps.messaging] ] with score 60 and providerId 5
+07-04 17:16:35.788  1726  2245 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=258, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10153 AdministratorUids: [] RequestorUid: 10153 RequestorPackageName: com.google.android.apps.messaging] ] with score 60 and providerId 5
+07-04 17:16:35.788  1726  2245 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=258, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10153 AdministratorUids: [] RequestorUid: 10153 RequestorPackageName: com.google.android.apps.messaging] ] with score 60 and providerId 5
+07-04 17:16:35.788  1726  2496 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=258, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10153 AdministratorUids: [] RequestorUid: 10153 RequestorPackageName: com.google.android.apps.messaging] ] with score 60 and providerId 5
+07-04 17:16:35.796 11693 16692 D MddListenableWorkerFactory: createWorker for class: com.google.android.libraries.mdi.download.workmanager.workers.PeriodicWorker
+07-04 17:16:35.798 11693 11693 D MddPeriodicWorker: PeriodicWorker: startWork
+07-04 17:16:35.800 11693 16693 E PhFileGroupPop: Failed to add file group 
+07-04 17:16:35.806 11693 16693 I chatty  : uid=10153(com.google.android.apps.messaging) Blocking Thread identical 14 lines
+07-04 17:16:35.807 11693 16693 E PhFileGroupPop: Failed to add file group 
+07-04 17:16:35.808 11693 16693 E cucd    : RuntimeException while executing runnable cufa{coqg@e881eaa} with executor MoreExecutors.directExecutor()
+07-04 17:16:35.808 11693 16693 E cucd    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cbxo.b' on a null object reference
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cdda.b(PG:2)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at coqg.b(PG:3)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cufa.run(PG:6)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cuee.execute(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cucd.o(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cucd.b(PG:5)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cufh.r(PG:2)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at coss.k(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cddc.a(PG:15)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at auss.a(PG:2)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at ccds.p(PG:3)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at ccds.t(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at ccds.g(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cdef.a(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at copt.a(PG:3)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cugw.a(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cufu.run(PG:4)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at cugy.run(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at byfl.run(PG:1)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at byen.run(PG:2)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at java.lang.Thread.run(Thread.java:923)
+07-04 17:16:35.808 11693 16693 E cucd    : 	at byfr.run(PG:5)
+07-04 17:16:35.826 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795826,-152343,4298
+07-04 17:16:35.934 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483795934,-152343,4298
+07-04 17:16:36.039 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796039,-152343,4298
+07-04 17:16:36.143 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796143,-152343,4298
+07-04 17:16:36.170 11693 11708 W .apps.messagin: Reducing the number of considered missed Gc histogram windows from 360 to 100
+07-04 17:16:36.247 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796247,-152343,4298
+07-04 17:16:36.355 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796354,-152343,4298
+07-04 17:16:36.459 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796459,-152343,4298
+07-04 17:16:36.563 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796563,-152343,4298
+07-04 17:16:36.667 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796667,-152343,4298
+07-04 17:16:36.773 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796773,-152343,4298
+07-04 17:16:36.877 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796877,-152343,4298
+07-04 17:16:36.981 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483796981,-152343,4298
+07-04 17:16:37.058 11693 16694 D PhFileGroupPop: Added file groups webref-model-local-index
+07-04 17:16:37.061 11693 16694 D PhFileGroupPop: Added file groups smart_actions_grammars
+07-04 17:16:37.062 11693 16694 D PhFileGroupPop: Added file groups smart_actions_ml_models
+07-04 17:16:37.063 11693 16694 D PhFileGroupPop: Added file groups text_classifier
+07-04 17:16:37.066 11693 16694 D PhFileGroupPop: Added file groups smart_actions_emotive_models
+07-04 17:16:37.086 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797086,-288574,4298
+07-04 17:16:37.099 11693 16694 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+07-04 17:16:37.100 11693 16694 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+07-04 17:16:37.101 11693 16694 D PhFileGroupPop: Added file groups scripted_reply
+07-04 17:16:37.102 11693 16694 D PhFileGroupPop: Added file groups multitask_experiment
+07-04 17:16:37.102 11693 16694 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+07-04 17:16:37.103 11693 16694 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+07-04 17:16:37.104 11693 16694 D PhFileGroupPop: Added file groups nudge
+07-04 17:16:37.105 11693 16694 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+07-04 17:16:37.105 11693 16694 D PhFileGroupPop: Added file groups birthday_suggestion
+07-04 17:16:37.106 11693 16694 D PhFileGroupPop: Added file groups birthday_grammars
+07-04 17:16:37.109 11693 16694 E PhFileGroupPop: Failed to add file group 
+07-04 17:16:37.115 11693 16694 I chatty  : uid=10153(com.google.android.apps.messaging) Blocking Thread identical 14 lines
+07-04 17:16:37.115 11693 16694 E PhFileGroupPop: Failed to add file group 
+07-04 17:16:37.116 11693 16694 E cucd    : RuntimeException while executing runnable cufa{coqg@11230bd} with executor MoreExecutors.directExecutor()
+07-04 17:16:37.116 11693 16694 E cucd    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cbxo.b' on a null object reference
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cdda.b(PG:2)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at coqg.b(PG:3)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cufa.run(PG:6)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cuee.execute(PG:1)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cucd.o(PG:1)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cucd.b(PG:5)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cufh.r(PG:2)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at coss.k(PG:1)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cddc.a(PG:15)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at auss.a(PG:2)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at ccds.p(PG:3)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at ccdf.a(PG:1)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at copx.a(PG:3)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cuch.d(PG:2)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cucj.run(PG:9)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at cugn.run(PG:4)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at byfl.run(PG:1)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at byen.run(PG:2)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at java.lang.Thread.run(Thread.java:923)
+07-04 17:16:37.116 11693 16694 E cucd    : 	at byfr.run(PG:5)
+07-04 17:16:37.190 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797190,-288574,4298
+07-04 17:16:37.294 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797294,-288574,4298
+07-04 17:16:37.398 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797398,-288574,4298
+07-04 17:16:37.503 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797503,-288574,4298
+07-04 17:16:37.608 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797608,-288574,4298
+07-04 17:16:37.713 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797712,-288574,4298
+07-04 17:16:37.817 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797817,-288574,4298
+07-04 17:16:37.921 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483797921,-288574,4298
+07-04 17:16:38.026 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798026,-288574,4298
+07-04 17:16:38.093   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:38.101   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:38.102   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:38.130 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798130,-288574,4298
+07-04 17:16:38.234 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798234,-288574,4298
+07-04 17:16:38.289 11693 16694 D PhFileGroupPop: Added file groups webref-model-local-index
+07-04 17:16:38.291 11693 16694 D PhFileGroupPop: Added file groups smart_actions_grammars
+07-04 17:16:38.293 11693 16694 D PhFileGroupPop: Added file groups smart_actions_ml_models
+07-04 17:16:38.293 11693 16694 D PhFileGroupPop: Added file groups text_classifier
+07-04 17:16:38.296 11693 16694 D PhFileGroupPop: Added file groups smart_actions_emotive_models
+07-04 17:16:38.322 11693 16694 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+07-04 17:16:38.323 11693 16694 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+07-04 17:16:38.324 11693 16694 D PhFileGroupPop: Added file groups scripted_reply
+07-04 17:16:38.325 11693 16694 D PhFileGroupPop: Added file groups multitask_experiment
+07-04 17:16:38.325 11693 16694 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+07-04 17:16:38.326 11693 16694 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+07-04 17:16:38.326 11693 16694 D PhFileGroupPop: Added file groups nudge
+07-04 17:16:38.327 11693 16694 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+07-04 17:16:38.328 11693 16694 D PhFileGroupPop: Added file groups birthday_suggestion
+07-04 17:16:38.329 11693 16694 D PhFileGroupPop: Added file groups birthday_grammars
+07-04 17:16:38.333 11693 16694 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=b3e8e1c0-d40f-466c-8c30-aa38b8b30796, tags={ MDD.WIFI.CHARGING.PERIODIC.TASK, com.google.android.libraries.mdi.download.workmanager.workers.PeriodicWorker } ]
+07-04 17:16:38.339 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798339,-288574,4298
+07-04 17:16:38.359  1726  1726 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:38.359  1726  1726 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:38.359  1726  1726 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:38.365  4180  4180 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+07-04 17:16:38.383  1726  2357 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=258, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10153 AdministratorUids: [] RequestorUid: 10153 RequestorPackageName: com.google.android.apps.messaging] ] (release request)
+07-04 17:16:38.387  4180 16538 I A       : Falling back to non-UDC sources
+07-04 17:16:38.388  4180 16538 I A       : (REDACTED) Setting = %s, optedInt = %s
+07-04 17:16:38.422  1726  4988 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:38.422  1726  4988 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:38.422  1726  4988 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:38.443 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798443,-288574,4298
+07-04 17:16:38.551 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798551,-288574,4298
+07-04 17:16:38.655 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798655,-322753,4298
+07-04 17:16:38.760 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798760,-322753,4298
+07-04 17:16:38.867 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798867,-322753,4298
+07-04 17:16:38.971 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483798971,-322753,4298
+07-04 17:16:39.075 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799075,-322753,4298
+07-04 17:16:39.182 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799182,-322753,4298
+07-04 17:16:39.189  1726  1924 I ProcessStatsService: Pruning old procstats: /data/system/procstats/state-2023-07-03-14-24-52.bin
+07-04 17:16:39.297 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799297,-322753,4298
+07-04 17:16:39.411 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799411,-322753,4298
+07-04 17:16:39.518 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799518,-322753,4298
+07-04 17:16:39.635 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799634,-322753,4298
+07-04 17:16:39.747 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799746,-322753,4298
+07-04 17:16:39.861 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799861,-322753,4298
+07-04 17:16:39.974 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483799974,-322753,4298
+07-04 17:16:40.089 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800089,-159179,4298
+07-04 17:16:40.204 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800203,-159179,4298
+07-04 17:16:40.317 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800317,-159179,4298
+07-04 17:16:40.433 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800433,-159179,4298
+07-04 17:16:40.544 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800544,-159179,4298
+07-04 17:16:40.651 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800651,-159179,4298
+07-04 17:16:40.758 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800758,-159179,4298
+07-04 17:16:40.815   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:40.823   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:40.823   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:40.828  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116084): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:40.828  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:40.828  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116086): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:40.828  1233  1233 W ipacm   : type=1400 audit(0.0:116087): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:40.828  1233  1233 W ipacm   : type=1400 audit(0.0:116088): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:40.867 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800866,-159179,4298
+07-04 17:16:40.980 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483800980,-159179,4298
+07-04 17:16:41.095 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801095,-159179,4298
+07-04 17:16:41.210 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801210,-159179,4298
+07-04 17:16:41.318 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801318,-159179,4298
+07-04 17:16:41.432 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801432,-159179,4298
+07-04 17:16:41.548 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801547,-151855,4298
+07-04 17:16:41.661 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801661,-151855,4298
+07-04 17:16:41.770 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801770,-151855,4298
+07-04 17:16:41.880 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801880,-151855,4298
+07-04 17:16:41.999 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483801998,-151855,4298
+07-04 17:16:42.115 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802114,-151855,4298
+07-04 17:16:42.225 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802225,-151855,4298
+07-04 17:16:42.339 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802339,-151855,4298
+07-04 17:16:42.447 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802446,-151855,4298
+07-04 17:16:42.555 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802555,-151855,4298
+07-04 17:16:42.664 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802664,-151855,4298
+07-04 17:16:42.784 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802783,-151855,4298
+07-04 17:16:42.891 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483802890,-151855,4298
+07-04 17:16:43.005 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803005,-217285,4298
+07-04 17:16:43.121 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803120,-217285,4298
+07-04 17:16:43.236 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803236,-217285,4298
+07-04 17:16:43.348 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803348,-217285,4298
+07-04 17:16:43.459 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803459,-217285,4298
+07-04 17:16:43.557   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:43.564   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:43.564   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:43.569 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803569,-217285,4298
+07-04 17:16:43.683 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803682,-217285,4298
+07-04 17:16:43.792 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803792,-217285,4298
+07-04 17:16:43.898  1726  1925 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:43.898  1726  1925 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:43.898  1726  1925 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:43.911  1726  2159 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:43.911  1726  2159 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:43.912  1726  2159 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:43.929 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483803929,-217285,4298
+07-04 17:16:43.959  1726 10229 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:43.959  1726 10229 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:43.959  1726 10229 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:43.963  3564  3564 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:43.963  3564  3564 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:44.034 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804034,-217285,4298
+07-04 17:16:44.044  1726  4988 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.044  1726  4988 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.044  1726  4988 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.052  3564 16427 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+07-04 17:16:44.067  3564 16493 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+07-04 17:16:44.086  3564  3564 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.udc.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:44.086  3564  3564 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.udc.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:44.139 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804139,-217285,4298
+07-04 17:16:44.147  3564 16493 I LockboxIntentOp: (REDACTED) Completed task: %b
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 275
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 276
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 277
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 278
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 279
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 280
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 281
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 282
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 283
+07-04 17:16:44.171  1726  4988 E IntervalStats: Unable to parse usage stats package 284
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 285
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 286
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 287
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 288
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 289
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 290
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 295
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 296
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 297
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 298
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 300
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 304
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 305
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 306
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 307
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 313
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 314
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 315
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 316
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 317
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 318
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 319
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 320
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 321
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse usage stats package 322
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 318
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 321
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 321
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 322
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 322
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 321
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 321
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 319
+07-04 17:16:44.172  1726  4988 I chatty  : uid=1000(system) Binder:1726_15 identical 2 lines
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 319
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 321
+07-04 17:16:44.172  1726  4988 I chatty  : uid=1000(system) Binder:1726_15 identical 1 line
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 321
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 319
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 319
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 318
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 318
+07-04 17:16:44.172  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 318
+07-04 17:16:44.173  1726  4988 I chatty  : uid=1000(system) Binder:1726_15 identical 1 line
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 318
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.173  1726  4988 I chatty  : uid=1000(system) Binder:1726_15 identical 1 line
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 320
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 322
+07-04 17:16:44.173  1726  4988 I chatty  : uid=1000(system) Binder:1726_15 identical 1 line
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 322
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 319
+07-04 17:16:44.218  1726  4286 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.218  1726  4286 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.218  1726  4286 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.236  3564 16076 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+07-04 17:16:44.244 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804244,-217285,4298
+07-04 17:16:44.266  3564 16493 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+07-04 17:16:44.280  3564 16493 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+07-04 17:16:44.287  3564 16710 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+07-04 17:16:44.348 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804348,-217285,4298
+07-04 17:16:44.383  3564  3579 I .gms.persisten: Background young concurrent copying GC freed 286389(13MB) AllocSpace objects, 3(132KB) LOS objects, 35% free, 23MB/36MB, paused 182us total 102.852ms
+07-04 17:16:44.451 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804451,-217285,4298
+07-04 17:16:44.504  3564  3564 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:44.504  3564  3564 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:44.512  1726  4286 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.512  1726  4286 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.512  1726  4286 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.515  1726 10229 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.515  1726 10229 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.515  1726 10229 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.519  1726  6921 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.519  1726  6921 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.519  1726  6921 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.523  1726  6921 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.523  1726  6921 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.523  1726  6921 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.531  3564 16710 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+07-04 17:16:44.534  1726  4286 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.534  1726  4286 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.534  1726  4286 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.541 24715 13177 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+07-04 17:16:44.555 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804555,-419921,4298
+07-04 17:16:44.557  3564 16711 I TapAndPay: Dynamic AID registration removed. [CONTEXT service_id=79 ]
+07-04 17:16:44.560  3564  3564 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.facs.cache.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:44.560  3564  3564 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.facs.cache.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:44.563  3564  3671 I FacsCacheGmsModule: (REDACTED) Receiving API connection to FACS API from package '%s'...
+07-04 17:16:44.563  3564  3671 I FacsCacheGmsModule: API connection successful!
+07-04 17:16:44.565  3564 16712 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+07-04 17:16:44.568  1726  4286 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:16:44.568  1726  4286 D CompatibilityInfo: applicationDensity - 420
+07-04 17:16:44.568  1726  4286 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:16:44.570  3564  3671 I FacsCacheGmsModule: (REDACTED) Received 'getActivityControlsSettings' request from package '%s', instance id '%s', version '%d'...
+07-04 17:16:44.570  3564  3671 I FacsCacheGmsModule: Operation 'getActivityControlsSettings' dispatched!
+07-04 17:16:44.570  3564  3665 I FacsCacheGmsModule: (REDACTED) Executing operation '%s'...
+07-04 17:16:44.570 24715 24715 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.facs.internal.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+07-04 17:16:44.570 24715 24715 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.facs.internal.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+07-04 17:16:44.571  3564  3665 I FacsCacheGmsModule: (REDACTED) Operation '%s' successful!
+07-04 17:16:44.574 24715 24731 I FacsCacheGmsModule: Receiving API connection to internal FACS API...
+07-04 17:16:44.575 24715 24731 I FacsCacheGmsModule: API connection successful!
+07-04 17:16:44.602 24715 24750 I GmsCoreXrpcWrapper: (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
+07-04 17:16:44.652 24715 24750 I Icing   : Usage reports ok 32, Failed Usage reports 0, indexed 0, rejected 0
+07-04 17:16:44.665 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804662,-419921,4298
+07-04 17:16:44.777 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804777,-419921,4298
+07-04 17:16:44.889 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804889,-419921,4298
+07-04 17:16:44.997 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483804997,-419921,4298
+07-04 17:16:45.105 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805105,-419921,4298
+07-04 17:16:45.221 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805221,-419921,4298
+07-04 17:16:45.329 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805329,-419921,4298
+07-04 17:16:45.438 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805438,-419921,4298
+07-04 17:16:45.556 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805556,-419921,4298
+07-04 17:16:45.670 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805670,-419921,4298
+07-04 17:16:45.785 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805785,-419921,4298
+07-04 17:16:45.900 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483805900,-419921,4298
+07-04 17:16:46.011 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806011,-151855,4298
+07-04 17:16:46.122 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806122,-151855,4298
+07-04 17:16:46.235 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806234,-151855,4298
+07-04 17:16:46.237 11693 11930 E TraceManagerImpl: Trace WorkManager:TikTokListenableWorker startWork timed out after 4261967 ms. Complete trace: # coqo@22a6945e
+07-04 17:16:46.237 11693 11930 E TraceManagerImpl: coqx: 
+07-04 17:16:46.237 11693 11930 E TraceManagerImpl: 	at tk_trace.Read AccountSyncData(Started After:0)
+07-04 17:16:46.278   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:46.289   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:46.290   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:46.299 11693 11928 E TraceManagerImpl: Trace BuglePhoneApplicationBase#attatchBaseContext timed out after 4263379 ms. Complete trace: # coqo@bddb4685
+07-04 17:16:46.299 11693 11928 E TraceManagerImpl: coqx: 
+07-04 17:16:46.299 11693 11928 E TraceManagerImpl: 	at tk_trace.Write UsageData(Started After:1)
+07-04 17:16:46.349 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806349,-151855,4298
+07-04 17:16:46.462 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806462,-151855,4298
+07-04 17:16:46.578 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806577,-151855,4298
+07-04 17:16:46.693 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806693,-151855,4298
+07-04 17:16:46.808 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806808,-151855,4298
+07-04 17:16:46.923 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483806923,-151855,4298
+07-04 17:16:47.036 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807035,-151855,4298
+07-04 17:16:47.147 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807147,-151855,4298
+07-04 17:16:47.258 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807258,-151855,4298
+07-04 17:16:47.367 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807366,-151855,4298
+07-04 17:16:47.478 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807478,-210449,4298
+07-04 17:16:47.594 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807592,-210449,4298
+07-04 17:16:47.709 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807709,-210449,4298
+07-04 17:16:47.824 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807824,-210449,4298
+07-04 17:16:47.945 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483807945,-210449,4298
+07-04 17:16:48.059 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808059,-210449,4298
+07-04 17:16:48.174 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808174,-210449,4298
+07-04 17:16:48.281 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808281,-210449,4298
+07-04 17:16:48.389 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808389,-210449,4298
+07-04 17:16:48.497 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808496,-210449,4298
+07-04 17:16:48.609 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808609,-210449,4298
+07-04 17:16:48.678  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116116): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:48.678  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:48.678  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116118): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:48.678  1233  1233 W ipacm   : type=1400 audit(0.0:116119): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:48.678  1233  1233 W ipacm   : type=1400 audit(0.0:116120): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:48.730 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808730,-210449,4298
+07-04 17:16:48.845 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808845,-210449,4298
+07-04 17:16:48.981 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483808978,-146484,4298
+07-04 17:16:49.015   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:49.020   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:49.020   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:49.097 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809097,-146484,4298
+07-04 17:16:49.210 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809210,-146484,4298
+07-04 17:16:49.264  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:49.321 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809321,-146484,4298
+07-04 17:16:49.429 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809429,-146484,4298
+07-04 17:16:49.538 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809538,-146484,4298
+07-04 17:16:49.609  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:49.651 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809651,-146484,4298
+07-04 17:16:49.762 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809762,-146484,4298
+07-04 17:16:49.877 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809876,-146484,4298
+07-04 17:16:49.987 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483809987,-146484,4298
+07-04 17:16:50.108 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810107,-146484,4298
+07-04 17:16:50.225 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810224,-146484,4298
+07-04 17:16:50.339 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810339,-146484,4298
+07-04 17:16:50.448 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810447,-146972,4298
+07-04 17:16:50.556 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810556,-146972,4298
+07-04 17:16:50.670 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810669,-146972,4298
+07-04 17:16:50.718  4362  4389 W ocess.gservice: Reducing the number of considered missed Gc histogram windows from 211 to 100
+07-04 17:16:50.785 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810785,-146972,4298
+07-04 17:16:50.897 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483810896,-146972,4298
+07-04 17:16:51.010 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811009,-146972,4298
+07-04 17:16:51.121 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811121,-146972,4298
+07-04 17:16:51.245 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811245,-146972,4298
+07-04 17:16:51.359 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811359,-146972,4298
+07-04 17:16:51.474 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811474,-146972,4298
+07-04 17:16:51.581 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811581,-146972,4298
+07-04 17:16:51.689 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811689,-146972,4298
+07-04 17:16:51.737   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:51.742   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:51.742   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:51.795 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811795,-146972,4298
+07-04 17:16:51.911 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483811909,-205566,4298
+07-04 17:16:52.025 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812025,-205566,4298
+07-04 17:16:52.141 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812141,-205566,4298
+07-04 17:16:52.254 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812253,-205566,4298
+07-04 17:16:52.369 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812368,-205566,4298
+07-04 17:16:52.488 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812488,-205566,4298
+07-04 17:16:52.518  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116151): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:52.518  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:52.518  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116153): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:52.518  1233  1233 W ipacm   : type=1400 audit(0.0:116154): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:52.518  1233  1233 W ipacm   : type=1400 audit(0.0:116155): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:52.604 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812603,-205566,4298
+07-04 17:16:52.713 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812713,-205566,4298
+07-04 17:16:52.821 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812821,-205566,4298
+07-04 17:16:52.935 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483812935,-205566,4298
+07-04 17:16:53.043 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813043,-205566,4298
+07-04 17:16:53.155 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813155,-205566,4298
+07-04 17:16:53.267 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813266,-205566,4298
+07-04 17:16:53.381 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813381,-176269,4298
+07-04 17:16:53.496 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813495,-176269,4298
+07-04 17:16:53.609 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813608,-176269,4298
+07-04 17:16:53.717 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813717,-176269,4298
+07-04 17:16:53.825 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813825,-176269,4298
+07-04 17:16:53.935 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483813935,-176269,4298
+07-04 17:16:54.050 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814050,-176269,4298
+07-04 17:16:54.163 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814162,-176269,4298
+07-04 17:16:54.278 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814277,-176269,4298
+07-04 17:16:54.390 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814390,-176269,4298
+07-04 17:16:54.398  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116183): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:54.398  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:16:54.398  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116185): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:54.398  1233  1233 W ipacm   : type=1400 audit(0.0:116186): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:54.398  1233  1233 W ipacm   : type=1400 audit(0.0:116187): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:16:54.475   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:54.481   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:54.482   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:54.498 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814498,-176269,4298
+07-04 17:16:54.609 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814609,-176269,4298
+07-04 17:16:54.721 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814721,-176269,4298
+07-04 17:16:54.836 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814836,-159179,4298
+07-04 17:16:54.945 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483814945,-159179,4298
+07-04 17:16:55.053 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815053,-159179,4298
+07-04 17:16:55.170 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815169,-159179,4298
+07-04 17:16:55.278 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815278,-159179,4298
+07-04 17:16:55.395 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815395,-159179,4298
+07-04 17:16:55.520 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815519,-159179,4298
+07-04 17:16:55.627 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815627,-159179,4298
+07-04 17:16:55.741 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815740,-159179,4298
+07-04 17:16:55.864 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815864,-159179,4298
+07-04 17:16:55.980 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483815980,-159179,4298
+07-04 17:16:56.087 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816087,-159179,4298
+07-04 17:16:56.195 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816195,-159179,4298
+07-04 17:16:56.315 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816314,-223144,4298
+07-04 17:16:56.429 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816429,-223144,4298
+07-04 17:16:56.516  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:56.540 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816540,-223144,4298
+07-04 17:16:56.649 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816649,-223144,4298
+07-04 17:16:56.680  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:16:56.765 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816764,-223144,4298
+07-04 17:16:56.879 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816879,-223144,4298
+07-04 17:16:56.988 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483816987,-223144,4298
+07-04 17:16:57.104 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817097,-223144,4298
+07-04 17:16:57.195   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:57.203   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:57.204   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:16:57.216 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817210,-223144,4298
+07-04 17:16:57.324 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817324,-223144,4298
+07-04 17:16:57.435 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817435,-223144,4298
+07-04 17:16:57.550 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817550,-223144,4298
+07-04 17:16:57.661 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817661,-223144,4298
+07-04 17:16:57.779 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817779,-158691,4298
+07-04 17:16:57.890 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483817890,-158691,4298
+07-04 17:16:58.001 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818000,-158691,4298
+07-04 17:16:58.114 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818114,-158691,4298
+07-04 17:16:58.231 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818231,-158691,4298
+07-04 17:16:58.343 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818343,-158691,4298
+07-04 17:16:58.450 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818450,-158691,4298
+07-04 17:16:58.558 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818558,-158691,4298
+07-04 17:16:58.678 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818678,-158691,4298
+07-04 17:16:58.793 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818793,-158691,4298
+07-04 17:16:58.905 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483818905,-158691,4298
+07-04 17:16:59.018 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819018,-158691,4298
+07-04 17:16:59.057  3564  3564 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:59.120  3564  3564 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.udc.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:59.133 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819133,-158691,4298
+07-04 17:16:59.247 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819246,-158691,4298
+07-04 17:16:59.361 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819360,-157714,4298
+07-04 17:16:59.468 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819468,-157714,4298
+07-04 17:16:59.587 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819587,-157714,4298
+07-04 17:16:59.592 24715 24715 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.facs.internal.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+07-04 17:16:59.600  3564  3564 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.facs.cache.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:59.613  3564  3564 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+07-04 17:16:59.698 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819698,-157714,4298
+07-04 17:16:59.817 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819817,-157714,4298
+07-04 17:16:59.928 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483819928,-157714,4298
+07-04 17:16:59.938   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:16:59.948   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:16:59.948   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:17:00.006  2942  2942 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+07-04 17:17:00.012  2942  2942 D KeyguardUpdateMonitor: handleTimeUpdate
+07-04 17:17:00.040 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820040,-157714,4298
+07-04 17:17:00.150 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820150,-157714,4298
+07-04 17:17:00.266 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820266,-157714,4298
+07-04 17:17:00.376 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820375,-157714,4298
+07-04 17:17:00.482 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820482,-157714,4298
+07-04 17:17:00.589 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820589,-157714,4298
+07-04 17:17:00.698 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820698,-157714,4298
+07-04 17:17:00.805 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820805,-230468,4298
+07-04 17:17:00.913 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483820913,-230468,4298
+07-04 17:17:01.024 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821024,-230468,4298
+07-04 17:17:01.132 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821132,-230468,4298
+07-04 17:17:01.241 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821241,-230468,4298
+07-04 17:17:01.350 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821349,-230468,4298
+07-04 17:17:01.459 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821459,-230468,4298
+07-04 17:17:01.568 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821568,-230468,4298
+07-04 17:17:01.681 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821681,-230468,4298
+07-04 17:17:01.790 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821790,-230468,4298
+07-04 17:17:01.897 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483821897,-230468,4298
+07-04 17:17:02.007 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822006,-230468,4298
+07-04 17:17:02.116 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822116,-230468,4298
+07-04 17:17:02.225 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822224,-157226,4298
+07-04 17:17:02.333 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822333,-157226,4298
+07-04 17:17:02.442 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822442,-157226,4298
+07-04 17:17:02.551 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822551,-157226,4298
+07-04 17:17:02.656   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:17:02.663   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:17:02.663   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:17:02.672 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822671,-157226,4298
+07-04 17:17:02.781 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822781,-157226,4298
+07-04 17:17:02.891 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483822891,-157226,4298
+07-04 17:17:03.000 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823000,-157226,4298
+07-04 17:17:03.108 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823108,-157226,4298
+07-04 17:17:03.135  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:17:03.215 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823215,-157226,4298
+07-04 17:17:03.311  1726  2166 D InputDispatcher: Waiting to send key to Window{316da5d u0 e.www.speakertest/e.www.speakertest.MainActivity} because there are unprocessed events that may cause focus to change
+07-04 17:17:03.322 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823322,-157226,4298
+07-04 17:17:03.431 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823431,-157226,4298
+07-04 17:17:03.539 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823539,-157226,4298
+07-04 17:17:03.648 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823647,-157226,4298
+07-04 17:17:03.755 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823755,-160156,4298
+07-04 17:17:03.867 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823867,-160156,4298
+07-04 17:17:03.974 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483823974,-160156,4298
+07-04 17:17:04.083 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824083,-160156,4298
+07-04 17:17:04.192 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824192,-160156,4298
+07-04 17:17:04.301 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824301,-160156,4298
+07-04 17:17:04.411 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824411,-160156,4298
+07-04 17:17:04.519 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824518,-160156,4298
+07-04 17:17:04.630 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824630,-160156,4298
+07-04 17:17:04.740 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824740,-160156,4298
+07-04 17:17:04.852 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824851,-160156,4298
+07-04 17:17:04.965 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483824965,-160156,4298
+07-04 17:17:05.073 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825073,-160156,4298
+07-04 17:17:05.180 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825180,-234863,4298
+07-04 17:17:05.286 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825286,-234863,4298
+07-04 17:17:05.394 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825394,-234863,4298
+07-04 17:17:05.395   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:17:05.401   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:17:05.403   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:17:05.502 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825502,-234863,4298
+07-04 17:17:05.610 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825610,-234863,4298
+07-04 17:17:05.718 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825718,-234863,4298
+07-04 17:17:05.829 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825829,-234863,4298
+07-04 17:17:05.940 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483825940,-234863,4298
+07-04 17:17:06.049 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826049,-234863,4298
+07-04 17:17:06.158 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826158,-234863,4298
+07-04 17:17:06.267 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826267,-234863,4298
+07-04 17:17:06.375 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826375,-234863,4298
+07-04 17:17:06.485 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826485,-234863,4298
+07-04 17:17:06.594 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826594,-234863,4298
+07-04 17:17:06.703 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826702,-158691,4298
+07-04 17:17:06.812 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826811,-158691,4298
+07-04 17:17:06.920 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483826920,-158691,4298
+07-04 17:17:07.029 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827029,-158691,4298
+07-04 17:17:07.139 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827138,-158691,4298
+07-04 17:17:07.248 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827248,-158691,4298
+07-04 17:17:07.356 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827356,-158691,4298
+07-04 17:17:07.465 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827465,-158691,4298
+07-04 17:17:07.575 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827575,-158691,4298
+07-04 17:17:07.684 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827684,-158691,4298
+07-04 17:17:07.794 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827792,-158691,4298
+07-04 17:17:07.901 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483827901,-158691,4298
+07-04 17:17:08.011 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828010,-158691,4298
+07-04 17:17:08.114   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:17:08.120   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:17:08.121   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:17:08.132 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828132,-171874,4298
+07-04 17:17:08.254 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828254,-171874,4298
+07-04 17:17:08.362 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828362,-171874,4298
+07-04 17:17:08.474 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828473,-171874,4298
+07-04 17:17:08.583 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828583,-171874,4298
+07-04 17:17:08.691 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828691,-171874,4298
+07-04 17:17:08.797 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828797,-171874,4298
+07-04 17:17:08.907 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483828907,-171874,4298
+07-04 17:17:09.022 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829021,-171874,4298
+07-04 17:17:09.128 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829128,-171874,4298
+07-04 17:17:09.235 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829235,-171874,4298
+07-04 17:17:09.348 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829348,-171874,4298
+07-04 17:17:09.455 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829454,-171874,4298
+07-04 17:17:09.563 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829562,-171874,4298
+07-04 17:17:09.671 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829671,-227538,4298
+07-04 17:17:09.758  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116253): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:09.758  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:17:09.758  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116255): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:09.758  1233  1233 W ipacm   : type=1400 audit(0.0:116256): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:09.758  1233  1233 W ipacm   : type=1400 audit(0.0:116257): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:09.778 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829778,-227538,4298
+07-04 17:17:09.888 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829888,-227538,4298
+07-04 17:17:09.997 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483829997,-227538,4298
+07-04 17:17:10.107 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830107,-227538,4298
+07-04 17:17:10.218 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830218,-227538,4298
+07-04 17:17:10.326 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830326,-227538,4298
+07-04 17:17:10.433 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830433,-227538,4298
+07-04 17:17:10.540 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830540,-227538,4298
+07-04 17:17:10.651 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830651,-227538,4298
+07-04 17:17:10.757 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830757,-227538,4298
+07-04 17:17:10.855   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:17:10.866 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830865,-227538,4298
+07-04 17:17:10.867   962 16651 D audio_hw_primary: No space available in compress driver, post msg to cb thread
+07-04 17:17:10.867   962 16647 D audio_hw_primary: copl(0xed057140):calling compress_wait
+07-04 17:17:10.977 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483830977,-227538,4298
+07-04 17:17:11.087 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831087,-151855,4298
+07-04 17:17:11.195 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831194,-151855,4298
+07-04 17:17:11.301 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831301,-151855,4298
+07-04 17:17:11.410 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831409,-151855,4298
+07-04 17:17:11.521 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831521,-151855,4298
+07-04 17:17:11.629 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831629,-151855,4298
+07-04 17:17:11.737 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831737,-151855,4298
+07-04 17:17:11.846 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831846,-151855,4298
+07-04 17:17:11.955 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483831955,-151855,4298
+07-04 17:17:12.065 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483832064,-151855,4298
+07-04 17:17:12.171 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483832171,-151855,4298
+07-04 17:17:12.277 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483832277,-151855,4298
+07-04 17:17:12.381 16568 16675 I BatteryMgr:DataCollectionService: stats => 1688483832381,-151855,4298
+07-04 17:17:12.454 16722 16724 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:16:44.173  1726  4988 I chatty  : uid=1000(system) Binder:1726_15 identical 3 lines
+07-04 17:16:44.173  1726  4988 E IntervalStats: Unable to parse event package 319
+07-04 17:17:12.836  1726  4286 I ActivityManager: Force stopping e.www.speakertest appid=10218 user=0: from pid 16738
+07-04 17:17:12.837  1726  4286 I ActivityManager: Killing 16614:e.www.speakertest/u0a218 (adj 0): stop e.www.speakertest due to from pid 16738
+07-04 17:17:12.840  1726  4286 W ActivityTaskManager: Force removing ActivityRecord{63d6b62 u0 e.www.speakertest/.MainActivity t1107 f}}: app died, no saved state
+07-04 17:17:12.857  1328  1328 D NuPlayerDriver: reset(0xed1403d0) at state 5
+07-04 17:17:12.862   916   916 I Zygote  : Process 16614 exited due to signal 9 (Killed)
+07-04 17:17:12.862   962  2316 D audio_hw_primary: copl(0xed057140):pause compress driver
+07-04 17:17:12.867  1726  7795 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:17:12.883  1726  1929 I libprocessgroup: Successfully killed process cgroup uid 10218 pid 16614 in 44ms
+07-04 17:17:12.898 16738 16740 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:17:12.902  3449  3449 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-04 17:17:12.902  3449  3449 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 17:17:12.903  3449  3449 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-04 17:17:12.903  3449  3449 D CarrierSvcBindHelper: No carrier app for: 1
+07-04 17:17:12.905 16568 16568 V Activity: mLastPackageName-com.example.batterymanager_utility.MainActivity
+07-04 17:17:12.916  1726  1913 W ActivityManager: setHasOverlayUi called on unknown pid: 16614
+07-04 17:17:12.928   962  2316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+07-04 17:17:12.928   962  2316 D ACDB-LOADER: ACDB -> send_audvoltable
+07-04 17:17:12.928   962  2316 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+07-04 17:17:12.928   962  2316 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+07-04 17:17:12.928   962  2316 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 40
+07-04 17:17:12.931  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:17:12.932  1011  1401 I chatty  : uid=1041(audioserver) ApmOutput identical 1 line
+07-04 17:17:12.932  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:17:12.932  1011  1401 W AudioFlinger: moveEffectChain_l() effect chain for session 0 not on source thread 0x76e9bd5170
+07-04 17:17:12.937  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.nearby.mediums.nearfieldcommunication.NfcAdvertisingService}
+07-04 17:17:12.937  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.pay.hce.service.PayHceService}
+07-04 17:17:12.937  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.tapandpay.hce.service.TpHceService}
+07-04 17:17:12.937  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.dck.service.DckNfcApduService}
+07-04 17:17:12.939   962  1041 I EffectsFactory: EffectCreate() create_effect
+07-04 17:17:12.941  1011  1401 W AudioFlinger: moveEffectChain_l() effect chain for session 0 not on source thread 0x784c520040
+07-04 17:17:12.941   962  1041 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+07-04 17:17:12.941   962  1041 D ACDB-LOADER: ACDB -> send_audvoltable
+07-04 17:17:12.941   962  1041 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+07-04 17:17:12.941   962  1041 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 5
+07-04 17:17:12.941   962  1041 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 40
+07-04 17:17:12.942  4261  4261 D AidRoutingManager: Default: 0, aid size: 314
+07-04 17:17:12.942  4261  4261 D AidRoutingManager: Default: 2, aid size: 0
+07-04 17:17:12.942  4261  4261 D AidRoutingManager: Default: 3, aid size: 0
+07-04 17:17:12.942  4261  4261 D AidRoutingManager: Default: 0, aid expected size: 0
+07-04 17:17:12.942  4261  4261 D AidRoutingManager: Default: 2, aid expected size: 314
+07-04 17:17:12.942  4261  4261 D AidRoutingManager: Default: 3, aid expected size: 314
+07-04 17:17:12.942  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:17:12.943  1011  1401 I chatty  : uid=1041(audioserver) ApmOutput identical 1 line
+07-04 17:17:12.943  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:17:12.945  4261  4261 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 17:17:12.945   962  1041 D audio_hw_primary: copl(0xed057140):calling compress flush
+07-04 17:17:12.946  1328 16645 E AudioSystem: invalid attributes { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: -1 Flags: 0x800 Tags:  } when converting to stream
+07-04 17:17:12.947   962 16647 D audio_hw_primary: copl(0xed057140):out of compress_wait
+07-04 17:17:12.948   962  1041 D audio_hw_primary: copl(0xed057140):out of compress flush
+07-04 17:17:12.950  1011  4795 W AudioFlinger: session id 193 not found for pid 16614
+07-04 17:17:12.950  1726  8215 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:17:12.951  1328 16641 D NuPlayerDriver: notifyResetComplete(0xed1403d0)
+07-04 17:17:12.961   962 16647 E audio_hw_primary: offload_thread_loop: Next track returned error -1
+07-04 17:17:12.962   962 16651 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: Using Fix DSP delay
+07-04 17:17:12.962   962 16651 D audio_hw_utils: audio_extn_utils_compress_get_dsp_latency:: delay in ms is 50
+07-04 17:17:12.965   962  2316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+07-04 17:17:12.965   962  2316 D ACDB-LOADER: ACDB -> send_audvoltable
+07-04 17:17:12.965   962  2316 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+07-04 17:17:12.965   962  2316 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+07-04 17:17:12.965   962  2316 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 40
+07-04 17:17:12.965  1726  8215 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:17:12.966   962  2316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+07-04 17:17:12.968  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:17:12.969  1011  1401 I chatty  : uid=1041(audioserver) ApmOutput identical 1 line
+07-04 17:17:12.969  1011  1401 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+07-04 17:17:12.969  1011  1401 W AudioFlinger: moveEffectChain_l() effect chain for session 0 not on source thread 0x76e9bd5170
+07-04 17:17:12.970   962  1041 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 11
+07-04 17:17:12.970   962  1041 D audio_hw_primary: route_output_stream: enter: usecase(3: compress-offload-playback) devices 0
+07-04 17:17:12.972   962  1041 D audio_hw_primary: out_set_parameters: enter: usecase(3: compress-offload-playback) kvpairs: closing=true
+07-04 17:17:12.977   962  1041 D audio_hw_primary: out_set_parameters: enter: usecase(3: compress-offload-playback) kvpairs: exiting=1
+07-04 17:17:12.977   962  2316 D audio_hw_primary: out_standby: enter: stream (0xed057140) usecase(3: compress-offload-playback)
+07-04 17:17:12.977   962  2316 D audio_hw_primary: copl(0xed057140):standby
+07-04 17:17:12.979 16568 16568 D PureDisplay: package-com.example.batterymanager_utility DYNAMIC_ORIGINAL_MODE open
+07-04 17:17:12.983 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,hdrMode=1
+07-04 17:17:12.990 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:12.991   973   973 I IrisService: irisConfigureSet(258, 1, 1)
+07-04 17:17:12.991 25555 25555 D PureDisplay: --setIrisDisplayHdrMode- mode =1--result = 0
+07-04 17:17:12.991 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,pureDisplayMode=1
+07-04 17:17:12.992 25555 25555 D PureDisplay: isDeviceProvisioned=true
+07-04 17:17:12.993 25555 25555 D PureDisplay: isUserSetuped=true
+07-04 17:17:12.993 25555 25555 D PureDisplay: setOriginalModeEnable()
+07-04 17:17:12.995 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:12.996   973   973 I IrisService: irisConfigureSet(0, 1, 0)
+07-04 17:17:13.027 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:13.029   973   973 I IrisService: irisConfigureSet(41, 1, 0)
+07-04 17:17:13.034 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:13.036   973   973 I IrisService: irisConfigureSet(42, 1, 0)
+07-04 17:17:13.039 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:13.039   973   973 I IrisService: irisConfigureSet(40, 1, 0)
+07-04 17:17:13.062 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:13.063   973   973 I IrisService: irisConfigureSet(36, 1, 0)
+07-04 17:17:13.065 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 17:17:13.066 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 17:17:13.067 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.batterymanager_utility fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 17:17:13.067 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 17:17:13.067 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 17:17:13.089   962 16652 D offload_visualizer: thread exit
+07-04 17:17:13.089   962  2316 D audio_hw_primary: disable_audio_route: reset and update mixer path: compress-offload-playback
+07-04 17:17:13.091   962  2316 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+07-04 17:17:13.091   962  2316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 3 of type 0 for Event 2, with Raise=1
+07-04 17:17:13.091   962  2316 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 2, usecase type 0
+07-04 17:17:13.091   962  2316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+07-04 17:17:13.091   962  2316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices(0)
+07-04 17:17:13.091   962  2316 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 3 snd_dev 2
+07-04 17:17:13.091   962  2316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+07-04 17:17:13.091   962  2316 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+07-04 17:17:13.091   962  2316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices(0)
+07-04 17:17:13.095 25555 25555 D PureDisplay: getWhiteBalanceAutoMode()0
+07-04 17:17:13.099 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:13.099   962  2316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+07-04 17:17:13.099   962  2316 D audio_hw_primary: audio_enable_asm_bit_width_enforce_mode: DSP bitwidth feature is disabled.
+07-04 17:17:13.099   962  2316 D audio_hw_primary: out_standby: exit
+07-04 17:17:13.099   962 16647 E audio_hw_primary: offload_thread_loop: Compress handle is NULL
+07-04 17:17:13.100   962  2316 D audio_hw_primary: adev_close_output_stream: enter:stream_handle(compress-offload-playback)
+07-04 17:17:13.100   962  2316 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 85
+07-04 17:17:13.100   962  2316 D audio_hw_primary: out_standby: enter: stream (0xed057140) usecase(3: compress-offload-playback)
+07-04 17:17:13.100   962  2316 D audio_hw_primary: out_standby: exit
+07-04 17:17:13.104   973   973 I IrisService: irisConfigureSet(39, 1, 1)
+07-04 17:17:13.105  1726  3286 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:17:13.127 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:13.128   973  1072 I IrisService: irisConfigureSet(264, 1, 0)
+07-04 17:17:13.129 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastclass=com.example.batterymanager_utility.MainActivity
+07-04 17:17:13.131 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastpackage=com.example.batterymanager_utility
+07-04 17:17:13.132 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,lastpackage_resume=1
+07-04 17:17:15.578  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116288): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:15.578  1233  1233 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+07-04 17:17:15.578  1233  1233 W /system/vendor/bin/ipacm: type=1400 audit(0.0:116290): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:15.578  1233  1233 W ipacm   : type=1400 audit(0.0:116291): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:15.578  1233  1233 W ipacm   : type=1400 audit(0.0:116292): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=27039 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+07-04 17:17:16.234  1726  3286 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10200 user=0: from pid 16750
+07-04 17:17:16.236  1726  3286 I ActivityManager: Killing 16568:com.example.batterymanager_utility/u0a200 (adj 0): stop com.example.batterymanager_utility due to from pid 16750
+07-04 17:17:16.238  1726  3286 W ActivityTaskManager: Force removing ActivityRecord{26f3e4a u0 com.example.batterymanager_utility/.MainActivity t1106 f}}: app died, no saved state
+07-04 17:17:16.273  1726  1929 I libprocessgroup: Successfully killed process cgroup uid 10200 pid 16568 in 36ms
+07-04 17:17:16.278   916   916 I Zygote  : Process 16568 exited due to signal 9 (Killed)
+07-04 17:17:16.280 16750 16752 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+07-04 17:17:16.285  3449  3449 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-04 17:17:16.285  3449  3449 D CarrierSvcBindHelper: No carrier app for: 0
+07-04 17:17:16.285  3449  3449 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+07-04 17:17:16.285  3449  3449 D CarrierSvcBindHelper: No carrier app for: 1
+07-04 17:17:16.287  1726  2718 E ANDR-PERF-JNI: UXEngine Trigger - Returning null
+07-04 17:17:16.296  1726  1913 W ActivityManager: setHasOverlayUi called on unknown pid: 16568
+07-04 17:17:16.308  4180  4180 I A       : onStart
+07-04 17:17:16.313  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.nearby.mediums.nearfieldcommunication.NfcAdvertisingService}
+07-04 17:17:16.314  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.pay.hce.service.PayHceService}
+07-04 17:17:16.314  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.tapandpay.hce.service.TpHceService}
+07-04 17:17:16.314  4261  4261 D RegisteredServicesCache: Others service enabled : ComponentInfo{com.google.android.gms/com.google.android.gms.dck.service.DckNfcApduService}
+07-04 17:17:16.325  4261  4261 D AidRoutingManager: Default: 0, aid size: 314
+07-04 17:17:16.325  4261  4261 D AidRoutingManager: Default: 2, aid size: 0
+07-04 17:17:16.325  4261  4261 D AidRoutingManager: Default: 3, aid size: 0
+07-04 17:17:16.325  4261  4261 D AidRoutingManager: Default: 0, aid expected size: 0
+07-04 17:17:16.325  4261  4261 D AidRoutingManager: Default: 2, aid expected size: 314
+07-04 17:17:16.325  4261  4261 D AidRoutingManager: Default: 3, aid expected size: 314
+07-04 17:17:16.325  1726  8215 D CompatibilityInfo: mCompatibilityFlags - 0
+07-04 17:17:16.325  1726  8215 D CompatibilityInfo: applicationDensity - 420
+07-04 17:17:16.325  1726  8215 D CompatibilityInfo: applicationScale - 1.0
+07-04 17:17:16.326  4261  4261 D RegisteredNfcFServicesCache: Service unchanged, not updating
+07-04 17:17:16.329 24715 24715 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 17:17:16.329 24715 24715 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+07-04 17:17:16.349  3196  3196 D PureDisplay: package-com.android.launcher3 DYNAMIC_ORIGINAL_MODE open
+07-04 17:17:16.352 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,hdrMode=1
+07-04 17:17:16.352  4180  4180 I A       : onResume
+07-04 17:17:16.355  4204  4204 I HdmBroadcastRecvUpd: (REDACTED) received broadcast: %s
+07-04 17:17:16.356  4204  4928 I HdmHotwordRequestListen: (REDACTED) received broadcast: %s
+07-04 17:17:16.356  4204  4928 I SodaTriggeringFrontend: (REDACTED) #onConfigUpdate. requester: %s
+07-04 17:17:16.357  4204  4928 I SodaTriggeringFrontend: #onConfigUpdate inside sequencer
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) Voice Match (Speaker-id) supported : %b 
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) hotword enrollment state is enrolled:  %b, speakerId model exist: %b. Voice Match supported : %b 
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) isHotwordAvailable():  %b, isHotwordEnabled() %b 
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) isHotwordAvailable():  %b, isHotwordEnabled() %b 
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) Hotword enrollment state : %s.
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) Voice Match (Speaker-id) supported : %b 
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) Voice Match (Speaker-id) supported : %b 
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) hotword enrollment state is enrolled:  %b, speakerId model exist: %b, voice match supported : %b
+07-04 17:17:16.357  4204  4928 I A       : (REDACTED) Hotword isNonVoiceMatchHotwordEnabled: %b, isHotwordAvailable : %b, isHotwordEnabled : %b, isVoiceMatchSupported: %b, isHotwordEnrolled: %b.
+07-04 17:17:16.357  4204  4928 I SodaTriggeringFrontend: (REDACTED) Ignore the legacy hotword request. voice match enabled %b, isHotwordSupported %b, isIncompleteEnrollmentState %b, nonVoiceMatchHotwordEnabled %b
+07-04 17:17:16.357 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.358   973   973 I IrisService: irisConfigureSet(258, 1, 1)
+07-04 17:17:16.358 25555 25555 D PureDisplay: --setIrisDisplayHdrMode- mode =1--result = 0
+07-04 17:17:16.358 25555 25555 D PureDisplay: PureDisplayModeChangeReceiver,pureDisplayMode=1
+07-04 17:17:16.359 25555 25555 D PureDisplay: isDeviceProvisioned=true
+07-04 17:17:16.360 25555 25555 D PureDisplay: isUserSetuped=true
+07-04 17:17:16.360 25555 25555 D PureDisplay: setOriginalModeEnable()
+07-04 17:17:16.363 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.364   973   973 I IrisService: irisConfigureSet(0, 1, 0)
+07-04 17:17:16.387  4942  4942 D PredictionService: onRequestPredictionUpdate
+07-04 17:17:16.388  4942  4942 D PredictionService: update predictions
+07-04 17:17:16.395 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.396   973   973 I IrisService: irisConfigureSet(41, 1, 0)
+07-04 17:17:16.400 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.401   973   973 I IrisService: irisConfigureSet(42, 1, 0)
+07-04 17:17:16.406 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.406 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3306 
+07-04 17:17:16.407   973   973 I IrisService: irisConfigureSet(40, 1, 0)
+07-04 17:17:16.408 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+07-04 17:17:16.408 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.android.launcher3 fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+07-04 17:17:16.408 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+07-04 17:17:16.409 10241 10241 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+07-04 17:17:16.445 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.446   973  1073 I IrisService: irisConfigureSet(36, 1, 0)
+07-04 17:17:16.476 25555 25555 D PureDisplay: getWhiteBalanceAutoMode()0
+07-04 17:17:16.479 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.480   973  1073 I IrisService: irisConfigureSet(39, 1, 1)
+07-04 17:17:16.513 25555 25555 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.pixelworks.hardware.display@1.0::IIris/default
+07-04 17:17:16.514   973  1073 I IrisService: irisConfigureSet(264, 1, 0)
+07-04 17:17:21.665  4432 14148 D MediaProvider: CrossUser not enabled.
